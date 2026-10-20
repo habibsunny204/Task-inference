@@ -1,0 +1,22 @@
+**Data Description**
+
+Predicting the age of abalone from physical measurements. The age of abalone is determined by cutting the shell through the cone, staining it, and counting the number of rings through a microscope -- a boring and time-consuming task. Other measurements, which are easier to obtain, are used to predict the age. Further information, such as weather patterns and location (hence food availability) may be required to solve the problem.
+
+From the original data examples with missing values were removed (the majority having the predicted value missing), and the ranges of the continuous values have been scaled for use with an ANN (by dividing by 200).
+
+An instance of this dataset is an abalone that was cut to determine the age. Wiki entry on abalone, can be found [here][1].
+
+[1]: <https://en.wikipedia.org/wiki/Abalone>
+
+
+**Attribute Description**
+
+1. *sex* - sex of the abalone, possible values include M, F, and I (infant)
+2. *length* - longest shell measurement in mm
+3. *diameter* - perpendicular to length in mm
+4. *height* - height with meat in shell in mm
+5. *whole_weight* - whole abalone weight in grams
+6. *shucked_weight* - weight of meat in grams
+7. *viscera_weight* - gut weight (after bleeding) in grams
+8. *shell_weight* - weight after being dried in grams
+9. *rings* - the age in years of abalone, target feature

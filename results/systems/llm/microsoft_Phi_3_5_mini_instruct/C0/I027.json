@@ -1,0 +1,33 @@
+{
+ "instance_id": "I027",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "31ca960fd58ac5c8b4d7b9b0b6163b1fe284b4560cecbe430540e7018b6028f0",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target values are distinct integers with only two possible values, 0 and 1, which are whole numbers and represent a binary outcome."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n\n{\n\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\"],\n\n  \"most_likely_task\": \"BINARY\",\n\n  \"probabilities\": {\n\n    \"BINARY\": 0.8,\n\n    \"COUNT_REGRESSION\": 0.2,\n\n    \"MULTICLASS\": 0,\n\n    \"ORDINAL\": 0,\n\n    \"CONTINUOUS_REGRESSION\": 0\n\n  },\n\n  \"confidence\": 5,\n\n  \"evidence\": \"The target values are distinct integers with only two possible values, 0 and 1, which are whole numbers and represent a binary outcome.\"\n\n}\n\n```",
+   "tokens_in": 818,
+   "tokens_out": 177,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.48
+}

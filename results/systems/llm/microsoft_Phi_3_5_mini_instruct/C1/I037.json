@@ -1,0 +1,33 @@
+{
+ "instance_id": "I037",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "9ad7b26c467622ad5048564cf26c212a803eff409f692a462b680048ff1477c0",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.045454545454545456,
+  "p_MULTICLASS": 0.045454545454545456,
+  "p_ORDINAL": 0.7272727272727273,
+  "p_COUNT_REGRESSION": 0.13636363636363635,
+  "p_CONTINUOUS_REGRESSION": 0.045454545454545456,
+  "probability_sum_raw": 1.1,
+  "confidence": 5,
+  "evidence": "The target values are whole numbers ranging from 6.4 to 47.8 with a mean of 18.5021, suggesting a count of occurrences rather than a continuous measurement or ordinal ranking."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.05,\n    \"ORDINAL\": 0.8,\n    \"COUNT_REGRESSION\": 0.15,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are whole numbers ranging from 6.4 to 47.8 with a mean of 18.5021, suggesting a count of occurrences rather than a continuous measurement or ordinal ranking.\"\n}\n```",
+   "tokens_in": 2397,
+   "tokens_out": 195,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.85
+}

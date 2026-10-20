@@ -1,0 +1,31 @@
+{
+ "instance_id": "I001",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "3eaa11a647d8b3ebd6024cbcaf31c5c7f975b0b1fb267eef0af1fd2318a88f67",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1667,\n    \"MULTICLASS\": 0.8333,\n    \"ORDINAL\": 0.3333,\n_REGRESSION\": 0.6667\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct integers ranging from 1 to 26 with a uniform distribution, indicating a classification task with multiple categories.\"\n}\n```",
+   "tokens_in": 1102,
+   "tokens_out": 174,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1667,\n    \"MULTICLASS\": 0.8333,\n    \"ORDINAL\": 0.3333,\n0.6667,\n    \"COUNT_REGRESSION\": 0.1667\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct integers ranging from 1 to 26 with a high frequency of each value, indicating a classification into multiple categories.\"\n}\n```",
+   "tokens_in": 1118,
+   "tokens_out": 187,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 19.84
+}

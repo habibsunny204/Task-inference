@@ -1,0 +1,34 @@
+{
+ "instance_id": "G004",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "b6428f7f384c1aa2a09998fa20b982db7ab3f49453a20ce1305367366e8c6cbe",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.6,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column 'Utility' is described as an 'enumerated' variable with 5 distinct integer values (1-5), suggesting it represents categories rather than measurements. The documentation does not indicate an inherent order or continuous nature, making MULTICLASS the most likely task.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.6,\n    \"ORDINAL\": 0.3,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column 'Utility' is described as an 'enumerated' variable with 5 distinct integer values (1-5), suggesting it represents categories rather than measurements. The documentation does not indicate an inherent order or continuous nature, making MULTICLASS the most likely task.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 2165,
+   "tokens_out": 176,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.06
+}

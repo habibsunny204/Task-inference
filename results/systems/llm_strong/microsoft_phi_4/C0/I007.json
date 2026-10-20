@@ -1,0 +1,34 @@
+{
+ "instance_id": "I007",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "fe53d950fc53914e5570f63af65b457819e32681561709022f80b778850994cc",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.5,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are real numbers with a wide range and distinct values, suggesting a continuous nature, but the presence of whole numbers and distinct frequent values also allows for ordinal or multiclass interpretations."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.3,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.5\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target values are real numbers with a wide range and distinct values, suggesting a continuous nature, but the presence of whole numbers and distinct frequent values also allows for ordinal or multiclass interpretations.\"\n}\n```",
+   "tokens_in": 1018,
+   "tokens_out": 160,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 18.07
+}

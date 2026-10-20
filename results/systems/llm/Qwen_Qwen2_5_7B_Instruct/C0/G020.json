@@ -1,0 +1,33 @@
+{
+ "instance_id": "G020",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "ca293914380a5bff6fcf4bd458e5450bcbdbc3dc287350f9956ca221d0591802",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has two distinct values, 'no' and 'yes', which are unordered categories."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.8, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.1, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has two distinct values, 'no' and 'yes', which are unordered categories.\"\n}",
+   "tokens_in": 622,
+   "tokens_out": 117,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 7.61
+}

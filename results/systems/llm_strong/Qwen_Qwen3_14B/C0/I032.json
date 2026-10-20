@@ -1,0 +1,34 @@
+{
+ "instance_id": "I032",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "31efdcd7b6e452101e3fbc005d8b558a2035da330c013ff904840d81a441c381",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.045454545454545456,
+  "p_MULTICLASS": 0.2727272727272727,
+  "p_ORDINAL": 0.45454545454545453,
+  "p_COUNT_REGRESSION": 0.09090909090909091,
+  "p_CONTINUOUS_REGRESSION": 0.13636363636363635,
+  "probability_sum_raw": 1.1,
+  "confidence": 3,
+  "evidence": "The target is an integer with 6 distinct values (3\u20138), suggesting it could represent ordered categories (e.g., ratings), unordered categories (e.g., types), or a continuous measurement rounded to integers."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.15\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target is an integer with 6 distinct values (3\u20138), suggesting it could represent ordered categories (e.g., ratings), unordered categories (e.g., types), or a continuous measurement rounded to integers.\"\n}",
+   "tokens_in": 754,
+   "tokens_out": 160,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 20.02
+}

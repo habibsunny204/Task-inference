@@ -1,0 +1,32 @@
+{
+ "instance_id": "I015",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "f695c97ebb405c87385e0c634c67c3d02c9ca7b351f0c64f8a53112706478c4b",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target has only two distinct values (1 and 2), and all values are whole numbers with no missing data, making it a clear binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.95, \"MULTICLASS\": 0.02, \"ORDINAL\": 0.01, \"COUNT_REGRESSION\": 0.01, \"CONTINUOUS_REGRESSION\": 0.01},\n  \"confidence\": 5,\n  \"evidence\": \"The target has only two distinct values (1 and 2), and all values are whole numbers with no missing data, making it a clear binary classification task.\"\n}",
+   "tokens_in": 719,
+   "tokens_out": 131,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 16.58
+}

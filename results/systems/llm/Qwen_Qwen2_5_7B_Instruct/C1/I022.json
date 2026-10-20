@@ -1,0 +1,34 @@
+{
+ "instance_id": "I022",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "e806461a5b8dcd7a595914dcbe2690f30921f66ca5240ce74a2e3c602c847e24",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.3076923076923077,
+  "p_MULTICLASS": 0.23076923076923075,
+  "p_ORDINAL": 0.23076923076923075,
+  "p_COUNT_REGRESSION": 0.15384615384615385,
+  "p_CONTINUOUS_REGRESSION": 0.07692307692307693,
+  "probability_sum_raw": 1.3,
+  "confidence": 3,
+  "evidence": "The target has four distinct values, but the distribution is highly skewed towards zero, and the values are whole numbers, suggesting binary classification or ordinal/categorical tasks."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.4, \"MULTICLASS\": 0.3, \"ORDINAL\": 0.3, \"COUNT_REGRESSION\": 0.2, \"CONTINUOUS_REGRESSION\": 0.1},\n  \"confidence\": 3,\n  \"evidence\": \"The target has four distinct values, but the distribution is highly skewed towards zero, and the values are whole numbers, suggesting binary classification or ordinal/categorical tasks.\"\n}",
+   "tokens_in": 1028,
+   "tokens_out": 135,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.53
+}

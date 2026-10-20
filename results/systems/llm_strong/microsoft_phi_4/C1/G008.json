@@ -1,0 +1,34 @@
+{
+ "instance_id": "G008",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "84cc0392cea5162da5f170277725e892683f2ab21ef23d8cab858fcb115447a4",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target values are whole numbers with a range and distribution that could suggest an ordinal scale, but could also be treated as continuous or multiclass."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target values are whole numbers with a range and distribution that could suggest an ordinal scale, but could also be treated as continuous or multiclass.\"\n}\n```",
+   "tokens_in": 1159,
+   "tokens_out": 148,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.47
+}

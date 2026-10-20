@@ -1,0 +1,31 @@
+{
+ "instance_id": "G007",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "81b7529894beb5ca5c58057bff1e91afc12feb0225a4f4b7ca2a059fd923af4f",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.85,\n0.04,\n    \"ORDINAL\": 0.05,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.01\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'MEDV' has 46 distinct values with a range from 5 to 50, indicating a categorical nature with a clear distinction between different classes.\"\n}\n```",
+   "tokens_in": 1632,
+   "tokens_out": 213,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.85,\n0.04,\n    \"ORDINAL\": 0.05,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'MEDV' has 46 distinct values, suggesting a classification task among these categories.\"\n}\n```",
+   "tokens_in": 1648,
+   "tokens_out": 197,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 22.18
+}

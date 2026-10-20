@@ -1,0 +1,35 @@
+{
+ "instance_id": "I048",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "9ad3f109081335ae5416bf1b80d6399d034ba954706c1c3ed42fe8a1c166b222",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.045454545454545456,
+  "p_MULTICLASS": 0.2727272727272727,
+  "p_ORDINAL": 0.45454545454545453,
+  "p_COUNT_REGRESSION": 0.09090909090909091,
+  "p_CONTINUOUS_REGRESSION": 0.13636363636363635,
+  "probability_sum_raw": 1.1,
+  "confidence": 4,
+  "evidence": "The documentation explicitly states that the continuous output was discretised into ordered intervals with k-means, and the column `y` holds the interval index.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.15\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The documentation explicitly states that the continuous output was discretised into ordered intervals with k-means, and the column `y` holds the interval index.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1519,
+   "tokens_out": 157,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 19.55
+}

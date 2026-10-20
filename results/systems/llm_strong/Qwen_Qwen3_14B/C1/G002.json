@@ -1,0 +1,34 @@
+{
+ "instance_id": "G002",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "b85f55dc2de54f89da9f38a22a80d770204647984f083c8688828a0c858e2282",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target column has only two distinct values (1 and 2), which strongly suggests a binary classification task. The column name 'Class' and the context of the feature names (e.g., 'Clump_Thickness', 'Bare_Nuclei') suggest this is a classification problem, likely related to medical diagnosis (e.g., benign vs. malignant)."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target column has only two distinct values (1 and 2), which strongly suggests a binary classification task. The column name 'Class' and the context of the feature names (e.g., 'Clump_Thickness', 'Bare_Nuclei') suggest this is a classification problem, likely related to medical diagnosis (e.g., benign vs. malignant).\"\n}",
+   "tokens_in": 1066,
+   "tokens_out": 186,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 25.67
+}

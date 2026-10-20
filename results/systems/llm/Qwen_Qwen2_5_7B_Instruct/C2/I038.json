@@ -1,0 +1,34 @@
+{
+ "instance_id": "I038",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "75b25bc2cd457073af9ead41ed611c0be16c9304310c3c116cd30ca9121cb60d",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.04545454545454546,
+  "p_MULTICLASS": 0.6363636363636364,
+  "p_ORDINAL": 0.2272727272727273,
+  "p_COUNT_REGRESSION": 0.04545454545454546,
+  "p_CONTINUOUS_REGRESSION": 0.04545454545454546,
+  "probability_sum_raw": 1.0999999999999999,
+  "confidence": 4,
+  "evidence": "The target has 86 distinct values, indicating multiple unordered categories.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\"BINARY\": 0.05, \"MULTICLASS\": 0.7, \"ORDINAL\": 0.25, \"COUNT_REGRESSION\": 0.05, \"CONTINUOUS_REGRESSION\": 0.05},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 86 distinct values, indicating multiple unordered categories.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1410,
+   "tokens_out": 130,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.23
+}

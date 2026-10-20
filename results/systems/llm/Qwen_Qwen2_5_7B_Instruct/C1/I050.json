@@ -1,0 +1,33 @@
+{
+ "instance_id": "I050",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "a277376e4506f4a2d962a1ac7588e0713a6dbb9f44c40bcaca2f13201a3acb07",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.4,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target variable has more than two distinct categories and is ordinal in nature, with a clear ordering from 'none' to 'best'."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.4, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target variable has more than two distinct categories and is ordinal in nature, with a clear ordering from 'none' to 'best'.\"\n}",
+   "tokens_in": 1213,
+   "tokens_out": 128,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.76
+}

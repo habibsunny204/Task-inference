@@ -1,0 +1,42 @@
+{
+ "instance_id": "G017",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "e8f1ca99930e1594b2b41ab7acad2bb3f01836a35da52924625ef463d5c393ec",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column 'y' has a high frequency of a single value (0) and a small range of distinct values, suggesting a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"COUNT_REGRESSION\": 0.2,\n0.1,\n  \"ORDINAL\": 0.1\n},\n  \"confidence\": 5,\n  \"evidence\": \"The target values are discrete whole numbers with a mode of 0, suggesting a binary outcome, but the presence of non-zero counts indicates it could also be a count regression task.\"\n}\n```",
+   "tokens_in": 1636,
+   "tokens_out": 155,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"COUNT_REGRESSION\": 0.2,\n    \"ORDINAL\": 0.1\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'y' has a high frequency of a single value (0) and a small range of distinct values, suggesting a binary classification task.\"\n}\n```",
+   "tokens_in": 1652,
+   "tokens_out": 145,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 16.82
+}

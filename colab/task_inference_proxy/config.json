@@ -1,0 +1,9 @@
+{
+  "bundle": "task_inference_proxy",
+  "frozen": "2026-10-19",
+  "seed": 0,
+  "n_folds": 5,
+  "folds": [0, 1, 2, 3, 4],
+  "max_ordinal": 30,
+  "sklearn": "1.9.1"
+}

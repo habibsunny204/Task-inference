@@ -1,0 +1,34 @@
+{
+ "instance_id": "I015",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "107126a4588585dd6f3247e412e4dd9f393b7a7a414e5634e29bad00f9a0d370",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.65,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column has only two distinct integer values (1 and 2), which strongly suggests a binary classification task, though it could also be treated as a multiclass or ordinal task with only two levels."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.65,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.10,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column has only two distinct integer values (1 and 2), which strongly suggests a binary classification task, though it could also be treated as a multiclass or ordinal task with only two levels.\"\n}",
+   "tokens_in": 1051,
+   "tokens_out": 156,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.91
+}

@@ -1,0 +1,29 @@
+{
+  "dataset_id": 1480,
+  "name": "ilpd",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/1480",
+  "original_data_url": null,
+  "paper_url": null,
+  "citation": null,
+  "creator": null,
+  "licence": "Public",
+  "upload_date": "2015-05-22T22:40:56",
+  "default_target": "Class",
+  "target_column": "Class",
+  "openml_task_id": "9971",
+  "openml_task_type": "Supervised Classification",
+  "feature_names": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10"
+  ]
+}

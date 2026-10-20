@@ -1,0 +1,33 @@
+{
+ "instance_id": "G009",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "0844171995f7644fc2b32997390ad12bd4205286b5892d06c0f32383951aaa73",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.047619047619047616,
+  "p_MULTICLASS": 0.047619047619047616,
+  "p_ORDINAL": 0.6666666666666666,
+  "p_COUNT_REGRESSION": 0.19047619047619047,
+  "p_CONTINUOUS_REGRESSION": 0.047619047619047616,
+  "probability_sum_raw": 1.05,
+  "confidence": 4,
+  "evidence": "The target has 11 distinct whole number values, with a clear ordinal progression and no indication of equal intervals."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.05, \"MULTICLASS\": 0.05, \"ORDINAL\": 0.7, \"COUNT_REGRESSION\": 0.2, \"CONTINUOUS_REGRESSION\": 0.05},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 11 distinct whole number values, with a clear ordinal progression and no indication of equal intervals.\"\n}",
+   "tokens_in": 788,
+   "tokens_out": 125,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.14
+}

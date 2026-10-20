@@ -1,0 +1,33 @@
+{
+ "instance_id": "G020",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "df0393da1b72fa3297c2010224ba2967944c5ae83d733d8ff4c24fe6efbee7b8",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column 'y' has only two distinct values ('no' and 'yes'), which are clearly binary outcomes, and the dataset documentation explicitly describes 'problems' as a binary classification task (whether a module has one or more reported defects).",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.95, \"MULTICLASS\": 0.02, \"ORDINAL\": 0.01, \"COUNT_REGRESSION\": 0.01, \"CONTINUOUS_REGRESSION\": 0.01},\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'y' has only two distinct values ('no' and 'yes'), which are clearly binary outcomes, and the dataset documentation explicitly describes 'problems' as a binary classification task (whether a module has one or more reported defects).\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1933,
+   "tokens_out": 159,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.27
+}

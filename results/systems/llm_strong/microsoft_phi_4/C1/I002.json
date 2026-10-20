@@ -1,0 +1,34 @@
+{
+ "instance_id": "I002",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "c1ffb1457d581296125ad4f01cb9273a38751a463b07e06c2c2ac10c016944a3",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.2,
+  "p_MULTICLASS": 0.5,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target values are integers 0, 1, and 2, which could represent categories in a MULTICLASS task, ordered levels in an ORDINAL task, or binary outcomes in a BINARY task if considering 0 vs. non-0."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.2,\n    \"MULTICLASS\": 0.5,\n    \"ORDINAL\": 0.3,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target values are integers 0, 1, and 2, which could represent categories in a MULTICLASS task, ordered levels in an ORDINAL task, or binary outcomes in a BINARY task if considering 0 vs. non-0.\"\n}\n```",
+   "tokens_in": 1356,
+   "tokens_out": 171,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 20.8
+}

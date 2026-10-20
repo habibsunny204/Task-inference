@@ -1,0 +1,43 @@
+{
+ "instance_id": "I033",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "340f4f7c34ee16aef4dcd3a5c3c603d1d2a192ef3b0e2b16e66ed121dcd8ae3f",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.13636363636363635,
+  "p_MULTICLASS": 0.09090909090909091,
+  "p_ORDINAL": 0.5454545454545454,
+  "p_COUNT_REGRESSION": 0.09090909090909091,
+  "p_CONTINUOUS_REGRESSION": 0.13636363636363635,
+  "probability_sum_raw": 1.1,
+  "confidence": 4,
+  "evidence": "The target variable sii is transformed to ordinal with clear classes representing severity levels.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"ORDINAL\": 0.8,\n_COUNT_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset targets the prediction of Severity Impairment Index (sii) based on demographic and behavioural factors, with sii being transformed to ordinal classes (None to class 0, Mild to class 1, Moderate to class 2, Severe to class 3).\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 2004,
+   "tokens_out": 191,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": \"0.15\",\n    \"MULTICLASS\": \"0.10\",\n    \"ORDINAL\": \"0.60\",\n    \"COUNT_REGRESSION\": \"0.10\",\n    \"CONTINUOUS_REGRESSION\": \"0.15\"\n  },\n  \"confidence\": \"4\",\n  \"evidence\": \"The target variable sii is transformed to ordinal with clear classes representing severity levels.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 2020,
+   "tokens_out": 188,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.07
+}

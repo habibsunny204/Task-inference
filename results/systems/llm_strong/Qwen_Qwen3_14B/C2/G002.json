@@ -1,0 +1,33 @@
+{
+ "instance_id": "G002",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "f783811d861a8bc9311b1c36d4c91ab7a49428c3420a687adec6262c49fef2d0",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column 'Class' has only two distinct values (1 and 2), and the dataset documentation explicitly states that the target feature records the prognosis (malignant or benign).",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.95,\n    \"MULTICLASS\": 0.02,\n    \"ORDINAL\": 0.01,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0.01\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'Class' has only two distinct values (1 and 2), and the dataset documentation explicitly states that the target feature records the prognosis (malignant or benign).\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1907,
+   "tokens_out": 155,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 20.69
+}

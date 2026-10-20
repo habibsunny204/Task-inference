@@ -1,0 +1,34 @@
+{
+ "instance_id": "I054",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "80aeffa353e7c86ff997b44d263e01b201339c983df56cab56b92643092085f8",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target column has only two distinct values (1 and 2) and the dataset documentation mentions 'Recommendation:0,1', indicating a binary classification task.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.6, \"MULTICLASS\": 0.2, \"ORDINAL\": 0.2, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target column has only two distinct values (1 and 2) and the dataset documentation mentions 'Recommendation:0,1', indicating a binary classification task.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1629,
+   "tokens_out": 141,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.99
+}

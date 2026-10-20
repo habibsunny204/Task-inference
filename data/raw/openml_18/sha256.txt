@@ -1,0 +1,1 @@
+49f8c7ab3906ee7f2124873058bc5738abc0ddbe7cc5ba4a3dadf0366422c6fc  data.parquet

@@ -1,0 +1,343 @@
+select,policy,system,condition,decide,rule,k,n,costly,median_regret
+decision,always act,autogluon,C0,,,0,35,7,0.01950308718545835
+decision,always act,autogluon,C1,,,0,35,7,0.01950308718545835
+decision,always act,autogluon,C2,,,0,35,7,0.01950308718545835
+decision,always act,heuristic_names,C0,,,0,35,11,0.02249764375035673
+decision,always act,heuristic_names,C1,,,0,35,6,0.0
+decision,always act,heuristic_names,C2,,,0,35,6,0.0
+decision,always act,llm:Qwen_Qwen2_5_7B_Instruct,C0,,,0,35,8,0.0
+decision,always act,llm:Qwen_Qwen2_5_7B_Instruct,C1,,,0,35,9,0.0
+decision,always act,llm:Qwen_Qwen2_5_7B_Instruct,C2,,,0,35,8,0.0
+decision,always act,llm:Qwen_Qwen3_14B,C0,,,0,35,13,0.018311515327996797
+decision,always act,llm:Qwen_Qwen3_14B,C1,,,0,35,12,0.018311515327996797
+decision,always act,llm:Qwen_Qwen3_14B,C2,,,0,35,8,0.0
+decision,always act,llm:microsoft_phi_4,C0,,,0,35,8,0.0
+decision,always act,llm:microsoft_phi_4,C1,,,0,35,7,0.0
+decision,always act,llm:microsoft_phi_4,C2,,,0,35,4,0.0
+decision,always act,method:conformal_a05,C0,,,0,35,1,0.0
+decision,always act,method:conformal_a05,C1,,,0,35,2,0.0
+decision,always act,method:conformal_a05,C2,,,0,35,5,0.0
+decision,always act,method:forced,C0,,,0,35,1,0.0
+decision,always act,method:forced,C1,,,0,35,2,0.0
+decision,always act,method:forced,C2,,,0,35,5,0.0
+decision,always act,sklearn,C0,,,0,35,7,0.01950308718545835
+decision,always act,sklearn,C1,,,0,35,7,0.01950308718545835
+decision,always act,sklearn,C2,,,0,35,7,0.01950308718545835
+decision,always act,sortinghat,C0,,,0,35,13,0.028868882364857282
+decision,always act,sortinghat,C1,,,0,35,10,0.022923083149105527
+decision,always act,sortinghat,C2,,,0,35,10,0.022923083149105527
+decision,always act,sortinghat:forced,C0,,,0,35,10,0.022520315580800733
+decision,always act,sortinghat:forced,C1,,,0,35,4,0.0
+decision,always act,sortinghat:forced,C2,,,0,35,4,0.0
+decision,always act,v2:ask10,C0,,,0,35,2,0.0
+decision,always act,v2:ask10,C1,,,0,35,3,0.0
+decision,always act,v2:ask10,C2,,,0,35,3,0.0
+decision,always act,v2:ask20,C0,,,0,35,2,0.0
+decision,always act,v2:ask20,C1,,,0,35,3,0.0
+decision,always act,v2:ask20,C2,,,0,35,3,0.0
+decision,always act,v2:ask30,C0,,,0,35,2,0.0
+decision,always act,v2:ask30,C1,,,0,35,3,0.0
+decision,always act,v2:ask30,C2,,,0,35,3,0.0
+decision,always act,v2:forced,C0,,,0,35,2,0.0
+decision,always act,v2:forced,C1,,,0,35,3,0.0
+decision,always act,v2:forced,C2,,,0,35,3,0.0
+decision,ask,v2:forced,C0,shared,confidence,0,56,2,
+decision,ask,v2:forced,C0,shared,confidence,3,56,1,
+decision,ask,v2:forced,C0,shared,confidence,6,56,1,
+decision,ask,v2:forced,C0,shared,confidence,11,56,1,
+decision,ask,v2:forced,C0,shared,confidence,17,56,0,
+decision,ask,v2:forced,C0,shared,confidence,28,56,0,
+decision,ask,v2:forced,C0,shared,expected_regret,0,56,2,
+decision,ask,v2:forced,C0,shared,expected_regret,3,56,0,
+decision,ask,v2:forced,C0,shared,expected_regret,6,56,0,
+decision,ask,v2:forced,C0,shared,expected_regret,11,56,0,
+decision,ask,v2:forced,C0,shared,expected_regret,17,56,0,
+decision,ask,v2:forced,C0,shared,expected_regret,28,56,0,
+decision,ask,v2:forced,C0,nested,confidence,0,56,2,
+decision,ask,v2:forced,C0,nested,confidence,3,56,1,
+decision,ask,v2:forced,C0,nested,confidence,6,56,1,
+decision,ask,v2:forced,C0,nested,confidence,11,56,1,
+decision,ask,v2:forced,C0,nested,confidence,17,56,0,
+decision,ask,v2:forced,C0,nested,confidence,28,56,0,
+decision,ask,v2:forced,C0,nested,expected_regret,0,56,2,
+decision,ask,v2:forced,C0,nested,expected_regret,3,56,1,
+decision,ask,v2:forced,C0,nested,expected_regret,6,56,1,
+decision,ask,v2:forced,C0,nested,expected_regret,11,56,1,
+decision,ask,v2:forced,C0,nested,expected_regret,17,56,1,
+decision,ask,v2:forced,C0,nested,expected_regret,28,56,1,
+decision,ask,v2:forced,C1,shared,confidence,0,56,3,
+decision,ask,v2:forced,C1,shared,confidence,3,56,2,
+decision,ask,v2:forced,C1,shared,confidence,6,56,2,
+decision,ask,v2:forced,C1,shared,confidence,11,56,0,
+decision,ask,v2:forced,C1,shared,confidence,17,56,0,
+decision,ask,v2:forced,C1,shared,confidence,28,56,0,
+decision,ask,v2:forced,C1,shared,expected_regret,0,56,3,
+decision,ask,v2:forced,C1,shared,expected_regret,3,56,0,
+decision,ask,v2:forced,C1,shared,expected_regret,6,56,0,
+decision,ask,v2:forced,C1,shared,expected_regret,11,56,0,
+decision,ask,v2:forced,C1,shared,expected_regret,17,56,0,
+decision,ask,v2:forced,C1,shared,expected_regret,28,56,0,
+decision,ask,v2:forced,C1,nested,confidence,0,56,3,
+decision,ask,v2:forced,C1,nested,confidence,3,56,2,
+decision,ask,v2:forced,C1,nested,confidence,6,56,2,
+decision,ask,v2:forced,C1,nested,confidence,11,56,0,
+decision,ask,v2:forced,C1,nested,confidence,17,56,0,
+decision,ask,v2:forced,C1,nested,confidence,28,56,0,
+decision,ask,v2:forced,C1,nested,expected_regret,0,56,3,
+decision,ask,v2:forced,C1,nested,expected_regret,3,56,1,
+decision,ask,v2:forced,C1,nested,expected_regret,6,56,1,
+decision,ask,v2:forced,C1,nested,expected_regret,11,56,1,
+decision,ask,v2:forced,C1,nested,expected_regret,17,56,1,
+decision,ask,v2:forced,C1,nested,expected_regret,28,56,1,
+decision,ask,v2:forced,C2,shared,confidence,0,56,3,
+decision,ask,v2:forced,C2,shared,confidence,3,56,3,
+decision,ask,v2:forced,C2,shared,confidence,6,56,3,
+decision,ask,v2:forced,C2,shared,confidence,11,56,2,
+decision,ask,v2:forced,C2,shared,confidence,17,56,0,
+decision,ask,v2:forced,C2,shared,confidence,28,56,0,
+decision,ask,v2:forced,C2,shared,expected_regret,0,56,3,
+decision,ask,v2:forced,C2,shared,expected_regret,3,56,2,
+decision,ask,v2:forced,C2,shared,expected_regret,6,56,1,
+decision,ask,v2:forced,C2,shared,expected_regret,11,56,1,
+decision,ask,v2:forced,C2,shared,expected_regret,17,56,1,
+decision,ask,v2:forced,C2,shared,expected_regret,28,56,1,
+decision,ask,v2:forced,C2,nested,confidence,0,56,3,
+decision,ask,v2:forced,C2,nested,confidence,3,56,3,
+decision,ask,v2:forced,C2,nested,confidence,6,56,3,
+decision,ask,v2:forced,C2,nested,confidence,11,56,2,
+decision,ask,v2:forced,C2,nested,confidence,17,56,0,
+decision,ask,v2:forced,C2,nested,confidence,28,56,0,
+decision,ask,v2:forced,C2,nested,expected_regret,0,56,3,
+decision,ask,v2:forced,C2,nested,expected_regret,3,56,2,
+decision,ask,v2:forced,C2,nested,expected_regret,6,56,2,
+decision,ask,v2:forced,C2,nested,expected_regret,11,56,2,
+decision,ask,v2:forced,C2,nested,expected_regret,17,56,2,
+decision,ask,v2:forced,C2,nested,expected_regret,28,56,2,
+fixed,always act,autogluon,C0,,,0,35,7,0.01950308718545835
+fixed,always act,autogluon,C1,,,0,35,7,0.01950308718545835
+fixed,always act,autogluon,C2,,,0,35,7,0.01950308718545835
+fixed,always act,heuristic_names,C0,,,0,35,11,0.018311515327996797
+fixed,always act,heuristic_names,C1,,,0,35,6,0.0
+fixed,always act,heuristic_names,C2,,,0,35,6,0.0
+fixed,always act,llm:Qwen_Qwen2_5_7B_Instruct,C0,,,0,35,8,0.0
+fixed,always act,llm:Qwen_Qwen2_5_7B_Instruct,C1,,,0,35,11,0.0
+fixed,always act,llm:Qwen_Qwen2_5_7B_Instruct,C2,,,0,35,8,0.0
+fixed,always act,llm:Qwen_Qwen3_14B,C0,,,0,35,15,0.018311515327996797
+fixed,always act,llm:Qwen_Qwen3_14B,C1,,,0,35,14,0.018311515327996797
+fixed,always act,llm:Qwen_Qwen3_14B,C2,,,0,35,8,0.0
+fixed,always act,llm:microsoft_phi_4,C0,,,0,35,8,0.0
+fixed,always act,llm:microsoft_phi_4,C1,,,0,35,7,0.0
+fixed,always act,llm:microsoft_phi_4,C2,,,0,35,4,0.0
+fixed,always act,method:conformal_a05,C0,,,0,35,1,0.0
+fixed,always act,method:conformal_a05,C1,,,0,35,2,0.0
+fixed,always act,method:conformal_a05,C2,,,0,35,5,0.0
+fixed,always act,method:forced,C0,,,0,35,1,0.0
+fixed,always act,method:forced,C1,,,0,35,2,0.0
+fixed,always act,method:forced,C2,,,0,35,5,0.0
+fixed,always act,sklearn,C0,,,0,35,7,0.01950308718545835
+fixed,always act,sklearn,C1,,,0,35,7,0.01950308718545835
+fixed,always act,sklearn,C2,,,0,35,7,0.01950308718545835
+fixed,always act,sortinghat,C0,,,0,35,13,0.028868882364857282
+fixed,always act,sortinghat,C1,,,0,35,10,0.022923083149105527
+fixed,always act,sortinghat,C2,,,0,35,10,0.022923083149105527
+fixed,always act,sortinghat:forced,C0,,,0,35,10,0.022520315580800733
+fixed,always act,sortinghat:forced,C1,,,0,35,4,0.0
+fixed,always act,sortinghat:forced,C2,,,0,35,4,0.0
+fixed,always act,v2:ask10,C0,,,0,35,2,0.0
+fixed,always act,v2:ask10,C1,,,0,35,3,0.0
+fixed,always act,v2:ask10,C2,,,0,35,3,0.0
+fixed,always act,v2:ask20,C0,,,0,35,2,0.0
+fixed,always act,v2:ask20,C1,,,0,35,3,0.0
+fixed,always act,v2:ask20,C2,,,0,35,3,0.0
+fixed,always act,v2:ask30,C0,,,0,35,2,0.0
+fixed,always act,v2:ask30,C1,,,0,35,3,0.0
+fixed,always act,v2:ask30,C2,,,0,35,3,0.0
+fixed,always act,v2:forced,C0,,,0,35,2,0.0
+fixed,always act,v2:forced,C1,,,0,35,3,0.0
+fixed,always act,v2:forced,C2,,,0,35,3,0.0
+fixed,ask,v2:forced,C0,shared,confidence,0,56,2,
+fixed,ask,v2:forced,C0,shared,confidence,3,56,1,
+fixed,ask,v2:forced,C0,shared,confidence,6,56,1,
+fixed,ask,v2:forced,C0,shared,confidence,11,56,1,
+fixed,ask,v2:forced,C0,shared,confidence,17,56,0,
+fixed,ask,v2:forced,C0,shared,confidence,28,56,0,
+fixed,ask,v2:forced,C0,shared,expected_regret,0,56,2,
+fixed,ask,v2:forced,C0,shared,expected_regret,3,56,0,
+fixed,ask,v2:forced,C0,shared,expected_regret,6,56,0,
+fixed,ask,v2:forced,C0,shared,expected_regret,11,56,0,
+fixed,ask,v2:forced,C0,shared,expected_regret,17,56,0,
+fixed,ask,v2:forced,C0,shared,expected_regret,28,56,0,
+fixed,ask,v2:forced,C0,nested,confidence,0,56,2,
+fixed,ask,v2:forced,C0,nested,confidence,3,56,1,
+fixed,ask,v2:forced,C0,nested,confidence,6,56,1,
+fixed,ask,v2:forced,C0,nested,confidence,11,56,1,
+fixed,ask,v2:forced,C0,nested,confidence,17,56,0,
+fixed,ask,v2:forced,C0,nested,confidence,28,56,0,
+fixed,ask,v2:forced,C0,nested,expected_regret,0,56,2,
+fixed,ask,v2:forced,C0,nested,expected_regret,3,56,1,
+fixed,ask,v2:forced,C0,nested,expected_regret,6,56,1,
+fixed,ask,v2:forced,C0,nested,expected_regret,11,56,1,
+fixed,ask,v2:forced,C0,nested,expected_regret,17,56,1,
+fixed,ask,v2:forced,C0,nested,expected_regret,28,56,1,
+fixed,ask,v2:forced,C1,shared,confidence,0,56,3,
+fixed,ask,v2:forced,C1,shared,confidence,3,56,2,
+fixed,ask,v2:forced,C1,shared,confidence,6,56,2,
+fixed,ask,v2:forced,C1,shared,confidence,11,56,0,
+fixed,ask,v2:forced,C1,shared,confidence,17,56,0,
+fixed,ask,v2:forced,C1,shared,confidence,28,56,0,
+fixed,ask,v2:forced,C1,shared,expected_regret,0,56,3,
+fixed,ask,v2:forced,C1,shared,expected_regret,3,56,0,
+fixed,ask,v2:forced,C1,shared,expected_regret,6,56,0,
+fixed,ask,v2:forced,C1,shared,expected_regret,11,56,0,
+fixed,ask,v2:forced,C1,shared,expected_regret,17,56,0,
+fixed,ask,v2:forced,C1,shared,expected_regret,28,56,0,
+fixed,ask,v2:forced,C1,nested,confidence,0,56,3,
+fixed,ask,v2:forced,C1,nested,confidence,3,56,2,
+fixed,ask,v2:forced,C1,nested,confidence,6,56,2,
+fixed,ask,v2:forced,C1,nested,confidence,11,56,0,
+fixed,ask,v2:forced,C1,nested,confidence,17,56,0,
+fixed,ask,v2:forced,C1,nested,confidence,28,56,0,
+fixed,ask,v2:forced,C1,nested,expected_regret,0,56,3,
+fixed,ask,v2:forced,C1,nested,expected_regret,3,56,1,
+fixed,ask,v2:forced,C1,nested,expected_regret,6,56,1,
+fixed,ask,v2:forced,C1,nested,expected_regret,11,56,1,
+fixed,ask,v2:forced,C1,nested,expected_regret,17,56,1,
+fixed,ask,v2:forced,C1,nested,expected_regret,28,56,1,
+fixed,ask,v2:forced,C2,shared,confidence,0,56,3,
+fixed,ask,v2:forced,C2,shared,confidence,3,56,3,
+fixed,ask,v2:forced,C2,shared,confidence,6,56,3,
+fixed,ask,v2:forced,C2,shared,confidence,11,56,2,
+fixed,ask,v2:forced,C2,shared,confidence,17,56,0,
+fixed,ask,v2:forced,C2,shared,confidence,28,56,0,
+fixed,ask,v2:forced,C2,shared,expected_regret,0,56,3,
+fixed,ask,v2:forced,C2,shared,expected_regret,3,56,2,
+fixed,ask,v2:forced,C2,shared,expected_regret,6,56,1,
+fixed,ask,v2:forced,C2,shared,expected_regret,11,56,1,
+fixed,ask,v2:forced,C2,shared,expected_regret,17,56,1,
+fixed,ask,v2:forced,C2,shared,expected_regret,28,56,1,
+fixed,ask,v2:forced,C2,nested,confidence,0,56,3,
+fixed,ask,v2:forced,C2,nested,confidence,3,56,3,
+fixed,ask,v2:forced,C2,nested,confidence,6,56,3,
+fixed,ask,v2:forced,C2,nested,confidence,11,56,2,
+fixed,ask,v2:forced,C2,nested,confidence,17,56,0,
+fixed,ask,v2:forced,C2,nested,confidence,28,56,0,
+fixed,ask,v2:forced,C2,nested,expected_regret,0,56,3,
+fixed,ask,v2:forced,C2,nested,expected_regret,3,56,2,
+fixed,ask,v2:forced,C2,nested,expected_regret,6,56,2,
+fixed,ask,v2:forced,C2,nested,expected_regret,11,56,2,
+fixed,ask,v2:forced,C2,nested,expected_regret,17,56,2,
+fixed,ask,v2:forced,C2,nested,expected_regret,28,56,2,
+eval,always act,autogluon,C0,,,0,35,7,0.01950308718545835
+eval,always act,autogluon,C1,,,0,35,7,0.01950308718545835
+eval,always act,autogluon,C2,,,0,35,7,0.01950308718545835
+eval,always act,heuristic_names,C0,,,0,35,11,0.02249764375035673
+eval,always act,heuristic_names,C1,,,0,35,6,0.0
+eval,always act,heuristic_names,C2,,,0,35,6,0.0
+eval,always act,llm:Qwen_Qwen2_5_7B_Instruct,C0,,,0,35,8,0.0
+eval,always act,llm:Qwen_Qwen2_5_7B_Instruct,C1,,,0,35,10,0.0
+eval,always act,llm:Qwen_Qwen2_5_7B_Instruct,C2,,,0,35,8,0.0
+eval,always act,llm:Qwen_Qwen3_14B,C0,,,0,35,14,0.018311515327996797
+eval,always act,llm:Qwen_Qwen3_14B,C1,,,0,35,13,0.018311515327996797
+eval,always act,llm:Qwen_Qwen3_14B,C2,,,0,35,8,0.0
+eval,always act,llm:microsoft_phi_4,C0,,,0,35,8,0.0
+eval,always act,llm:microsoft_phi_4,C1,,,0,35,7,0.0
+eval,always act,llm:microsoft_phi_4,C2,,,0,35,4,0.0
+eval,always act,method:conformal_a05,C0,,,0,35,1,0.0
+eval,always act,method:conformal_a05,C1,,,0,35,2,0.0
+eval,always act,method:conformal_a05,C2,,,0,35,5,0.0
+eval,always act,method:forced,C0,,,0,35,1,0.0
+eval,always act,method:forced,C1,,,0,35,2,0.0
+eval,always act,method:forced,C2,,,0,35,5,0.0
+eval,always act,sklearn,C0,,,0,35,7,0.01950308718545835
+eval,always act,sklearn,C1,,,0,35,7,0.01950308718545835
+eval,always act,sklearn,C2,,,0,35,7,0.01950308718545835
+eval,always act,sortinghat,C0,,,0,35,13,0.028868882364857282
+eval,always act,sortinghat,C1,,,0,35,10,0.022520315580800733
+eval,always act,sortinghat,C2,,,0,35,10,0.022520315580800733
+eval,always act,sortinghat:forced,C0,,,0,35,10,0.020474301622008587
+eval,always act,sortinghat:forced,C1,,,0,35,4,0.0
+eval,always act,sortinghat:forced,C2,,,0,35,4,0.0
+eval,always act,v2:ask10,C0,,,0,35,2,0.0
+eval,always act,v2:ask10,C1,,,0,35,3,0.0
+eval,always act,v2:ask10,C2,,,0,35,3,0.0
+eval,always act,v2:ask20,C0,,,0,35,2,0.0
+eval,always act,v2:ask20,C1,,,0,35,3,0.0
+eval,always act,v2:ask20,C2,,,0,35,3,0.0
+eval,always act,v2:ask30,C0,,,0,35,2,0.0
+eval,always act,v2:ask30,C1,,,0,35,3,0.0
+eval,always act,v2:ask30,C2,,,0,35,3,0.0
+eval,always act,v2:forced,C0,,,0,35,2,0.0
+eval,always act,v2:forced,C1,,,0,35,3,0.0
+eval,always act,v2:forced,C2,,,0,35,3,0.0
+eval,ask,v2:forced,C0,shared,confidence,0,56,2,
+eval,ask,v2:forced,C0,shared,confidence,3,56,1,
+eval,ask,v2:forced,C0,shared,confidence,6,56,1,
+eval,ask,v2:forced,C0,shared,confidence,11,56,1,
+eval,ask,v2:forced,C0,shared,confidence,17,56,0,
+eval,ask,v2:forced,C0,shared,confidence,28,56,0,
+eval,ask,v2:forced,C0,shared,expected_regret,0,56,2,
+eval,ask,v2:forced,C0,shared,expected_regret,3,56,0,
+eval,ask,v2:forced,C0,shared,expected_regret,6,56,0,
+eval,ask,v2:forced,C0,shared,expected_regret,11,56,0,
+eval,ask,v2:forced,C0,shared,expected_regret,17,56,0,
+eval,ask,v2:forced,C0,shared,expected_regret,28,56,0,
+eval,ask,v2:forced,C0,nested,confidence,0,56,2,
+eval,ask,v2:forced,C0,nested,confidence,3,56,1,
+eval,ask,v2:forced,C0,nested,confidence,6,56,1,
+eval,ask,v2:forced,C0,nested,confidence,11,56,1,
+eval,ask,v2:forced,C0,nested,confidence,17,56,0,
+eval,ask,v2:forced,C0,nested,confidence,28,56,0,
+eval,ask,v2:forced,C0,nested,expected_regret,0,56,2,
+eval,ask,v2:forced,C0,nested,expected_regret,3,56,1,
+eval,ask,v2:forced,C0,nested,expected_regret,6,56,1,
+eval,ask,v2:forced,C0,nested,expected_regret,11,56,1,
+eval,ask,v2:forced,C0,nested,expected_regret,17,56,1,
+eval,ask,v2:forced,C0,nested,expected_regret,28,56,1,
+eval,ask,v2:forced,C1,shared,confidence,0,56,3,
+eval,ask,v2:forced,C1,shared,confidence,3,56,2,
+eval,ask,v2:forced,C1,shared,confidence,6,56,2,
+eval,ask,v2:forced,C1,shared,confidence,11,56,0,
+eval,ask,v2:forced,C1,shared,confidence,17,56,0,
+eval,ask,v2:forced,C1,shared,confidence,28,56,0,
+eval,ask,v2:forced,C1,shared,expected_regret,0,56,3,
+eval,ask,v2:forced,C1,shared,expected_regret,3,56,0,
+eval,ask,v2:forced,C1,shared,expected_regret,6,56,0,
+eval,ask,v2:forced,C1,shared,expected_regret,11,56,0,
+eval,ask,v2:forced,C1,shared,expected_regret,17,56,0,
+eval,ask,v2:forced,C1,shared,expected_regret,28,56,0,
+eval,ask,v2:forced,C1,nested,confidence,0,56,3,
+eval,ask,v2:forced,C1,nested,confidence,3,56,2,
+eval,ask,v2:forced,C1,nested,confidence,6,56,2,
+eval,ask,v2:forced,C1,nested,confidence,11,56,0,
+eval,ask,v2:forced,C1,nested,confidence,17,56,0,
+eval,ask,v2:forced,C1,nested,confidence,28,56,0,
+eval,ask,v2:forced,C1,nested,expected_regret,0,56,3,
+eval,ask,v2:forced,C1,nested,expected_regret,3,56,1,
+eval,ask,v2:forced,C1,nested,expected_regret,6,56,1,
+eval,ask,v2:forced,C1,nested,expected_regret,11,56,1,
+eval,ask,v2:forced,C1,nested,expected_regret,17,56,1,
+eval,ask,v2:forced,C1,nested,expected_regret,28,56,1,
+eval,ask,v2:forced,C2,shared,confidence,0,56,3,
+eval,ask,v2:forced,C2,shared,confidence,3,56,3,
+eval,ask,v2:forced,C2,shared,confidence,6,56,3,
+eval,ask,v2:forced,C2,shared,confidence,11,56,2,
+eval,ask,v2:forced,C2,shared,confidence,17,56,0,
+eval,ask,v2:forced,C2,shared,confidence,28,56,0,
+eval,ask,v2:forced,C2,shared,expected_regret,0,56,3,
+eval,ask,v2:forced,C2,shared,expected_regret,3,56,2,
+eval,ask,v2:forced,C2,shared,expected_regret,6,56,1,
+eval,ask,v2:forced,C2,shared,expected_regret,11,56,1,
+eval,ask,v2:forced,C2,shared,expected_regret,17,56,1,
+eval,ask,v2:forced,C2,shared,expected_regret,28,56,1,
+eval,ask,v2:forced,C2,nested,confidence,0,56,3,
+eval,ask,v2:forced,C2,nested,confidence,3,56,3,
+eval,ask,v2:forced,C2,nested,confidence,6,56,3,
+eval,ask,v2:forced,C2,nested,confidence,11,56,2,
+eval,ask,v2:forced,C2,nested,confidence,17,56,0,
+eval,ask,v2:forced,C2,nested,confidence,28,56,0,
+eval,ask,v2:forced,C2,nested,expected_regret,0,56,3,
+eval,ask,v2:forced,C2,nested,expected_regret,3,56,2,
+eval,ask,v2:forced,C2,nested,expected_regret,6,56,2,
+eval,ask,v2:forced,C2,nested,expected_regret,11,56,2,
+eval,ask,v2:forced,C2,nested,expected_regret,17,56,2,
+eval,ask,v2:forced,C2,nested,expected_regret,28,56,2,

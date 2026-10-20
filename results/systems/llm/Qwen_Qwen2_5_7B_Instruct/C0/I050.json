@@ -1,0 +1,33 @@
+{
+ "instance_id": "I050",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "19aa593fb2a283f8efc871c14071da86ce1656ec153d75b6e15da1ce16702982",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.045454545454545456,
+  "p_MULTICLASS": 0.40909090909090906,
+  "p_ORDINAL": 0.45454545454545453,
+  "p_COUNT_REGRESSION": 0.045454545454545456,
+  "p_CONTINUOUS_REGRESSION": 0.045454545454545456,
+  "probability_sum_raw": 1.1,
+  "confidence": 4,
+  "evidence": "The values have a clear ordinal progression, but the distinct values suggest it could also be treated as categorical."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.05, \"MULTICLASS\": 0.45, \"ORDINAL\": 0.5, \"COUNT_REGRESSION\": 0.05, \"CONTINUOUS_REGRESSION\": 0.05},\n  \"confidence\": 4,\n  \"evidence\": \"The values have a clear ordinal progression, but the distinct values suggest it could also be treated as categorical.\"\n}",
+   "tokens_in": 646,
+   "tokens_out": 125,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.73
+}

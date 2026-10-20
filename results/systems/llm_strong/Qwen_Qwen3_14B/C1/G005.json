@@ -1,0 +1,34 @@
+{
+ "instance_id": "G005",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "93399b5b02f1ffb973851621e3983308e0abc1a46b6da6a8d06645d2e707ae4d",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column `Utility` has integer values ranging from 1 to 5, which could represent ordered categories (e.g., ratings or severity levels), unordered categories (e.g., types), or continuous measurements rounded to integers."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column `Utility` has integer values ranging from 1 to 5, which could represent ordered categories (e.g., ratings or severity levels), unordered categories (e.g., types), or continuous measurements rounded to integers.\"\n}",
+   "tokens_in": 1313,
+   "tokens_out": 163,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.65
+}

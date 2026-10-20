@@ -1,0 +1,34 @@
+{
+ "instance_id": "I016",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "e036b647db7cb7da07323d260b787f647ee18738c51ae3a37386c368181af068",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has 3 distinct integer values (0, 1, 2), with 1 being the most common. While this could be interpreted as ordinal or multi-class, the presence of 0 and 2 as extremes with 1 as the median suggests a binary classification task (e.g., 0/1 as negative/positive, and 2 as an outlier or misclassification)."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has 3 distinct integer values (0, 1, 2), with 1 being the most common. While this could be interpreted as ordinal or multi-class, the presence of 0 and 2 as extremes with 1 as the median suggests a binary classification task (e.g., 0/1 as negative/positive, and 2 as an outlier or misclassification).\"\n}",
+   "tokens_in": 940,
+   "tokens_out": 195,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 25.8
+}

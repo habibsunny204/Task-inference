@@ -1,0 +1,33 @@
+{
+ "instance_id": "I020",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "ec95b55f79bed09959776131c910aa9f6e0e9a28de023e3a607ff5f842b89d94",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has two distinct values and all values are whole numbers, suggesting a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.7, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.2, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has two distinct values and all values are whole numbers, suggesting a binary classification task.\"\n}",
+   "tokens_in": 1421,
+   "tokens_out": 117,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.84
+}

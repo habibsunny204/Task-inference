@@ -1,0 +1,34 @@
+{
+ "instance_id": "I047",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "3b1638d241be67d885c70055b4f47ea0303455a5d101ac75c09ce75eca5c4381",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.7,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target column `class` has three distinct values (B, L, R), representing balanced, left, and right outcomes, which are unordered categories.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.7,\n    \"ORDINAL\": 0.2,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target column `class` has three distinct values (B, L, R), representing balanced, left, and right outcomes, which are unordered categories.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1145,
+   "tokens_out": 151,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.77
+}

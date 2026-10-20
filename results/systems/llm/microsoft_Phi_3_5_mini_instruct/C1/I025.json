@@ -1,0 +1,36 @@
+{
+ "instance_id": "I025",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "9f5564fcc09886a60af55d0590ba77d6ed842037b00fb8b86845da03c5e3c92b",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.85,
+  "p_ORDINAL": 0.04,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column 'class' has 10 distinct values, each with an equal count of 200, suggesting a classification task with multiple classes."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.85,\n    \"ORDINAL\": 0.04,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'class' has 10 distinct values, each with an equal count of 200, suggesting a classification task with multiple classes.\"\n}\n```",
+   "tokens_in": 2090,
+   "tokens_out": 201,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.34
+}

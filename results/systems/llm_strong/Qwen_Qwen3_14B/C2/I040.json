@@ -1,0 +1,33 @@
+{
+ "instance_id": "I040",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "e48d5834b061ed948b4cff3b3af48f2f5a88cafb6e7bb5f8a76f14318b87ac21",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column `band_type` has only two distinct values: `band` and `noband`, which are clearly binary categories.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.95,\n    \"MULTICLASS\": 0.02,\n    \"ORDINAL\": 0.01,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0.01\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column `band_type` has only two distinct values: `band` and `noband`, which are clearly binary categories.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 2292,
+   "tokens_out": 144,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 20.93
+}

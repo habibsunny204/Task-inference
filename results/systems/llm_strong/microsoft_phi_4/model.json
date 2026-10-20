@@ -1,0 +1,23 @@
+{
+ "model_id": "microsoft/phi-4",
+ "revision": null,
+ "config": {
+  "version": "llm-strong-v0.1",
+  "frozen_on": "2026-10-18",
+  "models": [
+   "Qwen/Qwen3-14B",
+   "microsoft/phi-4"
+  ],
+  "chat_template_kwargs": {
+   "Qwen/Qwen3-14B": {
+    "enable_thinking": false
+   }
+  },
+  "load_in_4bit": true,
+  "max_new_tokens": 400,
+  "decoding": "greedy (do_sample=False)",
+  "retries": 1,
+  "note": "Stronger successors of the two baseline families (Qwen2.5-7B -> Qwen3-14B, Phi-3.5-mini -> Phi-4). Both ungated on Hugging Face. Prompts, packets, items and parsing are identical to colab/task_inference_llm_baseline (llm-baseline-v0.1). Qwen3 runs in non-thinking mode so it answers directly, like every other model."
+ },
+ "utc": "2026-10-18T18:37:40+00:00"
+}

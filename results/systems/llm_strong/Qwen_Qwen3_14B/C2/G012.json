@@ -1,0 +1,35 @@
+{
+ "instance_id": "G012",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "214a110c3b02e089217ab7df838af268f540897bbe47109e0d8d5ea4cd0c8cbb",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.045454545454545456,
+  "p_MULTICLASS": 0.2727272727272727,
+  "p_ORDINAL": 0.45454545454545453,
+  "p_COUNT_REGRESSION": 0.09090909090909091,
+  "p_CONTINUOUS_REGRESSION": 0.13636363636363635,
+  "probability_sum_raw": 1.1,
+  "confidence": 4,
+  "evidence": "The target column `Price` is described as a discretised version of a continuous retail price, with 5 equal-frequency intervals. This suggests an ordinal relationship between the levels (0 to 4), where the order matters but the distances between levels are not meaningful.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.15\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target column `Price` is described as a discretised version of a continuous retail price, with 5 equal-frequency intervals. This suggests an ordinal relationship between the levels (0 to 4), where the order matters but the distances between levels are not meaningful.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1411,
+   "tokens_out": 180,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.74
+}

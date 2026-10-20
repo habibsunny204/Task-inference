@@ -1,0 +1,35 @@
+{
+ "instance_id": "I019",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "f533847d9f36d73bda514dfcf7fb7ab65be3e3b0a1cb8354d054b162bc23b9de",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target values are integers ranging from 0 to 3, with a distribution suggesting an ordinal relationship."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.2,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target values are integers ranging from 0 to 3, with a distribution suggesting an ordinal relationship.\"\n}\n```",
+   "tokens_in": 1033,
+   "tokens_out": 142,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 16.54
+}

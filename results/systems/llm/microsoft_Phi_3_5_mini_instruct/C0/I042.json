@@ -1,0 +1,33 @@
+{
+ "instance_id": "I042",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "c85823d1096ef4b19ba4db7e91af073374d3371ead090fab95760a58f0fc75f4",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.9,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target values are distinct integers with only two possible values, 0 and 1, which are typical of a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.9,\n    \"COUNT_REGRESSION\": 0.1,\n    \"MULTICLASS\": 0,\n    \"ORDINAL\": 0,\n    \"CONTINUOUS_REGRESSION\": 0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct integers with only two possible values, 0 and 1, which are typical of a binary classification task.\"\n}\n```",
+   "tokens_in": 825,
+   "tokens_out": 162,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.93
+}

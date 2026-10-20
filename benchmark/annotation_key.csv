@@ -1,0 +1,57 @@
+instance_id,candidate_id,dataset_name,target_column,pilot_group,origin,has_documentation
+I001,openml_300,isolet,class,B-edge,OpenML-CC18+OpenML-multitype,True
+I002,tocuco_oc03_tae,tae,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),False
+I003,tocuco_dr07_calhousing,calhousing,y,C/D-ordinal-values-only,TOC-UCO (discretised-regression),True
+I004,openml_287,wine_quality,quality,B-edge,AMLB-regression,True
+I005,openml_29,credit-approval,class,A-clear,OpenML-CC18,True
+I006,openml_44960,energy_efficiency,heating_load,A-clear,OpenML-CTR23,True
+I007,openml_44970,QSAR_fish_toxicity,LC50,A-clear,OpenML-CTR23,True
+I008,openml_201,pol,foo,B-edge,AMLB-regression,True
+I009,openml_44967,student_performance_por,G3,B-edge,OpenML-CTR23,True
+I010,tocuco_oc04_gymExerciseTracking,gymExerciseTracking,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),True
+I011,tocuco_oc04_LESTSensors,LESTSensors,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),False
+I012,openml_44971,white_wine,quality,B-edge,OpenML-CTR23,True
+I013,tocuco_dr05_census2,census2,y,C/D-ordinal-values-only,TOC-UCO (discretised-regression),True
+I014,openml_44956,abalone,rings,B-edge,OpenML-CTR23,True
+I015,openml_1480,ilpd,Class,A-clear,OpenML-CC18,True
+I016,tocuco_oc03_newthyroid,newthyroid,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),False
+I017,tocuco_oc04_heartDisease,heartDisease,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),True
+I018,openml_23,cmc,Contraceptive_method_used,B-edge,AMLB-classification+OpenML-CC18,True
+I019,tocuco_oc04_LEVXSensors,LEVXSensors,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),False
+I020,openml_1510,wdbc,Class,A-clear,OpenML-CC18,True
+I021,tocuco_oc04_support,support,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),True
+I022,tocuco_dr04_forestfires,forestfires,y,C/D-ordinal-values-only,TOC-UCO (discretised-regression),True
+I023,openml_14,mfeat-fourier,class,B-edge,OpenML-CC18,True
+I024,openml_44994,cars,Price,A-clear,OpenML-CTR23,True
+I025,openml_16,mfeat-karhunen,class,B-edge,OpenML-CC18,True
+I026,openml_531,boston,MEDV,A-clear,AMLB-regression,True
+I027,openml_41157,arcene,class,A-clear,AMLB-classification,True
+I028,tocuco_dr05_census1,census1,y,C/D-ordinal-values-only,TOC-UCO (discretised-regression),True
+I029,tocuco_dr05_buoysFlux46026,buoysFlux46026,y,C/D-ordinal-values-only,TOC-UCO (discretised-regression),True
+I030,tocuco_oc04_childrenAnemia,childrenAnemia,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),True
+I031,tocuco_dr04_machine,machine,y,C/D-ordinal-values-only,TOC-UCO (discretised-regression),True
+I032,openml_44972,red_wine,quality,B-edge,OpenML-CTR23,True
+I033,tocuco_oc04_problematicInternetUsage,problematicInternetUsage,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),True
+I034,tocuco_oc03_balanceScale,balanceScale,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),False
+I035,openml_15,breast-w,Class,A-clear,OpenML-CC18,True
+I036,openml_12,mfeat-factors,class,B-edge,AMLB-classification+OpenML-CC18,True
+I037,openml_505,tecator,fat,A-clear,AMLB-regression,True
+I038,openml_45104,PLK_Mini_Copy,CATEGORY,B-edge,OpenML-multitype,True
+I039,openml_44959,concrete_compressive_strength,strength,A-clear,OpenML-CTR23,True
+I040,openml_6332,cylinder-bands,band_type,A-clear,OpenML-CC18,True
+I041,openml_42726,abalone,Class_number_of_rings,B-edge,AMLB-regression,True
+I042,openml_40981,Australian,A15,A-clear,AMLB-classification,True
+I043,tocuco_dr05_buoysFlux46059,buoysFlux46059,y,C/D-ordinal-values-only,TOC-UCO (discretised-regression),True
+I044,openml_546,sensory,Score,A-clear,AMLB-regression,True
+I045,openml_18,mfeat-morphological,class,B-edge,OpenML-CC18,True
+I046,openml_44966,solar_flare,c_class_flares,B-edge,OpenML-CTR23,True
+I047,openml_11,balance-scale,class,A-clear,OpenML-CC18,True
+I048,tocuco_dr06_buoysFlux46069,buoysFlux46069,y,C/D-ordinal-values-only,TOC-UCO (discretised-regression),True
+I049,tocuco_oc04_car,car,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),False
+I050,openml_188,eucalyptus,Utility,A-clear,AMLB-classification+OpenML-CC18,True
+I051,openml_22,mfeat-zernike,class,B-edge,OpenML-CC18,True
+I052,openml_44962,forest_fires,area,A-clear,OpenML-CTR23,True
+I053,tocuco_oc03_mammoexp,mammoexp,y,C/D-ordinal-values-only,TOC-UCO (originally-ordinal),True
+I054,openml_23381,dresses-sales,Class,A-clear,OpenML-CC18,True
+I055,openml_1063,kc2,problems,A-clear,OpenML-CC18,True
+I056,openml_40994,climate-model-simulation-crashes,outcome,A-clear,OpenML-CC18,True

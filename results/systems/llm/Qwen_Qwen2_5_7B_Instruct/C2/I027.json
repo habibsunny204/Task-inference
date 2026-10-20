@@ -1,0 +1,34 @@
+{
+ "instance_id": "I027",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "7eb89fc868b039d2471f27adf84cf50d1a9e317ed2485fcd59644cc7147fa140",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The dataset documentation explicitly states that the task is a binary classification problem.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.8, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.1, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 5,\n  \"evidence\": \"The dataset documentation explicitly states that the task is a binary classification problem.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1722,
+   "tokens_out": 122,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.8
+}

@@ -1,0 +1,3 @@
+instance_id,condition,note
+I008,C0,"Moderator note 2026-10-05: the two notes conflict on who moved (each says they took the other's position). Resolved by the agreed NONE rule: annotator 2 states the percentage reading is ahead but not at 2:1, so no task is named. Recorded NONE stands; set unchanged."
+I008,C1,"Moderator note 2026-10-05: same conflict as C0, resolved the same way by the NONE rule (NONE stands). MULTICLASS stays in the C1 set: both annotators included it independently and kept it in adjudication ('agreed set reverted'), although the notes say C1 adds nothing over C0. Reported as a non-nested set."

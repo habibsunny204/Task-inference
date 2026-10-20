@@ -1,0 +1,19 @@
+{
+  "bundle": "task_inference_method",
+  "frozen": "2026-10-05",
+  "seed": 0,
+  "n_folds": 5,
+  "alphas": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "primary_alpha": 0.1,
+  "store": "/content/drive/MyDrive/task_inference_data/store",
+  "ask_budgets": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "ask_mass": 0.9
+}

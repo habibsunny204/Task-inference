@@ -1,0 +1,36 @@
+{
+ "instance_id": "I027",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "31ca960fd58ac5c8b4d7b9b0b6163b1fe284b4560cecbe430540e7018b6028f0",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.05,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has only two distinct values (0 and 1), which strongly suggests a binary classification task, though other interpretations are possible."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has only two distinct values (0 and 1), which strongly suggests a binary classification task, though other interpretations are possible.\"\n}",
+   "tokens_in": 716,
+   "tokens_out": 153,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 19.11
+}

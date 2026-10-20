@@ -1,0 +1,34 @@
+{
+ "instance_id": "I045",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "3d9c40e3dd0a26fa2326c88aa82a1f1d64f56f65541b3e5ccef36a3a6cdb7b4c",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.2,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are whole numbers from 1 to 10 with equal frequency, suggesting an ordinal scale, but could also be treated as multicategorical or continuous."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.2\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target values are whole numbers from 1 to 10 with equal frequency, suggesting an ordinal scale, but could also be treated as multicategorical or continuous.\"\n}\n```",
+   "tokens_in": 1011,
+   "tokens_out": 151,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.02
+}

@@ -1,0 +1,32 @@
+{
+ "instance_id": "I055",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "80c1385290c6ec728df81a1ead8d54c6324487e223fe44dc9f55a5025b2dfc3a",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column has exactly two distinct values ('no' and 'yes'), which strongly indicates a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.95, \"MULTICLASS\": 0.02, \"ORDINAL\": 0.01, \"COUNT_REGRESSION\": 0.01, \"CONTINUOUS_REGRESSION\": 0.01},\n  \"confidence\": 5,\n  \"evidence\": \"The target column has exactly two distinct values ('no' and 'yes'), which strongly indicates a binary classification task.\"\n}",
+   "tokens_in": 1166,
+   "tokens_out": 122,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 18.1
+}

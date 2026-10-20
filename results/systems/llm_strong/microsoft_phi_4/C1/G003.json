@@ -1,0 +1,34 @@
+{
+ "instance_id": "G003",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "8d02b713fc1b0341e0c0dd532b9624b21473836a0515dc228b9196264e109113",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.2,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target values are whole numbers ranging from 1 to 86 with a uniform distribution of frequent values, suggesting an ordinal or multicategory nature."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.2\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target values are whole numbers ranging from 1 to 86 with a uniform distribution of frequent values, suggesting an ordinal or multicategory nature.\"\n}\n```",
+   "tokens_in": 1046,
+   "tokens_out": 148,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.18
+}

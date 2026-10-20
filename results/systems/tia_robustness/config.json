@@ -1,0 +1,14 @@
+{
+  "bundle": "task_inference_robustness",
+  "declared": "2026-10-19 (docs/findings_log.md, before running)",
+  "seed": 0,
+  "n_folds": 5,
+  "signature_features": [
+    "n_name_lex_generic",
+    "n_name_anonymous",
+    "n_name_len_tokens",
+    "d_has_doc",
+    "d_doc_log_chars",
+    "d_doc_mentions_target"
+  ]
+}

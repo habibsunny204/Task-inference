@@ -1,0 +1,34 @@
+{
+ "instance_id": "I040",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "e48d5834b061ed948b4cff3b3af48f2f5a88cafb6e7bb5f8a76f14318b87ac21",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target column 'band_type' has two distinct values, 'band' and 'noband', indicating a binary classification problem.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.8, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.1, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target column 'band_type' has two distinct values, 'band' and 'noband', indicating a binary classification problem.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 2288,
+   "tokens_out": 134,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 13.54
+}

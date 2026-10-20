@@ -1,0 +1,34 @@
+{
+ "instance_id": "I034",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "900f9ce5bd36c5307ccc0fe587b31f042b0d985854ba78c912600dda3741bd7b",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.16666666666666669,
+  "p_MULTICLASS": 0.08333333333333334,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.16666666666666669,
+  "p_CONTINUOUS_REGRESSION": 0.08333333333333334,
+  "probability_sum_raw": 1.2,
+  "confidence": 4,
+  "evidence": "The target has three distinct values, including a zero, and the values are discrete with a natural ordering."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.2, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.2, \"CONTINUOUS_REGRESSION\": 0.1},\n  \"confidence\": 4,\n  \"evidence\": \"The target has three distinct values, including a zero, and the values are discrete with a natural ordering.\"\n}",
+   "tokens_in": 720,
+   "tokens_out": 124,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.86
+}

@@ -1,0 +1,36 @@
+{
+ "instance_id": "I043",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "514778878c2357af2b39cd078a8b58ea60cc6bdfcbdefab50baf35beee67874a",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.15,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.35,
+  "p_COUNT_REGRESSION": 0.15,
+  "p_CONTINUOUS_REGRESSION": 0.15,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column has integer values ranging from 0 to 4, with 5 distinct categories. While it could be interpreted as a count or continuous variable, the small number of distinct values and the presence of 0 suggest it may represent ordered categories (e.g., severity levels, ratings)."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.20,\n    \"ORDINAL\": 0.35,\n    \"COUNT_REGRESSION\": 0.15,\n    \"CONTINUOUS_REGRESSION\": 0.15\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column has integer values ranging from 0 to 4, with 5 distinct categories. While it could be interpreted as a count or continuous variable, the small number of distinct values and the presence of 0 suggest it may represent ordered categories (e.g., severity levels, ratings).\"\n}",
+   "tokens_in": 1270,
+   "tokens_out": 189,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 27.45
+}

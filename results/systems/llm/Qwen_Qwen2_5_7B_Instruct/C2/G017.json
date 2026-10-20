@@ -1,0 +1,34 @@
+{
+ "instance_id": "G017",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "5f56b54e0768c819cf54ef5a183ac7c5fd69a475a5f0d8b14d56475b5ab84cb8",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.6,
+  "p_CONTINUOUS_REGRESSION": 0.4,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target variable 'area' is described as the burned area of forest fires, which is a continuous value.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.0, \"COUNT_REGRESSION\": 0.6, \"CONTINUOUS_REGRESSION\": 0.4},\n  \"confidence\": 4,\n  \"evidence\": \"The target variable 'area' is described as the burned area of forest fires, which is a continuous value.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 2016,
+   "tokens_out": 137,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.52
+}

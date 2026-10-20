@@ -1,0 +1,34 @@
+{
+ "instance_id": "G011",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "1426314223827a97357faa2dc41d77a7662bfaa86e21038907a8b8d3874c500f",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.2,
+  "p_MULTICLASS": 0.5,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has 5 distinct values, evenly distributed, and no clear ordering or distance significance."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\"BINARY\": 0.2, \"MULTICLASS\": 0.5, \"ORDINAL\": 0.3},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 5 distinct values, evenly distributed, and no clear ordering or distance significance.\"\n}",
+   "tokens_in": 738,
+   "tokens_out": 103,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 7.25
+}

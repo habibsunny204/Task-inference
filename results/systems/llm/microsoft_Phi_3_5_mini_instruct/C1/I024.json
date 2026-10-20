@@ -1,0 +1,31 @@
+{
+ "instance_id": "I024",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "4c517a5d4a62b229eb4b50ddf163514e6a676c0a583c34f15d2fb776ba511f96",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.1,\n0.4,\n\"ORDINAL\": 0.35,\n\"COUNT_REGRESSION\": 0.05,\n\"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'Price' has distinct values ranging from 8638.93 to 70755.5 with a mean of 21343.1, suggesting an ordinal scale with a clear order but not necessarily equidistant intervals.\"\n}\n```",
+   "tokens_in": 1794,
+   "tokens_out": 227,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.1,\n0.4,\n    \"ORDINAL\": 0.4,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values range from 8638.93 to 70755.5 with distinct values and a mean of 21343.1, suggesting an ordinal scale with clear intervals but not necessarily a continuous distribution.\"\n}\n```",
+   "tokens_in": 1810,
+   "tokens_out": 222,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 24.33
+}

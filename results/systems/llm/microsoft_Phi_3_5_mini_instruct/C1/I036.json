@@ -1,0 +1,31 @@
+{
+ "instance_id": "I036",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "c4e5bcedffbdda4ff6b80091acfe6beb9bc18c1270f18450cd3e1eb8c0fde0b4",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.65,\n_ORIGINAL_TEXT_ENDS_HERE_: \"ORDINAL\": 0.10,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'class' has 10 distinct values with equal counts, suggesting a classification task among multiple categories.\"\n}\n```",
+   "tokens_in": 1567,
+   "tokens_out": 208,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.65,\n0.15,\n    \"ORDINAL\": 0.10,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'class' has 10 distinct values with equal counts, suggesting a classification task with multiple classes.\"\n}\n```",
+   "tokens_in": 1583,
+   "tokens_out": 201,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 21.1
+}

@@ -1,0 +1,34 @@
+{
+ "instance_id": "I031",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "6c322ea3d65edd07634dabb5e8eebb96275c927dc01dd02c3b0d187f7b03464e",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.8,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target column `y` is the interval index from a discretized regression problem.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0, \"MULTICLASS\": 0, \"ORDINAL\": 0.8, \"COUNT_REGRESSION\": 0.2, \"CONTINUOUS_REGRESSION\": 0},\n  \"confidence\": 4,\n  \"evidence\": \"The target column `y` is the interval index from a discretized regression problem.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1092,
+   "tokens_out": 120,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.31
+}

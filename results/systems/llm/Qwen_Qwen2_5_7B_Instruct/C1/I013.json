@@ -1,0 +1,33 @@
+{
+ "instance_id": "I013",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "37e6e3ce6891ed7fb13a3074fbdccec160021e0087a11831056c33902c6e3605",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.5,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target variable has five distinct whole number values, with a distribution that resembles counts, and all values are non-negative."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.5, \"COUNT_REGRESSION\": 0.5, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target variable has five distinct whole number values, with a distribution that resembles counts, and all values are non-negative.\"\n}",
+   "tokens_in": 1521,
+   "tokens_out": 124,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.51
+}

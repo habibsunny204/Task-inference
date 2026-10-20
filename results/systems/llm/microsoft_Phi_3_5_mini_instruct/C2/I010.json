@@ -1,0 +1,43 @@
+{
+ "instance_id": "I010",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "f29ced9d5c6cb6ae64d9062b68e9b148ca5b7a6edd674acc9341f6f53c46db1b",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.4,
+  "p_COUNT_REGRESSION": 0.4,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The dataset predicts the number of workout sessions per week for gym members, which is a count of events.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.25,\n    \"MULTICLASS\": 0,\n    \"ORDINAL\": 0.5,\n0: \"CONTINUOUS_REGRESSION\": 0.25\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset predicts the number of workout sessions per week for gym members, which is a count of events.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 1584,
+   "tokens_out": 171,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": \"0.1\",\n    \"MULTICLASS\": \"0.1\",\n    \"ORDINAL\": \"0.4\",\n    \"COUNT_REGRESSION\": \"0.4\",\n    \"CONTINUOUS_REGRESSION\": \"0.0\"\n  },\n  \"confidence\": \"4\",\n  \"evidence\": \"The dataset predicts the number of workout sessions per week for gym members, which is a count of events.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 1600,
+   "tokens_out": 191,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 19.52
+}

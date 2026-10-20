@@ -1,0 +1,34 @@
+{
+ "instance_id": "G009",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "0844171995f7644fc2b32997390ad12bd4205286b5892d06c0f32383951aaa73",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target is an integer between 0 and 10, with values distributed across the range, suggesting it could represent ordered categories (e.g., ratings) or a continuous measurement rounded to integers."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target is an integer between 0 and 10, with values distributed across the range, suggesting it could represent ordered categories (e.g., ratings) or a continuous measurement rounded to integers.\"\n}",
+   "tokens_in": 792,
+   "tokens_out": 157,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 20.08
+}

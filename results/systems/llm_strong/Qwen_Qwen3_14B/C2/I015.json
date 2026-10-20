@@ -1,0 +1,35 @@
+{
+ "instance_id": "I015",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "922f700c77650821f84609f578c128c8edab0e0febbfe96f5a003ca2d878bf89",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The dataset documentation explicitly states that the class label divides patients into two groups: liver patient or not, which is a binary classification task.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The dataset documentation explicitly states that the class label divides patients into two groups: liver patient or not, which is a binary classification task.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1638,
+   "tokens_out": 149,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 25.03
+}

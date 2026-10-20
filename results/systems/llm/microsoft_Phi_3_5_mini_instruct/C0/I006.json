@@ -1,0 +1,44 @@
+{
+ "instance_id": "I006",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "126719ba42d3d3c2c57bd534f33c8919c883a3dbf990ce425c9e9d31260f2a22",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.8,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.03,
+  "p_CONTINUOUS_REGRESSION": 0.02,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target values are distinct floating-point numbers with a range and several frequent values, suggesting multiple categories."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.25,\n0.3,\n  \"CONTINUOUS_REGRESSION\": 0.4,\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct whole numbers with a range and standard deviation, suggesting counts of events or items.\"\n}\n```",
+   "tokens_in": 1274,
+   "tokens_out": 166,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.8,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.03,\n    \"CONTINUOUS_REGRESSION\": 0.02\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct floating-point numbers with a range and several frequent values, suggesting multiple categories.\"\n}\n```",
+   "tokens_in": 1290,
+   "tokens_out": 190,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 19.66
+}

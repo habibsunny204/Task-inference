@@ -1,0 +1,31 @@
+{
+ "instance_id": "G006",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "ee65640c69c61f0b53e75fad2770ce071e5795a9a8d1781a708074efdbef0b77",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.65,\n0.10,\n    \"ORDINAL\": 0.10,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'strength' has 79 distinct values with a range from 10 to 83, indicating multiple categories beyond binary outcomes.\"\n}\n```",
+   "tokens_in": 1521,
+   "tokens_out": 210,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.65,\n0.15,\n    \"ORDINAL\": 0.10,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'strength' has 79 distinct values with a range from 10 to 83, suggesting a multiclass classification task with multiple ordered levels.\"\n}\n```",
+   "tokens_in": 1537,
+   "tokens_out": 214,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 22.93
+}

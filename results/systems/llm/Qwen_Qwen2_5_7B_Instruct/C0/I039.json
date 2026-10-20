@@ -1,0 +1,33 @@
+{
+ "instance_id": "I039",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "f680983b05721fccb8ca614929b11bf41b1e8f959f11fd5b9d61a0fbd3e590b0",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.16666666666666669,
+  "p_CONTINUOUS_REGRESSION": 0.33333333333333337,
+  "probability_sum_raw": 1.2,
+  "confidence": 4,
+  "evidence": "The target values are continuous, have a range of over 60 units, and include fractional values, ruling out ordinal and count regression tasks."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.2, \"CONTINUOUS_REGRESSION\": 0.4},\n  \"confidence\": 4,\n  \"evidence\": \"The target values are continuous, have a range of over 60 units, and include fractional values, ruling out ordinal and count regression tasks.\"\n}",
+   "tokens_in": 1283,
+   "tokens_out": 133,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.09
+}

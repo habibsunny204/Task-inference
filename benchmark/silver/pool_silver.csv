@@ -1,0 +1,263 @@
+candidate_id,did,dataset_name,target_column,origin,family,status,silver_label,rule,n_samples,n_features,n_unique_target,has_description
+openml_45536,45536,Contaminant-detection-in-packaged-cocoa-hazelnut-spread-jars-using-Microwaves-Sensing-and-Machine-Learning-9.0GHz(Urbinati),class,OpenML-multitype,contaminant_detection,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,2400.0,30.0,2.0,True
+openml_45537,45537,Contaminant-detection-in-packaged-cocoa-hazelnut-spread-jars-using-Microwaves-Sensing-and-Machine-Learning-9.5GHz(Urbinati),class,OpenML-multitype,contaminant_detection,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,2400.0,30.0,2.0,True
+openml_45538,45538,Contaminant-detection-in-packaged-cocoa-hazelnut-spread-jars-using-Microwaves-Sensing-and-Machine-Learning-10.0GHz(Urbinati),class,OpenML-multitype,contaminant_detection,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,2400.0,30.0,2.0,True
+openml_45539,45539,Contaminant-detection-in-packaged-cocoa-hazelnut-spread-jars-using-Microwaves-Sensing-and-Machine-Learning-10.5GHz(Urbinati),class,OpenML-multitype,contaminant_detection,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,2400.0,30.0,2.0,True
+openml_45540,45540,Contaminant-detection-in-packaged-cocoa-hazelnut-spread-jars-using-Microwaves-Sensing-and-Machine-Learning-11.0GHz(Urbinati),class,OpenML-multitype,contaminant_detection,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,2400.0,30.0,2.0,True
+openml_43672,43672,Heart-Disease-Dataset-(Comprehensive),target,OpenML-multitype,heart_disease_dataset_comprehensive,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,1190.0,11.0,2.0,True
+openml_45040,45040,Intersectional-Bias-Assessment,Diagnosis,OpenML-multitype,intersectional_bias_assessment,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,11000.0,19.0,2.0,True
+openml_43442,43442,Is-this-a-good-customer,bad_client_target,OpenML-multitype,is_this_a_good_customer,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,1723.0,13.0,2.0,True
+openml_301,301,ozone_level,Class,OpenML-multitype,ozone,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,2536.0,72.0,2.0,True
+openml_43812,43812,Performance-Prediction,Target,OpenML-multitype,performance_prediction,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,1340.0,20.0,2.0,True
+openml_42889,42889,shill-bidding,Class,OpenML-multitype,shill_bidding,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,6321.0,12.0,2.0,True
+openml_45062,45062,shrutime,class,OpenML-multitype,shrutime,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,10000.0,10.0,2.0,True
+openml_44150,44150,VulNoneVul,lable,OpenML-multitype,vulnonevul,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,5692.0,16.0,2.0,True
+openml_42464,42464,Waterstress,class,OpenML-multitype,waterstress,excluded: R5 registered as both classification and regression (F1): no source label,,R5 registered as both classification and regression (F1): no source label,1188.0,22.0,2.0,True
+tocuco_dr09_computer2,dr09_computer2,computer2,y,TOC-UCO (discretised-regression),comp_activ,excluded: duplicate of a kept table,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,8192.0,21.0,9.0,False
+openml_42225,42225,diamonds,price,AMLB-regression,diamonds,excluded: duplicate of a kept table,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),53940.0,9.0,11602.0,True
+openml_42731,42731,house_sales,price,AMLB-regression,kc_house,excluded: duplicate of a kept table,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),21613.0,21.0,4028.0,True
+openml_541,541,socmob,counts_for_sons_current_occupation,AMLB-regression,socmob,excluded: duplicate of a kept table,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1156.0,5.0,361.0,True
+openml_1430,1430,,class,OpenML-multitype,nan,excluded: not loadable (error: TypeError: Sparse pandas data (column att_1) not supported.),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_1575,1575,,class,OpenML-multitype,nan,excluded: not loadable (error: TypeError: Sparse pandas data (column att_1) not supported.),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_1589,1589,,class,OpenML-multitype,nan,excluded: not loadable (error: TypeError: Sparse pandas data (column att_1) not supported.),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_1592,1592,,class,OpenML-multitype,nan,excluded: not loadable (error: TypeError: Sparse pandas data (column att_1) not supported.),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_3050,3050,,MEDIAN_PXC50,AMLB-regression,nan,"excluded: not loadable (error: TypeError: factorize requires a Series, Index, ExtensionArray, np.ndarray or NumpyExtensionArray got list.)",CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),,,,
+openml_3277,3277,,MEDIAN_PXC50,AMLB-regression,nan,"excluded: not loadable (error: TypeError: factorize requires a Series, Index, ExtensionArray, np.ndarray or NumpyExtensionArray got list.)",CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),,,,
+openml_4102,4102,,MEDIAN_PXC50,OpenML-multitype,nan,"excluded: not loadable (error: TypeError: factorize requires a Series, Index, ExtensionArray, np.ndarray or NumpyExtensionArray got list.)",,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45650,45650,,Species,OpenML-multitype,nan,excluded: not loadable (target 'Species' not in data),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_41163,41163,,class,AMLB-classification,nan,excluded: not loadable (too large (10000 x 2001)),,R1 class count unknown,,,,
+openml_41165,41165,,class,AMLB-classification,nan,excluded: not loadable (too large (10000 x 7201)),,R1 class count unknown,,,,
+openml_42769,42769,,target,AMLB-classification,nan,excluded: not loadable (too large (1000000 x 29)),,R1 class count unknown,,,,
+openml_42728,42728,,DepDelay,AMLB-regression,nan,excluded: not loadable (too large (10000000 x 10)),CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),,,,
+openml_42571,42571,,loss,AMLB-regression,nan,excluded: not loadable (too large (188318 x 131)),CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),,,,
+openml_41159,41159,,class,AMLB-classification,nan,excluded: not loadable (too large (20000 x 4297)),,R1 class count unknown,,,,
+openml_41161,41161,,class,AMLB-classification,nan,excluded: not loadable (too large (20000 x 4297)),,R1 class count unknown,,,,
+openml_42732,42732,,ViolentCrime,AMLB-classification,nan,excluded: not loadable (too large (2215023 x 9)),,R1 class count unknown,,,,
+openml_42705,42705,,101,AMLB-regression,nan,excluded: not loadable (too large (400000 x 101)),CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),,,,
+openml_41167,41167,,class,AMLB-classification,nan,excluded: not loadable (too large (416188 x 61)),,R1 class count unknown,,,,
+openml_41147,41147,,class,AMLB-classification,nan,excluded: not loadable (too large (425240 x 79)),,R1 class count unknown,,,,
+openml_42572,42572,,target,AMLB-regression,nan,excluded: not loadable (too large (4459 x 4992)),CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),,,,
+openml_42746,42746,,target,AMLB-classification,nan,excluded: not loadable (too large (4898431 x 42)),,R1 class count unknown,,,,
+openml_43072,43072,,upselling,AMLB-classification,nan,excluded: not loadable (too large (50000 x 14892)),,R1 class count unknown,,,,
+openml_45667,45667,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 101)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45668,45668,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 101)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45672,45672,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 103)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45666,45666,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 11)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45691,45691,,Y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 11)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45695,45695,,Run1,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 15)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45690,45690,,Class,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 17)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45696,45696,,utime,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 19)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45654,45654,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 21)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45655,45655,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 21)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45664,45664,,Target,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 29)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45670,45670,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 61)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45671,45671,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 61)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45665,45665,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 63)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45669,45669,,y,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 78)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_45693,45693,,class,OpenML-multitype,nan,excluded: not loadable (too large (5100000 x 9)),,R5 registered as both classification and regression (F1): no source label,,,,
+openml_1169,1169,,Delay,AMLB-classification,nan,excluded: not loadable (too large (539383 x 8)),,R1 class count unknown,,,,
+openml_1596,1596,,class,AMLB-classification,nan,excluded: not loadable (too large (581012 x 55)),,R1 class count unknown,,,,
+openml_42729,42729,,tip_amount,AMLB-regression,nan,excluded: not loadable (too large (581835 x 19)),CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),,,,
+openml_4549,4549,,Annotation,AMLB-regression,nan,excluded: not loadable (too large (583250 x 78)),CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),,,,
+openml_42742,42742,,target,AMLB-classification,nan,excluded: not loadable (too large (595212 x 58)),,R1 class count unknown,,,,
+openml_40927,40927,,class,OpenML-CC18,nan,excluded: not loadable (too large (60000 x 3073)),,R1 class count unknown,,,,
+openml_554,554,,class,OpenML-CC18,nan,excluded: not loadable (too large (70000 x 785)),,R1 class count unknown,,,,
+openml_40996,40996,,class,AMLB-classification+OpenML-CC18,nan,excluded: not loadable (too large (70000 x 785)),,R1 class count unknown,,,,
+openml_40923,40923,,character,OpenML-CC18,nan,excluded: not loadable (too large (92000 x 1025)),,R1 class count unknown,,,,
+tocuco_dr09_abalone,dr09_abalone,abalone,y,TOC-UCO (discretised-regression),abalone,excluded: same family as a gold table,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,4177.0,10.0,9.0,False
+tocuco_dr09_housing,dr09_housing,housing,y,TOC-UCO (discretised-regression),boston_housing,excluded: same family as a gold table,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,506.0,13.0,9.0,False
+tocuco_dr08_buoysHeight46026,dr08_buoysHeight46026,buoysHeight46026,y,TOC-UCO (discretised-regression),buoys,excluded: same family as a gold table,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,5844.0,8.0,8.0,False
+tocuco_dr08_buoysHeight46069,dr08_buoysHeight46069,buoysHeight46069,y,TOC-UCO (discretised-regression),buoys,excluded: same family as a gold table,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,5844.0,8.0,8.0,False
+tocuco_dr09_buoysHeight46059,dr09_buoysHeight46059,buoysHeight46059,y,TOC-UCO (discretised-regression),buoys,excluded: same family as a gold table,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,5844.0,8.0,9.0,False
+openml_44977,44977,california_housing,medianHouseValue,OpenML-CTR23,california_housing,excluded: same family as a gold table,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),20640.0,8.0,3842.0,True
+openml_40975,40975,car,class,AMLB-classification+OpenML-CC18,car_evaluation,excluded: same family as a gold table,MULTICLASS,"R1 curated classification suite, 4 classes",1728.0,6.0,4.0,True
+tocuco_dr10_concreteStrength,dr10_concreteStrength,concreteStrength,y,TOC-UCO (discretised-regression),concrete,excluded: same family as a gold table,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,1030.0,8.0,10.0,False
+tocuco_oc05_eucalyptus,oc05_eucalyptus,eucalyptus,y,TOC-UCO (originally-ordinal),eucalyptus,excluded: same family as a gold table,ORDINAL,R3 TOC-UCO originally-ordinal repository,736.0,91.0,5.0,False
+openml_40979,40979,mfeat-pixel,class,OpenML-CC18,mfeat,excluded: same family as a gold table,MULTICLASS,"R1 curated classification suite, 10 classes",2000.0,240.0,10.0,True
+openml_1049,1049,pc4,c,AMLB-classification+OpenML-CC18,nasa_defect,excluded: same family as a gold table,BINARY,"R1 curated classification suite, 2 classes",1458.0,37.0,2.0,True
+openml_1050,1050,pc3,c,OpenML-CC18,nasa_defect,excluded: same family as a gold table,BINARY,"R1 curated classification suite, 2 classes",1563.0,37.0,2.0,True
+openml_1053,1053,jm1,defects,OpenML-CC18,nasa_defect,excluded: same family as a gold table,BINARY,"R1 curated classification suite, 2 classes",10885.0,21.0,2.0,True
+openml_1067,1067,kc1,defects,AMLB-classification+OpenML-CC18,nasa_defect,excluded: same family as a gold table,BINARY,"R1 curated classification suite, 2 classes",2109.0,21.0,2.0,True
+openml_1068,1068,pc1,defects,OpenML-CC18,nasa_defect,excluded: same family as a gold table,BINARY,"R1 curated classification suite, 2 classes",1109.0,21.0,2.0,True
+tocuco_oc08_studentPerformance,oc08_studentPerformance,studentPerformance,y,TOC-UCO (originally-ordinal),student_performance,excluded: same family as a gold table,ORDINAL,R3 TOC-UCO originally-ordinal repository,662.0,43.0,8.0,False
+openml_40498,40498,wine-quality-white,Class,AMLB-classification,wine_quality,excluded: same family as a gold table,MULTICLASS,"R1 curated classification suite, 7 classes",4898.0,11.0,7.0,True
+tocuco_oc05_winequalityRed,oc05_winequalityRed,winequalityRed,y,TOC-UCO (originally-ordinal),wine_quality,excluded: same family as a gold table,ORDINAL,R3 TOC-UCO originally-ordinal repository,1599.0,11.0,5.0,False
+openml_42726,42726,abalone,Class_number_of_rings,AMLB-regression,abalone,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),4177.0,8.0,28.0,True
+openml_44956,44956,abalone,rings,OpenML-CTR23,abalone,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),4177.0,8.0,28.0,True
+openml_41157,41157,arcene,class,AMLB-classification,arcene,gold,BINARY,"R1 curated classification suite, 2 classes",100.0,10000.0,2.0,True
+openml_11,11,balance-scale,class,OpenML-CC18,balance_scale,gold,MULTICLASS,"R1 curated classification suite, 3 classes",625.0,4.0,3.0,True
+tocuco_oc03_balanceScale,oc03_balanceScale,balanceScale,y,TOC-UCO (originally-ordinal),balance_scale,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,625.0,4.0,3.0,False
+openml_531,531,boston,MEDV,AMLB-regression,boston_housing,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),506.0,13.0,229.0,True
+openml_15,15,breast-w,Class,OpenML-CC18,breast_w,gold,BINARY,"R1 curated classification suite, 2 classes",699.0,9.0,2.0,True
+tocuco_dr05_buoysFlux46026,dr05_buoysFlux46026,buoysFlux46026,y,TOC-UCO (discretised-regression),buoys,gold,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,5844.0,8.0,5.0,False
+tocuco_dr05_buoysFlux46059,dr05_buoysFlux46059,buoysFlux46059,y,TOC-UCO (discretised-regression),buoys,gold,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,5844.0,8.0,5.0,False
+tocuco_dr06_buoysFlux46069,dr06_buoysFlux46069,buoysFlux46069,y,TOC-UCO (discretised-regression),buoys,gold,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,5844.0,8.0,6.0,False
+tocuco_dr07_calhousing,dr07_calhousing,calhousing,y,TOC-UCO (discretised-regression),california_housing,gold,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,20640.0,8.0,7.0,False
+tocuco_oc04_car,oc04_car,car,y,TOC-UCO (originally-ordinal),car_evaluation,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,1728.0,21.0,4.0,False
+openml_44994,44994,cars,Price,OpenML-CTR23,cars,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),804.0,17.0,798.0,True
+tocuco_dr05_census1,dr05_census1,census1,y,TOC-UCO (discretised-regression),census,gold,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,22784.0,8.0,5.0,False
+tocuco_dr05_census2,dr05_census2,census2,y,TOC-UCO (discretised-regression),census,gold,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,22784.0,16.0,5.0,False
+tocuco_oc04_childrenAnemia,oc04_childrenAnemia,childrenAnemia,y,TOC-UCO (originally-ordinal),childrenanemia,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,5855.0,14.0,4.0,False
+openml_40994,40994,climate-model-simulation-crashes,outcome,OpenML-CC18,climate_model_simulation_crashes,gold,BINARY,"R1 curated classification suite, 2 classes",540.0,18.0,2.0,True
+openml_23,23,cmc,Contraceptive_method_used,AMLB-classification+OpenML-CC18,cmc,gold,MULTICLASS,"R1 curated classification suite, 3 classes",1473.0,9.0,3.0,True
+openml_44959,44959,concrete_compressive_strength,strength,OpenML-CTR23,concrete,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1030.0,8.0,938.0,True
+openml_29,29,credit-approval,class,OpenML-CC18,credit_australian,gold,BINARY,"R1 curated classification suite, 2 classes",690.0,15.0,2.0,True
+openml_40981,40981,Australian,A15,AMLB-classification,credit_australian,gold,BINARY,"R1 curated classification suite, 2 classes",690.0,14.0,2.0,True
+openml_6332,6332,cylinder-bands,band_type,OpenML-CC18,cylinder_bands,gold,BINARY,"R1 curated classification suite, 2 classes",540.0,37.0,2.0,True
+openml_23381,23381,dresses-sales,Class,OpenML-CC18,dresses_sales,gold,BINARY,"R1 curated classification suite, 2 classes",500.0,12.0,2.0,True
+openml_44960,44960,energy_efficiency,heating_load,OpenML-CTR23,energy_efficiency,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),768.0,8.0,587.0,True
+openml_188,188,eucalyptus,Utility,AMLB-classification+OpenML-CC18,eucalyptus,gold,MULTICLASS,"R1 curated classification suite, 5 classes",736.0,19.0,5.0,True
+openml_44962,44962,forest_fires,area,OpenML-CTR23,forest_fires,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),517.0,12.0,251.0,True
+tocuco_dr04_forestfires,dr04_forestfires,forestfires,y,TOC-UCO (discretised-regression),forest_fires,gold,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,517.0,8.0,4.0,False
+tocuco_oc04_gymExerciseTracking,oc04_gymExerciseTracking,gymExerciseTracking,y,TOC-UCO (originally-ordinal),gymexercisetracking,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,973.0,17.0,4.0,False
+tocuco_oc04_heartDisease,oc04_heartDisease,heartDisease,y,TOC-UCO (originally-ordinal),heartdisease,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,294.0,13.0,4.0,False
+openml_1480,1480,ilpd,Class,OpenML-CC18,ilpd,gold,BINARY,"R1 curated classification suite, 2 classes",583.0,10.0,2.0,True
+openml_300,300,isolet,class,OpenML-CC18+OpenML-multitype,isolet,gold,,R5 registered as both classification and regression (F1): no source label,7797.0,617.0,26.0,True
+tocuco_oc04_LESTSensors,oc04_LESTSensors,LESTSensors,y,TOC-UCO (originally-ordinal),lestsensors,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,5112.0,6.0,4.0,False
+tocuco_oc04_LEVXSensors,oc04_LEVXSensors,LEVXSensors,y,TOC-UCO (originally-ordinal),levxsensors,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,5112.0,6.0,4.0,False
+tocuco_dr04_machine,dr04_machine,machine,y,TOC-UCO (discretised-regression),machine,gold,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,209.0,6.0,4.0,False
+tocuco_oc03_mammoexp,oc03_mammoexp,mammoexp,y,TOC-UCO (originally-ordinal),mammoexp,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,412.0,5.0,3.0,False
+openml_12,12,mfeat-factors,class,AMLB-classification+OpenML-CC18,mfeat,gold,MULTICLASS,"R1 curated classification suite, 10 classes",2000.0,216.0,10.0,True
+openml_14,14,mfeat-fourier,class,OpenML-CC18,mfeat,gold,MULTICLASS,"R1 curated classification suite, 10 classes",2000.0,76.0,10.0,True
+openml_16,16,mfeat-karhunen,class,OpenML-CC18,mfeat,gold,MULTICLASS,"R1 curated classification suite, 10 classes",2000.0,64.0,10.0,True
+openml_18,18,mfeat-morphological,class,OpenML-CC18,mfeat,gold,MULTICLASS,"R1 curated classification suite, 10 classes",2000.0,6.0,10.0,True
+openml_22,22,mfeat-zernike,class,OpenML-CC18,mfeat,gold,MULTICLASS,"R1 curated classification suite, 10 classes",2000.0,47.0,10.0,True
+openml_1063,1063,kc2,problems,OpenML-CC18,nasa_defect,gold,BINARY,"R1 curated classification suite, 2 classes",522.0,21.0,2.0,True
+tocuco_oc03_newthyroid,oc03_newthyroid,newthyroid,y,TOC-UCO (originally-ordinal),newthyroid,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,215.0,5.0,3.0,False
+openml_45104,45104,PLK_Mini_Copy,CATEGORY,OpenML-multitype,plk_mini_copy,gold,,R5 registered as both classification and regression (F1): no source label,3440.0,2.0,86.0,True
+openml_201,201,pol,foo,AMLB-regression,pol,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),15000.0,48.0,11.0,True
+tocuco_oc04_problematicInternetUsage,oc04_problematicInternetUsage,problematicInternetUsage,y,TOC-UCO (originally-ordinal),problematicinternetusage,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,2120.0,32.0,4.0,False
+openml_44970,44970,QSAR_fish_toxicity,LC50,OpenML-CTR23,qsar_fish_toxicity,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),908.0,6.0,827.0,True
+openml_546,546,sensory,Score,AMLB-regression,sensory,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),576.0,11.0,11.0,True
+openml_44966,44966,solar_flare,c_class_flares,OpenML-CTR23,solar_flare,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1066.0,10.0,8.0,True
+openml_44967,44967,student_performance_por,G3,OpenML-CTR23,student_performance,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),649.0,30.0,17.0,True
+tocuco_oc04_support,oc04_support,support,y,TOC-UCO (originally-ordinal),support,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,730.0,19.0,4.0,False
+tocuco_oc03_tae,oc03_tae,tae,y,TOC-UCO (originally-ordinal),tae,gold,ORDINAL,R3 TOC-UCO originally-ordinal repository,151.0,54.0,3.0,False
+openml_505,505,tecator,fat,AMLB-regression,tecator,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),240.0,124.0,157.0,True
+openml_1510,1510,wdbc,Class,OpenML-CC18,wdbc,gold,BINARY,"R1 curated classification suite, 2 classes",569.0,30.0,2.0,True
+openml_287,287,wine_quality,quality,AMLB-regression,wine_quality,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),6497.0,11.0,7.0,True
+openml_44971,44971,white_wine,quality,OpenML-CTR23,wine_quality,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),4898.0,11.0,7.0,True
+openml_44972,44972,red_wine,quality,OpenML-CTR23,wine_quality,gold,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1599.0,11.0,6.0,True
+openml_41156,41156,ada,class,AMLB-classification,ada,silver,BINARY,"R1 curated classification suite, 2 classes",4147.0,48.0,2.0,True
+openml_1590,1590,adult,class,AMLB-classification+OpenML-CC18,adult,silver,BINARY,"R1 curated classification suite, 2 classes",48842.0,14.0,2.0,True
+openml_44957,44957,airfoil_self_noise,sound_pressure,OpenML-CTR23,airfoil_self_noise,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1503.0,5.0,1456.0,True
+openml_1457,1457,amazon-commerce-reviews,Class,AMLB-classification,amazon_commerce_reviews,silver,MULTICLASS,"R1 curated classification suite, 50 classes",1500.0,10000.0,50.0,True
+openml_4135,4135,Amazon_employee_access,target,AMLB-classification,amazon_employee_access,silver,BINARY,"R1 curated classification suite, 2 classes",32769.0,9.0,2.0,True
+openml_458,458,analcatdata_authorship,Author,OpenML-CC18,analcatdata_authorship,silver,MULTICLASS,"R1 curated classification suite, 4 classes",841.0,70.0,4.0,True
+openml_469,469,analcatdata_dmft,Prevention,OpenML-CC18,analcatdata_dmft,silver,MULTICLASS,"R1 curated classification suite, 5 classes",797.0,4.0,5.0,True
+openml_41138,41138,APSFailure,class,AMLB-classification,apsfailure,silver,BINARY,"R1 curated classification suite, 2 classes",76000.0,170.0,2.0,True
+openml_44958,44958,auction_verification,verification.time,OpenML-CTR23,auction_verification,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),2043.0,7.0,2039.0,True
+tocuco_dr09_bank1,dr09_bank1,bank1,y,TOC-UCO (discretised-regression),bank1,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,8192.0,8.0,9.0,False
+tocuco_dr10_bank2,dr10_bank2,bank2,y,TOC-UCO (discretised-regression),bank2,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,8192.0,32.0,10.0,False
+openml_1461,1461,bank-marketing,Class,AMLB-classification+OpenML-CC18,bank_marketing,silver,BINARY,"R1 curated classification suite, 2 classes",45211.0,16.0,2.0,True
+openml_1462,1462,banknote-authentication,Class,OpenML-CC18,banknote_authentication,silver,BINARY,"R1 curated classification suite, 2 classes",1372.0,4.0,2.0,True
+openml_4134,4134,Bioresponse,target,AMLB-classification+OpenML-CC18,bioresponse,silver,BINARY,"R1 curated classification suite, 2 classes",3751.0,1776.0,2.0,True
+openml_41540,41540,black_friday,Purchase,AMLB-regression,black_friday,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),166821.0,9.0,13876.0,True
+openml_1464,1464,blood-transfusion-service-center,Class,AMLB-classification+OpenML-CC18,blood_transfusion_service_center,silver,BINARY,"R1 curated classification suite, 2 classes",748.0,4.0,2.0,True
+openml_42688,42688,Brazilian_houses,total_(BRL),AMLB-regression,brazilian_houses,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),10692.0,12.0,5751.0,True
+openml_44990,44990,brazilian_houses,total,OpenML-CTR23,brazilian_houses,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),10692.0,9.0,5751.0,True
+tocuco_dr10_cancerDeathRate,dr10_cancerDeathRate,cancerDeathRate,y,TOC-UCO (discretised-regression),cancerdeathrate,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,3047.0,29.0,10.0,False
+tocuco_dr08_cancerTreatmentResponse,dr08_cancerTreatmentResponse,cancerTreatmentResponse,y,TOC-UCO (discretised-regression),cancertreatmentresponse,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,1069.0,12.0,8.0,False
+openml_41142,41142,christine,class,AMLB-classification,christine,silver,BINARY,"R1 curated classification suite, 2 classes",5418.0,1636.0,2.0,True
+openml_40701,40701,churn,class,AMLB-classification+OpenML-CC18,churn,silver,BINARY,"R1 curated classification suite, 2 classes",5000.0,20.0,2.0,True
+openml_42733,42733,Click_prediction_small,click,AMLB-classification,click_prediction_small,silver,BINARY,"R1 curated classification suite, 2 classes",39948.0,11.0,2.0,True
+openml_1468,1468,cnae-9,Class,AMLB-classification+OpenML-CC18,cnae_9,silver,MULTICLASS,"R1 curated classification suite, 9 classes",1080.0,856.0,9.0,True
+openml_42727,42727,colleges,percent_pell_grant,AMLB-regression,colleges,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),7063.0,44.0,4502.0,True
+openml_44978,44978,cpu_activity,usr,OpenML-CTR23,comp_activ,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),8192.0,21.0,56.0,True
+tocuco_dr09_computer1,dr09_computer1,computer1,y,TOC-UCO (discretised-regression),comp_activ,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,8192.0,12.0,9.0,False
+openml_40668,40668,connect-4,class,AMLB-classification+OpenML-CC18,connect_4,silver,MULTICLASS,"R1 curated classification suite, 3 classes",67557.0,42.0,3.0,True
+openml_44984,44984,cps88wages,wage,OpenML-CTR23,cps88wages,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),28155.0,6.0,5970.0,True
+openml_31,31,credit-g,class,AMLB-classification+OpenML-CC18,credit_g,silver,BINARY,"R1 curated classification suite, 2 classes",1000.0,20.0,2.0,True
+openml_37,37,diabetes,class,OpenML-CC18,diabetes,silver,BINARY,"R1 curated classification suite, 2 classes",768.0,8.0,2.0,True
+openml_4541,4541,Diabetes130US,readmitted,AMLB-classification,diabetes130us,silver,MULTICLASS,"R1 curated classification suite, 3 classes",101766.0,49.0,3.0,True
+openml_44979,44979,diamonds,price,OpenML-CTR23,diamonds,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),53940.0,9.0,11602.0,True
+openml_40670,40670,dna,class,AMLB-classification+OpenML-CC18,dna,silver,MULTICLASS,"R1 curated classification suite, 3 classes",3186.0,180.0,3.0,True
+openml_151,151,electricity,class,OpenML-CC18,electricity,silver,BINARY,"R1 curated classification suite, 2 classes",45312.0,8.0,2.0,True
+openml_216,216,elevators,Goal,AMLB-regression,elevators,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),16599.0,18.0,61.0,True
+tocuco_oc09_era,oc09_era,era,y,TOC-UCO (originally-ordinal),era,silver,ORDINAL,R3 TOC-UCO originally-ordinal repository,1000.0,4.0,9.0,False
+tocuco_oc06_esl,oc06_esl,esl,y,TOC-UCO (originally-ordinal),esl,silver,ORDINAL,R3 TOC-UCO originally-ordinal repository,488.0,4.0,6.0,False
+openml_41164,41164,fabert,class,AMLB-classification,fabert,silver,MULTICLASS,"R1 curated classification suite, 7 classes",8237.0,800.0,7.0,True
+openml_45012,45012,fifa,wage_eur,OpenML-CTR23,fifa,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),19178.0,28.0,133.0,True
+openml_1475,1475,first-order-theorem-proving,Class,AMLB-classification+OpenML-CC18,first_order_theorem_proving,silver,MULTICLASS,"R1 curated classification suite, 6 classes",6118.0,51.0,6.0,True
+openml_44992,44992,fps_benchmark,FPS,OpenML-CTR23,fps_benchmark,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),24624.0,43.0,2675.0,True
+openml_44965,44965,geographical_origin_of_music,latitude,OpenML-CTR23,geographical_origin_of_music,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1059.0,116.0,31.0,True
+openml_4538,4538,GesturePhaseSegmentationProcessed,Phase,AMLB-classification+OpenML-CC18,gesturephasesegmentationprocessed,silver,MULTICLASS,"R1 curated classification suite, 5 classes",9873.0,32.0,5.0,True
+openml_41158,41158,gina,class,AMLB-classification,gina,silver,BINARY,"R1 curated classification suite, 2 classes",3153.0,970.0,2.0,True
+openml_44973,44973,grid_stability,stab,OpenML-CTR23,grid_stability,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),10000.0,12.0,10000.0,True
+openml_1478,1478,har,Class,OpenML-CC18,har,silver,MULTICLASS,"R1 curated classification suite, 6 classes",10299.0,561.0,6.0,True
+openml_44993,44993,health_insurance,whrswk,OpenML-CTR23,health_insurance,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),22272.0,11.0,75.0,True
+openml_41169,41169,helena,class,AMLB-classification,helena,silver,MULTICLASS,"R1 curated classification suite, 100 classes",65196.0,27.0,100.0,True
+openml_574,574,house_16H,price,AMLB-regression,house_16h,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),22784.0,16.0,2045.0,True
+openml_42563,42563,house_prices_nominal,SalePrice,AMLB-regression,house_prices_nominal,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1460.0,79.0,663.0,True
+tocuco_dr09_insurance,dr09_insurance,insurance,y,TOC-UCO (discretised-regression),insurance,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,1338.0,9.0,9.0,False
+openml_40978,40978,Internet-Advertisements,class,AMLB-classification+OpenML-CC18,internet_advertisements,silver,BINARY,"R1 curated classification suite, 2 classes",3279.0,1558.0,2.0,True
+openml_41168,41168,jannis,class,AMLB-classification,jannis,silver,MULTICLASS,"R1 curated classification suite, 4 classes",83733.0,54.0,4.0,True
+openml_41143,41143,jasmine,class,AMLB-classification,jasmine,silver,BINARY,"R1 curated classification suite, 2 classes",2984.0,144.0,2.0,True
+openml_41027,41027,jungle_chess_2pcs_raw_endgame_complete,class,AMLB-classification+OpenML-CC18,jungle_chess_2pcs_raw_endgame_complete,silver,MULTICLASS,"R1 curated classification suite, 3 classes",44819.0,6.0,3.0,True
+openml_44989,44989,kings_county,price,OpenML-CTR23,kc_house,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),21613.0,21.0,4028.0,True
+openml_1111,1111,KDDCup09_appetency,APPETENCY,AMLB-classification,kddcup09_appetency,silver,BINARY,"R1 curated classification suite, 2 classes",50000.0,230.0,2.0,True
+openml_41162,41162,kick,IsBadBuy,AMLB-classification,kick,silver,BINARY,"R1 curated classification suite, 2 classes",72983.0,32.0,2.0,True
+openml_44980,44980,kin8nm,y,OpenML-CTR23,kin8nm,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),8192.0,8.0,8191.0,True
+openml_3,3,kr-vs-kp,class,AMLB-classification+OpenML-CC18,kr_vs_kp,silver,BINARY,"R1 curated classification suite, 2 classes",3196.0,36.0,2.0,True
+openml_6,6,letter,class,OpenML-CC18,letter,silver,MULTICLASS,"R1 curated classification suite, 26 classes",20000.0,16.0,26.0,True
+tocuco_oc05_lev,oc05_lev,lev,y,TOC-UCO (originally-ordinal),lev,silver,ORDINAL,R3 TOC-UCO originally-ordinal repository,1000.0,4.0,5.0,False
+openml_41144,41144,madeline,class,AMLB-classification,madeline,silver,BINARY,"R1 curated classification suite, 2 classes",3140.0,259.0,2.0,True
+openml_1485,1485,madelon,Class,OpenML-CC18,madelon,silver,BINARY,"R1 curated classification suite, 2 classes",2600.0,500.0,2.0,True
+tocuco_oc10_melbourneAirbnb,oc10_melbourneAirbnb,melbourneAirbnb,y,TOC-UCO (originally-ordinal),melbourneairbnb,silver,ORDINAL,R3 TOC-UCO originally-ordinal repository,20036.0,48.0,10.0,False
+openml_42570,42570,Mercedes_Benz_Greener_Manufacturing,y,AMLB-regression,mercedes_benz_greener_manufacturing,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),4209.0,376.0,2545.0,True
+openml_44983,44983,miami_housing,SALE_PRC,OpenML-CTR23,miami_housing,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),13932.0,15.0,2111.0,True
+openml_40966,40966,MiceProtein,class,OpenML-CC18,miceprotein,silver,MULTICLASS,"R1 curated classification suite, 8 classes",1080.0,77.0,8.0,True
+openml_1515,1515,micro-mass,Class,AMLB-classification,micro_mass,silver,MULTICLASS,"R1 curated classification suite, 20 classes",571.0,1300.0,20.0,True
+openml_41150,41150,MiniBooNE,signal,AMLB-classification,miniboone,silver,BINARY,"R1 curated classification suite, 2 classes",130064.0,50.0,2.0,True
+openml_43071,43071,MIP-2016-regression,PAR10,AMLB-regression,mip_2016_regression,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1090.0,144.0,933.0,True
+openml_41021,41021,Moneyball,RS,AMLB-regression+OpenML-CTR23,moneyball,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1232.0,14.0,374.0,True
+openml_44969,44969,naval_propulsion_plant,gt_compressor_decay_state_coefficient,OpenML-CTR23,naval_propulsion_plant,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),11934.0,14.0,51.0,True
+tocuco_oc05_nhanes,oc05_nhanes,nhanes,y,TOC-UCO (originally-ordinal),nhanes,silver,ORDINAL,R3 TOC-UCO originally-ordinal repository,5223.0,30.0,5.0,False
+openml_1486,1486,nomao,Class,AMLB-classification+OpenML-CC18,nomao,silver,BINARY,"R1 curated classification suite, 2 classes",34465.0,118.0,2.0,True
+openml_23517,23517,numerai28.6,attribute_21,AMLB-classification+OpenML-CC18,numerai28_6,silver,BINARY,"R1 curated classification suite, 2 classes",96320.0,21.0,2.0,True
+openml_42734,42734,okcupid-stem,job,AMLB-classification,okcupid_stem,silver,MULTICLASS,"R1 curated classification suite, 3 classes",50789.0,19.0,3.0,True
+openml_42724,42724,OnlineNewsPopularity,shares,AMLB-regression,onlinenewspopularity,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),39644.0,59.0,1454.0,True
+openml_28,28,optdigits,class,OpenML-CC18,optdigits,silver,MULTICLASS,"R1 curated classification suite, 10 classes",5620.0,64.0,10.0,True
+openml_1487,1487,ozone-level-8hr,Class,AMLB-classification+OpenML-CC18,ozone,silver,BINARY,"R1 curated classification suite, 2 classes",2534.0,72.0,2.0,True
+openml_32,32,pendigits,class,OpenML-CC18,pendigits,silver,MULTICLASS,"R1 curated classification suite, 10 classes",10992.0,16.0,10.0,True
+openml_41145,41145,philippine,class,AMLB-classification,philippine,silver,BINARY,"R1 curated classification suite, 2 classes",5832.0,308.0,2.0,True
+openml_4534,4534,PhishingWebsites,Result,AMLB-classification+OpenML-CC18,phishingwebsites,silver,BINARY,"R1 curated classification suite, 2 classes",11055.0,30.0,2.0,True
+openml_1489,1489,phoneme,Class,AMLB-classification+OpenML-CC18,phoneme,silver,BINARY,"R1 curated classification suite, 2 classes",5404.0,5.0,2.0,True
+openml_44963,44963,physiochemical_protein,RMSD,OpenML-CTR23,physiochemical_protein,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),45730.0,9.0,15903.0,True
+openml_44981,44981,pumadyn32nh,thetadd6,OpenML-CTR23,pumadyn32nh,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),8192.0,32.0,8191.0,True
+openml_1494,1494,qsar-biodeg,Class,AMLB-classification+OpenML-CC18,qsar_biodeg,silver,BINARY,"R1 curated classification suite, 2 classes",1055.0,41.0,2.0,True
+openml_550,550,quake,col_4,AMLB-regression,quake,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),2178.0,3.0,12.0,True
+tocuco_dr10_realState,dr10_realState,realState,y,TOC-UCO (discretised-regression),realstate,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,414.0,6.0,10.0,False
+openml_44976,44976,sarcos,V22,OpenML-CTR23,sarcos,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),48933.0,21.0,11414.0,True
+openml_41980,41980,SAT11-HAND-runtime-regression,runtime,AMLB-regression,sat11_hand_runtime_regression,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),4440.0,116.0,1945.0,True
+openml_182,182,satimage,class,OpenML-CC18,satimage,silver,MULTICLASS,"R1 curated classification suite, 6 classes",6430.0,36.0,6.0,True
+openml_40900,40900,Satellite,Target,AMLB-classification,satimage,silver,BINARY,"R1 curated classification suite, 2 classes",5100.0,36.0,2.0,True
+openml_40984,40984,segment,class,AMLB-classification+OpenML-CC18,segment,silver,MULTICLASS,"R1 curated classification suite, 7 classes",2310.0,16.0,7.0,True
+openml_1501,1501,semeion,Class,OpenML-CC18,semeion,silver,MULTICLASS,"R1 curated classification suite, 10 classes",1593.0,256.0,10.0,True
+openml_40685,40685,shuttle,class,AMLB-classification,shuttle,silver,MULTICLASS,"R1 curated classification suite, 7 classes",58000.0,9.0,7.0,True
+openml_38,38,sick,Class,OpenML-CC18,sick,silver,BINARY,"R1 curated classification suite, 2 classes",3772.0,29.0,2.0,True
+openml_44987,44987,socmob,counts_for_sons_current_occupation,OpenML-CTR23,socmob,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1156.0,5.0,361.0,True
+tocuco_dr09_soybean,dr09_soybean,soybean,y,TOC-UCO (discretised-regression),soybean,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,320.0,9.0,9.0,False
+openml_507,507,space_ga,ln(VOTES/POP),AMLB-regression,space_ga,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),3107.0,6.0,3105.0,True
+openml_45402,45402,space_ga,ln_votes_pop,OpenML-CTR23,space_ga,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),3107.0,6.0,3105.0,True
+openml_44,44,spambase,class,OpenML-CC18,spambase,silver,BINARY,"R1 curated classification suite, 2 classes",4601.0,57.0,2.0,True
+openml_46,46,splice,Class,OpenML-CC18,splice,silver,MULTICLASS,"R1 curated classification suite, 3 classes",3190.0,60.0,3.0,True
+openml_40982,40982,steel-plates-fault,target,AMLB-classification+OpenML-CC18,steel_plates_fault,silver,MULTICLASS,"R1 curated classification suite, 7 classes",1941.0,27.0,7.0,True
+tocuco_dr10_stock,dr10_stock,stock,y,TOC-UCO (discretised-regression),stock,silver,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,950.0,9.0,10.0,False
+openml_44964,44964,superconductivity,critical_temp,OpenML-CTR23,superconductivity,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),21263.0,81.0,3007.0,True
+tocuco_oc04_swd,oc04_swd,swd,y,TOC-UCO (originally-ordinal),swd,silver,ORDINAL,R3 TOC-UCO originally-ordinal repository,1000.0,10.0,4.0,False
+openml_41146,41146,sylvine,class,AMLB-classification,sylvine,silver,BINARY,"R1 curated classification suite, 2 classes",5124.0,20.0,2.0,True
+openml_40499,40499,texture,Class,OpenML-CC18,texture,silver,MULTICLASS,"R1 curated classification suite, 11 classes",5500.0,40.0,11.0,True
+openml_50,50,tic-tac-toe,Class,OpenML-CC18,tic_tac_toe,silver,BINARY,"R1 curated classification suite, 2 classes",958.0,9.0,2.0,True
+openml_422,422,topo_2_1,oz267,AMLB-regression,topo_2_1,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),8885.0,266.0,1336.0,True
+openml_42730,42730,us_crime,ViolentCrimesPerPop,AMLB-regression,us_crime,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),1994.0,126.0,98.0,True
+openml_54,54,vehicle,Class,AMLB-classification+OpenML-CC18,vehicle,silver,MULTICLASS,"R1 curated classification suite, 4 classes",846.0,18.0,4.0,True
+openml_44974,44974,video_transcoding,utime,OpenML-CTR23,video_transcoding,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),68784.0,18.0,10960.0,True
+tocuco_oc05_vlbw,oc05_vlbw,vlbw,y,TOC-UCO (originally-ordinal),vlbw,silver,ORDINAL,R3 TOC-UCO originally-ordinal repository,172.0,19.0,5.0,False
+openml_41166,41166,volkert,class,AMLB-classification,volkert,silver,MULTICLASS,"R1 curated classification suite, 10 classes",58310.0,180.0,10.0,True
+openml_307,307,vowel,Class,OpenML-CC18,vowel,silver,MULTICLASS,"R1 curated classification suite, 11 classes",990.0,12.0,11.0,True
+openml_1497,1497,wall-robot-navigation,Class,OpenML-CC18,wall_robot_navigation,silver,MULTICLASS,"R1 curated classification suite, 4 classes",5456.0,24.0,4.0,True
+openml_44975,44975,wave_energy,energy_total,OpenML-CTR23,wave_energy,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),72000.0,48.0,71993.0,True
+openml_40983,40983,wilt,class,AMLB-classification+OpenML-CC18,wilt,silver,BINARY,"R1 curated classification suite, 2 classes",4839.0,5.0,2.0,True
+openml_181,181,yeast,class_protein_localization,AMLB-classification,yeast,silver,MULTICLASS,"R1 curated classification suite, 10 classes",1484.0,8.0,10.0,True
+openml_416,416,yprop_4_1,oz252,AMLB-regression,yprop_4_1,silver,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),8885.0,251.0,1336.0,True

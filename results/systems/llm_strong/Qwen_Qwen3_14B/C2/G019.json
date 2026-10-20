@@ -1,0 +1,35 @@
+{
+ "instance_id": "G019",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "cdfc04f94f12168f46135403f4f07d42210e363cd42497a1a826928e9d8055ba",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The dataset documentation explicitly states that the goal is to predict simulation outcomes (fail or succeed) using the target column, which has only two distinct values (0 = failure, 1 = success).",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.8,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset documentation explicitly states that the goal is to predict simulation outcomes (fail or succeed) using the target column, which has only two distinct values (0 = failure, 1 = success).\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 3196,
+   "tokens_out": 162,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 26.33
+}

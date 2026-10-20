@@ -1,0 +1,33 @@
+{
+ "instance_id": "I007",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "4eaa16b90b2c5b445c08181f6dd6b1e3516039aaef2fa515fb7da1be00a2d630",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 1.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target 'LC50' is a quantitative measure of toxicity, typically treated as a continuous variable.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.0,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 1.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target 'LC50' is a quantitative measure of toxicity, typically treated as a continuous variable.\",\n  \"evidence_level\": \"E2\"\n}\n```\n\n**Explanation:**\n\n- **Plausible Task Set:** The target `LC50` is a quantitative measure of toxicity, which is typically treated as a continuous variable. This makes `CONTINUOUS_REGRESSION` the most plausible task.\n  \n- **Most Likely Task:** Given the nature of `LC50` as a continuous measure, `CONTINUOUS_REGRESSION` is the most likely task.\n\n- **Probabilities:** The probability is assigned entirely to `CONTINUOUS_REGRESSION` because the target is a continuous measure of toxicity.\n\n- **Confidence:** The confidence level is set to 5, indicating certainty, as the documentation clearly describes `LC50` as a quantitative response.\n\n- **Evidence:** The evidence is based on the description of `LC50` as a quantitative measure, which aligns with continuous regression tasks.\n\n- **Evidence Level:** The evidence level is E2 because the documentation describes the target precisely enough to determine the task without explicitly naming it.",
+   "tokens_in": 1571,
+   "tokens_out": 339,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 40.31
+}

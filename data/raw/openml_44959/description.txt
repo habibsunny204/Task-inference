@@ -1,0 +1,15 @@
+**Data Description**
+
+Concrete is the most important material in civil engineering. The concrete compressive strength is a highly nonlinear function of age and ingredients. Each instance represents a description, different features of concrete instance, including its compressive strength. The latter can be predicted using the other features about the concrete.
+
+**Attribute Description**
+
+1. *cement* - amount in kg in a m3 mixture
+2. *blast_furnace_slag* - amount in kg in a m3 mixture
+3. *fly_ash* - amount in kg in a m3 mixture
+4. *water* - amount in kg in a m3 mixture
+5. *superplasticizer* - amount in kg in a m3 mixture
+6. *coarse_aggregate* - amount in kg in a m3 mixture
+7. *fine_aggregate* - amount in kg in a m3 mixture
+8. *age* - age in days (1 - 365)
+9. *strength* - in MPa, target feature

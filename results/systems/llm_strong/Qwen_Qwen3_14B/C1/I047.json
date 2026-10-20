@@ -1,0 +1,34 @@
+{
+ "instance_id": "I047",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "4778d34b651c2c145dc40461a76f3387034de794e2138c0ec9197181a9119b1d",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has three distinct values (B, L, R), which could represent classes in a classification task. Since 'B' is much less frequent than 'L' and 'R', it is plausible that this is a binary classification task where 'B' is the minority class and 'L'/'R' are the majority classes, or a multiclass task with three categories."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has three distinct values (B, L, R), which could represent classes in a classification task. Since 'B' is much less frequent than 'L' and 'R', it is plausible that this is a binary classification task where 'B' is the minority class and 'L'/'R' are the majority classes, or a multiclass task with three categories.\"\n}",
+   "tokens_in": 798,
+   "tokens_out": 189,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.08
+}

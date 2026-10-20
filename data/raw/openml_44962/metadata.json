@@ -1,0 +1,31 @@
+{
+  "dataset_id": 44962,
+  "name": "forest_fires",
+  "version": 9,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/44962",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/forest+fires",
+  "paper_url": "https://www.semanticscholar.org/paper/A-data-mining-approach-to-predict-forest-fires-data-Cortez-Morais/0f529dc2b2b2bad22394454d4cba79e2c319f0b0",
+  "citation": "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. \n[Cortez and Morais, 2007] P. Cortez and A. Morais. A Data Mining Approach to Predict Forest Fires using Meteorological Data. In J. Neves, M. F. Santos and J. Machado Eds., New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence, December, Guimaraes, Portugal, pp. 512-523, 2007. APPIA, ISBN-13 978-989-95618-0-9.",
+  "creator": null,
+  "licence": "CC BY 4.0",
+  "upload_date": "2022-12-22T16:11:46",
+  "default_target": "area",
+  "target_column": "area",
+  "openml_task_id": "361618",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "X",
+    "Y",
+    "month",
+    "day",
+    "FFMC",
+    "DMC",
+    "DC",
+    "ISI",
+    "temp",
+    "RH",
+    "wind",
+    "rain"
+  ]
+}

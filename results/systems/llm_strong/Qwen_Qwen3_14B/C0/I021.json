@@ -1,0 +1,34 @@
+{
+ "instance_id": "I021",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "2d4218356b0c9023ddeab14bf7eac133e77b1eb45f306b2f207cc37f5d97f391",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.5,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has 4 distinct integer values (0-3), which could represent categories (MULTICLASS or BINARY if 0/1), or ordered levels (ORDINAL). However, the dominance of 0 and 3, along with the mean being closer to 1, suggests a binary classification task where 0 and 3 might represent opposing classes."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.5,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.2,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has 4 distinct integer values (0-3), which could represent categories (MULTICLASS or BINARY if 0/1), or ordered levels (ORDINAL). However, the dominance of 0 and 3, along with the mean being closer to 1, suggests a binary classification task where 0 and 3 might represent opposing classes.\"\n}",
+   "tokens_in": 736,
+   "tokens_out": 187,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 23.12
+}

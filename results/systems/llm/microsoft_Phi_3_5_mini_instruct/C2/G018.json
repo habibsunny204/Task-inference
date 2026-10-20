@@ -1,0 +1,35 @@
+{
+ "instance_id": "G018",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "753b33a5d3ab5fcc281d5ab5362ec47ca26f68d1e9d9a83b02bd6ba9155d5f2b",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "MULTICLASS"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.09523809523809523,
+  "p_MULTICLASS": 0.19047619047619047,
+  "p_ORDINAL": 0.047619047619047616,
+  "p_COUNT_REGRESSION": 0.6666666666666666,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.05,
+  "confidence": 5,
+  "evidence": "The dataset title 'solar_flare' and the attribute description indicate that the target is the count of common solar flares, which are non-negative integers.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"MULTICLASS\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.2,\n    \"COUNT_REGRESSION\": 0.7,\n    \"ORDINAL\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset title 'solar_flare' and the attribute description indicate that the target is the count of common solar flares, which are non-negative integers.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 1703,
+   "tokens_out": 195,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.15
+}

@@ -1,0 +1,33 @@
+{
+ "instance_id": "I026",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "a3b3dd140af7b70b3db47d3b02518403792f663dbba4e3ae95b9bae58eb4901e",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.37499999999999994,
+  "p_COUNT_REGRESSION": 0.25,
+  "p_CONTINUOUS_REGRESSION": 0.37499999999999994,
+  "probability_sum_raw": 1.6,
+  "confidence": 4,
+  "evidence": "The target has many distinct values, is not whole numbers-only, and the distribution suggests ordered categories rather than continuous measurements."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.4, \"CONTINUOUS_REGRESSION\": 0.6},\n  \"confidence\": 4,\n  \"evidence\": \"The target has many distinct values, is not whole numbers-only, and the distribution suggests ordered categories rather than continuous measurements.\"\n}",
+   "tokens_in": 1070,
+   "tokens_out": 125,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.06
+}

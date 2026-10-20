@@ -1,0 +1,37 @@
+{
+ "instance_id": "I049",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "4b1fb090c597bb3c3585cf80a8cc73dd12e4b967a793f539408f17fd18a96e28",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7368421052631579,
+  "p_MULTICLASS": 0.052631578947368425,
+  "p_ORDINAL": 0.10526315789473685,
+  "p_COUNT_REGRESSION": 0.052631578947368425,
+  "p_CONTINUOUS_REGRESSION": 0.052631578947368425,
+  "probability_sum_raw": 0.95,
+  "confidence": 4,
+  "evidence": "The target column contains only two distinct values (0 and 1) with a large majority of the data being one of these values.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.05,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target column contains only two distinct values (0 and 1) with a large majority of the data being one of these values.\",\n  \"evidence_level\": \"E1\"\n}\n```",
+   "tokens_in": 1495,
+   "tokens_out": 206,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.36
+}

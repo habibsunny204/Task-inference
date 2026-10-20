@@ -1,0 +1,34 @@
+{
+ "instance_id": "I002",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "bdf72b9dccead8384fc702024795aba548667360887a211cf4ec46aba518feab",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.4,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are integers with a minimum of 0 and a maximum of 2, and the mean and median are close to 1, suggesting counts of occurrences.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.4, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target values are integers with a minimum of 0 and a maximum of 2, and the mean and median are close to 1, suggesting counts of occurrences.\",\n  \"evidence_level\": \"E3\"\n}",
+   "tokens_in": 1530,
+   "tokens_out": 144,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.83
+}

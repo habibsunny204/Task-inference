@@ -1,0 +1,34 @@
+{
+ "instance_id": "I020",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "952d6684bcf31268419534c2b0a577d6e1e9042eeb8d798d67580c188209a267",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are binary (1 or 2), and the dataset documentation explicitly states the target feature records the prognosis (benign or malignant).",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.8, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.1, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target values are binary (1 or 2), and the dataset documentation explicitly states the target feature records the prognosis (benign or malignant).\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 2084,
+   "tokens_out": 138,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 13.23
+}

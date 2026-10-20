@@ -1,0 +1,31 @@
+{
+ "instance_id": "I027",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "7cfa964d644790dea536c1ecc7cf126d20f20511bad15dec2380a68aebf732ff",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.8,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.1,\n0.0,\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'class' has two distinct values with a significant majority being one value, indicating a binary classification task.\"\n}\n```",
+   "tokens_in": 1491,
+   "tokens_out": 141,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.8,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.1,\n0.0,\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'class' has only two distinct values (0 and 1) with a significant imbalance (56 out of 100 are 0), suggesting a binary classification task.\"\n}\n```",
+   "tokens_in": 1507,
+   "tokens_out": 159,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 16.08
+}

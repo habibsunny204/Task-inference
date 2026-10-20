@@ -1,0 +1,36 @@
+{
+ "instance_id": "I049",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "fb0bf076bd2f4dd98f9c0b95d35f32251ee92f5ab73090433a4ee3da543c9877",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.45,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.05,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column has 4 distinct integer values (0, 1, 2, 3), with 0 being the most frequent. While this could support multiple task types (e.g., ordinal, multiclass, or count regression), the dominance of 0 and the small range of values makes binary classification (e.g., 0 vs. non-zero) a plausible and likely intended task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.45,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.10,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column has 4 distinct integer values (0, 1, 2, 3), with 0 being the most frequent. While this could support multiple task types (e.g., ordinal, multiclass, or count regression), the dominance of 0 and the small range of values makes binary classification (e.g., 0 vs. non-zero) a plausible and likely intended task.\"\n}",
+   "tokens_in": 1244,
+   "tokens_out": 210,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 29.96
+}

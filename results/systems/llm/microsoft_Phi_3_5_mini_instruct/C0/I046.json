@@ -1,0 +1,33 @@
+{
+ "instance_id": "I046",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "e32615e3f5dfa211991aaf0c25725790d2d14ea2fa87506722ed4a46a5a3f359",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.025641025641025644,
+  "p_MULTICLASS": 0.025641025641025644,
+  "p_ORDINAL": 0.46153846153846156,
+  "p_COUNT_REGRESSION": 0.48717948717948717,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.95,
+  "confidence": 5,
+  "evidence": "The target values are distinct integers with a mode of 0, indicating counts of events or items, consistent with COUNT_REGRESSION."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.05,\n    \"ORDINAL\": 0.90,\n    \"COUNT_REGRESSION\": 0.95,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct integers with a mode of 0, indicating counts of events or items, consistent with COUNT_REGRESSION.\"\n}\n```",
+   "tokens_in": 876,
+   "tokens_out": 175,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.52
+}

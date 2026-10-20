@@ -1,0 +1,34 @@
+{
+ "instance_id": "I050",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "79bd7f8c21e14185c2ab52a747a08d7ab4c979f5450cc0f7c72c74d169c88a97",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.6,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column 'Utility' has 5 distinct values (average, best, good, low, none), which are unordered categories, suggesting a multicategory classification task.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.6,\n    \"ORDINAL\": 0.3,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column 'Utility' has 5 distinct values (average, best, good, low, none), which are unordered categories, suggesting a multicategory classification task.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 2058,
+   "tokens_out": 154,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.3
+}

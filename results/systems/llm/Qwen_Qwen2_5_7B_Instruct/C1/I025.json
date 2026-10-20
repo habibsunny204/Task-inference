@@ -1,0 +1,34 @@
+{
+ "instance_id": "I025",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "9f5564fcc09886a60af55d0590ba77d6ed842037b00fb8b86845da03c5e3c92b",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.3,
+  "p_CONTINUOUS_REGRESSION": 0.2,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are evenly distributed across 10 discrete levels without any indication of ordering or distance between them, suggesting ordinal nature."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.5, \"COUNT_REGRESSION\": 0.3, \"CONTINUOUS_REGRESSION\": 0.2},\n  \"confidence\": 4,\n  \"evidence\": \"The target values are evenly distributed across 10 discrete levels without any indication of ordering or distance between them, suggesting ordinal nature.\"\n}",
+   "tokens_in": 1965,
+   "tokens_out": 132,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.25
+}

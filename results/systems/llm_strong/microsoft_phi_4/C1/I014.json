@@ -1,0 +1,34 @@
+{
+ "instance_id": "I014",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "4db40d8dbdb862c60a546430a77cbed757d802a411f10e5460f1dad654e160b9",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are whole numbers ranging from 1 to 29, with a distribution that suggests ordered categories, typical of ordinal data."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.6,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target values are whole numbers ranging from 1 to 29, with a distribution that suggests ordered categories, typical of ordinal data.\"\n}\n```",
+   "tokens_in": 1147,
+   "tokens_out": 146,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.3
+}

@@ -1,0 +1,36 @@
+{
+ "instance_id": "I017",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "218630018dfce5fa237cbc72e66e72599e0340d0922be6d5adc2fd2434faa0dc",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.4,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.15,
+  "p_CONTINUOUS_REGRESSION": 0.05,
+  "probability_sum_raw": 1.0,
+  "confidence": 2,
+  "evidence": "The target is an integer with 4 distinct values (0, 1, 2, 3), which could be interpreted as binary (e.g., 0 vs. non-zero), multi-class, ordinal, or counts, but the high frequency of 0 suggests a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.4,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.15,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 2,\n  \"evidence\": \"The target is an integer with 4 distinct values (0, 1, 2, 3), which could be interpreted as binary (e.g., 0 vs. non-zero), multi-class, ordinal, or counts, but the high frequency of 0 suggests a binary classification task.\"\n}",
+   "tokens_in": 737,
+   "tokens_out": 188,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 23.23
+}

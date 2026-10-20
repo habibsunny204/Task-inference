@@ -1,0 +1,16 @@
+condition,variant,n_train,train_labels,oof_accuracy
+C0,heldout:no_tocuco,478,"{""BINARY"": 125, ""ORDINAL"": 124, ""CONTINUOUS_REGRESSION"": 97, ""MULTICLASS"": 82, ""COUNT_REGRESSION"": 50}",
+C0,heldout:no_rdatasets,405,"{""ORDINAL"": 149, ""CONTINUOUS_REGRESSION"": 94, ""BINARY"": 83, ""MULTICLASS"": 79}",
+C0,heldout:no_groupc2,169,"{""BINARY"": 53, ""CONTINUOUS_REGRESSION"": 40, ""MULTICLASS"": 33, ""COUNT_REGRESSION"": 25, ""ORDINAL"": 18}",
+C0,v2:ensemble OOF natural,169,,0.9467455621301775
+C0,v2:ensemble OOF transformed,341,,0.9530791788856305
+C1,heldout:no_tocuco,478,"{""BINARY"": 125, ""ORDINAL"": 124, ""CONTINUOUS_REGRESSION"": 97, ""MULTICLASS"": 82, ""COUNT_REGRESSION"": 50}",
+C1,heldout:no_rdatasets,405,"{""ORDINAL"": 149, ""CONTINUOUS_REGRESSION"": 94, ""BINARY"": 83, ""MULTICLASS"": 79}",
+C1,heldout:no_groupc2,169,"{""BINARY"": 53, ""CONTINUOUS_REGRESSION"": 40, ""MULTICLASS"": 33, ""COUNT_REGRESSION"": 25, ""ORDINAL"": 18}",
+C1,v2:ensemble OOF natural,169,,0.9349112426035503
+C1,v2:ensemble OOF transformed,341,,0.9442815249266863
+C2,heldout:no_tocuco,478,"{""BINARY"": 125, ""ORDINAL"": 124, ""CONTINUOUS_REGRESSION"": 97, ""MULTICLASS"": 82, ""COUNT_REGRESSION"": 50}",
+C2,heldout:no_rdatasets,405,"{""ORDINAL"": 149, ""CONTINUOUS_REGRESSION"": 94, ""BINARY"": 83, ""MULTICLASS"": 79}",
+C2,heldout:no_groupc2,169,"{""BINARY"": 53, ""CONTINUOUS_REGRESSION"": 40, ""MULTICLASS"": 33, ""COUNT_REGRESSION"": 25, ""ORDINAL"": 18}",
+C2,v2:ensemble OOF natural,169,,0.9585798816568047
+C2,v2:ensemble OOF transformed,341,,0.9560117302052786

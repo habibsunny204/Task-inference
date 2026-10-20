@@ -1,0 +1,35 @@
+{
+ "instance_id": "G009",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "fea9d7c79e8dd919da73abc39dbb6e80204e523a19861c674c97c9b57aedf5a9",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The dataset contains LC50 data, which is a quantitative measure of acute aquatic toxicity towards fish, indicating a binary outcome of either toxic or non-toxic.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset contains LC50 data, which is a quantitative measure of acute aquatic toxicity towards fish, indicating a binary outcome of either toxic or non-toxic.\",\n  \"evidence_level\": \"E1\"\n}\n```",
+   "tokens_in": 1583,
+   "tokens_out": 196,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.19
+}

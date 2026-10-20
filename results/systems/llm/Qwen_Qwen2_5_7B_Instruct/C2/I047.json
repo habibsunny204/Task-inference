@@ -1,0 +1,34 @@
+{
+ "instance_id": "I047",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "3b1638d241be67d885c70055b4f47ea0303455a5d101ac75c09ce75eca5c4381",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.6,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has 3 distinct values representing the balance scale tipping to the left, right, or being balanced.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\"BINARY\": 0.1, \"MULTICLASS\": 0.6, \"ORDINAL\": 0.3, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 3 distinct values representing the balance scale tipping to the left, right, or being balanced.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1141,
+   "tokens_out": 134,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.15
+}

@@ -1,0 +1,32 @@
+{
+ "instance_id": "G002",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "b85f55dc2de54f89da9f38a22a80d770204647984f083c8688828a0c858e2282",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 1.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column 'Class' has exactly two distinct integer values (1 and 2), indicating a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 1.0,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.0,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'Class' has exactly two distinct integer values (1 and 2), indicating a binary classification task.\"\n}\n```",
+   "tokens_in": 1042,
+   "tokens_out": 130,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 15.31
+}

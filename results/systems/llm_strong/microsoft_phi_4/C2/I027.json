@@ -1,0 +1,33 @@
+{
+ "instance_id": "I027",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "7eb89fc868b039d2471f27adf84cf50d1a9e317ed2485fcd59644cc7147fa140",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 1.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The documentation explicitly states that all problems are binary classification problems.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 1.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.0, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 5,\n  \"evidence\": \"The documentation explicitly states that all problems are binary classification problems.\",\n  \"evidence_level\": \"E1\"\n}\n```",
+   "tokens_in": 1583,
+   "tokens_out": 120,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 16.11
+}

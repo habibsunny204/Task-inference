@@ -1,0 +1,36 @@
+{
+ "instance_id": "I046",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "6de83484481d01a22ef50e3efc0bfed8dc9f18e96296d4d0d88b1e452459b13d",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.15,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.7,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The dataset title 'solar_flare' and the attribute 'c_class_flares' describe the number of common solar flares, which is a count of occurrences.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.7,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset title 'solar_flare' and the attribute 'c_class_flares' describe the number of common solar flares, which is a count of occurrences.\",\n  \"evidence_level\": \"E1\"\n}\n```",
+   "tokens_in": 1703,
+   "tokens_out": 211,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.51
+}

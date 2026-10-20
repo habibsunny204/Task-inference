@@ -1,0 +1,35 @@
+{
+ "instance_id": "I012",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "4bd55420628082a3d1d0e2767d3d945cfe767010b00bcca364bcb5ec016a1b2d",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.045454545454545456,
+  "p_MULTICLASS": 0.2727272727272727,
+  "p_ORDINAL": 0.45454545454545453,
+  "p_COUNT_REGRESSION": 0.09090909090909091,
+  "p_CONTINUOUS_REGRESSION": 0.13636363636363635,
+  "probability_sum_raw": 1.1,
+  "confidence": 3,
+  "evidence": "The target column 'quality' has integer values ranging from 3 to 9, which could represent ordered categories (e.g., wine quality ratings). The documentation mentions using chemical analysis to determine wine quality, suggesting an ordinal interpretation.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.15\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column 'quality' has integer values ranging from 3 to 9, which could represent ordered categories (e.g., wine quality ratings). The documentation mentions using chemical analysis to determine wine quality, suggesting an ordinal interpretation.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1540,
+   "tokens_out": 173,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 27.78
+}

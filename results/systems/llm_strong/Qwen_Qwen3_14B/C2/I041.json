@@ -1,0 +1,35 @@
+{
+ "instance_id": "I041",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "34ce95730f8848b03e59bade77930e861662708cbe3e1ecbbf3ac5a75fbf3081",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.047619047619047616,
+  "p_MULTICLASS": 0.2857142857142857,
+  "p_ORDINAL": 0.47619047619047616,
+  "p_COUNT_REGRESSION": 0.09523809523809523,
+  "p_CONTINUOUS_REGRESSION": 0.09523809523809523,
+  "probability_sum_raw": 1.05,
+  "confidence": 4,
+  "evidence": "The target column `Class_number_of_rings` represents the age of abalone, determined by counting rings, which is an ordered integer (1 to 29). The documentation explicitly states that the number of rings can be treated as a continuous value or as a classification problem, but the ordered nature of the rings (representing age) supports an ordinal interpretation.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target column `Class_number_of_rings` represents the age of abalone, determined by counting rings, which is an ordered integer (1 to 29). The documentation explicitly states that the number of rings can be treated as a continuous value or as a classification problem, but the ordered nature of the rings (representing age) supports an ordinal interpretation.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 3240,
+   "tokens_out": 199,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 31.08
+}

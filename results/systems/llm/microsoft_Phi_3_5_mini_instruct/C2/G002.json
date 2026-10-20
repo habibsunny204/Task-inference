@@ -1,0 +1,35 @@
+{
+ "instance_id": "G002",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "f783811d861a8bc9311b1c36d4c91ab7a49428c3420a687adec6262c49fef2d0",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.9,
+  "p_MULTICLASS": 0.05,
+  "p_ORDINAL": 0.05,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The dataset contains a target column with only two distinct values (1 and 2), which correspond to malignant and benign diagnoses, respectively.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.9,\n    \"ORDINAL\": 0.05,\n    \"MULTICLASS\": 0.05,\n    \"COUNT_REGRESSION\": 0,\n    \"CONTINUOUS_REGRESSION\": 0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset contains a target column with only two distinct values (1 and 2), which correspond to malignant and benign diagnoses, respectively.\",\n  \"evidence_level\": \"E1\"\n}\n```",
+   "tokens_in": 2231,
+   "tokens_out": 187,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.81
+}

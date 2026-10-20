@@ -1,0 +1,31 @@
+{
+ "instance_id": "I021",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "7ea152fca3fe6c635c3de4ae7a5d752c4a3f7fe21a8caa0af17861667dcdb28c",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.1,\n0.1,\n  \"CONTINUOUS_REGRESSION\": 0.1,\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'y' has distinct values of 0 and 1-3 with a majority of 0, suggesting a binary outcome.\"\n}\n```",
+   "tokens_in": 1518,
+   "tokens_out": 164,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.1,\n0.1,\n  \"confidence\": 5,\n  \"evidence\": \"The target column has distinct values with only two unique non-zero counts, suggesting a binary outcome.\"\n}\n```",
+   "tokens_in": 1534,
+   "tokens_out": 137,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 16.48
+}

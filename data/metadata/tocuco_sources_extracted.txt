@@ -1,0 +1,325 @@
+Extracted from literature/pdfs/ayllon2025tocuco.pdf (Section 4: sources and preprocessing)
+
+===== PDF PAGE 12 =====
+< 500 [500, 1000) [1000, 2500) [2500, 5000) [5000, 10000) > 10000
+#Patterns range
+0
+2
+4
+6
+8
+10
+12
+14#Datasets
+TOCUCO
+Previous
+Figure 3: Comparison between TOC-UCO and Previous repository in terms of the number of datasets
+per number of patterns. Duplicated datasets in the Previous repository are included only once.
+the remaining 13 datasets. In Figure 4, we can observe the aforementioned difference
+between k-means and equal-frequency discretisation.
+10 20 30 40 50
+y: Energy flux (kW/m)
+0
+50
+100
+150
+200
+250
+300
+350Count
+Class (#Patterns)
+0 (1968)
+1 (1386)
+2 (936)
+3 (612)
+4 (394)
+5 (548)
+(a) K-means discretised output.
+10 20 30 40 50
+y: Energy flux (kW/m)
+0
+50
+100
+150
+200
+250
+300
+350Count
+Class (#Patterns)
+0 (974)
+1 (974)
+2 (974)
+3 (974)
+4 (974)
+5 (974)
+ (b) Equal-frequency discretised output.
+Figure 4: Histogram of the original regression output of the dr06 buoysFlux46069 dataset for both
+discretisation strategies: k-means (utilised in TOC-UCO) and equal-frequency (utilised in Previous
+repository). Outliers below 5% and above 95% percentiles are discarded to obtain a better histogram
+shape.
+12
+
+===== PDF PAGE 13 =====
+The source and preprocessing of each dataset are presented below.
+4.1.1. Forestfires.
+The problem is to predict the burned area of forest fires (variable named area in the
+original source) in the north-east region of Portugal, by using meteorological and other
+data. The dataset was obtained from 3. Spatial and temporal columns are discarded
+given that tabular classification algorithms are not prepared to to take advantage of
+them.
+4.1.2. BuoysFlux and BuoysHeight datasets.
+Energy flux and wave height prediction based on buoys information. The prediction
+horizon considered is 6 hours. The data is the same utilised in [12]. The original source
+is the National Data Buoys Center 4.
+4.1.3. Cancer treatment.
+Prediction of the pathologically complete response after neoadjuvant chemoradio-
+therapy for oesophageal cancer [25] (the target variable is namedComplete response probability
+in the original source). The dataset was collected from 5. Additionally, the following
+preprocessing was performed:
+• Column Tumor type was converted to a binary column named adenocarcinoma,
+as it has only two values: adenocarcinoma and squamous cell carcinoma.
+• The M stage column was discarded given that it is constant.
+• The Smoking column was also discarded due to the high number of null values.
+• Tumor location was converted into multiple dummy columns.
+• Every row with null values in all columns was removed.
+4.1.4. Insurance.
+The problem is to predict individual medical costs billed by health insurance (col-
+umn named charges in the original source). The dataset was collected from 6. The
+only preprocessing performed was to convert the column region into multiple dummy
+columns and to remove rows with null values, no missing value imputation is performed.
+3https://archive.ics.uci.edu/dataset/162/forest+fires
+4https://www.ndbc.noaa.gov/
+5https://www.kaggle.com/datasets/lijsbeth/cancer-treatment-response?select=
+treatment_response_development.csv
+6https://www.kaggle.com/datasets/mirichoi0218/insurance
+13
+
+===== PDF PAGE 14 =====
+4.1.5. Soybean.
+Prediction of the number of legumes per plant in soybean cultivars. The dataset
+was obtained from 7. The preprocessing conducted was to discard column Cultivar (as
+it has too many text unique values), and to remove rows with null values. No missing
+value imputation is performed.
+4.1.6. CancerDeathRate.
+Prediction of the cancer death rate in specific regions (column namedtarget deathrate
+in the original source). The dataset was obtained from 8. The following preprocessing
+was performed:
+• Column binnedic, which was originally filled with intervals, e.g.: “[1232.9, 46432.8)”,
+was converted into two columns containing the min and max of the interval, e.g.
+binnedic min = 1232.9 and binnedic max = 46432.8.
+• Geography column was discarded given that it has almost 3000 unique values.
+• Columns pctsomecol18 24, pctemployed16 over and pctprivatecoveragealone were
+discarded due to the high number of null values.
+4.1.7. ConcreteStrength.
+The problem is to predict the compressive strength of concrete (variable named
+Concrete compressive strength(MPa, megapascals) in the original source). The dataset
+was obtained from 9.
+4.1.8. RealState.
+Prediction of house prices by unit area [31]. The dataset was collected from 10.
+4.2. Originally ordinal classification datasets
+From the 22 originally ordinal classification datasets in TOC-UCO, a total of 10
+datasets were extracted from the repository utilised in [13]. These datasets are: bal-
+anceScale, newthyroid, tae, car, swd, eucalyptus, lev, winequalityRed, esl, era. In the
+case of winequalityRed and esl, we alleviated the extreme class imbalance by merging
+extreme classes. In this way, for winequalityRed we merged class 0 with class 1, and
+for esl we merged class 0 and 1 with class 2, and class 8 with 7. In the following, we
+present the remaining new 12 datasets.
+7https://archive.ics.uci.edu/dataset/913/forty+soybean+cultivars+from+subsequent+
+harvests
+8https://www.kaggle.com/datasets/varunraskar/cancer-regression/data
+9https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength
+10https://archive.ics.uci.edu/dataset/477/real+estate+valuation+data+set
+14
+
+===== PDF PAGE 15 =====
+4.2.1. Mammoexp.
+The objective is to model the relationship between mammography experience: have
+never had a mammography (class 0), have had one within the last year (class 1), last
+mammography greater than one year ago (class 2), and the attitude towards mammog-
+raphy. The dataset was sourced from [16].
+4.2.2. ChildrenAnemia.
+Prediction of children anemia level based on different physical and socioeconomic
+factors. The datasets was obtained from 11. The following preprocessing was performed:
+• Variable Type of place of residence is replaced by residence urban or rural, a bi-
+nary variable being: 1 if residence is urban and 0 if rural.
+• Variable Highest educational level is replaced by education level, an ordinal vari-
+able encoding original values as follows: No education: 0, Primary: 1, Secondary:
+2, Higher: 3.
+• Variable Wealth index combined is replaced by wealth index, an ordinal variable
+encoding original values as follows: Poorest: 0, Poorer: 1, Middle: 2, Richer: 3,
+Richest: 4.
+• Variable Have mosquito bed net for sleeping (from household questionnaire) is
+replaced by mosquito bed net , a binary variable being: 1 if mosquito bed net is
+used and 0 if not.
+• Variable Smokes cigarettes is replaced by smokes cigarettes, a binary variable
+being: 1 when smoking and 0 if not.
+• Variable Current marital status is replaced by married, a binary variable being:
+1 if married and 0 if not.
+• Variable Currently residing with husband/partneris replaced byliving with partner,
+a binary variable being: 1 if living with husband or partner and 0 if not.
+• Variable Had fever in last two weeks is replaced by had fever in last two weeks, a
+binary variable being: 1 if fever in the last two weeks and 0 if not.
+• Variable Taking iron pills, sprinkles or syrup is replaced bytaking iron pills sprinkles or syrup,
+a binary variable being: 1 if taking those pills and 0 if not.
+• Variable Age in 5-year groups is replaced by age group, an ordinal variable doing
+the next replacement from original column: 15-19: 0, 20-24: 1, 25-29: 2, 30-34:
+3, 35-39: 4, 40-44: 5, 45-49: 6.
+11https://www.kaggle.com/datasets/adeolaadesina/factors-affecting-children-anemia-level/
+data
+15
+
+===== PDF PAGE 16 =====
+4.2.3. GymExerciseTracking.
+The problem is to predict the number of workout sessions per week for gym members
+(variable named Workout Frequency (days/week) in the source). The dataset was ob-
+tained from 12. The preprocessing consisted of transforming the variable workout type
+into multiple dummy variables and removing missing values.
+4.2.4. HeartDisease.
+The objective is to predict the presence of heart disease in patients (variable named
+num at source), ranging from 0 (no heart disease presence) to 4 (severe heart disease).
+This data is sourced from 13. The preprocessing consisted of removing missing values.
+4.2.5. ProblematicInternetUsage.
+The problem is to predict the Severity Impairment Index (sii), a standard measure
+of problematic internet use, based on different demographic and behavioural factors.
+This data was obtained from 14. The preprocessing consisted of:
+• Columns with more than a 35% of missing values were discarded.
+• Seasonal columns are discarded due to a high number of unique values.
+• Target variable sii is transformed to ordinal by mapping: None to class 0, Mild
+to class 1, Moderate to class 2, and Severe to class 3.
+4.2.6. Support.
+Prediction of functional disability, which is categorised into 5 ordered classes from
+slight to severe. This dataset was sourced from [16].
+4.2.7. vlbw.
+The problem is to predict the Apgar score, a score for the physical health status of
+a newborn measured on a 9-point scale, from diverse factors such as the weight and sex
+of the newborn and the type of delivery. The dataset was sourced from [16].
+4.2.8. Nhannes.
+Prediction of the self-reported general health status from demographical and health-
+related factors. The response is categorised into five classes (0: excellent, 1: very good,
+2: good, 3: fair, 4: poor). Sourced from [16].
+12https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data
+13https://archive.ics.uci.edu/dataset/45/heart+disease
+14https://www.kaggle.com/competitions/child-mind-institute-problematic-internet-use/
+data
+16
+
+===== PDF PAGE 17 =====
+4.2.9. StudentPerformance.
+Prediction of student grades in Mathematics and Portuguese language subjects. The
+input features include student grades in other different subjects, demographic, and other
+social and school related characteristics. Data was collected by using school reports
+and questionnaires. The dataset was sourced from 15. The following preprocessing was
+performed:
+• All nominal variables Mjob, Fjob, reason and guardian have been converted into
+multiple binary (dummy) variables.
+• Columns G1 and G2, representing the first and second period grades, are dis-
+carded given that we want to focus on predicting the final (global) grade.
+• We reduced the number of classes by grouping the original target values so that:
+original 0, 1 and 2 values are mapped to 0, 3 and 4 to 1, 5 and 6 to 2, . . . , 19 and
+20 to 10. After this step, some classes remained extremely under-represented. To
+fix this, we merged class 2 with 1 and class 8 with 9, so that we were left with 8
+classes.
+4.2.10. MelbourneAirbnb.
+The problem is to predict price labels for Airbnb rentals (variable price label at
+source). The dataset was obtained from 16. The preprocessing conducted consisted of:
+• All text mining columns were discarded.
+• Constant valued columns were discarded.
+• Converted calendar updated text valued variable to integer variable representing
+the number of days since the last calendar update. Rows with no update are
+discarded.
+• Columns with more than 20% missing values are discarded. Then, any row with
+at least one missing value is removed. No missing value imputation is performed.
+5. Baseline experiments and results
+In order to provide the OC literature with a baseline experimentation, we provide
+the results obtained in the TOC-UCO repository by 8 different methodologies:
+• Ridge. This method converts the classification problem into a multi-output re-
+gression task by mapping the target values into Q outputs taking values in the set
+{−1, 1}, there the value will be 1 is the class is the one observed in the pattern
+[23].
+15https://archive.ics.uci.edu/dataset/320/student+performance
+16https://huggingface.co/datasets/james-burton/melbourne_airbnb_ordinal
+17
+
+===== PDF PAGE 18 =====
+• Random Forest (RF). This method trains an ensemble of decision trees and per-
+forms the final prediction by majority voting [5].
+• EXtreme Gradient Boosting classifier (XGB). XGB is an efficient and scalable
+implementation of a gradient boosting machine, presented in [6].
+• Logistic All-Threshold classifier (LogAT). An OC technique based on the cumu-
+lative link models (CLM) [1], employing the all-thresholds loss presented in [22].
+• Multi-Layer Perceptron (MLP). A single-layer neural network trained with the
+cross-entropy loss [4].
+• MLP-CLM. An MLP model that replaces the softmax by a CLM output layer
+[28, 3].
+• Triangular MLP (MLP-T). A MLP trained with soft labels computed from a
+triangular distribution [27, 3].
+• Ensemble BAsed on uNimodal Ordinal (EBANO) classifier. An emsemble of
+LogAT, MLP-CLM and MLP-T, where the weights of the ensemble are cross-
+validated in terms of the Averaged Mean Absolute Error (AMAE) [26].
+The hyperparameters of the eight methodologies presented above are cross-validated
+following a 3-fold strategy in the training set. In Table 5, the different values consid-
+ered in the cross-validation of each hyperparameter are specified. Due to the inherent
+imbalance of ordinal problems commented in Section 2.2, all the methodologies are
+trained employing balanced class weights, i.e. each sample belonging to a class Cq is
+weighted with ωq = N
+Q·Nq
+, where Nq is the total number of samples of class Cq. The
+code implementation of these experiments is publicly available in GitHub 17.
+The methodologies are evaluated in terms of 4 different performance metrics:
+• Averaged Mean Absolute Error (AMAE). This metric accounts for the imbalance
+of the problem by averaging the isolated MAE obtained for each class [2], where
+the MAE corresponds to the mean absolute distance between true and predicted
+labels coded as integers (i.e. it corresponds to the mean absolute deviation in
+number of categories of the ordinal scale).
+• Maximum Mean Absolute Error (MMAE). This metric follows the same logic as
+the AMAE, but focuses on the maximum MAE along the classes (worst classified
+class), instead of the computing the average [10].
+17https://github.com/ayrna/tocuco/blob/main/baseline_experiments.py
+18
+
+===== PDF PAGE 19 =====
+Table 5: Hyperparameter values used for cross-validation of for each technique.
+Method Hyperparameter Values
+Ridge and LogAT Regularisation strength {10−3, 10−2, 10−1, 100, 101, 102, 103}
+Maximum iterations {1000, 1500, 3000, 5000}
+RF
+Max depth {3, 5, 8},
+#Estimators {100, 250, 500, 1000}
+Minimal Cost-Complexity Pruning {0.0, 0.05, 0.1}
+Feature subsample {No, squared root}
+Bootstrap {No, Yes}
+XGB
+Max depth {3, 5, 8}
+#Estimators {100, 250, 500, 1000}
+Learning rate {0.01, 0.05, 0.10}
+Pattern subsample (%) {0.75, 0.95, 1.0}
+Feature subsample (%) {0.75, 0.95, 1.0}
+MLP, #Hidden units {5, 8, 10, 15, 20, 50, 100}
+MLP-CLM and #Epochs {1000, 1500, 3000, 5000}
+MLP-T Learning rate {10−5, 10−4, 10−3}
+MLP-CLM Minimum distance {0.0, 0.1, 0.2}
+MLP-T Alpha {0.05, 0.10}
+• Quadratic Weighted Kappa (QWK), a metric based on the kappa index that
+measures the inter-rater agreement on classifying elements into a set of classes. Its
+value ranges from−1 to 1, with 1 representing a perfect prediction. This metric
+is weighted with quadratic penalisation values that increase with the distance
+between classes [29].
+• Balanced Accuracy (BACC), this metric computes the average of the sensitivity
+(true positive rate) across all classes. It differs from regular accuracy by con-
+sidering the imbalance in the dataset, giving each class an equal weight in the
+computation regardless of its size.
+AMAE, MMAE and QWK are OC metrics, while BACC is nominal. The results
+obtained from the experiments are shown in Table 6 and Table 7. In Table 6, the
+results are presented in terms of the mean and standard deviation for each model-
+metric pair. It can be observed that the RF method obtains the lowest mean in terms
+of AMAE. However, LogAT is very close with respect to the mean, and presents almost
+half of the standard deviation obtained by RF, i.e. it is much more robust. With
+respect to MMAE, LogAT is the best methodology with respect to both mean and
+standard deviation. EBANO obtains the second best values. In terms of QWK, XGB
+achieves the highest (best) values, and EBANO the second best results. On the other
+hand, RF obtains the highest BACC, followed by the XGB. In Table 7, the rankings
+are provided. In this table, the LogAT manages to surpass the rest of the methods
+in terms of AMAE and MMAE. However, with respect to QWK and BACC, EBANO
+stands as the best performer, followed by XGB in terms of QWK, and by RF in terms
+of BACC. In Figure 5, a more detailed comparison of the two best methods for each
+19

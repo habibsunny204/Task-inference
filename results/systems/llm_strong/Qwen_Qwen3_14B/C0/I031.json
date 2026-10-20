@@ -1,0 +1,35 @@
+{
+ "instance_id": "I031",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "1e342edd47f3212fe398b584a76ce21313516d200c289fd92e98110a64ec381b",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.45,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.15,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target is an integer with 4 distinct values (0, 1, 2, 3), and 0 is the most common value. This could represent a binary classification (e.g., 0 vs. non-zero), a multi-class classification, or an ordinal scale. The absence of negative values and the small range suggest it might also represent counts."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.45,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.15,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target is an integer with 4 distinct values (0, 1, 2, 3), and 0 is the most common value. This could represent a binary classification (e.g., 0 vs. non-zero), a multi-class classification, or an ordinal scale. The absence of negative values and the small range suggest it might also represent counts.\"\n}",
+   "tokens_in": 738,
+   "tokens_out": 195,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.01
+}

@@ -1,0 +1,48 @@
+{
+ "instance_id": "I012",
+ "group": "pilot",
+ "task": "CONTINUOUS_REGRESSION",
+ "arm": "ag_continuous_regression",
+ "fold": 4,
+ "k": 7,
+ "presets": "medium_quality",
+ "time_limit_s": 60,
+ "problem_type": "regression",
+ "eval_metric": "root_mean_squared_error",
+ "decision": "native",
+ "started_utc": "2026-10-17T19:13:05+00:00",
+ "status": "ok",
+ "fit_seconds": 61.03,
+ "n_train": 3919,
+ "n_test": 979,
+ "model_best": "WeightedEnsemble_L2",
+ "models_trained": [
+  "WeightedEnsemble_L2",
+  "ExtraTreesMSE",
+  "CatBoost",
+  "RandomForestMSE",
+  "XGBoost",
+  "LightGBM",
+  "LightGBMXT",
+  "NeuralNetTorch",
+  "NeuralNetFastAI"
+ ],
+ "metrics": {
+  "mae": 0.41982843829613786,
+  "rmse": 0.5968651954637033,
+  "exact_acc": 0.6874361593462717,
+  "macro_f1": 0.381688506709153,
+  "qwk": 0.6823100067230694,
+  "spearman": 0.7264608338454028
+ },
+ "metrics_all_decisions": {
+  "native": {
+   "mae": 0.41982843829613786,
+   "rmse": 0.5968651954637033,
+   "exact_acc": 0.6874361593462717,
+   "macro_f1": 0.381688506709153,
+   "qwk": 0.6823100067230694,
+   "spearman": 0.7264608338454028
+  }
+ }
+}

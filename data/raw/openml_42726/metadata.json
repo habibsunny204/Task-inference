@@ -1,0 +1,27 @@
+{
+  "dataset_id": 42726,
+  "name": "abalone",
+  "version": 5,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/42726",
+  "original_data_url": null,
+  "paper_url": null,
+  "citation": null,
+  "creator": null,
+  "licence": "Public",
+  "upload_date": "2020-11-17T18:07:53",
+  "default_target": "Class_number_of_rings",
+  "target_column": "Class_number_of_rings",
+  "openml_task_id": "359944",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "Sex",
+    "Length",
+    "Diameter",
+    "Height",
+    "Whole_weight",
+    "Shucked_weight",
+    "Viscera_weight",
+    "Shell_weight"
+  ]
+}

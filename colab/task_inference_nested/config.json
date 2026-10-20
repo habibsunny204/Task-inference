@@ -1,0 +1,20 @@
+{
+ "bundle": "task_inference_nested",
+ "frozen": "2026-10-19",
+ "seed": 0,
+ "n_folds": 5,
+ "dev_folds": [
+  0,
+  1,
+  2
+ ],
+ "eval_folds": [
+  3,
+  4
+ ],
+ "fidelity_folds": [
+  0
+ ],
+ "max_ordinal": 30,
+ "sklearn": "1.9.1"
+}

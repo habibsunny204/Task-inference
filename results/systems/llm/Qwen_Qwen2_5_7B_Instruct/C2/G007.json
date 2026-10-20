@@ -1,0 +1,35 @@
+{
+ "instance_id": "G007",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "e887e071f46a3ea949007345884301f0003a30d043799a62032b8d82d2ba8222",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.4,
+  "p_CONTINUOUS_REGRESSION": 0.3,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target values are whole numbers with a range and mean/median that suggest a continuous scale rather than discrete categories.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0, \"MULTICLASS\": 0, \"ORDINAL\": 0.3, \"COUNT_REGRESSION\": 0.4, \"CONTINUOUS_REGRESSION\": 0.3},\n  \"confidence\": 3,\n  \"evidence\": \"The target values are whole numbers with a range and mean/median that suggest a continuous scale rather than discrete categories.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1919,
+   "tokens_out": 138,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.49
+}

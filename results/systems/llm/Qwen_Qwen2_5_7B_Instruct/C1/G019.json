@@ -1,0 +1,33 @@
+{
+ "instance_id": "G019",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "3058b499d6b39fac1977c34d2089c51525eb929ad1432e496f9f9edd96f26e9a",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has two distinct values (0 and 1) with a clear binary distribution, and all values are whole numbers."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.8, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.1, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has two distinct values (0 and 1) with a clear binary distribution, and all values are whole numbers.\"\n}",
+   "tokens_in": 2181,
+   "tokens_out": 123,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.34
+}

@@ -1,0 +1,36 @@
+{
+ "instance_id": "I011",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "fb17ef10f7cf9e35c985d9e624ca348bf9469f37500c7f52aae15e6f15487d4c",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.15,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.35,
+  "p_CONTINUOUS_REGRESSION": 0.2,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target is an integer with values 0 to 3, which could represent counts, ordinal categories, or classes. The distribution of values and the presence of zeros suggest a count-like interpretation, though other interpretations are plausible."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.15,\n    \"ORDINAL\": 0.2,\n    \"COUNT_REGRESSION\": 0.35,\n    \"CONTINUOUS_REGRESSION\": 0.2\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target is an integer with values 0 to 3, which could represent counts, ordinal categories, or classes. The distribution of values and the presence of zeros suggest a count-like interpretation, though other interpretations are plausible.\"\n}",
+   "tokens_in": 1280,
+   "tokens_out": 172,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 25.1
+}

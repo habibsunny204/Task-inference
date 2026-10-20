@@ -1,0 +1,35 @@
+{
+ "instance_id": "I024",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "2b84186a457d12b40a735aae2f23a1ee19c1a3efd98fe25552b3134da4c51332",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.05,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.25,
+  "p_CONTINUOUS_REGRESSION": 0.45,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column 'Price' is a float64 type with non-integer values, suggesting it represents a continuous quantity (e.g., dollars). The documentation describes it as a 'suggested retail price,' which is a continuous measurement.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.05,\n    \"ORDINAL\": 0.2,\n    \"COUNT_REGRESSION\": 0.25,\n    \"CONTINUOUS_REGRESSION\": 0.45\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column 'Price' is a float64 type with non-integer values, suggesting it represents a continuous quantity (e.g., dollars). The documentation describes it as a 'suggested retail price,' which is a continuous measurement.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1937,
+   "tokens_out": 179,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 31.33
+}

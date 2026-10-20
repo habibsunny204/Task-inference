@@ -1,0 +1,31 @@
+{
+ "instance_id": "I019",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "17f3514a84797233ac1e4103bd7d1c443906f61883532a6ee0af2785a08c9d8a",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.1,\n0.1,\n  \"CONTINUOUS_REGRESSION\": 0.1,\n  \"COUNT_REGRESSION\": 0.1\n},\n  \"confidence\": 4,\n  \"evidence\": \"The target column 'y' has distinct values with counts that include only 0 and 1, suggesting a binary outcome.\",\n  \"evidence_level\": \"E1\"\n}\n```",
+   "tokens_in": 1559,
+   "tokens_out": 187,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.5,\n    \"MULTICLASS\": 0.1,\n0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column 'y' has distinct values with counts, indicating a limited number of categories.\",\n  \"evidence_level\": \"E2\"\n}\n```",
+   "tokens_in": 1575,
+   "tokens_out": 200,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 20.6
+}

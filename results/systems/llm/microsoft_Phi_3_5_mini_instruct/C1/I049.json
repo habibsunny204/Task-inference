@@ -1,0 +1,34 @@
+{
+ "instance_id": "I049",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "fb0bf076bd2f4dd98f9c0b95d35f32251ee92f5ab73090433a4ee3da543c9877",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.5833333333333334,
+  "p_MULTICLASS": 0.08333333333333334,
+  "p_ORDINAL": 0.16666666666666669,
+  "p_COUNT_REGRESSION": 0.08333333333333334,
+  "p_CONTINUOUS_REGRESSION": 0.08333333333333334,
+  "probability_sum_raw": 1.2,
+  "confidence": 5,
+  "evidence": "The target column has only three distinct values with a clear majority of zeros, suggesting a binary outcome."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.2,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column has only three distinct values with a clear majority of zeros, suggesting a binary outcome.\"\n}\n```",
+   "tokens_in": 1374,
+   "tokens_out": 166,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.21
+}

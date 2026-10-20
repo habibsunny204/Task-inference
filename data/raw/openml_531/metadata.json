@@ -1,0 +1,35 @@
+{
+  "dataset_id": 531,
+  "name": "boston",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/531",
+  "original_data_url": null,
+  "paper_url": null,
+  "citation": null,
+  "creator": [
+    "D. and Rubinfeld",
+    "D.L. 'Hedonic"
+  ],
+  "licence": "Public",
+  "upload_date": "2014-09-29T00:08:07",
+  "default_target": "MEDV",
+  "target_column": "MEDV",
+  "openml_task_id": "359950",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "CRIM",
+    "ZN",
+    "INDUS",
+    "CHAS",
+    "NOX",
+    "RM",
+    "AGE",
+    "DIS",
+    "RAD",
+    "TAX",
+    "PTRATIO",
+    "B",
+    "LSTAT"
+  ]
+}
