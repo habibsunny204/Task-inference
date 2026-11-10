@@ -239,6 +239,21 @@ pairs = [("method:forced", b) for b in ["autogluon", "sortinghat:forced", "llm:Q
         [("v2:forced", b) for b in ["autogluon", "llm:Qwen_Qwen3_14B", "llm:microsoft_phi_4"]]
 no_mfeat = [(a, b) for a in ("method:forced", "v2:forced") for b in ("llm:Qwen_Qwen3_14B", "llm:microsoft_phi_4")]
 SHORT = {"method:forced": "TIA-v1", "v2:forced": "TIA-v2"}
+# Holm's step-down correction over the 24 comparisons of the upper two blocks (8 pairs x 3 conditions, all 34 targets).
+# Post hoc (third reading of 2026-11-10): no comparison was designated primary in advance, so the table prints unadjusted
+# p-values and marks with a dagger those that stay below 0.05 after the correction.
+holm_keys = [(a, b, c) for a, b in pairs for c in CONDS]
+holm_raw = np.array([paired.loc[(a, b, c, "all")].mcnemar_p for a, b, c in holm_keys])
+holm_adj = np.empty_like(holm_raw)
+_running = 0.0
+for rank, i in enumerate(np.argsort(holm_raw, kind="stable")):
+    _running = max(_running, min(1.0, (len(holm_raw) - rank) * holm_raw[i]))
+    holm_adj[i] = _running
+HOLM = dict(zip(holm_keys, holm_adj))
+holm_pass = sorted(k for k, v in HOLM.items() if v < 0.05)
+# the text (Metrics and statistics, RQ2) says that only TIA-v1 against SortingHat under C0 survives the correction
+assert len(holm_keys) == 24 and holm_pass == [("method:forced", "sortinghat:forced", "C0")], holm_pass
+assert int((holm_raw < 0.05).sum()) == 10, int((holm_raw < 0.05).sum())  # 10 of 24 unadjusted, as the text says
 
 
 def paired_row(a, b, subset, label=None):
@@ -250,6 +265,8 @@ def paired_row(a, b, subset, label=None):
         if subset == "all":
             assert (int(((g[a] == 1) & (g[b] == 0)).sum()), int(((g[a] == 0) & (g[b] == 1)).sum())) == (r.won, r.lost)
         ps = f"{r.mcnemar_p:.3f}" if r.mcnemar_p >= 0.001 else "$<$0.001"
+        if subset == "all" and HOLM.get((a, b, c), 1.0) < 0.05:
+            ps += "$^\\dagger$"
         diff = f"{r['diff']:+.2f} {{\\scriptsize[{r.newcombe_lo:+.2f}, {r.newcombe_hi:+.2f}]}}".replace("-", "$-$")
         cells.append(f"+{int(r.won)}/$-${int(r.lost)} ({('\\textbf{' + ps + '}') if r.mcnemar_p < 0.05 else ps}) & {diff}")
     return f"\\quad {label or NAMES[b]} & " + " & ".join(cells) + " \\\\"
