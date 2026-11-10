@@ -1,0 +1,43 @@
+{
+ "versions": {
+  "python": "3.13.18",
+  "numpy": "2.1.3",
+  "pandas": "2.3.3",
+  "scipy": "1.16.3",
+  "scikit-learn": "1.6.1"
+ },
+ "smoke": false,
+ "only": null,
+ "n_targets": 319,
+ "fetch": {
+  "mode": "range requests",
+  "bytes_read": 108250633,
+  "files": 319,
+  "seconds": 265.2
+ },
+ "read_ok": 319,
+ "read_failed": [],
+ "features": {
+  "seconds_per_target": 0.017765258920603787,
+  "extra_columns": []
+ },
+ "fidelity": [
+  {
+   "system": "tia_v1",
+   "reference": "rerun:v1",
+   "n": 228,
+   "max_abs_prob_diff": 1.1102230246251565e-16,
+   "argmax_agreement": 1.0
+  },
+  {
+   "system": "tia_v2",
+   "reference": "v2:forced",
+   "n": 228,
+   "max_abs_prob_diff": 6.94777568810423e-13,
+   "argmax_agreement": 1.0
+  }
+ ],
+ "fidelity_passed": true,
+ "seconds": 323.8,
+ "n_predictions": 5742
+}

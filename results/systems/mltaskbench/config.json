@@ -1,0 +1,24 @@
+{
+ "bundle": "task_inference_mltaskbench",
+ "declared": "2026-11-10 (docs/findings_log.md, F39, before any run)",
+ "record": "https://doi.org/10.5281/zenodo.21649607",
+ "zip_url": "https://zenodo.org/records/21649607/files/dataset.zip?download=1",
+ "zip_size": 4189308425,
+ "zip_md5": "md5:b211cab946338517f1b9ecb56f6bfb77",
+ "sklearn": "1.6.1",
+ "seed": 0,
+ "n_folds": 5,
+ "fidelity_tol": 1e-09,
+ "smoke_ids": [
+  "M250",
+  "M014",
+  "M028"
+ ],
+ "store": {
+  "seed": 0,
+  "sample_seed": 1,
+  "max_target_rows": 50000,
+  "sample_rows": 200,
+  "sample_cols": 50
+ }
+}

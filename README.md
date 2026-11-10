@@ -70,13 +70,15 @@ python scripts/policy_regret.py --eval ag_argmax
 python scripts/sensitivity_analyses.py
 python scripts/review_analyses.py
 python scripts/seed_replication.py
+python scripts/score_mltaskbench.py                  # external check on MLTaskBench (predictions from the Kaggle notebook)
 python manuscript/make_tables.py                     # every table and figure data file of the paper
 ```
 
 The outputs equal the files in `results/`; a few probabilities can differ in the last digit (about 1e-16), because the
 order of a sum varies between runs. On Windows consoles, set `PYTHONIOENCODING=utf-8` first.
-TIA-v2, the nested decision fits, the proxy refit, the robustness run, the new fold seeds, `sensitivity_analyses.py`,
-`review_analyses.py` and `seed_replication.py` are post hoc, as labelled in the paper.
+TIA-v2, the nested decision fits, the proxy refit, the robustness run, the new fold seeds, the MLTaskBench check,
+`sensitivity_analyses.py`, `review_analyses.py`, `seed_replication.py` and `score_mltaskbench.py` are post hoc, as labelled in
+the paper.
 
 ## Results
 
@@ -106,9 +108,23 @@ Targets left with a costly choice (relative regret above 10%) among the 56 when 
 
 With larger budgets, asking the least confident targets does better.
 
+External check (post hoc): top-1 accuracy on the 210 MLTaskBench targets whose tables share no records with a training or
+benchmark table (labels binary, multiclass or regression; an ordinal answer counts for multiclass or regression). The
+notebook `colab/task_inference_mltaskbench/mltaskbench_kaggle.ipynb` reads the tables from Zenodo; the target list and the
+overlap decisions are in `data/external/mltaskbench/`.
+
+| system | C0: values | C1: + names | C2: + documentation |
+|---|---|---|---|
+| AutoGluon rule | 0.95 | 0.95 | 0.95 |
+| TIA-v1 | 0.91 | 0.94 | 0.91 |
+| TIA-v2 (post hoc) | 0.94 | 0.94 | 0.94 |
+
+Every paired difference between TIA-v2 and the AutoGluon rule has a 95% interval that includes zero.
+
 ## License
 
-MIT (`LICENSE`) for the code, annotations, labels and results. The source datasets keep their original licences.
+MIT (`LICENSE`) for the code, annotations, labels and results. The source datasets keep their original licences;
+the MLTaskBench metadata in `data/external/mltaskbench/` are CC BY 4.0 (Tsialis et al., doi:10.5281/zenodo.21649607).
 
 ## Citation
 

@@ -928,6 +928,40 @@ write("formulations", "\n".join([
     "\\begin{tabular}{llll}", "\\toprule", "ID & Dataset & Target & Formulations fitted \\\\", "\\midrule",
     *lines, "\\bottomrule", "\\end{tabular}"]))
 
+# Table S: MLTaskBench (post hoc; declared in docs/findings_log.md F39 before any table was read; scripts/score_mltaskbench.py)
+MT_SYS = [("tia_v2", NAMES["v2:forced"]), ("tia_v1", NAMES["method:forced"]), ("rule:autogluon", NAMES["autogluon"]),
+          ("rule:sklearn", NAMES["sklearn"]), ("rule:heuristic_set", NAMES["heuristic_set"]),
+          ("rule:heuristic_names", NAMES["heuristic_names"])]
+mt_acc = pd.read_csv(SENS / "mltaskbench_accuracy.csv").set_index(["set", "variant", "system", "condition"])
+mt_pair = pd.read_csv(SENS / "mltaskbench_paired.csv").set_index(["set", "variant", "system", "versus", "condition"])
+mt_prop = pd.read_csv(SENS / "mltaskbench_proposals.csv").set_index(["set", "system", "condition", "label"])
+MT_N = {s: int(mt_acc.loc[(s, "lenient", "tia_v2", "C0"), "n"]) for s in ("primary", "all")}
+assert MT_N == {"primary": 210, "all": 319}, MT_N  # the counts declared in F39
+lines = []
+for s, v, title in (("primary", "lenient", f"Top-1 accuracy, {MT_N['primary']} targets kept (declared scoring)"),
+                    ("primary", "strict", f"Top-1 accuracy, {MT_N['primary']} targets kept, \\Ord\\ counted wrong"),
+                    ("all", "lenient", f"Top-1 accuracy, all {MT_N['all']} targets (declared scoring)")):
+    lines.append(f"\\addlinespace\\multicolumn{{4}}{{l}}{{\\emph{{{title}}}}} \\\\")
+    for sysname, lab in MT_SYS:
+        lines.append(f"\\quad {lab} & " + " & ".join(
+            f"{mt_acc.loc[(s, v, sysname, c), 'accuracy']:.2f} [{mt_acc.loc[(s, v, sysname, c), 'ci_lo']:.2f}, "
+            f"{mt_acc.loc[(s, v, sysname, c), 'ci_hi']:.2f}]" for c in CONDS) + " \\\\")
+lines.append(f"\\addlinespace\\multicolumn{{4}}{{l}}{{\\emph{{Paired difference from the AutoGluon rule, {MT_N['primary']} targets "
+             f"(McNemar $p$)}}}} \\\\")
+for v, vlab in (("lenient", "declared scoring"), ("strict", "\\Ord\\ wrong")):
+    for sysname in ("tia_v2", "tia_v1"):
+        lines.append(f"\\quad {SYS_LAB['v2:forced' if sysname == 'tia_v2' else 'method:forced']}, {vlab} & " + " & ".join(
+            f"{diff_str(r['diff'])} [{diff_str(r.ci_lo)}, {diff_str(r.ci_hi)}] "
+            f"({'$<$0.01' if r.mcnemar_p < 0.01 else f'{r.mcnemar_p:.2f}'})"
+            for r in (mt_pair.loc[("primary", v, sysname, "rule:autogluon", c)] for c in CONDS)) + " \\\\")
+lines.append(f"\\addlinespace\\multicolumn{{4}}{{l}}{{\\emph{{TIA-v2 top-1 \\Ord\\ or \\Cnt, {MT_N['primary']} targets kept}}}} \\\\")
+for lab in ("multiclass", "regression"):
+    lines.append(f"\\quad Labelled {lab} & " + " & ".join(
+        f"{int(r.top1_ORDINAL)} + {int(r.top1_COUNT_REGRESSION)} of {int(r.n)}"
+        for r in (mt_prop.loc[("primary", "tia_v2", c, lab)] for c in CONDS)) + " \\\\")
+write("mltaskbench", "\n".join([
+    "\\begin{tabular}{llll}", "\\toprule", " & C0 & C1 & C2 \\\\", "\\midrule", *lines, "\\bottomrule", "\\end{tabular}"]))
+
 # Table (main text): every robustness check in one table
 paired_all = pd.read_csv(SENS / "paired.csv").set_index(["system", "other", "condition", "subset"])
 grid = pd.read_csv(SENS / "ask_grid.csv")
@@ -1001,7 +1035,17 @@ ROB = [
      f"at six questions, ER fewer in {', '.join(str(int((seed6_new[c] > 0).sum())) for c in CONDS)} of {len(seed6_new['C0'])} seeds"
      f" (C0, C1, C2), more in none"),
     ("Decision-fit time per target",f"median {times.decision_fit_seconds.median():.0f}~s, largest {times.decision_fit_seconds.max():.0f}~s"),
+    (f"MLTaskBench, {MT_N['primary']} independent targets (three coarse labels)",
+     "top-1 TIA-v2 " + ", ".join(f"{mt_acc.loc[('primary', 'lenient', 'tia_v2', c), 'accuracy']:.2f}" for c in CONDS)
+     + f" against {mt_acc.loc[('primary', 'lenient', 'rule:autogluon', 'C0'), 'accuracy']:.2f} for the AutoGluon rule"
+     " (C0, C1, C2), paired intervals including zero; with \\Ord\\ counted wrong, "
+     + " to ".join(f"{-mt_pair.loc[('primary', 'strict', 'tia_v2', 'rule:autogluon', c), 'diff'] * 100:.0f}"
+                   for c in ('C1', 'C0')) + " points lower"),
 ]
+assert all(mt_pair.loc[("primary", "lenient", "tia_v2", "rule:autogluon", c), "ci_lo"] < 0
+           < mt_pair.loc[("primary", "lenient", "tia_v2", "rule:autogluon", c), "ci_hi"] for c in CONDS), \
+    "the MLTaskBench row says every TIA-v2 interval includes zero"
+assert mt_acc.xs(("primary", "lenient", "rule:autogluon"), level=(0, 1, 2)).accuracy.nunique() == 1, "the AutoGluon rule ignores the condition"
 write("robustness", "\n".join([
     "\\begin{tabularx}{\\linewidth}{@{}>{\\raggedright\\arraybackslash}p{6.4cm}>{\\raggedright\\arraybackslash}X@{}}", "\\toprule",
     "Check & Result \\\\", "\\midrule", *[f"{a} & {b} \\\\" for a, b in ROB], "\\bottomrule", "\\end{tabularx}"]))
