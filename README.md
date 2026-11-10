@@ -51,6 +51,7 @@ controlled transformations.
 | gradient-boosting fit of every task formulation | `scripts/run_downstream_ambiguity.py` | `results/downstream/hgb_fits/` |
 | AutoGluon forced into each task | `colab/task_inference_e2e/` | `results/downstream/autogluon_fits/` |
 | nested decision fits, proxy refit, robustness of TIA | `colab/task_inference_nested/`, `colab/task_inference_proxy/`, `colab/task_inference_robustness/` | `results/downstream/`, `results/systems/tia_robustness/` |
+| nested evaluation on five new fold seeds (Colab or Kaggle) | `colab/task_inference_seeds/` | `results/downstream/hgb_seed_fits/` |
 
 ## Evaluation
 
@@ -67,13 +68,15 @@ python scripts/policy_regret.py --eval hgb           # downstream regret and ask
 python scripts/policy_regret.py --eval ag            # the same, AutoGluon fits
 python scripts/policy_regret.py --eval ag_argmax
 python scripts/sensitivity_analyses.py
+python scripts/review_analyses.py
+python scripts/seed_replication.py
 python manuscript/make_tables.py                     # every table and figure data file of the paper
 ```
 
 The outputs equal the files in `results/`; a few probabilities can differ in the last digit (about 1e-16), because the
 order of a sum varies between runs. On Windows consoles, set `PYTHONIOENCODING=utf-8` first.
-TIA-v2, the nested decision fits, the proxy refit, the robustness run and `sensitivity_analyses.py` are post hoc, as
-labelled in the paper.
+TIA-v2, the nested decision fits, the proxy refit, the robustness run, the new fold seeds, `sensitivity_analyses.py`,
+`review_analyses.py` and `seed_replication.py` are post hoc, as labelled in the paper.
 
 ## Results
 

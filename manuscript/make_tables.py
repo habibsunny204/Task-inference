@@ -5,7 +5,8 @@
 Inputs: benchmark/reference_*.csv, annotation/agreement/, results/scores/, results/downstream/, results/sensitivity/,
         results/systems/tia_v2/, colab store manifest.
 Outputs: manuscript/tables/*.tex, the figure data manuscript/figures/*.dat, and manuscript/figures/figure_data.tex
-(the numbers that the TikZ figures print, as macros). The figure layouts are figures/*.tex without the _data suffix.
+(the numbers that the figures print, as macros). The figure layouts are figures/*.tex without the _data suffix;
+manuscript/make_figures.py renders them to the image files the manuscript includes.
 """
 import sys
 from math import comb
@@ -98,14 +99,16 @@ man = pd.read_csv(ROOT / "colab/task_inference_sortinghat/store/manifest.csv").s
 
 # ---------------------------------------------------------------------------------------------- Table: benchmark
 def source_group(s):
+    # rows follow the selection strata of the Benchmark section: a target registered both ways (multitype) is in the
+    # conflicting-registrations row even when it is also in a classification suite (isolet: "OpenML-CC18+OpenML-multitype")
+    if "multitype" in s:
+        return "OpenML, conflicting registrations"
     if s.startswith("TOC-UCO (originally"):
         return "TOC-UCO, originally ordinal"
     if s.startswith("TOC-UCO (discretised"):
         return "TOC-UCO, discretised regression"
     if "CTR23" in s or "regression" in s:
         return "OpenML-CTR23 / AMLB regression"
-    if s == "OpenML-multitype":
-        return "OpenML, conflicting registrations"
     return "OpenML-CC18 / AMLB classification"
 
 
@@ -366,8 +369,25 @@ for d, _ in evals:
         share[(d, s, c)] = (g.regret_if_act > 0.10).mean()
         med[(d, s, c)] = g.regret_if_act.median()
 n_ds = int(L[(L.system == "autogluon") & (L.condition == "C0")].shape[0])
-cols = {(d, c): bold_max([share[(d, s, c)] for s in ds_sys], higher=False) for d, _ in evals for c in CONDS}
-lines = [f"{NAMES[s]} & " + " & ".join(cols[(d, c)][i] for d, _ in evals for c in CONDS) + " \\\\" for i, s in enumerate(ds_sys)]
+bayes = pd.read_csv(ROOT / "results/sensitivity/ask_bayes.csv")  # the Bayes action (review_analyses.py, post hoc)
+
+
+def bayes_n(system, ev, c, policy="bayes_er", k=0, measure="rel"):
+    g = bayes[(bayes.system == system) & (bayes["eval"] == ev) & (bayes.condition == c) & (bayes.measure == measure)
+              & (bayes.policy == policy) & (bayes.k == k)]
+    assert len(g) == 1, (system, ev, c, policy, k, measure)
+    return int(g.costly_left.iloc[0])
+
+
+DS_ROWS = [(NAMES[s], {(d, c): int(round(share[(d, s, c)] * n_ds)) for d, _ in evals for c in CONDS}) for s in ds_sys]
+for s, lab in (("method:forced", "TIA-v1, Bayes action (post hoc)"), ("v2:forced", "TIA-v2, Bayes action (post hoc)")):
+    DS_ROWS.append((lab, {(d, c): bayes_n(s, d.removeprefix("policy_"), c) for d, _ in evals for c in CONDS}))
+    # the always-act count of the same file must equal the always-act count of the policy files
+    for d, _ in evals:
+        for c in CONDS:
+            assert bayes_n(s, d.removeprefix("policy_"), c, "act_conf") == int(round(share[(d, s, c)] * n_ds))
+cols = {(d, c): bold_max([r[(d, c)] for _, r in DS_ROWS], higher=False, nd=0) for d, _ in evals for c in CONDS}
+lines = [f"{lab} & " + " & ".join(cols[(d, c)][i] for d, _ in evals for c in CONDS) + " \\\\" for i, (lab, _) in enumerate(DS_ROWS)]
 write("downstream", "\n".join([
     "\\begin{tabular}{lrrrrrrrrr}", "\\toprule",
     " & \\multicolumn{3}{c}{HGB} & \\multicolumn{3}{c}{AutoGluon (median)} & \\multicolumn{3}{c}{AutoGluon (argmax)} \\\\",
@@ -382,7 +402,7 @@ for d, lab in evals:
     for c in CONDS:
         g = cur[cur.condition == c].pivot_table(index="ask_rate", columns="rule", values="share_regret_gt_10pct")
         rates = g.index[:4]
-        cells = " & ".join(f"{g.at[r, 'confidence']:.3f} & {g.at[r, 'expected_regret']:.3f}" for r in rates)
+        cells = " & ".join(f"{g.at[r, 'confidence'] * 56:.0f} & {g.at[r, 'expected_regret'] * 56:.0f}" for r in rates)
         lines.append(f"{lab} & {c} & {cells} \\\\")
         out = g.reset_index().rename(columns={"expected_regret": "er", "confidence": "conf"})
         out[["ask_rate", "conf", "er"]].to_csv(FIG / f"ask_{d.removeprefix('policy_')}_{c}.dat",
@@ -455,6 +475,14 @@ MEAS = [("rel", 0.05, "relative, above 5\\%", "expected_regret"),
         ("norm", 0.10, "normalised, above 10\\%", "expected_regret"),
         ("norm", 0.10, "\\quad ER from normalised estimates", "expected_regret_norm")]
 K_ASK = 6
+
+
+def bayes_cells(ev, measure, c, system="v2:forced"):
+    """none: act on a_B and never ask; conf.: a_B and ask the least confident; ER: a_B and ask by its expected regret."""
+    none, conf, er = (bayes_n(system, ev, c, p, k, measure) for p, k in (("bayes_er", 0), ("bayes_conf", K_ASK), ("bayes_er", K_ASK)))
+    return [str(none), str(conf), f"\\textbf{{{er}}}" if er < conf else str(er)]
+
+
 # B2 (post hoc): ER from the AutoGluon-like proxy, only where the proxy's ordinal decision rule matches the evaluation
 PROXY_OF = {"ag": "proxy_median", "ag_argmax": "proxy_argmax"}
 lines = []
@@ -474,6 +502,9 @@ for d, _ in evals:
             er = int(g[(g.k == K_ASK) & (g.rule == er_rule)].costly_left.iloc[0])
             cells += [str(none), str(conf), f"\\textbf{{{er}}}" if er < conf else str(er)]
         lines.append(f"\\quad {lab} & " + " & ".join(cells) + " \\\\")
+    for meas, lab in (("rel", "\\quad Bayes action $a_B$, relative above 10\\% (post hoc)"),
+                      ("norm", "\\quad Bayes action $a_B$, normalised above 10\\% (post hoc)")):
+        lines.append(f"{lab} & " + " & ".join(x for c in CONDS for x in bayes_cells(ev, meas, c)) + " \\\\")
     if ev != "ag_argmax":  # the primary cell must match the ask-curve table (share of 56 targets)
         cur = by_decide(pd.read_csv(ROOT / "results" / "downstream" / d / "ask_curves.csv"))
         for c in CONDS:
@@ -513,6 +544,24 @@ def ask_cells(a, ev, m, rule, c, k=K_ASK, tau=0.10):
     return [str(none), str(conf), f"\\textbf{{{er}}}" if er < conf else str(er)]
 
 
+unc = pd.read_csv(SENS / "ask_uncertainty.csv")
+
+
+def int_str(x):
+    return f"{int(round(x)):+d}".replace("-", "$-$")
+
+
+def unc_row(ev, c, stat="d6", system="v2:forced", unit="target"):
+    r = unc[(unc.system == system) & (unc["eval"] == ev) & (unc.condition == c) & (unc.stat == stat) & (unc.unit == unit)]
+    assert len(r) == 1, (ev, c, stat, system, unit)
+    return r.iloc[0]
+
+
+def unc_cell(ev, c, stat="d6", system="v2:forced", unit="target"):
+    r = unc_row(ev, c, stat, system, unit)
+    return f"\\multicolumn{{3}}{{c}}{{{int_str(r.point)} [{int_str(r.ci_lo)}, {int_str(r.ci_hi)}]}}"
+
+
 MEAS_MAIN = [("rel", "expected_regret", "Relative regret (fixed in advance)"),
              ("rel_clip", "expected_regret_clip", "Relative, negative regrets set to 0"),
              ("norm", "expected_regret", "Normalised, ER from relative estimates"),
@@ -522,6 +571,9 @@ for ev in ("hgb", "ag"):
     lines.append(f"\\addlinespace\\multicolumn{{10}}{{l}}{{\\emph{{{EVN['policy_' + ev]}}}}} \\\\")
     for m, rule, name in MEAS_MAIN:
         lines.append(f"\\quad {name} & " + " & ".join(x for c in CONDS for x in ask_cells(ask, ev, m, rule, c)) + " \\\\")
+    lines.append("\\quad Bayes action $a_B$ (relative) & " + " & ".join(x for c in CONDS for x in bayes_cells(ev, "rel", c)) + " \\\\")
+    lines.append("\\quad Bayes action $a_B$ (normalised) & " + " & ".join(x for c in CONDS for x in bayes_cells(ev, "norm", c)) + " \\\\")
+    lines.append("\\quad conf.\\ $-$ ER, relative [95\\% CI] & " + " & ".join(unc_cell(ev, c) for c in CONDS) + " \\\\")
 write("ask_measures", "\n".join([
     "\\begin{tabular}{lrrrrrrrrr}", "\\toprule",
     " & \\multicolumn{3}{c}{C0} & \\multicolumn{3}{c}{C1} & \\multicolumn{3}{c}{C2} \\\\",
@@ -667,13 +719,14 @@ for key, (iid, a_exp, er_asks) in EX.items():
     bars = []
     for j in np.argsort(-r.p):
         t = pr.TASKS[j]
-        if round(r.p[j], 2) >= 0.01:
-            rh = "" if t == r.a else (f"{Rd[iid].at[r.a, t]:+.2f}" if Rd[iid][t].notna().any() else "\\text{n/a}")
-            bars.append(f"\\exbar{{{len(bars)}}}{{{TN[t]}}}{{{r.p[j]:.2f}}}{{{rh}}}")
+        if r.p[j] >= 0.005:  # the caption says tasks below 0.005 are not drawn
+            # three decimals, so that ER can be recomputed from the panel (review of 2026-11-10)
+            rh = "" if t == r.a else (f"{Rd[iid].at[r.a, t]:+.3f}" if Rd[iid][t].notna().any() else "\\text{n/a}")
+            bars.append(f"\\exbar{{{len(bars)}}}{{{TN[t]}}}{{{r.p[j]:.3f}}}{{{rh}}}")
     figmac(f"figEx{key}Bars", "".join(bars))
     figmac(f"figEx{key}Chosen", TN[r.a])
-    figmac(f"figEx{key}Conf", f"{r.conf:.2f}")
-    figmac(f"figEx{key}ER", f"{r.er:.2f}")
+    figmac(f"figEx{key}Conf", f"{r.conf:.3f}")
+    figmac(f"figEx{key}ER", f"{r.er:.3f}")
     figmac(f"figEx{key}ERrank", nth(int(r.er_rank)))
     figmac(f"figEx{key}Confrank", nth(int(r.conf_rank)))
     figmac(f"figEx{key}Realized", f"{r.act:.2f}" if abs(r.act) < 1 else f"{r.act:.1f}")
@@ -689,6 +742,269 @@ figmac("figExCarErrIntended", "--".join(f"{x * 100:.1f}" for x in sorted({car.at
 aba = Ls["I014"]
 figmac("figExAbaMaeChosen", f"{aba.at['CONTINUOUS_REGRESSION', 'mae']:.2f}")
 figmac("figExAbaMaeAlt", f"{aba.at['COUNT_REGRESSION', 'mae']:.2f}")
+
+
+# ---------------------------------------------------------------------------------------------- Frontiers review (post hoc): new tables
+# Every number below comes from results/sensitivity/ (scripts/review_analyses.py and sensitivity_analyses.py).
+SYS_LAB = {"v2:forced": "TIA-v2", "method:forced": "TIA-v1"}
+EV_LAB = {"hgb": "HGB", "ag": "AutoGluon (median)", "ag_argmax": "AutoGluon (argmax)"}
+
+
+def diff_str(x, nd=2):
+    return f"{x:+.{nd}f}".replace("-", "$-$")
+
+
+# Table S: uncertainty of confidence minus ER
+lines = []
+for system in ("v2:forced", "method:forced"):
+    for ev in ("hgb", "ag"):
+        lines.append(f"\\addlinespace\\multicolumn{{7}}{{l}}{{\\emph{{{SYS_LAB[system]}, {EV_LAB[ev]}}}}} \\\\")
+        for c in CONDS:
+            for unit in ("target", "family"):
+                cells = [f"{int_str(unc_row(ev, c, s, system, unit).point)} [{int_str(unc_row(ev, c, s, system, unit).ci_lo)}, "
+                         f"{int_str(unc_row(ev, c, s, system, unit).ci_hi)}]" for s in ("d6", "d11", "d17")]
+                r = unc_row(ev, c, "auc", system, unit)
+                cells.append(f"{diff_str(r.point)} [{diff_str(r.ci_lo)}, {diff_str(r.ci_hi)}]")
+                r = unc_row(ev, c, "norm6", system, unit)
+                cells.append(f"{diff_str(r.point, 3)} [{diff_str(r.ci_lo, 3)}, {diff_str(r.ci_hi, 3)}]")
+                lines.append(f"\\quad {c} & {unit} & " + " & ".join(cells) + " \\\\")
+write("ask_uncertainty", "\n".join([
+    "\\begin{tabular}{lllllll}", "\\toprule",
+    " & Resampling unit & 6 questions & 11 questions & 17 questions & mean over $k=0$--17 & mean norm.\\ regret, 6 questions \\\\", "\\midrule", *lines,
+    "\\bottomrule", "\\end{tabular}"]))
+
+# Table S: TIA-v1 next to TIA-v2 for both ask rules at 6, 11 and 17 questions
+lines = []
+for system in ("method:forced", "v2:forced"):
+    for ev in ("hgb", "ag"):
+        cells = []
+        for c in CONDS:
+            cells.append(str(bayes_n(system, ev, c, "act_conf", 0)))
+            for k in (6, 11, 17):
+                cells += [str(bayes_n(system, ev, c, "act_conf", k)), str(bayes_n(system, ev, c, "act_er", k))]
+        lines.append(f"{SYS_LAB[system]}, {EV_LAB[ev]} & " + " & ".join(cells) + " \\\\")
+write("ask_v1_v2", "\n".join([
+    "\\begin{tabular}{l" + "r" * 21 + "}", "\\toprule",
+    " & \\multicolumn{7}{c}{C0} & \\multicolumn{7}{c}{C1} & \\multicolumn{7}{c}{C2} \\\\",
+    "\\cmidrule(lr){2-8}\\cmidrule(lr){9-15}\\cmidrule(lr){16-22}",
+    " & none & \\multicolumn{2}{c}{6} & \\multicolumn{2}{c}{11} & \\multicolumn{2}{c}{17} & none & \\multicolumn{2}{c}{6} & "
+    "\\multicolumn{2}{c}{11} & \\multicolumn{2}{c}{17} & none & \\multicolumn{2}{c}{6} & \\multicolumn{2}{c}{11} & \\multicolumn{2}{c}{17} \\\\",
+    " & & conf. & ER & conf. & ER & conf. & ER & & conf. & ER & conf. & ER & conf. & ER & & conf. & ER & conf. & ER & conf. & ER \\\\",
+    "\\midrule", *lines, "\\bottomrule", "\\end{tabular}"]))
+
+# Table S: which targets drive each count (TIA-v2)
+per = pd.read_csv(SENS / "ask_per_target.csv")
+per = per[per["eval"].isin(["hgb", "ag"])]
+TN2 = {"BINARY": "\\B", "MULTICLASS": "\\M", "ORDINAL": "\\Ord", "COUNT_REGRESSION": "\\Cnt", "CONTINUOUS_REGRESSION": "\\Cont"}
+lines = []
+for ev, gv in per.groupby("eval", sort=False):
+    lines.append(f"\\addlinespace\\multicolumn{{9}}{{l}}{{\\emph{{{EV_LAB[ev]}}}}} \\\\")
+    for r in gv.itertuples():
+        tar = str(r.target).replace("_", "\\_")
+        dat = str(r.dataset).replace("_", "\\_")
+        rg = f"{r.regret_rel:.2f}" if r.regret_rel < 10 else f"{r.regret_rel:.1f}"
+        lines.append(f"{r.condition} & {dat} & {TN2[r.chosen]} & {'|'.join(TN2[t] for t in r.set_C2.split('|'))} & {r.conf:.2f} & "
+                     f"{diff_str(r.er)} & {rg} & {r.conf_rank}{'*' if r.asked_conf_k6 else ''} & {r.er_rank}{'*' if r.asked_er_k6 else ''} \\\\")
+write("ask_per_target", "\n".join([
+    "\\begin{tabular}{llllrrrrr}", "\\toprule",
+    "Cond. & Target & Acts on & Human set & conf. & ER & regret & conf.\\ rank & ER rank \\\\", "\\midrule", *lines,
+    "\\bottomrule", "\\end{tabular}"]))
+
+# Table S: fold rotation
+rot = pd.read_csv(SENS / "ask_rotation.csv", dtype={"decision_folds": str, "eval_folds": str})
+rot_ask = rot[rot.k == 6]
+lines = []
+for system in ("v2:forced", "method:forced"):
+    for c in CONDS:
+        g = rot_ask[(rot_ask.system == system) & (rot_ask.condition == c)]
+        lines.append(f"{SYS_LAB[system]} & {c} & {g.conf.mean():.1f} ({g.conf.min()}--{g.conf.max()}) & "
+                     f"{g.er.mean():.1f} ({g.er.min()}--{g.er.max()}) & {int((g.er < g.conf).sum())} & "
+                     f"{int((g.er == g.conf).sum())} & {int((g.er > g.conf).sum())} \\\\")
+write("ask_rotation", "\n".join([
+    "\\begin{tabular}{llrrrrr}", "\\toprule",
+    "System & Cond. & conf.\\ mean (range) & ER mean (range) & ER fewer & tie & ER more \\\\", "\\midrule", *lines,
+    "\\bottomrule", "\\end{tabular}"]))
+
+# Table S: new fold seeds (post hoc; declared in docs/findings_log.md F37, results F38). The nested gradient-boosting evaluation
+# repeated on fold seeds 1-5 by scripts/seed_replication.py; seed 0 is the assignment of the main text.
+seeds = pd.read_csv(SENS / "ask_seeds_curves.csv")
+seeds = seeds[(seeds.measure == "rel") & seeds.policy.isin(["act_conf", "act_er"])]
+seeds = seeds.pivot_table(index=["system", "condition", "seed", "k"], columns="policy", values="costly_left").reset_index()
+SEED_IDS = sorted(seeds.seed.unique())
+assert SEED_IDS == [0, 1, 2, 3, 4, 5], SEED_IDS
+seeds_summ = pd.read_csv(SENS / "ask_seeds_summary.csv").set_index(["system", "condition", "measure", "summary"])
+
+
+def seed_values(system, c, budget):
+    """Costly choices left (conf., ER) per seed after `budget` questions, or their mean over k = 0..17 ("auc")."""
+    g = seeds[(seeds.system == system) & (seeds.condition == c)]
+    if budget == "auc":
+        return g[g.k <= 17].groupby("seed")[["act_conf", "act_er"]].mean()
+    return g[g.k == budget].set_index("seed")[["act_conf", "act_er"]]
+
+
+def signed(x, nd):
+    return f"{0:.{nd}f}" if abs(x) < 1e-12 else diff_str(x, nd)
+
+
+lines = []
+for system in ("v2:forced", "method:forced"):
+    lines.append(f"\\addlinespace\\multicolumn{{13}}{{l}}{{\\emph{{{SYS_LAB[system]}}}}} \\\\")
+    for c in CONDS:
+        for budget, lab in ((6, "6"), (11, "11"), (17, "17"), ("auc", "mean 0--17")):
+            g = seed_values(system, c, budget)
+            d = g.act_conf - g.act_er  # positive: the ER rule leaves fewer costly choices
+            new = d[d.index != 0]
+            key = "mean_k0_17" if budget == "auc" else f"k={budget}"
+            assert np.isclose(new.mean(), seeds_summ.loc[(system, c, "rel", key), "mean_diff"]), (system, c, key)
+            nd = 2 if budget == "auc" else 0
+            cells = [f"{r.act_conf:.{nd}f}/{r.act_er:.{nd}f}" for r in g.itertuples()]
+            lines.append(f"{c if budget == 6 else ''} & {lab} & " + " & ".join(cells)
+                         + f" & {signed(new.mean(), 2 if budget == 'auc' else 1)} & {signed(new.min(), nd)} to {signed(new.max(), nd)}"
+                         + f" & {int((new > 0).sum())} & {int((new == 0).sum())} & {int((new < 0).sum())} \\\\")
+write("ask_seeds", "\n".join([
+    "\\begin{tabular}{llrrrrrrrrrrr}", "\\toprule",
+    " & & \\multicolumn{6}{c}{Fold seed (conf./ER)} & \\multicolumn{5}{c}{Seeds 1--5} \\\\",
+    "\\cmidrule(lr){3-8}\\cmidrule(lr){9-13}",
+    "Cond. & Questions & 0 & 1 & 2 & 3 & 4 & 5 & mean diff. & range & ER fewer & tie & ER more \\\\", "\\midrule", *lines,
+    "\\bottomrule", "\\end{tabular}"]))
+
+# Tables S: intervals for the probability metrics, and the paired Brier differences
+im = pd.read_csv(SENS / "interval_metrics.csv").set_index(["system", "condition", "metric"])
+lines = []
+IV_SYS = [(s, ("auroc", "brier")) for s in prob_sys] + [(s, ("exact_set", "jaccard")) for s in ask_sys]
+for metric, title in (("auroc", "AUROC for ambiguity ($n=56$)"), ("brier", "Brier score ($n=34$)"), ("exact_set", "Exact set match ($n=56$)"),
+                      ("jaccard", "Jaccard ($n=56$)")):
+    lines.append(f"\\addlinespace\\multicolumn{{4}}{{l}}{{\\emph{{{title}}}}} \\\\")
+    for s, ms in IV_SYS:
+        if metric in ms:
+            lines.append(f"\\quad {NAMES[s]} & " + " & ".join(
+                f"{im.loc[(s, c, metric), 'point']:.2f} [{im.loc[(s, c, metric), 'ci_lo']:.2f}, {im.loc[(s, c, metric), 'ci_hi']:.2f}]"
+                for c in CONDS) + " \\\\")
+write("interval_metrics", "\n".join([
+    "\\begin{tabular}{llll}", "\\toprule", "System & C0 & C1 & C2 \\\\", "\\midrule", *lines, "\\bottomrule", "\\end{tabular}"]))
+
+bp = pd.read_csv(SENS / "brier_paired.csv").set_index(["other", "condition"])
+lines = [f"{NAMES[o]} & " + " & ".join(
+    f"{diff_str(bp.loc[(o, c), 'diff_v2_minus_other'])} [{diff_str(bp.loc[(o, c), 'ci_lo'])}, {diff_str(bp.loc[(o, c), 'ci_hi'])}]"
+    for c in CONDS) + " \\\\" for o in ("llm:microsoft_Phi_3_5_mini_instruct", "llm:Qwen_Qwen2_5_7B_Instruct", "llm:Qwen_Qwen3_14B",
+                                           "llm:microsoft_phi_4", "ml:rf", "ml:logreg")]
+write("brier_paired", "\n".join([
+    "\\begin{tabular}{llll}", "\\toprule", "TIA-v2 minus & C0 & C1 & C2 \\\\", "\\midrule", *lines, "\\bottomrule", "\\end{tabular}"]))
+
+# Table S: imperfect users and favourite weights (six questions, TIA-v2)
+ny = pd.read_csv(SENS / "noisy_user.csv")
+fw = pd.read_csv(SENS / "favourite_weights.csv")
+USERS = [("wrong_p0.0", "Oracle (as in the main text)"), ("wrong_p0.1", "Wrong answer with $p=0.1$"), ("wrong_p0.2", "Wrong answer with $p=0.2$"),
+         ("wrong_p0.3", "Wrong answer with $p=0.3$"), ("favourite", "Answers with the named favourite")]
+lines = []
+for ev in ("hgb", "ag"):
+    lines.append(f"\\addlinespace\\multicolumn{{7}}{{l}}{{\\emph{{{EV_LAB[ev]}}}}} \\\\")
+    for u, lab in USERS:
+        cells = []
+        for c in CONDS:
+            for rule in ("confidence", "expected_regret"):
+                v = ny[(ny["eval"] == ev) & (ny.condition == c) & (ny.rule == rule) & (ny.user == u)].costly_left.iloc[0]
+                cells.append(f"{v:.1f}")
+        lines.append(f"\\quad {lab} & " + " & ".join(cells) + " \\\\")
+    cells = []
+    for c in CONDS:
+        for rule in ("confidence", "expected_regret"):
+            v = fw[(fw["eval"] == ev) & (fw.condition == c) & (fw.policy == rule) & (fw.weights == "favourite_2_3")].costly.iloc[0]
+            cells.append(f"{v:.1f}")
+    lines.append("\\quad Oracle, favourite weighted 2/3 & " + " & ".join(cells) + " \\\\")
+write("ask_users", "\n".join([
+    "\\begin{tabular}{lrrrrrr}", "\\toprule",
+    " & \\multicolumn{2}{c}{C0} & \\multicolumn{2}{c}{C1} & \\multicolumn{2}{c}{C2} \\\\",
+    "\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}\\cmidrule(lr){6-7}",
+    "Simulated user & conf. & ER & conf. & ER & conf. & ER \\\\", "\\midrule", *lines, "\\bottomrule", "\\end{tabular}"]))
+
+# Table S: formulations per target
+fm = pd.read_csv(SENS / "formulations.csv")
+FT = {"": "one (the task itself)", "MULTICLASS|ORDINAL|COUNT_REGRESSION|CONTINUOUS_REGRESSION": "\\M, \\Ord, \\Cnt, \\Cont"}
+lines = [f"{r.instance_id} & {str(r.dataset).replace('_', chr(92) + '_')} & {str(r.target).replace('_', chr(92) + '_')} & "
+         f"{FT['' if pd.isna(r.formulations) else r.formulations]} \\\\" for r in fm.itertuples()]
+write("formulations", "\n".join([
+    "\\begin{tabular}{llll}", "\\toprule", "ID & Dataset & Target & Formulations fitted \\\\", "\\midrule",
+    *lines, "\\bottomrule", "\\end{tabular}"]))
+
+# Table (main text): every robustness check in one table
+paired_all = pd.read_csv(SENS / "paired.csv").set_index(["system", "other", "condition", "subset"])
+grid = pd.read_csv(SENS / "ask_grid.csv")
+times = pd.read_csv(SENS / "decision_fit_time.csv")
+oof = pd.read_csv(SENS / "robustness_oof_per_class.csv")
+
+
+def pr_counts(ev, c, d="nested"):
+    g = ask_all[(ask_all.decide == d) & (ask_all["eval"] == ev) & (ask_all.measure == "rel") & np.isclose(ask_all.tau, 0.10)
+                & (ask_all.condition == c) & (ask_all.k == K_ASK)]
+    return (int(g[g.rule == "confidence"].costly_left.iloc[0]), int(g[g.rule == "expected_regret"].costly_left.iloc[0]))
+
+
+p04 = paired_all.loc[("method:forced", "llm:microsoft_phi_4", "C0", "all")]
+p04n = paired_all.loc[("method:forced", "llm:microsoft_phi_4", "C0", "no_mfeat")]
+hold = {c: (s1[(s1.system == "method:forced") & (s1.condition == c) & s1.instance_id.isin(toc)].top1.mean(),
+            s1[(s1.system == "heldout:no_tocuco") & (s1.condition == c) & s1.instance_id.isin(toc)].top1.mean()) for c in CONDS}
+same_v1 = {}
+for c in CONDS:
+    a = s1[(s1.system == "rerun:v1") & (s1.condition == c)].set_index("instance_id").most_likely_task
+    b = s1[(s1.system == "nosig:v1") & (s1.condition == c)].set_index("instance_id").most_likely_task
+    same_v1[c] = int((a.reindex(b.index) != b).sum())
+disc = s1[s1.instance_id.map(origin).str.contains("discretised", na=False)]
+binned = {c: int(disc[(disc.system == "heldout:no_bin") & (disc.condition == c)].top1.sum()) for c in CONDS}
+oof_cnt = oof[(oof.part == "natural") & (oof.task == "COUNT_REGRESSION") & (oof.system == "rerun:v1") & (oof.condition == "C2")].iloc[0]
+never_worse = {}
+for ev in ("hgb", "ag"):
+    g = grid[(grid["eval"] == ev) & (grid.decide == "nested")].pivot_table(index=["condition", "tau"], columns="rule", values="costly_left").reset_index()
+    never_worse[ev] = int((g.expected_regret > g.confidence).sum())
+rot6 = rot_ask[rot_ask.system == "v2:forced"]
+clip_same = True
+for ev in ("hgb", "ag"):
+    for c in CONDS:
+        for k in (0, K_ASK):
+            for r in ("confidence", "expected_regret"):
+                a = ask_all[(ask_all.decide == "nested") & (ask_all["eval"] == ev) & (ask_all.condition == c) & (ask_all.k == k)
+                            & (ask_all.rule == r) & np.isclose(ask_all.tau, 0.10)]
+                clip_same = clip_same and int(a[a.measure == "rel"].costly_left.iloc[0]) == int(a[a.measure == "rel_clip"].costly_left.iloc[0])
+fw_same = all(
+    int(fw[(fw["eval"] == ev) & (fw.condition == c) & (fw.policy == p) & (fw.weights == "uniform")].costly.iloc[0])
+    == int(fw[(fw["eval"] == ev) & (fw.condition == c) & (fw.policy == p) & (fw.weights == "favourite_2_3")].costly.iloc[0])
+    for ev in ("hgb", "ag") for c in CONDS for p in ("never ask", "confidence", "expected_regret"))
+ny_add = max(float(ny[(ny["eval"] == ev) & (ny.condition == c) & (ny.rule == r) & (ny.user == "wrong_p0.3")].costly_left.iloc[0]
+                   - ny[(ny["eval"] == ev) & (ny.condition == c) & (ny.rule == r) & (ny.user == "wrong_p0.0")].costly_left.iloc[0])
+             for ev in ("hgb", "ag") for c in CONDS for r in ("confidence", "expected_regret"))
+sh = {c: pr_counts("hgb", c, "shared") for c in CONDS}
+ne = {c: pr_counts("hgb", c, "nested") for c in CONDS}
+assert clip_same, "the clipped regret was expected to change no count of the ask table"
+assert never_worse["hgb"] == 0 and never_worse["ag"] == 0, "the 'no more costly choices' statement needs revising"
+assert fw_same, "favourite weights were expected to change no count of TIA-v2"
+seed6 = {c: seed_values("v2:forced", c, K_ASK) for c in CONDS}
+for c in CONDS:  # seed 0 of the seed scorer is the reported ask table (nested fits, HGB evaluation)
+    assert tuple(int(v) for v in seed6[c].loc[0]) == pr_counts("hgb", c), c
+seed6_new = {c: (g.act_conf - g.act_er)[g.index != 0] for c, g in seed6.items()}
+assert all((d >= 0).all() for d in seed6_new.values()), "the text says the ER rule never leaves more on the new fold seeds"
+ROB = [
+    ("Related targets (five digit tables removed)",
+     f"TIA-v1 against Phi-4 under C0: +{int(p04.won)}/$-${int(p04.lost)} becomes +{int(p04n.won)}/$-${int(p04n.lost)}"),
+    ("TOC-UCO tables removed from training",
+     f"top-1 on the 9 TOC-UCO targets: {hold['C0'][0]:.2f} to {hold['C0'][1]:.2f} (C0), {hold['C2'][0]:.2f} to {hold['C2'][1]:.2f} (C2)"),
+    ("Source-signature features removed", f"TIA-v1 answers changed: {same_v1['C0']}, {same_v1['C1']}, {same_v1['C2']} of 34 (C0, C1, C2)"),
+    ("Bin transformations removed", f"discretised targets recognised: {binned['C0']}, {binned['C1']}, {binned['C2']} of 6"),
+    ("Count on derived labels (out of fold)", f"TIA-v1 recall {int(round(oof_cnt.recall * oof_cnt.n_label))} of {int(oof_cnt.n_label)}"),
+    ("Regret threshold 5--50\\%, six questions", "ER leaves no more costly choices than confidence at any threshold (HGB, AutoGluon median)"),
+    ("Negative regrets set to zero", "no count of costly choices changes"),
+    ("Favourite weighted 2/3", "no count of TIA-v2 changes"),
+    ("Users who err with $p\\le0.3$", f"adds at most {ny_add:.1f} costly choices at six questions"),
+    ("Decision fits, shared against nested", f"ER at six questions, HGB: {sh['C0'][1]}, {sh['C1'][1]}, {sh['C2'][1]} against {ne['C0'][1]}, {ne['C1'][1]}, {ne['C2'][1]} left"),
+    ("Ten fold assignments (HGB, shared fits)", f"ER fewer in {int((rot6.er < rot6.conf).sum())}, tie in {int((rot6.er == rot6.conf).sum())}, more in {int((rot6.er > rot6.conf).sum())} of {len(rot6)} cells"),
+    ("Five new fold seeds (HGB, nested fits)",
+     f"at six questions, ER fewer in {', '.join(str(int((seed6_new[c] > 0).sum())) for c in CONDS)} of {len(seed6_new['C0'])} seeds"
+     f" (C0, C1, C2), more in none"),
+    ("Decision-fit time per target",f"median {times.decision_fit_seconds.median():.0f}~s, largest {times.decision_fit_seconds.max():.0f}~s"),
+]
+write("robustness", "\n".join([
+    "\\begin{tabularx}{\\linewidth}{@{}>{\\raggedright\\arraybackslash}p{6.4cm}>{\\raggedright\\arraybackslash}X@{}}", "\\toprule",
+    "Check & Result \\\\", "\\midrule", *[f"{a} & {b} \\\\" for a, b in ROB], "\\bottomrule", "\\end{tabularx}"]))
 
 (FIG / "figure_data.tex").write_text(
     "% Generated by manuscript/make_tables.py: the numbers that the TikZ figures print. Do not edit by hand.\n"
