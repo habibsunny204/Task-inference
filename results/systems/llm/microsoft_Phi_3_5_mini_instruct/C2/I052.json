@@ -1,0 +1,36 @@
+{
+ "instance_id": "I052",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "965d13b1057e83d2acc999d8c5f056a740f9a8d8c9074b0b01d425b66e7798b4",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.09090909090909091,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.09090909090909091,
+  "p_COUNT_REGRESSION": 0.6363636363636362,
+  "p_CONTINUOUS_REGRESSION": 0.18181818181818182,
+  "probability_sum_raw": 1.1,
+  "confidence": 5,
+  "evidence": "The target 'area' represents the burned area of forest fires in hectares, a non-negative integer count of events, which aligns with the COUNT_REGRESSION label.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.7,\n    \"CONTINUOUS_REGRESSION\": 0.2\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target 'area' represents the burned area of forest fires in hectares, a non-negative integer count of events, which aligns with the COUNT_REGRESSION label.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 2181,
+   "tokens_out": 195,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.79
+}

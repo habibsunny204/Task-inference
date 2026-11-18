@@ -1,0 +1,36 @@
+{
+ "instance_id": "I011",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "116bd80942252e0030fe9e633a47d2c9cc1154d5e66041fa3bde21242e5c7c2d",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "NONE",
+  "p_BINARY": 0.15,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.25,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.2,
+  "probability_sum_raw": 1.0,
+  "confidence": 2,
+  "evidence": "The target is an integer with 4 distinct values (0\u20133), making it ambiguous between classification and regression tasks."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"NONE\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.20,\n    \"ORDINAL\": 0.25,\n    \"COUNT_REGRESSION\": 0.20,\n    \"CONTINUOUS_REGRESSION\": 0.20\n  },\n  \"confidence\": 2,\n  \"evidence\": \"The target is an integer with 4 distinct values (0\u20133), making it ambiguous between classification and regression tasks.\"\n}",
+   "tokens_in": 742,
+   "tokens_out": 152,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 19.23
+}

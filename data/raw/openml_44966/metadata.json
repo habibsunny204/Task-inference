@@ -1,0 +1,29 @@
+{
+  "dataset_id": 44966,
+  "name": "solar_flare",
+  "version": 7,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/44966",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/solar+flare",
+  "paper_url": null,
+  "citation": "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.",
+  "creator": null,
+  "licence": "CC BY 4.0",
+  "upload_date": "2022-12-22T16:12:48",
+  "default_target": "c_class_flares",
+  "target_column": "c_class_flares",
+  "openml_task_id": "361244",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "class",
+    "largest_spot_size",
+    "spot_distribution",
+    "activity",
+    "evolution",
+    "previous_activity",
+    "complex",
+    "complex_path",
+    "area",
+    "area_largest"
+  ]
+}

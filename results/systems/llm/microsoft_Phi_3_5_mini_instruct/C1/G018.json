@@ -1,0 +1,34 @@
+{
+ "instance_id": "G018",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "6de9d2dc1107ae882a36f3570a6d54638b585f2c510e296894b6639556e07706",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.55,
+  "p_COUNT_REGRESSION": 0.15,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column contains distinct whole number values ranging from 0 to 8 with a mode of 0, suggesting a count of occurrences, indicative of a COUNT_REGRESSION task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.55,\n    \"COUNT_REGRESSION\": 0.15,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column contains distinct whole number values ranging from 0 to 8 with a mode of 0, suggesting a count of occurrences, indicative of a COUNT_REGRESSION task.\"\n}\n```",
+   "tokens_in": 1140,
+   "tokens_out": 195,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.44
+}

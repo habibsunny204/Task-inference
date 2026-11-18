@@ -1,0 +1,27 @@
+{
+  "dataset_id": 44960,
+  "name": "energy_efficiency",
+  "version": 9,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/44960",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/energy+efficiency",
+  "paper_url": "https://doi.org/10.1016/j.enbuild.2012.03.003",
+  "citation": "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. \nA. Tsanas, A. Xifara: 'Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools', Energy and Buildings, Vol. 49, pp. 560-567, 2012",
+  "creator": null,
+  "licence": "CC BY 4.0",
+  "upload_date": "2022-12-22T16:11:13",
+  "default_target": "heating_load",
+  "target_column": "heating_load",
+  "openml_task_id": "361617",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "relative_compactness",
+    "surface_area",
+    "wall_area",
+    "roof_area",
+    "overall_height",
+    "orientation",
+    "glazing_area",
+    "glazing_area_distribution"
+  ]
+}

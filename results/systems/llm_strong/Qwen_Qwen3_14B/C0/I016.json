@@ -1,0 +1,34 @@
+{
+ "instance_id": "I016",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "8b86826e82e9cf2279cb8981c0672d15aa9837e49b7a98bbf4e70f763d49d14d",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has three distinct integer values (0, 1, 2), with 0 and 2 being relatively rare. While this could be interpreted as a multicategory or ordinal task, the presence of only three values and the distribution suggests it is more likely a binary classification task (e.g., 0 and 1/2 as classes)."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has three distinct integer values (0, 1, 2), with 0 and 2 being relatively rare. While this could be interpreted as a multicategory or ordinal task, the presence of only three values and the distribution suggests it is more likely a binary classification task (e.g., 0 and 1/2 as classes).\"\n}",
+   "tokens_in": 728,
+   "tokens_out": 186,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 22.91
+}

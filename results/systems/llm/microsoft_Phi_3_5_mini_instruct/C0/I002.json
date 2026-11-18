@@ -1,0 +1,33 @@
+{
+ "instance_id": "I002",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "8fb2abe7c97d5caee0108cb74a34951e14ff0c94e71c037899062329964d5c6d",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.125,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.375,
+  "p_COUNT_REGRESSION": 0.5,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 2.0,
+  "confidence": 5,
+  "evidence": "The target values are distinct integers with a clear minimum and maximum, and all values are whole numbers with a mode of 1, suggesting a count of occurrences."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.25,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.75,\n    \"COUNT_REGRESSION\": 1.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct integers with a clear minimum and maximum, and all values are whole numbers with a mode of 1, suggesting a count of occurrences.\"\n}\n```",
+   "tokens_in": 830,
+   "tokens_out": 178,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.69
+}

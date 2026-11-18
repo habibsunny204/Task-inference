@@ -1,0 +1,34 @@
+{
+ "instance_id": "I012",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "6f59d1b4d3c18eee6b98b6a61126a5c2701a80014b1b8318b49aed2871955bfb",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.2,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are whole numbers ranging from 3 to 9, suggesting an ordinal scale, but could also be treated as multiclass or continuous."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.2\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target values are whole numbers ranging from 3 to 9, suggesting an ordinal scale, but could also be treated as multiclass or continuous.\"\n}\n```",
+   "tokens_in": 1123,
+   "tokens_out": 149,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.55
+}

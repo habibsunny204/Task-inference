@@ -1,0 +1,32 @@
+{
+ "instance_id": "I040",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "c26b769103d4f76776bef7a59a065cc2e92a4076ab389a61b04b00365496b6e5",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target has exactly two distinct values ('band' and 'noband'), making it a clear binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.95, \"MULTICLASS\": 0.02, \"ORDINAL\": 0.01, \"COUNT_REGRESSION\": 0.01, \"CONTINUOUS_REGRESSION\": 0.01},\n  \"confidence\": 5,\n  \"evidence\": \"The target has exactly two distinct values ('band' and 'noband'), making it a clear binary classification task.\"\n}",
+   "tokens_in": 648,
+   "tokens_out": 122,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 15.24
+}

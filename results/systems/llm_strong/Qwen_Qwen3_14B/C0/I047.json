@@ -1,0 +1,33 @@
+{
+ "instance_id": "I047",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "f7721051383bb1a2a94e6dbf927e7a07a8d90695de8f60a8f76acef440cf1668",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has 3 distinct values (B, L, R), which could be interpreted as two groups (e.g., B vs. L+R) or as three unordered categories."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.0,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has 3 distinct values (B, L, R), which could be interpreted as two groups (e.g., B vs. L+R) or as three unordered categories.\"\n}",
+   "tokens_in": 633,
+   "tokens_out": 146,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.88
+}

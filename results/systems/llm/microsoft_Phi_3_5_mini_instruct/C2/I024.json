@@ -1,0 +1,37 @@
+{
+ "instance_id": "I024",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "2b84186a457d12b40a735aae2f23a1ee19c1a3efd98fe25552b3134da4c51332",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.5,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The dataset contains a target column 'Price' with distinct values ranging from 8638.93 to 70755.5, and a variety of car characteristics, suggesting a classification task among different car types or models.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"ORDINAL\": 0.2,\n    \"MULTICLASS\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The dataset contains a target column 'Price' with distinct values ranging from 8638.93 to 70755.5, and a variety of car characteristics, suggesting a classification task among different car types or models.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 2150,
+   "tokens_out": 229,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.6
+}

@@ -1,0 +1,31 @@
+{
+ "instance_id": "I011",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "e278ae9f99e89a1ccf317e0614444b3d05afea9e4823f4a66481081f1f735979",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.7,\n0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target column 'y' has 4 distinct values with counts ranging from 0 to 3, indicating multiple categories.\",\n  \"evidence_level\": \"E2\"\n}\n```",
+   "tokens_in": 1527,
+   "tokens_out": 211,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.5,\n    \"MULTICLASS\": 0.1,\n0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column 'y' has distinct values with counts, indicating possible binary or multiclass classification.\",\n  \"evidence_level\": \"E2\"\n}\n```",
+   "tokens_in": 1543,
+   "tokens_out": 202,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 22.88
+}

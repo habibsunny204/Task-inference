@@ -1,0 +1,31 @@
+{
+ "instance_id": "I024",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "30c63cf99e49617e035061ef5d2d5bfbfc6b9a4c8ccb0d7e8afe84228fdd915d",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.8,\n0r \"ORDINAL\": 0.1,\n  \"COUNT_REGRESSION\": 0.03,\n  \"CONTINUOUS_REGRESSION\": 0.02\n},\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct floats with a wide range and multiple frequent values, suggesting a classification into multiple categories.\"\n}\n```",
+   "tokens_in": 1392,
+   "tokens_out": 192,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.8,\n    \"ORDINAL\": 0.10,\n0.05,\n  \"CONTINUOUS_REGRESSION\": 0.05\n},\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct floats with a wide range and multiple frequent values, suggesting multiple categories.\"\n}\n```",
+   "tokens_in": 1408,
+   "tokens_out": 180,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 19.59
+}

@@ -1,0 +1,9 @@
+{
+  "bundle": "task_inference_e2e",
+  "frozen": "2026-10-18",
+  "seed": 0,
+  "n_folds": 5,
+  "eval_folds": [3, 4],
+  "presets": "medium_quality",
+  "time_limit_s": 60
+}

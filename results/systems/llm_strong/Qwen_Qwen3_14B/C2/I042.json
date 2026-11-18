@@ -1,0 +1,35 @@
+{
+ "instance_id": "I042",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "000bc21b7fcb72aee16c2bfd985eeb3298f0a5b6c8308f39344442c95c41a608",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.15,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.03,
+  "p_CONTINUOUS_REGRESSION": 0.02,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target column `A15` is explicitly described as a class attribute with two values (1, 2), and the dataset is labeled as a binary classification task in the documentation.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.15,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.03,\n    \"CONTINUOUS_REGRESSION\": 0.02\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target column `A15` is explicitly described as a class attribute with two values (1, 2), and the dataset is labeled as a binary classification task in the documentation.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1808,
+   "tokens_out": 163,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.39
+}

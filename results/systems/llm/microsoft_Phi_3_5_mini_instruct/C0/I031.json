@@ -1,0 +1,33 @@
+{
+ "instance_id": "I031",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "1e342edd47f3212fe398b584a76ce21313516d200c289fd92e98110a64ec381b",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.025641025641025644,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.48717948717948717,
+  "p_COUNT_REGRESSION": 0.46153846153846156,
+  "p_CONTINUOUS_REGRESSION": 0.025641025641025644,
+  "probability_sum_raw": 1.95,
+  "confidence": 5,
+  "evidence": "The target values are whole numbers with a clear minimum and maximum, and the distribution is heavily skewed towards zero, indicating a count of occurrences."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n\n{\n\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n\n  \"probabilities\": {\n\n    \"BINARY\": 0.05,\n\n    \"MULTICLASS\": 0.0,\n\n    \"ORDINAL\": 0.95,\n\n    \"COUNT_REGRESSION\": 0.9,\n\n    \"CONTINUOUS_REGRESSION\": 0.05\n\n  },\n\n  \"confidence\": 5,\n\n  \"evidence\": \"The target values are whole numbers with a clear minimum and maximum, and the distribution is heavily skewed towards zero, indicating a count of occurrences.\"\n\n}\n\n```",
+   "tokens_in": 842,
+   "tokens_out": 190,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.19
+}

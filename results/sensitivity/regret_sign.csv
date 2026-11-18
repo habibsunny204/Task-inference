@@ -1,0 +1,12 @@
+tables,n_entries,n_negative,decide,condition,n_targets_er_negative
+decision (shared),560.0,194.0,,,
+decision (nested),560.0,188.0,,,
+evaluation (hgb),560.0,190.0,,,
+evaluation (ag),560.0,147.0,,,
+evaluation (ag_argmax),560.0,147.0,,,
+,,,nested,C0,18.0
+,,,nested,C1,17.0
+,,,nested,C2,19.0
+,,,shared,C0,19.0
+,,,shared,C1,20.0
+,,,shared,C2,23.0

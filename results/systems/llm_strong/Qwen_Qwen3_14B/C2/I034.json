@@ -1,0 +1,35 @@
+{
+ "instance_id": "I034",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "e78144576feb981e8f8c711684cbcffeb110ea718dba8a48fcd1d067450492c6",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 2,
+  "evidence": "The target column has 3 distinct integer values (0, 1, 2), which could represent binary outcomes (e.g., 0 and 1 as classes, with 2 as an outlier or mislabel), or a 3-class classification task. However, the prevalence of 0 and 2 suggests a binary task with 0 and 2 as classes, and 1 as a possible intermediate or misclassified value.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 2,\n  \"evidence\": \"The target column has 3 distinct integer values (0, 1, 2), which could represent binary outcomes (e.g., 0 and 1 as classes, with 2 as an outlier or mislabel), or a 3-class classification task. However, the prevalence of 0 and 2 suggests a binary task with 0 and 2 as classes, and 1 as a possible intermediate or misclassified value.\",\n  \"evidence_level\": \"E3\"\n}",
+   "tokens_in": 1002,
+   "tokens_out": 210,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 27.99
+}

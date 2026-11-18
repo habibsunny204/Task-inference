@@ -1,0 +1,33 @@
+{
+ "instance_id": "I052",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "108bb992fdb6e7c4ea674e2bbe10ad0630e8b08a8705e0c5d9742aedc180e7f9",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.034482758620689655,
+  "p_MULTICLASS": 0.034482758620689655,
+  "p_ORDINAL": 0.034482758620689655,
+  "p_COUNT_REGRESSION": 0.41379310344827586,
+  "p_CONTINUOUS_REGRESSION": 0.48275862068965514,
+  "probability_sum_raw": 1.45,
+  "confidence": 4,
+  "evidence": "The target has 251 distinct values, a range from 0 to 1090.84, and most values are non-zero and non-whole numbers, indicating a continuous-like distribution."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.05, \"MULTICLASS\": 0.05, \"ORDINAL\": 0.05, \"COUNT_REGRESSION\": 0.6, \"CONTINUOUS_REGRESSION\": 0.7},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 251 distinct values, a range from 0 to 1090.84, and most values are non-zero and non-whole numbers, indicating a continuous-like distribution.\"\n}",
+   "tokens_in": 1073,
+   "tokens_out": 151,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.87
+}

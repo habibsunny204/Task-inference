@@ -1,0 +1,34 @@
+{
+ "instance_id": "I010",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "f29ced9d5c6cb6ae64d9062b68e9b148ca5b7a6edd674acc9341f6f53c46db1b",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.4,
+  "p_COUNT_REGRESSION": 0.4,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The dataset documentation explicitly states that the task is to predict the number of workout sessions per week, which is a count.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.4,\n    \"COUNT_REGRESSION\": 0.4,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The dataset documentation explicitly states that the task is to predict the number of workout sessions per week, which is a count.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1404,
+   "tokens_out": 142,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 22.48
+}

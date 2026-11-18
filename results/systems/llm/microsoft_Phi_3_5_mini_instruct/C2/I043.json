@@ -1,0 +1,36 @@
+{
+ "instance_id": "I043",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "8e52c22dd08785d8c8cd05d403fae4be035183a4035d671b5b4399362e573c60",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The dataset documentation mentions that the continuous output was discretised into ordered intervals, suggesting an ordinal nature.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"ORDINAL\": 0.6,\n    \"COUNT_REGRESSION\": 0.2,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset documentation mentions that the continuous output was discretised into ordered intervals, suggesting an ordinal nature.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 1670,
+   "tokens_out": 177,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.92
+}

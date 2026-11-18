@@ -1,0 +1,35 @@
+{
+ "instance_id": "I014",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "4db40d8dbdb862c60a546430a77cbed757d802a411f10e5460f1dad654e160b9",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.07692307692307693,
+  "p_MULTICLASS": 0.4358974358974359,
+  "p_ORDINAL": 0.25641025641025644,
+  "p_COUNT_REGRESSION": 0.05128205128205129,
+  "p_CONTINUOUS_REGRESSION": 0.1794871794871795,
+  "probability_sum_raw": 1.95,
+  "confidence": 5,
+  "evidence": "The target column 'rings' has 28 distinct values ranging from 1 to 29, indicating a multiclass classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.85,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.35\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'rings' has 28 distinct values ranging from 1 to 29, indicating a multiclass classification task.\"\n}\n```",
+   "tokens_in": 1449,
+   "tokens_out": 189,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.36
+}

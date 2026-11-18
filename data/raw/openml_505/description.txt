@@ -1,0 +1,141 @@
+**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This is the Tecator data set: The task is to predict the fat content of a
+meat sample on the basis of its near infrared absorbance spectrum.
+1. Statement of permission from Tecator (the original data source)
+
+These data are recorded on a Tecator Infratec Food and Feed Analyzer
+working in the wavelength range 850 - 1050 nm by the Near Infrared
+Transmission (NIT) principle. Each sample contains finely chopped pure
+meat with different moisture, fat and protein contents.
+
+If results from these data are used in a publication we want you to
+mention the instrument and company name (Tecator) in the publication.
+In addition, please send a preprint of your article to
+
+Karin Thente, Tecator AB,
+Box 70, S-263 21 Hoganas, Sweden
+
+The data are available in the public domain with no responsability from
+the original data source. The data can be redistributed as long as this
+permission note is attached.
+For more information about the instrument - call Perstorp Analytical's
+representative in your area.
+
+
+2. Description of the data file
+
+For each meat sample the data consists of a 100 channel spectrum of
+absorbances and the contents of moisture (water), fat and protein.
+The absorbance is -log10 of the transmittance
+measured by the spectrometer. The three contents, measured in percent,
+are determined by analytic chemistry.
+
+There are 240 samples which are divided into 5 data sets for the purpose
+of model validation and extrapolation studies. The data sets, further
+described in reference 1, are:
+
+Data set  Use               Samples
+C         Traning               129
+M         Monitoring             43
+T         Testing                43
+E1        Extrapolation, Fat      8
+E2        Extrapolation, Protein 17
+
+The data for all 240 samples appear at the end of this file - 25 lines
+per sample. The data sets appear in the order of the table above.
+The spectra are preprocessed using a principal component analysis on the
+data set C, and the first 22 principal components (scaled to unit
+variance) are included for each sample.
+Thus if you want to use the data for a standard (interpolation) test
+of your algorithm, use sample 1-172 for training and sample 173-215
+for testing (and ignore the last 25 samples), and use the first 13 or so
+principal components to predict the fat content.
+
+Each line contains the 100 absorbances followed by the 22 principal
+components and finally the contents of moisture, fat and protein.
+
+Preceeding the data lines, the following lines appear:
+
+real_in=122
+real_out=3
+training_examples=172
+test_examples=43
+extrapolation_examples=25
+
+
+3. More details on how to use the data
+
+The data are made available as a benchmark for regression models. In order
+to compare models, it is practical to use the data set as follows:
+
+C and M combined are used to tune (estimate, train) the model. (Some
+approaches set aside some training data to control overfitting. These data
+should be a subset of C+M. In (1) the subset M was used for this purpose.)
+
+T is used to test the model once it has been tuned.
+If each model has an element of randomness (as is the case
+for neural networks) the most reliable measure of performance of a single
+model is obtained by selecting a handful of models on the basis of C+M and
+quoting the average of the performances on T.
+In the presence of randomness it is bad practice to train a lot of models
+on C+M and then select the best of these on the basis of T.
+
+C, M and T are drawn from the same pool of data, so T is used to test the
+ability of the models to interpolate. The data sets E1 and E2 contain
+more fat and protein respectively and are intended to be used to test the
+ability of the models to extrapolate.
+
+
+4. Performance of neural network models
+
+The performance is measured as Standard Error of Prediction (SEP) which
+is the root mean square of the difference between the true and the predicted
+content.
+
+For the prediction of fat on the data set T the following results were obtained
+
+Reference SEP   method (see the papers for details)
+(1)       0.65  10-6-1 network, early stopping
+(2)       0.52  10-3-1 network, Bayesian
+(3)       0.36  13-X-1 network, Bayesian, Automatic Relevance Determination
+
+A linear model with 10 inputs yields SEP=2.78.
+
+5. References
+
+(1) C.Borggaard and H.H.Thodberg,
+"Optimal Minimal Neural Interpretation of Spectra",
+Analytical Chemistry 64 (1992), p 545-551.
+(2) H.H.Thodberg, "Ace of Bayes: Application of Neural Networks with Pruning"
+Manuscript 1132, Danish Meat Research Institute (1993),
+available by anonymous ftp in the file:
+pub/neuroprose/thodberg.ace-of-bayes.ps.Z on the Internet node
+archive.cis.ohio-state.edu (128.146.8.52).
+
+(3) Revised and extended version of (2), in preparation, to be
+submitted to IEEE Trans. Neural Networks (1995)
+available by anonymous ftp in the file:
+pub/neuroprose/thodberg.bayesARD.ps.Z on the Internet node
+archive.cis.ohio-state.edu (128.146.8.52).
+
+Hans Henrik Thodberg                Email: thodberg@nn.dmri.dk
+Danish Meat Research Institute      Phone: (+45) 42 36 12 00
+Maglegaardsvej 2, Postboks 57       Fax:   (+45) 42 36 48 36
+DK-4000 Roskilde, Denmark
+
+real_in=122
+real_out=3
+training_examples=172
+test_examples=43
+extrapolation_examples=25
+
+
+Note: all 240 samples are included in the same order as mentioned above
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific

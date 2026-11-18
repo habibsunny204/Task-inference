@@ -1,0 +1,21 @@
+**Data Description**
+
+The data were collected from May/2004 to February/2007 using only protected designation of origin samples that were tested at the official certification entity (CVRVV). The CVRVV is an inter-professional organization with the goal of improving the quality and marketing of vinho verde. The data were recorded by a computerized system (iLab), which automatically manages the process of wine sample testing from producer requests to laboratory and sensory analysis. Each entry denotes a given test (analytical or sensory).
+This dataset contains only the read wine.
+
+The goal is using chemical analysis determine the quality of the wine.
+
+**Attribute Description**
+
+1. *fixed_acidity*
+2. *volatile_acidity*
+3. *citric_acid*
+4. *residual_sugar*
+5. *chlorides*
+6. *free_sulfur_dioxide*
+7. *total_sulfur_dioxide*
+8. *density*
+9. *pH*
+10. *sulphates*
+11. *alcohol*
+12. *quality* - target feature

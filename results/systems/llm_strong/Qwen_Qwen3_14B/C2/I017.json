@@ -1,0 +1,35 @@
+{
+ "instance_id": "I017",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "3d1da7595b5a9c349cff0635f924c0a187d71b8917321d180726412635760997",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.05,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The documentation states that the target variable represents the presence of heart disease, ranging from 0 (no heart disease) to 4 (severe heart disease), which suggests a classification task. However, the target values are integers from 0 to 3, and the documentation mentions a range up to 4, which could imply a multi-class or ordinal task.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The documentation states that the target variable represents the presence of heart disease, ranging from 0 (no heart disease) to 4 (severe heart disease), which suggests a classification task. However, the target values are integers from 0 to 3, and the documentation mentions a range up to 4, which could imply a multi-class or ordinal task.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1348,
+   "tokens_out": 197,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 29.36
+}

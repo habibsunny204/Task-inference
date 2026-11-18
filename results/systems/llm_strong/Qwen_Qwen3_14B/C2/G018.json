@@ -1,0 +1,35 @@
+{
+ "instance_id": "G018",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "753b33a5d3ab5fcc281d5ab5362ec47ca26f68d1e9d9a83b02bd6ba9155d5f2b",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.35,
+  "p_COUNT_REGRESSION": 0.35,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column `y` represents the number of C-class solar flares, which is a count of events and thus fits COUNT_REGRESSION. However, the small range of values (0\u20138) and the presence of distinct categories could also support ORDINAL or MULTICLASS interpretations.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.35,\n    \"COUNT_REGRESSION\": 0.35,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column `y` represents the number of C-class solar flares, which is a count of events and thus fits COUNT_REGRESSION. However, the small range of values (0\u20138) and the presence of distinct categories could also support ORDINAL or MULTICLASS interpretations.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1484,
+   "tokens_out": 187,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 22.78
+}

@@ -1,0 +1,19 @@
+{
+ "n_train": 510,
+ "n_train_natural": 169,
+ "n_test": 76,
+ "train_labels": {
+  "ORDINAL": 156,
+  "BINARY": 125,
+  "CONTINUOUS_REGRESSION": 97,
+  "MULTICLASS": 82,
+  "COUNT_REGRESSION": 50
+ },
+ "families": 163,
+ "feature_seconds_per_instance": 0.7184571829265295,
+ "n_features": {
+  "C0": 46,
+  "C1": 63,
+  "C2": 84
+ }
+}

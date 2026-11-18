@@ -1,0 +1,33 @@
+{
+ "instance_id": "I026",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "433f593b60141764da4a9e7e179780a4f555ce8d1a1d0b3a29d38e8dd116140d",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.8,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are real numbers with a continuous distribution, suggesting a continuous regression task, though the presence of whole numbers and a limited range could also imply an ordinal task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.2,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.8\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target values are real numbers with a continuous distribution, suggesting a continuous regression task, though the presence of whole numbers and a limited range could also imply an ordinal task.\"\n}\n```",
+   "tokens_in": 1390,
+   "tokens_out": 150,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 18.66
+}

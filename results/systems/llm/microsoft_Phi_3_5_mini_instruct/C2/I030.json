@@ -1,0 +1,35 @@
+{
+ "instance_id": "I030",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "811d6fd5cb349d707d498a8f78ebcebc5afd4e0df8f4d5825c7ccd68eb29c6cb",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.14285714285714285,
+  "p_MULTICLASS": 0.047619047619047616,
+  "p_ORDINAL": 0.5714285714285714,
+  "p_COUNT_REGRESSION": 0.19047619047619047,
+  "p_CONTINUOUS_REGRESSION": 0.047619047619047616,
+  "probability_sum_raw": 1.05,
+  "confidence": 4,
+  "evidence": "The target column 'y' has distinct values with counts, indicating a count of occurrences, and the dataset documentation describes the prediction of anemia levels based on various factors, which aligns with a COUNT_REGRESSION task.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": \"0.15\",\n    \"MULTICLASS\": \"0.05\",\n    \"ORDINAL\": \"0.6\",\n    \"COUNT_REGRESSION\": \"0.2\",\n    \"CONTINUOUS_REGRESSION\": \"0.05\"\n  },\n  \"confidence\": \"4\",\n  \"evidence\": \"The target column 'y' has distinct values with counts, indicating a count of occurrences, and the dataset documentation describes the prediction of anemia levels based on various factors, which aligns with a COUNT_REGRESSION task.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 2115,
+   "tokens_out": 217,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.1
+}

@@ -1,0 +1,31 @@
+{
+ "instance_id": "G003",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "445d56caf78503180b2c35ce62f3e7d9e479d03b8b87cbca6aef07fcabf98b93",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.7,\n0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'CATEGORY' has 86 distinct values, which suggests more than two categories.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 1530,
+   "tokens_out": 208,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.7,\n0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'CATEGORY' has 86 distinct values with a mean of 43.5, all of which are whole numbers, suggesting multiple categories.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 1546,
+   "tokens_out": 221,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 23.23
+}

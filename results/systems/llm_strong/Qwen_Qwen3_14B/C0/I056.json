@@ -1,0 +1,34 @@
+{
+ "instance_id": "I056",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "94efa8a965093d039a3358ead40682ab507c611d3bda3c59497e5b353eefa0bc",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has only two distinct values (0 and 1), making BINARY the most likely task, though it could also be interpreted as a multicategory or ordinal task with only two levels."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.1,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has only two distinct values (0 and 1), making BINARY the most likely task, though it could also be interpreted as a multicategory or ordinal task with only two levels.\"\n}",
+   "tokens_in": 721,
+   "tokens_out": 151,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 18.84
+}

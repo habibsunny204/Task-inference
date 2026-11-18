@@ -1,0 +1,33 @@
+{
+  "dataset_id": 40981,
+  "name": "Australian",
+  "version": 4,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/40981",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/Statlog+(Australian+Credit+Approval)",
+  "paper_url": null,
+  "citation": null,
+  "creator": null,
+  "licence": "Public",
+  "upload_date": "2017-12-04T22:15:38",
+  "default_target": "A15",
+  "target_column": "A15",
+  "openml_task_id": "146818",
+  "openml_task_type": "Supervised Classification",
+  "feature_names": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14"
+  ]
+}

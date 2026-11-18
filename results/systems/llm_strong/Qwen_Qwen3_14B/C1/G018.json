@@ -1,0 +1,36 @@
+{
+ "instance_id": "G018",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "6de9d2dc1107ae882a36f3570a6d54638b585f2c510e296894b6639556e07706",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.45,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.05,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column has values ranging from 0 to 8, with 0 being overwhelmingly dominant. This suggests a possible binary classification (0 vs. non-zero), but the presence of multiple distinct values also allows for multicategory, ordinal, or count regression interpretations."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.45,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.10,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column has values ranging from 0 to 8, with 0 being overwhelmingly dominant. This suggests a possible binary classification (0 vs. non-zero), but the presence of multiple distinct values also allows for multicategory, ordinal, or count regression interpretations.\"\n}",
+   "tokens_in": 995,
+   "tokens_out": 182,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.48
+}

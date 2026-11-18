@@ -1,0 +1,34 @@
+{
+ "instance_id": "I010",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "f9a9414c43d70942b51bb82286f2caf8fb73a9f40d17e4c04e4d7158417663a6",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.047619047619047616,
+  "p_MULTICLASS": 0.42857142857142855,
+  "p_ORDINAL": 0.47619047619047616,
+  "p_COUNT_REGRESSION": 0.047619047619047616,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.05,
+  "confidence": 4,
+  "evidence": "The target has four distinct values, including zero, and the values are ordered with increasing meaning, suggesting ordinal nature."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.05, \"MULTICLASS\": 0.45, \"ORDINAL\": 0.5, \"COUNT_REGRESSION\": 0.05},\n  \"confidence\": 4,\n  \"evidence\": \"The target has four distinct values, including zero, and the values are ordered with increasing meaning, suggesting ordinal nature.\"\n}",
+   "tokens_in": 736,
+   "tokens_out": 119,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 7.74
+}

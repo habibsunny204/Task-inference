@@ -1,0 +1,36 @@
+{
+ "instance_id": "I030",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "29b0f292ecf25551606f058241ac4130c07aad767461461b155d6408b2bf7ce2",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.15,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.35,
+  "p_COUNT_REGRESSION": 0.15,
+  "p_CONTINUOUS_REGRESSION": 0.15,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target is an integer with 4 distinct values (0-3), which could represent ordered categories (e.g., severity levels), unordered categories (e.g., types), or counts. The distribution and presence of zeros suggest multiple plausible interpretations."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.20,\n    \"ORDINAL\": 0.35,\n    \"COUNT_REGRESSION\": 0.15,\n    \"CONTINUOUS_REGRESSION\": 0.15\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target is an integer with 4 distinct values (0-3), which could represent ordered categories (e.g., severity levels), unordered categories (e.g., types), or counts. The distribution and presence of zeros suggest multiple plausible interpretations.\"\n}",
+   "tokens_in": 744,
+   "tokens_out": 178,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 22.08
+}

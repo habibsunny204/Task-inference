@@ -1,0 +1,27 @@
+{
+  "dataset_id": 44956,
+  "name": "abalone",
+  "version": 15,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/44956",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/abalone",
+  "paper_url": "https://www.researchgate.net/publication/287546509_7he_Population_Biology_of_Abalone_Haliotis_species_in_Tasmania_I_Blacklip_Abalone_H_rubra_from_the_North_Coast_and_Islands_of_Bass_Strait",
+  "citation": "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.",
+  "creator": null,
+  "licence": "CC BY 4.0",
+  "upload_date": "2022-12-22T16:10:55",
+  "default_target": "rings",
+  "target_column": "rings",
+  "openml_task_id": "361234",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "sex",
+    "length",
+    "diameter",
+    "height",
+    "whole_weight",
+    "shucked_weight",
+    "cisvera_weight",
+    "shell_weight"
+  ]
+}

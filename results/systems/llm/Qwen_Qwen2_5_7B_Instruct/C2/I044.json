@@ -1,0 +1,34 @@
+{
+ "instance_id": "I044",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "609841dee3114c4804a3d61e0e01dd0b2de59d512b36e494dfada005792ef74f",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.7,
+  "p_COUNT_REGRESSION": 0.3,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The scores are ordered and have a clear ordinal structure with distinct values and a range of whole and non-whole numbers.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0, \"MULTICLASS\": 0, \"ORDINAL\": 0.7, \"COUNT_REGRESSION\": 0.3, \"CONTINUOUS_REGRESSION\": 0},\n  \"confidence\": 4,\n  \"evidence\": \"The scores are ordered and have a clear ordinal structure with distinct values and a range of whole and non-whole numbers.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1896,
+   "tokens_out": 129,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.71
+}

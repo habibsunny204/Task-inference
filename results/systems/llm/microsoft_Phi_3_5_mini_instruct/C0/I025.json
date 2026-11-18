@@ -1,0 +1,33 @@
+{
+ "instance_id": "I025",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "e24c13f3c4225f279a55b23281ee91f061754d1e65c60c345ecc23f8e276bd36",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "MULTICLASS"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.047619047619047616,
+  "p_MULTICLASS": 0.42857142857142855,
+  "p_ORDINAL": 0.047619047619047616,
+  "p_COUNT_REGRESSION": 0.42857142857142855,
+  "p_CONTINUOUS_REGRESSION": 0.047619047619047616,
+  "probability_sum_raw": 2.1,
+  "confidence": 5,
+  "evidence": "The target values are distinct integers ranging from 1 to 10 with equal counts, indicating a count of occurrences."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"MULTICLASS\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.9,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.9,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are distinct integers ranging from 1 to 10 with equal counts, indicating a count of occurrences.\"\n}\n```",
+   "tokens_in": 906,
+   "tokens_out": 171,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.19
+}

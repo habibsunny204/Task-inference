@@ -1,0 +1,33 @@
+{
+ "instance_id": "I052",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "965d13b1057e83d2acc999d8c5f056a740f9a8d8c9074b0b01d425b66e7798b4",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.9,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target 'area' is a real-valued quantity with a wide range and a skewed distribution, suggesting a continuous regression task.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.0,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.9\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target 'area' is a real-valued quantity with a wide range and a skewed distribution, suggesting a continuous regression task.\",\n  \"evidence_level\": \"E2\"\n}\n```\n\n**Explanation:**\n\n- **Plausible Task Set:** The target 'area' is a real-valued quantity with a wide range (0 to 1090.84) and includes non-integer values, making it suitable for CONTINUOUS_REGRESSION. COUNT_REGRESSION is also plausible due to the nature of counting events (burned area), but the presence of non-integer values makes CONTINUOUS_REGRESSION more fitting.\n  \n- **Most Likely Task:** CONTINUOUS_REGRESSION is the most likely task due to the continuous nature of the data and the presence of non-integer values.\n\n- **Probabilities:** The probabilities reflect a strong leaning towards CONTINUOUS_REGRESSION, with a small possibility for COUNT_REGRESSION due to the context of counting burned area.\n\n- **Confidence:** The confidence level is 4, indicating a strong belief in the CONTINUOUS_REGRESSION task based on the data characteristics.\n\n- **Evidence:** The evidence is based on the description of the target variable as a real-valued quantity with a skewed distribution, which aligns with continuous regression tasks.\n\n- **Evidence Level:** E2 is chosen because the documentation describes the target precisely enough to suggest a continuous regression task without explicitly naming it.",
+   "tokens_in": 1832,
+   "tokens_out": 397,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 48.23
+}

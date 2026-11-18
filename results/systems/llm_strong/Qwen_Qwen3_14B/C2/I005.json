@@ -1,0 +1,35 @@
+{
+ "instance_id": "I005",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "19e7bec5ac5fe297525bcd39be1b560515b978e448b1cdd443d4cafa31d8062a",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column has only two distinct values, '+' and '-', which are commonly used as binary labels in classification tasks such as credit approval.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column has only two distinct values, '+' and '-', which are commonly used as binary labels in classification tasks such as credit approval.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1179,
+   "tokens_out": 149,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.58
+}

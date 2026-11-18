@@ -1,0 +1,33 @@
+{
+ "instance_id": "I053",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "0afcfc081ce63d3c4d95fbfd850544744f448c23b843893168724ed747d05e7f",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.074,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.426,
+  "p_COUNT_REGRESSION": 0.5,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 2.0,
+  "confidence": 5,
+  "evidence": "The target column contains three distinct whole number values with zeros being the most frequent, suggesting a count of occurrences."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.148,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.852,\n    \"COUNT_REGRESSION\": 1.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column contains three distinct whole number values with zeros being the most frequent, suggesting a count of occurrences.\"\n}\n```",
+   "tokens_in": 1002,
+   "tokens_out": 170,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.26
+}

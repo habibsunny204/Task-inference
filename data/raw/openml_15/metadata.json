@@ -1,0 +1,28 @@
+{
+  "dataset_id": 15,
+  "name": "breast-w",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/15",
+  "original_data_url": "http://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original)",
+  "paper_url": "http://pages.cs.wisc.edu/~olvi/uwmp/cancer.html",
+  "citation": "Dr. William H. Wolberg, University of Wisconsin Hospitals, Madison.",
+  "creator": "Dr. William H. Wolberg",
+  "licence": "Public",
+  "upload_date": "2014-04-06T23:20:20",
+  "default_target": "Class",
+  "target_column": "Class",
+  "openml_task_id": "15",
+  "openml_task_type": "Supervised Classification",
+  "feature_names": [
+    "Clump_Thickness",
+    "Cell_Size_Uniformity",
+    "Cell_Shape_Uniformity",
+    "Marginal_Adhesion",
+    "Single_Epi_Cell_Size",
+    "Bare_Nuclei",
+    "Bland_Chromatin",
+    "Normal_Nucleoli",
+    "Mitoses"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "dataset_id": 11,
+  "name": "balance-scale",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/11",
+  "original_data_url": "http://archive.ics.uci.edu/ml/datasets/balance+scale",
+  "paper_url": "https://www.sciencedirect.com/science/article/pii/S0065240708600361",
+  "citation": "https://archive.ics.uci.edu/ml/citation_policy.html",
+  "creator": "Robert. S. Siegler",
+  "licence": "Public",
+  "upload_date": "2014-04-06T23:19:55",
+  "default_target": "class",
+  "target_column": "class",
+  "openml_task_id": "11",
+  "openml_task_type": "Supervised Classification",
+  "feature_names": [
+    "left-weight",
+    "left-distance",
+    "right-weight",
+    "right-distance"
+  ]
+}

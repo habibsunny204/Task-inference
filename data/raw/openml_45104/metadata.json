@@ -1,0 +1,21 @@
+{
+  "dataset_id": 45104,
+  "name": "PLK_Mini_Copy",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/45104",
+  "original_data_url": null,
+  "paper_url": null,
+  "citation": null,
+  "creator": "Ihsan Ullah",
+  "licence": "CC BY-NC 4.0",
+  "upload_date": "2023-03-30T16:52:23",
+  "default_target": "CATEGORY",
+  "target_column": "CATEGORY",
+  "openml_task_id": "361480 363788",
+  "openml_task_type": "classification+regression",
+  "feature_names": [
+    "FILE_NAME",
+    "SUPER_CATEGORY"
+  ]
+}

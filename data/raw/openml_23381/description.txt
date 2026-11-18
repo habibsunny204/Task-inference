@@ -1,0 +1,32 @@
+**Author**: Muhammad Usman & Adeel Ahmed   
+**Source**: origin source at [UCI](https://archive.ics.uci.edu/ml/datasets/Dresses_Attribute_Sales)  
+**Please cite**: [Paper that claims to first have used the data](https://www.researchgate.net/profile/Dalia_Jasim/publication/293464737_main_steps_for_doing_data_mining_project_using_weka/links/56b8782008ae44bb330d2583/main-steps-for-doing-data-mining-project-using-weka.pdf)
+
+####1. Summary
+
+This dataset contain attributes of dresses and their recommendations according to their sales. Sales are monitor on the basis of alternate days. 
+
+The attributes present analyzed are: Recommendation, Style, Price, Rating, Size, Season, NeckLine, SleeveLength, waiseline, Material, FabricType, Decoration, Pattern, Type. In this dataset they are named Class(target) and then subsequently V2 - V13.
+
+Contact:
+```
+Muhammad Usman & Adeel Ahmed, usman.madspot '@' gmail.com adeel.ahmed92 '@' gmail.com, Air University, Students at Air University.
+```
+
+####2: Attribute Information:
+
+```
+Recommendation:0,1 
+Style: Bohemia,brief,casual,cute,fashion,flare,novelty,OL,party,sexy,vintage,work. 
+Price:Low,Average,Medium,High,Very-High 
+Rating:1-5 
+Size:S,M,L,XL,Free 
+Season:Autumn,winter,Spring,Summer 
+NeckLine:O-neck,backless,board-neck,Bowneck,halter,mandarin-collor,open,peterpan-collor,ruffled,scoop,slash-neck,square-collar,sweetheart,turndowncollar,V-neck. 
+SleeveLength:full,half,halfsleeves,butterfly,sleveless,short,threequarter,turndown,null 
+waiseline:dropped,empire,natural,princess,null. 
+Material:wool,cotton,mix etc 
+FabricType:shafoon,dobby,popline,satin,knitted,jersey,flannel,corduroy etc 
+Decoration:applique,beading,bow,button,cascading,crystal,draped,embroridary,feathers,flowers etc 
+Pattern type: solid,animal,dot,leapard etc 
+```

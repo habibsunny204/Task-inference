@@ -1,0 +1,33 @@
+{
+ "instance_id": "G017",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "a535df765dcb0032f7b91b269cc8d3cf0388642eea86537b6dfac47c4addb894",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.034482758620689655,
+  "p_MULTICLASS": 0.034482758620689655,
+  "p_ORDINAL": 0.034482758620689655,
+  "p_COUNT_REGRESSION": 0.41379310344827586,
+  "p_CONTINUOUS_REGRESSION": 0.48275862068965514,
+  "probability_sum_raw": 1.45,
+  "confidence": 4,
+  "evidence": "The target has 251 distinct values, a range from 0 to 1090.84, and most values are non-zero and non-whole numbers, suggesting it represents a continuous quantity."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.05, \"MULTICLASS\": 0.05, \"ORDINAL\": 0.05, \"COUNT_REGRESSION\": 0.6, \"CONTINUOUS_REGRESSION\": 0.7},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 251 distinct values, a range from 0 to 1090.84, and most values are non-zero and non-whole numbers, suggesting it represents a continuous quantity.\"\n}",
+   "tokens_in": 1073,
+   "tokens_out": 152,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.75
+}

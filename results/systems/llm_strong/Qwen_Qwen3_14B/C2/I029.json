@@ -1,0 +1,35 @@
+{
+ "instance_id": "I029",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "dde66803eaec7efc4c630fd0696c6168c1443d313cebb7581afaf63d15f747ea",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.05,
+  "p_CONTINUOUS_REGRESSION": 0.05,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The documentation explicitly states that the target column `y` holds the interval index from a discretised continuous output, which strongly suggests an ordinal task.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The documentation explicitly states that the target column `y` holds the interval index from a discretised continuous output, which strongly suggests an ordinal task.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1508,
+   "tokens_out": 156,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.65
+}

@@ -1,0 +1,28 @@
+{
+  "dataset_id": 23,
+  "name": "cmc",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/23",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice",
+  "paper_url": "https://link.springer.com/article/10.1023/A:1007608224229",
+  "citation": "https://archive.ics.uci.edu/ml/citation_policy.html",
+  "creator": "Tjen-Sien Lim",
+  "licence": "Public",
+  "upload_date": "2014-04-06T23:21:03",
+  "default_target": "Contraceptive_method_used",
+  "target_column": "Contraceptive_method_used",
+  "openml_task_id": "23 359959",
+  "openml_task_type": "Supervised Classification",
+  "feature_names": [
+    "Wifes_age",
+    "Wifes_education",
+    "Husbands_education",
+    "Number_of_children_ever_born",
+    "Wifes_religion",
+    "Wifes_now_working%3F",
+    "Husbands_occupation",
+    "Standard-of-living_index",
+    "Media_exposure"
+  ]
+}

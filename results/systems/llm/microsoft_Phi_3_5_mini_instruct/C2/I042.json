@@ -1,0 +1,37 @@
+{
+ "instance_id": "I042",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "000bc21b7fcb72aee16c2bfd985eeb3298f0a5b6c8308f39344442c95c41a608",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.9183673469387755,
+  "p_MULTICLASS": 0.05102040816326531,
+  "p_ORDINAL": 0.020408163265306124,
+  "p_COUNT_REGRESSION": 0.010204081632653062,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 0.98,
+  "confidence": 5,
+  "evidence": "The dataset contains a '15' attribute with two distinct values, 0 and 1, and the context of credit card applications suggests a binary outcome.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.9,\n    \"MULTICLASS\": 0.05,\n    \"ORDINAL\": 0.02,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset contains a '15' attribute with two distinct values, 0 and 1, and the context of credit card applications suggests a binary outcome.\",\n  \"evidence_level\": \"E1\"\n}\n```",
+   "tokens_in": 2086,
+   "tokens_out": 209,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.59
+}

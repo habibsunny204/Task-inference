@@ -1,0 +1,32 @@
+{
+ "instance_id": "I054",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "0f9a0357cb6d96cc2ef10e3c572f942a66a72bb17223297023784711963d976f",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.02,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target has only two distinct values (1 and 2), making it a clear binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.95,\n    \"MULTICLASS\": 0.02,\n    \"ORDINAL\": 0.02,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0.00\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target has only two distinct values (1 and 2), making it a clear binary classification task.\"\n}",
+   "tokens_in": 717,
+   "tokens_out": 128,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 16.19
+}

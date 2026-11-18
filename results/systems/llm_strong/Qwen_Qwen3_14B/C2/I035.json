@@ -1,0 +1,33 @@
+{
+ "instance_id": "I035",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "5f0a8fa284fe408e41411da0c438e4643493066f07bdcaf844bae97d07a16307",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column 'Class' has exactly two distinct values: 'benign' and 'malignant', which are explicitly described in the documentation as the prognosis for breast cancer, a binary classification task.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.95,\n    \"MULTICLASS\": 0.02,\n    \"ORDINAL\": 0.01,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0.01\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'Class' has exactly two distinct values: 'benign' and 'malignant', which are explicitly described in the documentation as the prognosis for breast cancer, a binary classification task.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1809,
+   "tokens_out": 158,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 27.69
+}

@@ -1,0 +1,33 @@
+{
+ "instance_id": "G001",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "388d1fbbe7ab4a6c19616277c15aae90411f1f6deeb094882219cdcc977dcedc",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has two distinct values and is represented as int64, with a binary-like distribution."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.7, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.2, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has two distinct values and is represented as int64, with a binary-like distribution.\"\n}",
+   "tokens_in": 716,
+   "tokens_out": 118,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.57
+}

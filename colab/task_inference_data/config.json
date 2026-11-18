@@ -1,0 +1,16 @@
+{
+  "bundle": "task_inference_data",
+  "frozen": "2026-10-05",
+  "rules": "benchmark/silver/RULES.md",
+  "seed": 0,
+  "sample_seed": 1,
+  "max_target_rows": 50000,
+  "sample_rows": 200,
+  "sample_cols": 50,
+  "min_rows_rdatasets": 50,
+  "bins": [3, 5, 7],
+  "round_min_levels": 3,
+  "request_sleep": 0.05,
+  "rdatasets_index": "https://vincentarelbundock.github.io/Rdatasets/datasets.csv",
+  "openml_version": "0.15.1"
+}

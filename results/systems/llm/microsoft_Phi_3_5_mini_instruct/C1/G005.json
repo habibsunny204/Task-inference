@@ -1,0 +1,35 @@
+{
+ "instance_id": "G005",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "93399b5b02f1ffb973851621e3983308e0abc1a46b6da6a8d06645d2e707ae4d",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.14285714285714285,
+  "p_MULTICLASS": 0.8095238095238094,
+  "p_ORDINAL": 0.047619047619047616,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.05,
+  "confidence": 5,
+  "evidence": "The target column 'Utility' has 5 distinct values (1, 2, 3, 4, 5) with varying counts, indicating a classification task among more than two categories."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.85,\n    \"ORDINAL\": 0.05,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'Utility' has 5 distinct values (1, 2, 3, 4, 5) with varying counts, indicating a classification task among more than two categories.\"\n}\n```",
+   "tokens_in": 1473,
+   "tokens_out": 199,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.07
+}

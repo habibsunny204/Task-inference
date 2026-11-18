@@ -1,0 +1,28 @@
+**Data Description**
+
+Data frame of the suggested retail prices (column *Price*) and various characteristics of each car.
+
+For this data set, a representative sample of over eight hundred 2005 GM cars were selected, then retail prices were calculated from the tables provided in the 2005 Central Edition of the Kelly Blue Book.
+
+**Attribute Description**
+
+All features describe different self-explanatory characteristics for the cars.
+
+1. *Price* - target feature
+2. *Mileage*
+3. *Cylinder*
+4. *Doors*
+5. *Cruise*
+6. *Sound*
+7. *Leather*
+8. *Buick*
+9. *Cadillac*
+10. *Chevy*
+11. *Pontiac*
+12. *Saab*
+13. *Saturn*
+14. *convertible*
+15. *coupe*
+16. *hatchback*
+17. *sedan*
+18. *wagon*

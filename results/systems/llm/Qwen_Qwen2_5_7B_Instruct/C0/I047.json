@@ -1,0 +1,33 @@
+{
+ "instance_id": "I047",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "f7721051383bb1a2a94e6dbf927e7a07a8d90695de8f60a8f76acef440cf1668",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.6,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has three distinct unordered categories, which suggests a classification task rather than regression."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\"BINARY\": 0.1, \"MULTICLASS\": 0.6, \"ORDINAL\": 0.3, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has three distinct unordered categories, which suggests a classification task rather than regression.\"\n}",
+   "tokens_in": 629,
+   "tokens_out": 119,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.48
+}

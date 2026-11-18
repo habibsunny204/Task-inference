@@ -1,0 +1,36 @@
+{
+ "bundle": "task_inference_seeds",
+ "declared": "2026-11-10",
+ "fold_seeds": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "model_seed": 0,
+ "seed": 0,
+ "n_folds": 5,
+ "dev_folds": [
+  0,
+  1,
+  2
+ ],
+ "eval_folds": [
+  3,
+  4
+ ],
+ "check_seed": 0,
+ "check_fits": [
+  [
+   "nested",
+   0
+  ],
+  [
+   "eval",
+   3
+  ]
+ ],
+ "max_ordinal": 30,
+ "sklearn": "1.9.1"
+}

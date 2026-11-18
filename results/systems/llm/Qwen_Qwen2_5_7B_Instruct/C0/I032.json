@@ -1,0 +1,33 @@
+{
+ "instance_id": "I032",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "31efdcd7b6e452101e3fbc005d8b558a2035da330c013ff904840d81a441c381",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.4,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The values are ordered and have a clear ordinal progression, with no indication of equal intervals between them."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.4, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The values are ordered and have a clear ordinal progression, with no indication of equal intervals between them.\"\n}",
+   "tokens_in": 750,
+   "tokens_out": 119,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 7.9
+}

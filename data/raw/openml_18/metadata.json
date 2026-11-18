@@ -1,0 +1,25 @@
+{
+  "dataset_id": 18,
+  "name": "mfeat-morphological",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/18",
+  "original_data_url": "http://archive.ics.uci.edu/ml/datasets/Multiple+Features",
+  "paper_url": "https://dml.cz/handle/10338.dmlcz/135219",
+  "citation": "https://archive.ics.uci.edu/ml/citation_policy.html",
+  "creator": "Robert P.W. Duin",
+  "licence": "Public",
+  "upload_date": "2014-04-06T23:20:37",
+  "default_target": "class",
+  "target_column": "class",
+  "openml_task_id": "18",
+  "openml_task_type": "Supervised Classification",
+  "feature_names": [
+    "att1",
+    "att2",
+    "att3",
+    "att4",
+    "att5",
+    "att6"
+  ]
+}

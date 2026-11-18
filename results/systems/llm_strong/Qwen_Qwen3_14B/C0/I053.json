@@ -1,0 +1,34 @@
+{
+ "instance_id": "I053",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "20f11e34886396a44b84b1c018cc014d8f1472cb0b621fac30697711e1317e6a",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has only 3 distinct integer values (0, 1, 2), with 0 being the most frequent. This suggests a classification task, and the binary interpretation (e.g., 0 vs. non-zero) is plausible, though multi-class or ordinal interpretations are also possible."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has only 3 distinct integer values (0, 1, 2), with 0 being the most frequent. This suggests a classification task, and the binary interpretation (e.g., 0 vs. non-zero) is plausible, though multi-class or ordinal interpretations are also possible.\"\n}",
+   "tokens_in": 729,
+   "tokens_out": 174,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.52
+}

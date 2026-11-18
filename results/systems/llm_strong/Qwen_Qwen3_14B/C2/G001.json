@@ -1,0 +1,35 @@
+{
+ "instance_id": "G001",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "7f1c5cb57befda8b92ef60e03c00f3f32dbd14d73c08002cc8a90788ca02faf6",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column has only two distinct values (1 and 2), which strongly suggests a binary classification task.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column has only two distinct values (1 and 2), which strongly suggests a binary classification task.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1300,
+   "tokens_out": 144,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.71
+}

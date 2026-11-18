@@ -1,0 +1,33 @@
+{
+ "instance_id": "I034",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "bbf13abfaf8b33c6942386fcbb9eab731e4668c302c1ec2cbdefb601c5ed847c",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.08333333333333333,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.4166666666666667,
+  "p_COUNT_REGRESSION": 0.5,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 2.0,
+  "confidence": 5,
+  "evidence": "The target column contains three distinct whole number values with a clear mode of 0 and 2, suggesting a count of occurrences, indicative of a COUNT_REGRESSION task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.16666666666666666,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.8333333333333334,\n    \"CONTINUOUS_REGRESSION\": 0.0,\n    \"COUNT_REGRESSION\": 1.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column contains three distinct whole number values with a clear mode of 0 and 2, suggesting a count of occurrences, indicative of a COUNT_REGRESSION task.\"\n}\n```",
+   "tokens_in": 1016,
+   "tokens_out": 212,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.25
+}

@@ -1,0 +1,33 @@
+{
+ "instance_id": "I050",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "19aa593fb2a283f8efc871c14071da86ce1656ec153d75b6e15da1ce16702982",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.6,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has 5 distinct string values that appear to represent categories (e.g., 'average', 'best', 'good', 'low', 'none'), which are unordered but could be interpreted as levels of a rating or quality, making MULTICLASS or ORDINAL plausible."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.6,\n    \"ORDINAL\": 0.3,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has 5 distinct string values that appear to represent categories (e.g., 'average', 'best', 'good', 'low', 'none'), which are unordered but could be interpreted as levels of a rating or quality, making MULTICLASS or ORDINAL plausible.\"\n}",
+   "tokens_in": 650,
+   "tokens_out": 167,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 20.21
+}

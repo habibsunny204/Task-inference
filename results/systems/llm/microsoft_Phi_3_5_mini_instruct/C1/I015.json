@@ -1,0 +1,33 @@
+{
+ "instance_id": "I015",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "107126a4588585dd6f3247e412e4dd9f393b7a7a414e5634e29bad00f9a0d370",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8181818181818181,
+  "p_MULTICLASS": 0.09090909090909091,
+  "p_ORDINAL": 0.045454545454545456,
+  "p_COUNT_REGRESSION": 0.045454545454545456,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.1,
+  "confidence": 5,
+  "evidence": "The target column 'Class' has only two distinct values with a clear majority of one value, indicating a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n\n{\n\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\"],\n\n  \"most_likely_task\": \"BINARY\",\n\n  \"probabilities\": {\n\n    \"BINARY\": 0.9,\n\n    \"MULTICLASS\": 0.1,\n\n    \"ORDINAL\": 0.05,\n\n    \"COUNT_REGRESSION\": 0.05,\n\n    \"CONTINUOUS_REGRESSION\": 0.0\n\n  },\n\n  \"confidence\": 5,\n\n  \"evidence\": \"The target column 'Class' has only two distinct values with a clear majority of one value, indicating a binary classification task.\"\n\n}\n\n```",
+   "tokens_in": 1180,
+   "tokens_out": 182,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.75
+}

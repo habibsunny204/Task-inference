@@ -1,0 +1,43 @@
+{
+ "instance_id": "I036",
+ "group": "pilot",
+ "task": "COUNT_REGRESSION",
+ "arm": "ag_count_regression",
+ "fold": 4,
+ "k": 10,
+ "presets": "medium_quality",
+ "time_limit_s": 60,
+ "problem_type": "regression",
+ "eval_metric": "mean_absolute_error",
+ "decision": "native",
+ "started_utc": "2026-10-17T20:15:47+00:00",
+ "status": "ok",
+ "fit_seconds": 31.37,
+ "n_train": 1600,
+ "n_test": 400,
+ "model_best": "WeightedEnsemble_L2",
+ "models_trained": [
+  "WeightedEnsemble_L2",
+  "LightGBM",
+  "XGBoost",
+  "CatBoost"
+ ],
+ "metrics": {
+  "mae": 0.5007076068222522,
+  "rmse": 0.954257206358943,
+  "exact_acc": 0.7475,
+  "macro_f1": 0.7464510701225013,
+  "qwk": 0.9360216614786255,
+  "spearman": 0.9435318804488646
+ },
+ "metrics_all_decisions": {
+  "native": {
+   "mae": 0.5007076068222522,
+   "rmse": 0.954257206358943,
+   "exact_acc": 0.7475,
+   "macro_f1": 0.7464510701225013,
+   "qwk": 0.9360216614786255,
+   "spearman": 0.9435318804488646
+  }
+ }
+}

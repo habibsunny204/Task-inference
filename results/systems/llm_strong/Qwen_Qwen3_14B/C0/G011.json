@@ -1,0 +1,36 @@
+{
+ "instance_id": "G011",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "1426314223827a97357faa2dc41d77a7662bfaa86e21038907a8b8d3874c500f",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "NONE",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.2,
+  "probability_sum_raw": 1.0,
+  "confidence": 2,
+  "evidence": "The target is an integer with 5 distinct values (0\u20134), evenly distributed, making it ambiguous between classification and regression tasks."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"NONE\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.3,\n    \"COUNT_REGRESSION\": 0.2,\n    \"CONTINUOUS_REGRESSION\": 0.2\n  },\n  \"confidence\": 2,\n  \"evidence\": \"The target is an integer with 5 distinct values (0\u20134), evenly distributed, making it ambiguous between classification and regression tasks.\"\n}",
+   "tokens_in": 742,
+   "tokens_out": 150,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 19.45
+}

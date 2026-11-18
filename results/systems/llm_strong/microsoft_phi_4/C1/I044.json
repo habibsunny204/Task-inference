@@ -1,0 +1,33 @@
+{
+ "instance_id": "I044",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "e46d3c3359a448689452cad71eea6a3da151b87cc1679ae5de2a349b3d150382",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.7,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.3,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are distinct, ordered, and have a small range with a central tendency around whole numbers, suggesting an ordinal scale."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.7,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.3\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target values are distinct, ordered, and have a small range with a central tendency around whole numbers, suggesting an ordinal scale.\"\n}\n```",
+   "tokens_in": 1048,
+   "tokens_out": 139,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 16.23
+}

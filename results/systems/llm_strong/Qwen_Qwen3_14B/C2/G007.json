@@ -1,0 +1,35 @@
+{
+ "instance_id": "G007",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "e887e071f46a3ea949007345884301f0003a30d043799a62032b8d82d2ba8222",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.15,
+  "p_ORDINAL": 0.25,
+  "p_COUNT_REGRESSION": 0.05,
+  "p_CONTINUOUS_REGRESSION": 0.5,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column `MEDV` represents the median value of owner-occupied homes in $1000's, which is a continuous real-valued quantity.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.15,\n    \"ORDINAL\": 0.25,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.5\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column `MEDV` represents the median value of owner-occupied homes in $1000's, which is a continuous real-valued quantity.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1923,
+   "tokens_out": 165,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.9
+}

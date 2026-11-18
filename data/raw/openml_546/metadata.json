@@ -1,0 +1,34 @@
+{
+  "dataset_id": 546,
+  "name": "sensory",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/546",
+  "original_data_url": null,
+  "paper_url": null,
+  "citation": null,
+  "creator": [
+    "Brien",
+    "C.J. and Payne",
+    "R.W"
+  ],
+  "licence": "Public",
+  "upload_date": "2014-09-29T00:09:15",
+  "default_target": "Score",
+  "target_column": "Score",
+  "openml_task_id": "359931",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "Occasion",
+    "Judges",
+    "Interval",
+    "Sittings",
+    "Position",
+    "Squares",
+    "Rows",
+    "Columns",
+    "Halfplot",
+    "Trellis",
+    "Method"
+  ]
+}

@@ -1,0 +1,77 @@
+instance_id,role,source,family,candidate_id,base_id,transformation,params,title,target_name,n_rows,n_features,n_unique,n_missing,target_kind,label,label_rule,check,has_doc
+G001,groupc1_test,group_c_v1,credit_australian,,I005,numcode,{'mapping': 'alphabetical'},credit-approval,class,690,15,2,0,int,,,,True
+G002,groupc1_test,group_c_v1,breast_w,,I035,numcode,{'mapping': 'alphabetical'},breast-w,Class,699,9,2,0,int,,,,True
+G003,groupc1_test,group_c_v1,plk_mini_copy,,I038,numcode,{'mapping': 'alphabetical'},PLK_Mini_Copy,CATEGORY,3440,2,86,0,int,,,,True
+G004,groupc1_test,group_c_v1,eucalyptus,,I050,numcode,"{'mapping': 'semantic', 'order': ['none', 'low', 'average', 'good', 'best']}",eucalyptus,Utility,736,19,5,0,int,,,,True
+G005,groupc1_test,group_c_v1,eucalyptus,,I050,numcode,{'mapping': 'alphabetical'},eucalyptus,Utility,736,19,5,0,int,,,,True
+G006,groupc1_test,group_c_v1,concrete,,I039,round,{'decimals': 0},concrete_compressive_strength,strength,1030,8,79,0,int,,,,True
+G007,groupc1_test,group_c_v1,boston_housing,,I026,round,{'decimals': 0},boston,MEDV,506,13,46,0,int,,,,True
+G008,groupc1_test,group_c_v1,energy_efficiency,,I006,round,{'decimals': 0},energy_efficiency,heating_load,768,8,37,0,int,,,,True
+G009,groupc1_test,group_c_v1,qsar_fish_toxicity,,I007,round,{'decimals': 0},QSAR_fish_toxicity,LC50,908,6,11,0,int,,,,True
+G010,groupc1_test,group_c_v1,tecator,,I037,round,{'decimals': 0},tecator,fat,240,124,47,0,int,,,,True
+G011,groupc1_test,group_c_v1,concrete,,I039,bin,"{'bins': 5, 'strategy': 'quantile'}",concrete_compressive_strength,strength,1030,8,5,0,int,,,,True
+G012,groupc1_test,group_c_v1,cars,,I024,bin,"{'bins': 5, 'strategy': 'quantile'}",cars,Price,804,17,5,0,int,,,,True
+G013,groupc1_test,group_c_v1,energy_efficiency,,I006,bin,"{'bins': 5, 'strategy': 'quantile'}",energy_efficiency,heating_load,768,8,5,0,int,,,,True
+G014,groupc1_test,group_c_v1,qsar_fish_toxicity,,I007,bin,"{'bins': 5, 'strategy': 'quantile'}",QSAR_fish_toxicity,LC50,908,6,5,0,int,,,,True
+G015,groupc1_test,group_c_v1,tecator,,I037,bin,"{'bins': 5, 'strategy': 'quantile'}",tecator,fat,240,124,5,0,int,,,,True
+G016,groupc1_test,group_c_v1,cars,,I024,anon,{},cars,y,804,17,798,0,float,,,,True
+G017,groupc1_test,group_c_v1,forest_fires,,I052,anon,{},forest_fires,y,517,12,251,0,float,,,,True
+G018,groupc1_test,group_c_v1,solar_flare,,I046,anon,{},solar_flare,y,1066,10,8,0,int,,,,True
+G019,groupc1_test,group_c_v1,climate_model_simulation_crashes,,I056,anon,{},climate-model-simulation-crashes,y,540,18,2,0,int,,,,True
+G020,groupc1_test,group_c_v1,nasa_defect,,I055,anon,{},kc2,y,522,21,2,0,string,,,,True
+I001,gold_test,OpenML-CC18+OpenML-multitype,isolet,openml_300,,,,isolet,class,7797,617,26,0,int,,,ok,True
+I002,gold_test,TOC-UCO (originally-ordinal),tae,tocuco_oc03_tae,,,,tae,y,151,54,3,0,int,,,ok,False
+I003,gold_test,TOC-UCO (discretised-regression),california_housing,tocuco_dr07_calhousing,,,,calhousing,y,20640,8,7,0,int,,,ok,True
+I004,gold_test,AMLB-regression,wine_quality,openml_287,,,,wine_quality,quality,6497,11,7,0,int,,,ok,True
+I005,gold_test,OpenML-CC18,credit_australian,openml_29,,,,credit-approval,class,690,15,2,0,string,,,ok,True
+I006,gold_test,OpenML-CTR23,energy_efficiency,openml_44960,,,,energy_efficiency,heating_load,768,8,587,0,float,,,ok,True
+I007,gold_test,OpenML-CTR23,qsar_fish_toxicity,openml_44970,,,,QSAR_fish_toxicity,LC50,908,6,827,0,float,,,ok,True
+I008,gold_test,AMLB-regression,pol,openml_201,,,,pol,foo,15000,48,11,0,int,,,ok,True
+I009,gold_test,OpenML-CTR23,student_performance,openml_44967,,,,student_performance_por,G3,649,30,17,0,int,,,ok,True
+I010,gold_test,TOC-UCO (originally-ordinal),gymexercisetracking,tocuco_oc04_gymExerciseTracking,,,,gymExerciseTracking,y,973,17,4,0,int,,,ok,True
+I011,gold_test,TOC-UCO (originally-ordinal),lestsensors,tocuco_oc04_LESTSensors,,,,LESTSensors,y,5112,6,4,0,int,,,ok,False
+I012,gold_test,OpenML-CTR23,wine_quality,openml_44971,,,,white_wine,quality,4898,11,7,0,int,,,ok,True
+I013,gold_test,TOC-UCO (discretised-regression),census,tocuco_dr05_census2,,,,census2,y,22784,16,5,0,int,,,ok,True
+I014,gold_test,OpenML-CTR23,abalone,openml_44956,,,,abalone,rings,4177,8,28,0,int,,,ok,True
+I015,gold_test,OpenML-CC18,ilpd,openml_1480,,,,ilpd,Class,583,10,2,0,int,,,ok,True
+I016,gold_test,TOC-UCO (originally-ordinal),newthyroid,tocuco_oc03_newthyroid,,,,newthyroid,y,215,5,3,0,int,,,ok,False
+I017,gold_test,TOC-UCO (originally-ordinal),heartdisease,tocuco_oc04_heartDisease,,,,heartDisease,y,294,13,4,0,int,,,ok,True
+I018,gold_test,AMLB-classification+OpenML-CC18,cmc,openml_23,,,,cmc,Contraceptive_method_used,1473,9,3,0,int,,,ok,True
+I019,gold_test,TOC-UCO (originally-ordinal),levxsensors,tocuco_oc04_LEVXSensors,,,,LEVXSensors,y,5112,6,4,0,int,,,ok,False
+I020,gold_test,OpenML-CC18,wdbc,openml_1510,,,,wdbc,Class,569,30,2,0,int,,,ok,True
+I021,gold_test,TOC-UCO (originally-ordinal),support,tocuco_oc04_support,,,,support,y,730,19,4,0,int,,,ok,True
+I022,gold_test,TOC-UCO (discretised-regression),forest_fires,tocuco_dr04_forestfires,,,,forestfires,y,517,8,4,0,int,,,ok,True
+I023,gold_test,OpenML-CC18,mfeat,openml_14,,,,mfeat-fourier,class,2000,76,10,0,int,,,ok,True
+I024,gold_test,OpenML-CTR23,cars,openml_44994,,,,cars,Price,804,17,798,0,float,,,ok,True
+I025,gold_test,OpenML-CC18,mfeat,openml_16,,,,mfeat-karhunen,class,2000,64,10,0,int,,,ok,True
+I026,gold_test,AMLB-regression,boston_housing,openml_531,,,,boston,MEDV,506,13,229,0,float,,,ok,True
+I027,gold_test,AMLB-classification,arcene,openml_41157,,,,arcene,class,100,10000,2,0,int,,,ok,True
+I028,gold_test,TOC-UCO (discretised-regression),census,tocuco_dr05_census1,,,,census1,y,22784,8,5,0,int,,,ok,True
+I029,gold_test,TOC-UCO (discretised-regression),buoys,tocuco_dr05_buoysFlux46026,,,,buoysFlux46026,y,5844,8,5,0,int,,,ok,True
+I030,gold_test,TOC-UCO (originally-ordinal),childrenanemia,tocuco_oc04_childrenAnemia,,,,childrenAnemia,y,5855,14,4,0,int,,,ok,True
+I031,gold_test,TOC-UCO (discretised-regression),machine,tocuco_dr04_machine,,,,machine,y,209,6,4,0,int,,,ok,True
+I032,gold_test,OpenML-CTR23,wine_quality,openml_44972,,,,red_wine,quality,1599,11,6,0,int,,,ok,True
+I033,gold_test,TOC-UCO (originally-ordinal),problematicinternetusage,tocuco_oc04_problematicInternetUsage,,,,problematicInternetUsage,y,2120,32,4,0,int,,,ok,True
+I034,gold_test,TOC-UCO (originally-ordinal),balance_scale,tocuco_oc03_balanceScale,,,,balanceScale,y,625,4,3,0,int,,,ok,False
+I035,gold_test,OpenML-CC18,breast_w,openml_15,,,,breast-w,Class,699,9,2,0,string,,,ok,True
+I036,gold_test,AMLB-classification+OpenML-CC18,mfeat,openml_12,,,,mfeat-factors,class,2000,216,10,0,int,,,ok,True
+I037,gold_test,AMLB-regression,tecator,openml_505,,,,tecator,fat,240,124,157,0,float,,,ok,True
+I038,gold_test,OpenML-multitype,plk_mini_copy,openml_45104,,,,PLK_Mini_Copy,CATEGORY,3440,2,86,0,string,,,ok,True
+I039,gold_test,OpenML-CTR23,concrete,openml_44959,,,,concrete_compressive_strength,strength,1030,8,938,0,float,,,ok,True
+I040,gold_test,OpenML-CC18,cylinder_bands,openml_6332,,,,cylinder-bands,band_type,540,37,2,0,string,,,ok,True
+I041,gold_test,AMLB-regression,abalone,openml_42726,,,,abalone,Class_number_of_rings,4177,8,28,0,int,,,ok,True
+I042,gold_test,AMLB-classification,credit_australian,openml_40981,,,,Australian,A15,690,14,2,0,int,,,ok,True
+I043,gold_test,TOC-UCO (discretised-regression),buoys,tocuco_dr05_buoysFlux46059,,,,buoysFlux46059,y,5844,8,5,0,int,,,ok,True
+I044,gold_test,AMLB-regression,sensory,openml_546,,,,sensory,Score,576,11,11,0,float,,,ok,True
+I045,gold_test,OpenML-CC18,mfeat,openml_18,,,,mfeat-morphological,class,2000,6,10,0,int,,,ok,True
+I046,gold_test,OpenML-CTR23,solar_flare,openml_44966,,,,solar_flare,c_class_flares,1066,10,8,0,int,,,ok,True
+I047,gold_test,OpenML-CC18,balance_scale,openml_11,,,,balance-scale,class,625,4,3,0,string,,,ok,True
+I048,gold_test,TOC-UCO (discretised-regression),buoys,tocuco_dr06_buoysFlux46069,,,,buoysFlux46069,y,5844,8,6,0,int,,,ok,True
+I049,gold_test,TOC-UCO (originally-ordinal),car_evaluation,tocuco_oc04_car,,,,car,y,1728,21,4,0,int,,,ok,False
+I050,gold_test,AMLB-classification+OpenML-CC18,eucalyptus,openml_188,,,,eucalyptus,Utility,736,19,5,0,string,,,ok,True
+I051,gold_test,OpenML-CC18,mfeat,openml_22,,,,mfeat-zernike,class,2000,47,10,0,int,,,ok,True
+I052,gold_test,OpenML-CTR23,forest_fires,openml_44962,,,,forest_fires,area,517,12,251,0,float,,,ok,True
+I053,gold_test,TOC-UCO (originally-ordinal),mammoexp,tocuco_oc03_mammoexp,,,,mammoexp,y,412,5,3,0,int,,,ok,True
+I054,gold_test,OpenML-CC18,dresses_sales,openml_23381,,,,dresses-sales,Class,500,12,2,0,int,,,ok,True
+I055,gold_test,OpenML-CC18,nasa_defect,openml_1063,,,,kc2,problems,522,21,2,0,string,,,ok,True
+I056,gold_test,OpenML-CC18,climate_model_simulation_crashes,openml_40994,,,,climate-model-simulation-crashes,outcome,540,18,2,0,int,,,ok,True

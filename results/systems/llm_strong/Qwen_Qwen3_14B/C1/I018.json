@@ -1,0 +1,34 @@
+{
+ "instance_id": "I018",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "6ec2c98446fe16f45f3e5444a4d3de3fd3bb87eff889bcff69176e93d8bc530b",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.2,
+  "p_MULTICLASS": 0.5,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column `Contraceptive_method_used` has 3 distinct integer values (1, 2, 3), which could represent different categories of contraceptive methods. Since there is no clear ordering or indication of counts, MULTICLASS is the most likely task, though ORDINAL and BINARY are also plausible."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.2,\n    \"MULTICLASS\": 0.5,\n    \"ORDINAL\": 0.3,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column `Contraceptive_method_used` has 3 distinct integer values (1, 2, 3), which could represent different categories of contraceptive methods. Since there is no clear ordering or indication of counts, MULTICLASS is the most likely task, though ORDINAL and BINARY are also plausible.\"\n}",
+   "tokens_in": 1003,
+   "tokens_out": 179,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.15
+}

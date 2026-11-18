@@ -1,0 +1,34 @@
+{
+ "instance_id": "I030",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "811d6fd5cb349d707d498a8f78ebcebc5afd4e0df8f4d5825c7ccd68eb29c6cb",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.7,
+  "p_COUNT_REGRESSION": 0.3,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values have 4 distinct levels and are ordinal in nature, as described in the dataset documentation.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.7, \"COUNT_REGRESSION\": 0.3, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target values have 4 distinct levels and are ordinal in nature, as described in the dataset documentation.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1799,
+   "tokens_out": 130,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.82
+}

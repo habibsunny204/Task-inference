@@ -1,0 +1,34 @@
+{
+ "instance_id": "G013",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "4236211e642df028e714252b72130deabd374d405dc75d359846b9ab2ddd5e9d",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.047619047619047616,
+  "p_MULTICLASS": 0.42857142857142855,
+  "p_ORDINAL": 0.47619047619047616,
+  "p_COUNT_REGRESSION": 0.047619047619047616,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.05,
+  "confidence": 4,
+  "evidence": "The target has 5 distinct whole number values, including zero, and the values are ordered with increasing counts, suggesting ordinal nature."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.05, \"MULTICLASS\": 0.45, \"ORDINAL\": 0.5, \"COUNT_REGRESSION\": 0.05},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 5 distinct whole number values, including zero, and the values are ordered with increasing counts, suggesting ordinal nature.\"\n}",
+   "tokens_in": 744,
+   "tokens_out": 122,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 7.99
+}

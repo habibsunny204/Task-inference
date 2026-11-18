@@ -1,0 +1,34 @@
+{
+ "instance_id": "I029",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "dde66803eaec7efc4c630fd0696c6168c1443d313cebb7581afaf63d15f747ea",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.8,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target column `y` is described as holding the interval index after discretisation of a continuous output.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0, \"MULTICLASS\": 0, \"ORDINAL\": 0.8, \"COUNT_REGRESSION\": 0.2, \"CONTINUOUS_REGRESSION\": 0},\n  \"confidence\": 4,\n  \"evidence\": \"The target column `y` is described as holding the interval index after discretisation of a continuous output.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1504,
+   "tokens_out": 124,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.25
+}

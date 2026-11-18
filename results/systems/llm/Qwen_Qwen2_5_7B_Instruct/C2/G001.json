@@ -1,0 +1,34 @@
+{
+ "instance_id": "G001",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "7f1c5cb57befda8b92ef60e03c00f3f32dbd14d73c08002cc8a90788ca02faf6",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has two distinct values and is integer-encoded, suggesting a binary classification task.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.7, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.2, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has two distinct values and is integer-encoded, suggesting a binary classification task.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1296,
+   "tokens_out": 125,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.1
+}

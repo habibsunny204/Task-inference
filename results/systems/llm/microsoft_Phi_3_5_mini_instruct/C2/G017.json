@@ -1,0 +1,35 @@
+{
+ "instance_id": "G017",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "5f56b54e0768c819cf54ef5a183ac7c5fd69a475a5f0d8b14d56475b5ab84cb8",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.07142857142857144,
+  "p_MULTICLASS": 0.07142857142857144,
+  "p_ORDINAL": 0.2142857142857143,
+  "p_COUNT_REGRESSION": 0.35714285714285715,
+  "p_CONTINUOUS_REGRESSION": 0.28571428571428575,
+  "probability_sum_raw": 1.4,
+  "confidence": 4,
+  "evidence": "The target variable 'area' is a continuous variable representing the burned area of forest fires, with a range from 0.00 to 1090.84 and a skewness towards 0.0, suggesting a count of events or items.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": \"0.1\",\n    \"MULTICLASS\": \"0.1\",\n    \"ORDINAL\": \"0.3\",\n    \"COUNT_REGRESSION\": \"0.5\",\n    \"CONTINUOUS_REGRESSION\": \"0.4\"\n  },\n  \"confidence\": \"4\",\n  \"evidence\": \"The target variable 'area' is a continuous variable representing the burned area of forest fires, with a range from 0.00 to 1090.84 and a skewness towards 0.0, suggesting a count of events or items.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 2225,
+   "tokens_out": 223,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.43
+}

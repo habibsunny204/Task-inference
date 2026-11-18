@@ -1,0 +1,33 @@
+{
+ "instance_id": "I035",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "d500ad9cc40034ddb06254f5f78f475e3ed24cb039ec8570fe1ac3716981da22",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.05,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column 'Class' has two distinct values, 'benign' and 'malignant', which correspond to two outcomes in a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n\n{\n\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\"],\n\n  \"most_likely_task\": \"BINARY\",\n\n  \"probabilities\": {\n\n    \"BINARY\": 0.95,\n\n    \"MULTICLASS\": 0.05,\n\n    \"ORDINAL\": 0.0,\n\n    \"COUNT_REGRESSION\": 0.0,\n\n    \"CONTINUOUS_REGRESSION\": 0.0\n\n  },\n\n  \"confidence\": 5,\n\n  \"evidence\": \"The target column 'Class' has two distinct values, 'benign' and 'malignant', which correspond to two outcomes in a binary classification task.\"\n\n}\n\n```",
+   "tokens_in": 1172,
+   "tokens_out": 190,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.17
+}

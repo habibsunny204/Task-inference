@@ -1,0 +1,587 @@
+instance_id,role,source,family,candidate_id,base_id,transformation,params,title,target_name,n_rows,n_features,n_unique,n_missing,target_kind,label,label_rule,check,has_doc
+G001,groupc1_test,group_c_v1,credit_australian,,I005,numcode,{'mapping': 'alphabetical'},credit-approval,class,690,15,2,0,int,,,,True
+G002,groupc1_test,group_c_v1,breast_w,,I035,numcode,{'mapping': 'alphabetical'},breast-w,Class,699,9,2,0,int,,,,True
+G003,groupc1_test,group_c_v1,plk_mini_copy,,I038,numcode,{'mapping': 'alphabetical'},PLK_Mini_Copy,CATEGORY,3440,2,86,0,int,,,,True
+G004,groupc1_test,group_c_v1,eucalyptus,,I050,numcode,"{'mapping': 'semantic', 'order': ['none', 'low', 'average', 'good', 'best']}",eucalyptus,Utility,736,19,5,0,int,,,,True
+G005,groupc1_test,group_c_v1,eucalyptus,,I050,numcode,{'mapping': 'alphabetical'},eucalyptus,Utility,736,19,5,0,int,,,,True
+G006,groupc1_test,group_c_v1,concrete,,I039,round,{'decimals': 0},concrete_compressive_strength,strength,1030,8,79,0,int,,,,True
+G007,groupc1_test,group_c_v1,boston_housing,,I026,round,{'decimals': 0},boston,MEDV,506,13,46,0,int,,,,True
+G008,groupc1_test,group_c_v1,energy_efficiency,,I006,round,{'decimals': 0},energy_efficiency,heating_load,768,8,37,0,int,,,,True
+G009,groupc1_test,group_c_v1,qsar_fish_toxicity,,I007,round,{'decimals': 0},QSAR_fish_toxicity,LC50,908,6,11,0,int,,,,True
+G010,groupc1_test,group_c_v1,tecator,,I037,round,{'decimals': 0},tecator,fat,240,124,47,0,int,,,,True
+G011,groupc1_test,group_c_v1,concrete,,I039,bin,"{'bins': 5, 'strategy': 'quantile'}",concrete_compressive_strength,strength,1030,8,5,0,int,,,,True
+G012,groupc1_test,group_c_v1,cars,,I024,bin,"{'bins': 5, 'strategy': 'quantile'}",cars,Price,804,17,5,0,int,,,,True
+G013,groupc1_test,group_c_v1,energy_efficiency,,I006,bin,"{'bins': 5, 'strategy': 'quantile'}",energy_efficiency,heating_load,768,8,5,0,int,,,,True
+G014,groupc1_test,group_c_v1,qsar_fish_toxicity,,I007,bin,"{'bins': 5, 'strategy': 'quantile'}",QSAR_fish_toxicity,LC50,908,6,5,0,int,,,,True
+G015,groupc1_test,group_c_v1,tecator,,I037,bin,"{'bins': 5, 'strategy': 'quantile'}",tecator,fat,240,124,5,0,int,,,,True
+G016,groupc1_test,group_c_v1,cars,,I024,anon,{},cars,y,804,17,798,0,float,,,,True
+G017,groupc1_test,group_c_v1,forest_fires,,I052,anon,{},forest_fires,y,517,12,251,0,float,,,,True
+G018,groupc1_test,group_c_v1,solar_flare,,I046,anon,{},solar_flare,y,1066,10,8,0,int,,,,True
+G019,groupc1_test,group_c_v1,climate_model_simulation_crashes,,I056,anon,{},climate-model-simulation-crashes,y,540,18,2,0,int,,,,True
+G020,groupc1_test,group_c_v1,nasa_defect,,I055,anon,{},kc2,y,522,21,2,0,string,,,,True
+I001,gold_test,OpenML-CC18+OpenML-multitype,isolet,openml_300,,,,isolet,class,7797,617,26,0,int,,,ok,True
+I002,gold_test,TOC-UCO (originally-ordinal),tae,tocuco_oc03_tae,,,,tae,y,151,54,3,0,int,,,ok,False
+I003,gold_test,TOC-UCO (discretised-regression),california_housing,tocuco_dr07_calhousing,,,,calhousing,y,20640,8,7,0,int,,,ok,True
+I004,gold_test,AMLB-regression,wine_quality,openml_287,,,,wine_quality,quality,6497,11,7,0,int,,,ok,True
+I005,gold_test,OpenML-CC18,credit_australian,openml_29,,,,credit-approval,class,690,15,2,0,string,,,ok,True
+I006,gold_test,OpenML-CTR23,energy_efficiency,openml_44960,,,,energy_efficiency,heating_load,768,8,587,0,float,,,ok,True
+I007,gold_test,OpenML-CTR23,qsar_fish_toxicity,openml_44970,,,,QSAR_fish_toxicity,LC50,908,6,827,0,float,,,ok,True
+I008,gold_test,AMLB-regression,pol,openml_201,,,,pol,foo,15000,48,11,0,int,,,ok,True
+I009,gold_test,OpenML-CTR23,student_performance,openml_44967,,,,student_performance_por,G3,649,30,17,0,int,,,ok,True
+I010,gold_test,TOC-UCO (originally-ordinal),gymexercisetracking,tocuco_oc04_gymExerciseTracking,,,,gymExerciseTracking,y,973,17,4,0,int,,,ok,True
+I011,gold_test,TOC-UCO (originally-ordinal),lestsensors,tocuco_oc04_LESTSensors,,,,LESTSensors,y,5112,6,4,0,int,,,ok,False
+I012,gold_test,OpenML-CTR23,wine_quality,openml_44971,,,,white_wine,quality,4898,11,7,0,int,,,ok,True
+I013,gold_test,TOC-UCO (discretised-regression),census,tocuco_dr05_census2,,,,census2,y,22784,16,5,0,int,,,ok,True
+I014,gold_test,OpenML-CTR23,abalone,openml_44956,,,,abalone,rings,4177,8,28,0,int,,,ok,True
+I015,gold_test,OpenML-CC18,ilpd,openml_1480,,,,ilpd,Class,583,10,2,0,int,,,ok,True
+I016,gold_test,TOC-UCO (originally-ordinal),newthyroid,tocuco_oc03_newthyroid,,,,newthyroid,y,215,5,3,0,int,,,ok,False
+I017,gold_test,TOC-UCO (originally-ordinal),heartdisease,tocuco_oc04_heartDisease,,,,heartDisease,y,294,13,4,0,int,,,ok,True
+I018,gold_test,AMLB-classification+OpenML-CC18,cmc,openml_23,,,,cmc,Contraceptive_method_used,1473,9,3,0,int,,,ok,True
+I019,gold_test,TOC-UCO (originally-ordinal),levxsensors,tocuco_oc04_LEVXSensors,,,,LEVXSensors,y,5112,6,4,0,int,,,ok,False
+I020,gold_test,OpenML-CC18,wdbc,openml_1510,,,,wdbc,Class,569,30,2,0,int,,,ok,True
+I021,gold_test,TOC-UCO (originally-ordinal),support,tocuco_oc04_support,,,,support,y,730,19,4,0,int,,,ok,True
+I022,gold_test,TOC-UCO (discretised-regression),forest_fires,tocuco_dr04_forestfires,,,,forestfires,y,517,8,4,0,int,,,ok,True
+I023,gold_test,OpenML-CC18,mfeat,openml_14,,,,mfeat-fourier,class,2000,76,10,0,int,,,ok,True
+I024,gold_test,OpenML-CTR23,cars,openml_44994,,,,cars,Price,804,17,798,0,float,,,ok,True
+I025,gold_test,OpenML-CC18,mfeat,openml_16,,,,mfeat-karhunen,class,2000,64,10,0,int,,,ok,True
+I026,gold_test,AMLB-regression,boston_housing,openml_531,,,,boston,MEDV,506,13,229,0,float,,,ok,True
+I027,gold_test,AMLB-classification,arcene,openml_41157,,,,arcene,class,100,10000,2,0,int,,,ok,True
+I028,gold_test,TOC-UCO (discretised-regression),census,tocuco_dr05_census1,,,,census1,y,22784,8,5,0,int,,,ok,True
+I029,gold_test,TOC-UCO (discretised-regression),buoys,tocuco_dr05_buoysFlux46026,,,,buoysFlux46026,y,5844,8,5,0,int,,,ok,True
+I030,gold_test,TOC-UCO (originally-ordinal),childrenanemia,tocuco_oc04_childrenAnemia,,,,childrenAnemia,y,5855,14,4,0,int,,,ok,True
+I031,gold_test,TOC-UCO (discretised-regression),machine,tocuco_dr04_machine,,,,machine,y,209,6,4,0,int,,,ok,True
+I032,gold_test,OpenML-CTR23,wine_quality,openml_44972,,,,red_wine,quality,1599,11,6,0,int,,,ok,True
+I033,gold_test,TOC-UCO (originally-ordinal),problematicinternetusage,tocuco_oc04_problematicInternetUsage,,,,problematicInternetUsage,y,2120,32,4,0,int,,,ok,True
+I034,gold_test,TOC-UCO (originally-ordinal),balance_scale,tocuco_oc03_balanceScale,,,,balanceScale,y,625,4,3,0,int,,,ok,False
+I035,gold_test,OpenML-CC18,breast_w,openml_15,,,,breast-w,Class,699,9,2,0,string,,,ok,True
+I036,gold_test,AMLB-classification+OpenML-CC18,mfeat,openml_12,,,,mfeat-factors,class,2000,216,10,0,int,,,ok,True
+I037,gold_test,AMLB-regression,tecator,openml_505,,,,tecator,fat,240,124,157,0,float,,,ok,True
+I038,gold_test,OpenML-multitype,plk_mini_copy,openml_45104,,,,PLK_Mini_Copy,CATEGORY,3440,2,86,0,string,,,ok,True
+I039,gold_test,OpenML-CTR23,concrete,openml_44959,,,,concrete_compressive_strength,strength,1030,8,938,0,float,,,ok,True
+I040,gold_test,OpenML-CC18,cylinder_bands,openml_6332,,,,cylinder-bands,band_type,540,37,2,0,string,,,ok,True
+I041,gold_test,AMLB-regression,abalone,openml_42726,,,,abalone,Class_number_of_rings,4177,8,28,0,int,,,ok,True
+I042,gold_test,AMLB-classification,credit_australian,openml_40981,,,,Australian,A15,690,14,2,0,int,,,ok,True
+I043,gold_test,TOC-UCO (discretised-regression),buoys,tocuco_dr05_buoysFlux46059,,,,buoysFlux46059,y,5844,8,5,0,int,,,ok,True
+I044,gold_test,AMLB-regression,sensory,openml_546,,,,sensory,Score,576,11,11,0,float,,,ok,True
+I045,gold_test,OpenML-CC18,mfeat,openml_18,,,,mfeat-morphological,class,2000,6,10,0,int,,,ok,True
+I046,gold_test,OpenML-CTR23,solar_flare,openml_44966,,,,solar_flare,c_class_flares,1066,10,8,0,int,,,ok,True
+I047,gold_test,OpenML-CC18,balance_scale,openml_11,,,,balance-scale,class,625,4,3,0,string,,,ok,True
+I048,gold_test,TOC-UCO (discretised-regression),buoys,tocuco_dr06_buoysFlux46069,,,,buoysFlux46069,y,5844,8,6,0,int,,,ok,True
+I049,gold_test,TOC-UCO (originally-ordinal),car_evaluation,tocuco_oc04_car,,,,car,y,1728,21,4,0,int,,,ok,False
+I050,gold_test,AMLB-classification+OpenML-CC18,eucalyptus,openml_188,,,,eucalyptus,Utility,736,19,5,0,string,,,ok,True
+I051,gold_test,OpenML-CC18,mfeat,openml_22,,,,mfeat-zernike,class,2000,47,10,0,int,,,ok,True
+I052,gold_test,OpenML-CTR23,forest_fires,openml_44962,,,,forest_fires,area,517,12,251,0,float,,,ok,True
+I053,gold_test,TOC-UCO (originally-ordinal),mammoexp,tocuco_oc03_mammoexp,,,,mammoexp,y,412,5,3,0,int,,,ok,True
+I054,gold_test,OpenML-CC18,dresses_sales,openml_23381,,,,dresses-sales,Class,500,12,2,0,int,,,ok,True
+I055,gold_test,OpenML-CC18,nasa_defect,openml_1063,,,,kc2,problems,522,21,2,0,string,,,ok,True
+I056,gold_test,OpenML-CC18,climate_model_simulation_crashes,openml_40994,,,,climate-model-simulation-crashes,outcome,540,18,2,0,int,,,ok,True
+R001-anon,groupc2_train,group_c_v2,rdata_affairs,,R001,anon,{},Fair's Extramarital Affairs Data,y,601,8,6,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R001,silver_train,Rdatasets/AER,rdata_affairs,rdatasets_AER_Affairs,,,,Fair's Extramarital Affairs Data,affairs,601,8,6,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R002-anon,groupc2_train,group_c_v2,rdata_bankwages,,R002,anon,{},Bank Wages,y,474,3,3,0,string,MULTICLASS,R6 multinom example in the dataset's documentation + transformation,,True
+R002-numcode,groupc2_train,group_c_v2,rdata_bankwages,,R002,numcode,"{""mapping"": ""alphabetical""}",Bank Wages,job,474,3,3,0,int,MULTICLASS,R6 multinom example in the dataset's documentation + transformation,,True
+R002,silver_train,Rdatasets/AER,rdata_bankwages,rdatasets_AER_BankWages,,,,Bank Wages,job,474,3,3,0,string,MULTICLASS,R6 multinom example in the dataset's documentation,,True
+R003-anon,groupc2_train,group_c_v2,rdata_doctorvisits,,R003,anon,{},Australian Health Service Utilization Data,y,5190,11,10,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R003,silver_train,Rdatasets/AER,rdata_doctorvisits,rdatasets_AER_DoctorVisits,,,,Australian Health Service Utilization Data,visits,5190,11,10,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R004-anon,groupc2_train,group_c_v2,rdata_equationcitations,,R004,anon,{},Number of Equations and Citations for Evolutionary Biology Publications,y,649,12,144,0,int,COUNT_REGRESSION,R6 glm.nb example in the dataset's documentation + transformation,,True
+R004,silver_train,Rdatasets/AER,rdata_equationcitations,rdatasets_AER_EquationCitations,,,,Number of Equations and Citations for Evolutionary Biology Publications,othercites,649,12,144,0,int,COUNT_REGRESSION,R6 glm.nb example in the dataset's documentation,,True
+R005-anon,groupc2_train,group_c_v2,rdata_hmda,,R005,anon,{},Home Mortgage Disclosure Act Data,y,2380,13,2,0,string,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R005-numcode,groupc2_train,group_c_v2,rdata_hmda,,R005,numcode,"{""mapping"": ""alphabetical""}",Home Mortgage Disclosure Act Data,deny,2380,13,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R005,silver_train,Rdatasets/AER,rdata_hmda,rdatasets_AER_HMDA,,,,Home Mortgage Disclosure Act Data,deny,2380,13,2,0,string,BINARY,R6 glm example in the dataset's documentation,,True
+R006-anon,groupc2_train,group_c_v2,rdata_psid1976,,R006,anon,{},Labor Force Participation Data,y,753,20,2,0,string,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R006-numcode,groupc2_train,group_c_v2,rdata_psid1976,,R006,numcode,"{""mapping"": ""alphabetical""}",Labor Force Participation Data,participation,753,20,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R006,silver_train,Rdatasets/AER,rdata_psid1976,rdatasets_AER_PSID1976,,,,Labor Force Participation Data,participation,753,20,2,0,string,BINARY,R6 glm example in the dataset's documentation,,True
+R007-anon,groupc2_train,group_c_v2,rdata_psid1982,,R007,anon,{},PSID Earnings Data 1982,y,595,11,2,0,string,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R007-numcode,groupc2_train,group_c_v2,rdata_psid1982,,R007,numcode,"{""mapping"": ""alphabetical""}",PSID Earnings Data 1982,union,595,11,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R007,silver_train,Rdatasets/AER,rdata_psid1982,rdatasets_AER_PSID1982,,,,PSID Earnings Data 1982,union,595,11,2,0,string,BINARY,R6 glm example in the dataset's documentation,,True
+R008-anon,groupc2_train,group_c_v2,rdata_phdpublications,,R008,anon,{},Doctoral Publications,y,915,5,15,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R008,silver_train,Rdatasets/AER,rdata_phdpublications,rdatasets_AER_PhDPublications,,,,Doctoral Publications,articles,915,5,15,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R009-anon,groupc2_train,group_c_v2,rdata_recreationdemand,,R009,anon,{},Recreation Demand Data,y,659,7,22,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R009,silver_train,Rdatasets/AER,rdata_recreationdemand,rdatasets_AER_RecreationDemand,,,,Recreation Demand Data,trips,659,7,22,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R010-anon,groupc2_train,group_c_v2,rdata_swisslabor,,R010,anon,{},Swiss Labor Market Participation Data,y,872,6,2,0,string,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R010-numcode,groupc2_train,group_c_v2,rdata_swisslabor,,R010,numcode,"{""mapping"": ""alphabetical""}",Swiss Labor Market Participation Data,participation,872,6,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R010,silver_train,Rdatasets/AER,rdata_swisslabor,rdatasets_AER_SwissLabor,,,,Swiss Labor Market Participation Data,participation,872,6,2,0,string,BINARY,R6 glm example in the dataset's documentation,,True
+R011-anon,groupc2_train,group_c_v2,rdata_affairs,,R011,anon,{},affairs,y,601,17,6,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R011,silver_train,Rdatasets/COUNT,rdata_affairs,rdatasets_COUNT_affairs,,,,affairs,naffairs,601,17,6,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R012-anon,groupc2_train,group_c_v2,rdata_azcabgptca,,R012,anon,{},azcabgptca,y,1959,5,38,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R012,silver_train,Rdatasets/COUNT,rdata_azcabgptca,rdatasets_COUNT_azcabgptca,,,,azcabgptca,los,1959,5,38,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R013-anon,groupc2_train,group_c_v2,rdata_azdrg112,,R013,anon,{},azdrg112,y,1798,3,26,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R013,silver_train,Rdatasets/COUNT,rdata_azdrg112,rdatasets_COUNT_azdrg112,,,,azdrg112,los,1798,3,26,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R014-anon,groupc2_train,group_c_v2,rdata_azpro,,R014,anon,{},azpro,y,3589,5,54,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R014,silver_train,Rdatasets/COUNT,rdata_azpro,rdatasets_COUNT_azpro,,,,azpro,los,3589,5,54,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R015-anon,groupc2_train,group_c_v2,rdata_azprocedure,,R015,anon,{},azprocedure,y,3589,5,54,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R015,silver_train,Rdatasets/COUNT,rdata_azprocedure,rdatasets_COUNT_azprocedure,,,,azprocedure,los,3589,5,54,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R016-anon,groupc2_train,group_c_v2,rdata_badhealth,,R016,anon,{},badhealth,y,1127,2,20,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R016,silver_train,Rdatasets/COUNT,rdata_badhealth,rdatasets_COUNT_badhealth,,,,badhealth,numvisit,1127,2,20,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R017-anon,groupc2_train,group_c_v2,rdata_lbw,,R017,anon,{},lbw,y,189,9,6,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R017,silver_train,Rdatasets/COUNT,rdata_lbw,rdatasets_COUNT_lbw,,,,lbw,ftv,189,9,6,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R018-anon,groupc2_train,group_c_v2,rdata_loomis,,R018,anon,{},loomis,y,410,10,47,26,float,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R018,silver_train,Rdatasets/COUNT,rdata_loomis,rdatasets_COUNT_loomis,,,,loomis,anvisits,410,10,47,26,float,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R019-anon,groupc2_train,group_c_v2,rdata_mdvis,,R019,anon,{},mdvis,y,2227,12,25,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R019,silver_train,Rdatasets/COUNT,rdata_mdvis,rdatasets_COUNT_mdvis,,,,mdvis,numvisit,2227,12,25,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R020-anon,groupc2_train,group_c_v2,rdata_medpar,,R020,anon,{},medpar,y,1495,9,52,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R020,silver_train,Rdatasets/COUNT,rdata_medpar,rdatasets_COUNT_medpar,,,,medpar,los,1495,9,52,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R021-anon,groupc2_train,group_c_v2,rdata_rwm,,R021,anon,{},rwm,y,27326,3,77,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R021,silver_train,Rdatasets/COUNT,rdata_rwm,rdatasets_COUNT_rwm,,,,rwm,docvis,27326,3,77,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R022-anon,groupc2_train,group_c_v2,rdata_rwm1984,,R022,anon,{},rwm1984,y,3874,14,55,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R022,silver_train,Rdatasets/COUNT,rdata_rwm1984,rdatasets_COUNT_rwm1984,,,,rwm1984,docvis,3874,14,55,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R023-anon,groupc2_train,group_c_v2,rdata_rwm5yr,,R023,anon,{},rwm5yr,y,19609,16,72,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R023,silver_train,Rdatasets/COUNT,rdata_rwm5yr,rdatasets_COUNT_rwm5yr,,,,rwm5yr,docvis,19609,16,72,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R025-anon,groupc2_train,group_c_v2,rdata_dengue,,R025,anon,{},"Dengue prevalence, by administrative region",y,2000,12,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R025,silver_train,Rdatasets/DAAG,rdata_dengue,rdatasets_DAAG_dengue,,,,"Dengue prevalence, by administrative region",NoYes,2000,12,2,0,int,BINARY,R6 glm example in the dataset's documentation,,True
+R026-anon,groupc2_train,group_c_v2,rdata_frogs,,R026,anon,{},Frogs Data,y,212,9,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R026,silver_train,Rdatasets/DAAG,rdata_frogs,rdatasets_DAAG_frogs,,,,Frogs Data,pres.abs,212,9,2,0,int,BINARY,R6 glm example in the dataset's documentation,,True
+R027-anon,groupc2_train,group_c_v2,rdata_leafshape17,,R027,anon,{},Full Leaf Shape Data Set,y,61,7,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R027,silver_train,Rdatasets/DAAG,rdata_leafshape17,rdatasets_DAAG_leafshape17,,,,Full Leaf Shape Data Set,arch,61,7,2,0,int,BINARY,R6 glm example in the dataset's documentation,,True
+R028-anon,groupc2_train,group_c_v2,rdata_default,,R028,anon,{},Credit Card Default Data,y,10000,3,2,0,string,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R028-numcode,groupc2_train,group_c_v2,rdata_default,,R028,numcode,"{""mapping"": ""alphabetical""}",Credit Card Default Data,default,10000,3,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R028,silver_train,Rdatasets/ISLR,rdata_default,rdatasets_ISLR_Default,,,,Credit Card Default Data,default,10000,3,2,0,string,BINARY,R6 glm example in the dataset's documentation,,True
+R029-anon,groupc2_train,group_c_v2,insurance,,R029,anon,{},Numbers of Car Insurance claims,y,64,4,46,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R029,silver_train,Rdatasets/MASS,insurance,rdatasets_MASS_Insurance,,,,Numbers of Car Insurance claims,Claims,64,4,46,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R030-anon,groupc2_train,group_c_v2,rdata_bacteria,,R030,anon,{},Presence of Bacteria after Drug Treatments,y,220,5,2,0,string,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R030-numcode,groupc2_train,group_c_v2,rdata_bacteria,,R030,numcode,"{""mapping"": ""alphabetical""}",Presence of Bacteria after Drug Treatments,y,220,5,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R030,silver_train,Rdatasets/MASS,rdata_bacteria,rdatasets_MASS_bacteria,,,,Presence of Bacteria after Drug Treatments,y,220,5,2,0,string,BINARY,R6 glm example in the dataset's documentation,,True
+R031-anon,groupc2_train,group_c_v2,rdata_epil,,R031,anon,{},Seizure Counts for Epileptics,y,236,8,36,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R031,silver_train,Rdatasets/MASS,rdata_epil,rdatasets_MASS_epil,,,,Seizure Counts for Epileptics,y,236,8,36,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R032-anon,groupc2_train,group_c_v2,rdata_infert,,R032,anon,{},Infertility after Spontaneous and Induced Abortion,y,248,7,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R032,silver_train,Rdatasets/datasets,rdata_infert,rdatasets_datasets_infert,,,,Infertility after Spontaneous and Induced Abortion,case,248,7,2,0,int,BINARY,R6 glm example in the dataset's documentation,,True
+R033-anon,groupc2_train,group_c_v2,rdata_respiratory,,R033,anon,{},Data from a clinical trial comparing two treatments for a respiratory illness,y,444,7,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R033,silver_train,Rdatasets/geepack,rdata_respiratory,rdatasets_geepack_respiratory,,,,Data from a clinical trial comparing two treatments for a respiratory illness,outcome,444,7,2,0,int,BINARY,R6 glm example in the dataset's documentation,,True
+R034-anon,groupc2_train,group_c_v2,rdata_verbagg,,R034,anon,{},Verbal Aggression item responses,y,7584,8,2,0,string,BINARY,R6 glmer example in the dataset's documentation + transformation,,True
+R034-numcode,groupc2_train,group_c_v2,rdata_verbagg,,R034,numcode,"{""mapping"": ""alphabetical""}",Verbal Aggression item responses,r2,7584,8,2,0,int,BINARY,R6 glmer example in the dataset's documentation + transformation,,True
+R034,silver_train,Rdatasets/lme4,rdata_verbagg,rdatasets_lme4_VerbAgg,,,,Verbal Aggression item responses,r2,7584,8,2,0,string,BINARY,R6 glmer example in the dataset's documentation,,True
+R035-anon,groupc2_train,group_c_v2,rdata_culcitalogreg,,R035,anon,{},Coral-eating seastar Culcita novaeguineae data (binary predation version),y,80,8,2,0,int,BINARY,R6 glmer example in the dataset's documentation + transformation,,True
+R035,silver_train,Rdatasets/lme4,rdata_culcitalogreg,rdatasets_lme4_culcitalogreg,,,,Coral-eating seastar Culcita novaeguineae data (binary predation version),predation,80,8,2,0,int,BINARY,R6 glmer example in the dataset's documentation,,True
+R036-anon,groupc2_train,group_c_v2,rdata_salamander,,R036,anon,{},Mountain dusky salamander mating,y,360,7,2,0,int,BINARY,R6 glmer example in the dataset's documentation + transformation,,True
+R036,silver_train,Rdatasets/lme4,rdata_salamander,rdatasets_lme4_salamander,,,,Mountain dusky salamander mating,Mate,360,7,2,0,int,BINARY,R6 glmer example in the dataset's documentation,,True
+R037-anon,groupc2_train,group_c_v2,rdata_schizophrenia,,R037,anon,{},National Institute of Mental Health Schizophrenia Collaborative Study,y,1603,8,21,0,float,CONTINUOUS_REGRESSION,R6 glmer example in the dataset's documentation + transformation,,True
+R037-bin3,groupc2_train,group_c_v2,rdata_schizophrenia,,R037,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",National Institute of Mental Health Schizophrenia Collaborative Study,imps79,1603,8,3,0,int,ORDINAL,R6 glmer example in the dataset's documentation + transformation,,True
+R037-bin5,groupc2_train,group_c_v2,rdata_schizophrenia,,R037,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",National Institute of Mental Health Schizophrenia Collaborative Study,imps79,1603,8,5,0,int,ORDINAL,R6 glmer example in the dataset's documentation + transformation,,True
+R037-bin7,groupc2_train,group_c_v2,rdata_schizophrenia,,R037,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",National Institute of Mental Health Schizophrenia Collaborative Study,imps79,1603,8,7,0,int,ORDINAL,R6 glmer example in the dataset's documentation + transformation,,True
+R037-round,groupc2_train,group_c_v2,rdata_schizophrenia,,R037,round,"{""decimals"": 0}",National Institute of Mental Health Schizophrenia Collaborative Study,imps79,1603,8,7,0,int,CONTINUOUS_REGRESSION,R6 glmer example in the dataset's documentation + transformation,,True
+R037,silver_train,Rdatasets/lme4,rdata_schizophrenia,rdatasets_lme4_schizophrenia,,,,National Institute of Mental Health Schizophrenia Collaborative Study,imps79,1603,8,21,0,float,CONTINUOUS_REGRESSION,R6 glmer example in the dataset's documentation,,True
+R038-anon,groupc2_train,group_c_v2,rdata_toenail,,R038,anon,{},Toenail onychomycosis data from dermatophyte infections,y,1908,4,2,0,string,BINARY,R6 glmer example in the dataset's documentation + transformation,,True
+R038-numcode,groupc2_train,group_c_v2,rdata_toenail,,R038,numcode,"{""mapping"": ""alphabetical""}",Toenail onychomycosis data from dermatophyte infections,outcome,1908,4,2,0,int,BINARY,R6 glmer example in the dataset's documentation + transformation,,True
+R038,silver_train,Rdatasets/lme4,rdata_toenail,rdatasets_lme4_toenail,,,,Toenail onychomycosis data from dermatophyte infections,outcome,1908,4,2,0,string,BINARY,R6 glmer example in the dataset's documentation,,True
+R039-anon,groupc2_train,group_c_v2,rdata_mmmec,,R039,anon,{},Malignant melanoma deaths in Europe,y,354,5,87,0,int,COUNT_REGRESSION,R6 glmer example in the dataset's documentation + transformation,,True
+R039,silver_train,Rdatasets/mlmRev,rdata_mmmec,rdatasets_mlmRev_Mmmec,,,,Malignant melanoma deaths in Europe,deaths,354,5,87,0,int,COUNT_REGRESSION,R6 glmer example in the dataset's documentation,,True
+R040-anon,groupc2_train,group_c_v2,rdata_admit,,R040,anon,{},Applications to a Political Science PhD Program,y,106,5,5,0,int,ORDINAL,R6 polr example in the dataset's documentation + transformation,,True
+R040,silver_train,Rdatasets/pscl,rdata_admit,rdatasets_pscl_admit,,,,Applications to a Political Science PhD Program,score,106,5,5,0,int,ORDINAL,R6 polr example in the dataset's documentation,,True
+R041-anon,groupc2_train,group_c_v2,rdata_iraqvote,,R041,anon,{},"U.S. Senate vote on the use of force against Iraq, 2002.",y,100,5,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R041,silver_train,Rdatasets/pscl,rdata_iraqvote,rdatasets_pscl_iraqVote,,,,"U.S. Senate vote on the use of force against Iraq, 2002.",y,100,5,2,0,int,BINARY,R6 glm example in the dataset's documentation,,True
+R042-anon,groupc2_train,group_c_v2,rdata_politicalinformation,,R042,anon,{},Interviewer ratings of respondent levels of political information,y,1807,7,5,7,string,ORDINAL,R6 polr example in the dataset's documentation + transformation,,True
+R042,silver_train,Rdatasets/pscl,rdata_politicalinformation,rdatasets_pscl_politicalInformation,,,,Interviewer ratings of respondent levels of political information,y,1807,7,5,7,string,ORDINAL,R6 polr example in the dataset's documentation,,True
+R043-anon,groupc2_train,group_c_v2,rdata_prussian,,R043,anon,{},Prussian army horse kick data,y,280,2,5,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R043,silver_train,Rdatasets/pscl,rdata_prussian,rdatasets_pscl_prussian,,,,Prussian army horse kick data,y,280,2,5,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R044-anon,groupc2_train,group_c_v2,rdata_epilepsy,,R044,anon,{},Epilepsy Attacks Data Set,y,59,10,36,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R044,silver_train,Rdatasets/robustbase,rdata_epilepsy,rdatasets_robustbase_epilepsy,,,,Epilepsy Attacks Data Set,Ysum,59,10,36,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R045-anon,groupc2_train,group_c_v2,rdata_solder,,R045,anon,{},Data from a soldering experiment,y,900,5,47,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R045,silver_train,Rdatasets/survival,rdata_solder,rdatasets_survival_solder,,,,Data from a soldering experiment,skips,900,5,47,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R046-anon,groupc2_train,group_c_v2,rdata_cormorants,,R046,anon,{},Advertising Behavior by Males Cormorants,y,343,7,16,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation + transformation,,True
+R046,silver_train,Rdatasets/vcdExtra,rdata_cormorants,rdatasets_vcdExtra_Cormorants,,,,Advertising Behavior by Males Cormorants,count,343,7,16,0,int,COUNT_REGRESSION,R6 glm example in the dataset's documentation,,True
+R047-anon,groupc2_train,group_c_v2,rdata_donner,,R047,anon,{},Survival in the Donner Party,y,90,4,2,0,int,BINARY,R6 glm example in the dataset's documentation + transformation,,True
+R047,silver_train,Rdatasets/vcdExtra,rdata_donner,rdatasets_vcdExtra_Donner,,,,Survival in the Donner Party,survived,90,4,2,0,int,BINARY,R6 glm example in the dataset's documentation,,True
+S001-anon,groupc2_train,group_c_v2,kddcup09_appetency,,S001,anon,{},KDDCup09_appetency,y,50000,230,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S001,silver_train,AMLB-classification,kddcup09_appetency,openml_1111,,,,KDDCup09_appetency,APPETENCY,50000,230,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S002-anon,groupc2_train,group_c_v2,amazon_commerce_reviews,,S002,anon,{},amazon-commerce-reviews,y,1500,10000,50,0,string,MULTICLASS,"R1 curated classification suite, 50 classes + transformation",,True
+S002-numcode,groupc2_train,group_c_v2,amazon_commerce_reviews,,S002,numcode,"{""mapping"": ""alphabetical""}",amazon-commerce-reviews,Class,1500,10000,50,0,int,MULTICLASS,"R1 curated classification suite, 50 classes + transformation",,True
+S002,silver_train,AMLB-classification,amazon_commerce_reviews,openml_1457,,,,amazon-commerce-reviews,Class,1500,10000,50,0,string,MULTICLASS,"R1 curated classification suite, 50 classes",ok,True
+S003-anon,groupc2_train,group_c_v2,bank_marketing,,S003,anon,{},bank-marketing,y,45211,16,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S003,silver_train,AMLB-classification+OpenML-CC18,bank_marketing,openml_1461,,,,bank-marketing,Class,45211,16,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S004-anon,groupc2_train,group_c_v2,banknote_authentication,,S004,anon,{},banknote-authentication,y,1372,4,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S004,silver_train,OpenML-CC18,banknote_authentication,openml_1462,,,,banknote-authentication,Class,1372,4,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S005-anon,groupc2_train,group_c_v2,blood_transfusion_service_center,,S005,anon,{},blood-transfusion-service-center,y,748,4,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S005,silver_train,AMLB-classification+OpenML-CC18,blood_transfusion_service_center,openml_1464,,,,blood-transfusion-service-center,Class,748,4,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S006-anon,groupc2_train,group_c_v2,cnae_9,,S006,anon,{},cnae-9,y,1080,856,9,0,int,MULTICLASS,"R1 curated classification suite, 9 classes + transformation",,True
+S006,silver_train,AMLB-classification+OpenML-CC18,cnae_9,openml_1468,,,,cnae-9,Class,1080,856,9,0,int,MULTICLASS,"R1 curated classification suite, 9 classes",ok,True
+S007-anon,groupc2_train,group_c_v2,first_order_theorem_proving,,S007,anon,{},first-order-theorem-proving,y,6118,51,6,0,int,MULTICLASS,"R1 curated classification suite, 6 classes + transformation",,True
+S007,silver_train,AMLB-classification+OpenML-CC18,first_order_theorem_proving,openml_1475,,,,first-order-theorem-proving,Class,6118,51,6,0,int,MULTICLASS,"R1 curated classification suite, 6 classes",ok,True
+S008-anon,groupc2_train,group_c_v2,har,,S008,anon,{},har,y,10299,561,6,0,int,MULTICLASS,"R1 curated classification suite, 6 classes + transformation",,True
+S008,silver_train,OpenML-CC18,har,openml_1478,,,,har,Class,10299,561,6,0,int,MULTICLASS,"R1 curated classification suite, 6 classes",ok,True
+S009-anon,groupc2_train,group_c_v2,madelon,,S009,anon,{},madelon,y,2600,500,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S009,silver_train,OpenML-CC18,madelon,openml_1485,,,,madelon,Class,2600,500,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S010-anon,groupc2_train,group_c_v2,nomao,,S010,anon,{},nomao,y,34465,118,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S010,silver_train,AMLB-classification+OpenML-CC18,nomao,openml_1486,,,,nomao,Class,34465,118,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S011-anon,groupc2_train,group_c_v2,ozone,,S011,anon,{},ozone-level-8hr,y,2534,72,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S011,silver_train,AMLB-classification+OpenML-CC18,ozone,openml_1487,,,,ozone-level-8hr,Class,2534,72,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S012-anon,groupc2_train,group_c_v2,phoneme,,S012,anon,{},phoneme,y,5404,5,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S012,silver_train,AMLB-classification+OpenML-CC18,phoneme,openml_1489,,,,phoneme,Class,5404,5,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S013-anon,groupc2_train,group_c_v2,qsar_biodeg,,S013,anon,{},qsar-biodeg,y,1055,41,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S013,silver_train,AMLB-classification+OpenML-CC18,qsar_biodeg,openml_1494,,,,qsar-biodeg,Class,1055,41,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S014-anon,groupc2_train,group_c_v2,wall_robot_navigation,,S014,anon,{},wall-robot-navigation,y,5456,24,4,0,int,MULTICLASS,"R1 curated classification suite, 4 classes + transformation",,True
+S014,silver_train,OpenML-CC18,wall_robot_navigation,openml_1497,,,,wall-robot-navigation,Class,5456,24,4,0,int,MULTICLASS,"R1 curated classification suite, 4 classes",ok,True
+S015-anon,groupc2_train,group_c_v2,semeion,,S015,anon,{},semeion,y,1593,256,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes + transformation",,True
+S015,silver_train,OpenML-CC18,semeion,openml_1501,,,,semeion,Class,1593,256,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes",ok,True
+S016-anon,groupc2_train,group_c_v2,electricity,,S016,anon,{},electricity,y,45312,8,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S016-numcode,groupc2_train,group_c_v2,electricity,,S016,numcode,"{""mapping"": ""alphabetical""}",electricity,class,45312,8,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S016,silver_train,OpenML-CC18,electricity,openml_151,,,,electricity,class,45312,8,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S017-anon,groupc2_train,group_c_v2,micro_mass,,S017,anon,{},micro-mass,y,571,1300,20,0,int,MULTICLASS,"R1 curated classification suite, 20 classes + transformation",,True
+S017,silver_train,AMLB-classification,micro_mass,openml_1515,,,,micro-mass,Class,571,1300,20,0,int,MULTICLASS,"R1 curated classification suite, 20 classes",ok,True
+S018-anon,groupc2_train,group_c_v2,adult,,S018,anon,{},adult,y,48842,14,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S018-numcode,groupc2_train,group_c_v2,adult,,S018,numcode,"{""mapping"": ""alphabetical""}",adult,class,48842,14,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S018,silver_train,AMLB-classification+OpenML-CC18,adult,openml_1590,,,,adult,class,48842,14,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S019-anon,groupc2_train,group_c_v2,yeast,,S019,anon,{},yeast,y,1484,8,10,0,string,MULTICLASS,"R1 curated classification suite, 10 classes + transformation",,True
+S019-numcode,groupc2_train,group_c_v2,yeast,,S019,numcode,"{""mapping"": ""alphabetical""}",yeast,class_protein_localization,1484,8,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes + transformation",,True
+S019,silver_train,AMLB-classification,yeast,openml_181,,,,yeast,class_protein_localization,1484,8,10,0,string,MULTICLASS,"R1 curated classification suite, 10 classes",ok,True
+S020-anon,groupc2_train,group_c_v2,satimage,,S020,anon,{},satimage,y,6430,36,6,0,float,MULTICLASS,"R1 curated classification suite, 6 classes + transformation",,True
+S020,silver_train,OpenML-CC18,satimage,openml_182,,,,satimage,class,6430,36,6,0,float,MULTICLASS,"R1 curated classification suite, 6 classes",ok,True
+S021-anon,groupc2_train,group_c_v2,elevators,,S021,anon,{},elevators,y,16599,18,61,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S021-bin3,groupc2_train,group_c_v2,elevators,,S021,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",elevators,Goal,16599,18,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S021-bin5,groupc2_train,group_c_v2,elevators,,S021,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",elevators,Goal,16599,18,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S021-bin7,groupc2_train,group_c_v2,elevators,,S021,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",elevators,Goal,16599,18,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S021,silver_train,AMLB-regression,elevators,openml_216,,,,elevators,Goal,16599,18,61,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S022-anon,groupc2_train,group_c_v2,numerai28_6,,S022,anon,{},numerai28.6,y,96320,21,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S022,silver_train,AMLB-classification+OpenML-CC18,numerai28_6,openml_23517,,,,numerai28.6,attribute_21,96320,21,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S023-anon,groupc2_train,group_c_v2,optdigits,,S023,anon,{},optdigits,y,5620,64,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes + transformation",,True
+S023,silver_train,OpenML-CC18,optdigits,openml_28,,,,optdigits,class,5620,64,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes",ok,True
+S024-anon,groupc2_train,group_c_v2,kr_vs_kp,,S024,anon,{},kr-vs-kp,y,3196,36,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S024-numcode,groupc2_train,group_c_v2,kr_vs_kp,,S024,numcode,"{""mapping"": ""alphabetical""}",kr-vs-kp,class,3196,36,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S024,silver_train,AMLB-classification+OpenML-CC18,kr_vs_kp,openml_3,,,,kr-vs-kp,class,3196,36,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S025-anon,groupc2_train,group_c_v2,vowel,,S025,anon,{},vowel,y,990,12,11,0,string,MULTICLASS,"R1 curated classification suite, 11 classes + transformation",,True
+S025-numcode,groupc2_train,group_c_v2,vowel,,S025,numcode,"{""mapping"": ""alphabetical""}",vowel,Class,990,12,11,0,int,MULTICLASS,"R1 curated classification suite, 11 classes + transformation",,True
+S025,silver_train,OpenML-CC18,vowel,openml_307,,,,vowel,Class,990,12,11,0,string,MULTICLASS,"R1 curated classification suite, 11 classes",ok,True
+S026-anon,groupc2_train,group_c_v2,credit_g,,S026,anon,{},credit-g,y,1000,20,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S026-numcode,groupc2_train,group_c_v2,credit_g,,S026,numcode,"{""mapping"": ""alphabetical""}",credit-g,class,1000,20,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S026,silver_train,AMLB-classification+OpenML-CC18,credit_g,openml_31,,,,credit-g,class,1000,20,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S027-anon,groupc2_train,group_c_v2,pendigits,,S027,anon,{},pendigits,y,10992,16,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes + transformation",,True
+S027,silver_train,OpenML-CC18,pendigits,openml_32,,,,pendigits,class,10992,16,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes",ok,True
+S028-anon,groupc2_train,group_c_v2,diabetes,,S028,anon,{},diabetes,y,768,8,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S028-numcode,groupc2_train,group_c_v2,diabetes,,S028,numcode,"{""mapping"": ""alphabetical""}",diabetes,class,768,8,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S028,silver_train,OpenML-CC18,diabetes,openml_37,,,,diabetes,class,768,8,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S029-anon,groupc2_train,group_c_v2,sick,,S029,anon,{},sick,y,3772,29,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S029-numcode,groupc2_train,group_c_v2,sick,,S029,numcode,"{""mapping"": ""alphabetical""}",sick,Class,3772,29,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S029,silver_train,OpenML-CC18,sick,openml_38,,,,sick,Class,3772,29,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S030-anon,groupc2_train,group_c_v2,texture,,S030,anon,{},texture,y,5500,40,11,0,int,MULTICLASS,"R1 curated classification suite, 11 classes + transformation",,True
+S030,silver_train,OpenML-CC18,texture,openml_40499,,,,texture,Class,5500,40,11,0,int,MULTICLASS,"R1 curated classification suite, 11 classes",ok,True
+S031-anon,groupc2_train,group_c_v2,connect_4,,S031,anon,{},connect-4,y,67557,42,3,0,int,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S031,silver_train,AMLB-classification+OpenML-CC18,connect_4,openml_40668,,,,connect-4,class,67557,42,3,0,int,MULTICLASS,"R1 curated classification suite, 3 classes",ok,True
+S032-anon,groupc2_train,group_c_v2,dna,,S032,anon,{},dna,y,3186,180,3,0,int,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S032,silver_train,AMLB-classification+OpenML-CC18,dna,openml_40670,,,,dna,class,3186,180,3,0,int,MULTICLASS,"R1 curated classification suite, 3 classes",ok,True
+S033-anon,groupc2_train,group_c_v2,shuttle,,S033,anon,{},shuttle,y,58000,9,7,0,int,MULTICLASS,"R1 curated classification suite, 7 classes + transformation",,True
+S033,silver_train,AMLB-classification,shuttle,openml_40685,,,,shuttle,class,58000,9,7,0,int,MULTICLASS,"R1 curated classification suite, 7 classes",ok,True
+S034-anon,groupc2_train,group_c_v2,churn,,S034,anon,{},churn,y,5000,20,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S034,silver_train,AMLB-classification+OpenML-CC18,churn,openml_40701,,,,churn,class,5000,20,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S035-anon,groupc2_train,group_c_v2,satimage,,S035,anon,{},Satellite,y,5100,36,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S035-numcode,groupc2_train,group_c_v2,satimage,,S035,numcode,"{""mapping"": ""alphabetical""}",Satellite,Target,5100,36,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S035,silver_train,AMLB-classification,satimage,openml_40900,,,,Satellite,Target,5100,36,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S036-anon,groupc2_train,group_c_v2,miceprotein,,S036,anon,{},MiceProtein,y,1080,77,8,0,string,MULTICLASS,"R1 curated classification suite, 8 classes + transformation",,True
+S036-numcode,groupc2_train,group_c_v2,miceprotein,,S036,numcode,"{""mapping"": ""alphabetical""}",MiceProtein,class,1080,77,8,0,int,MULTICLASS,"R1 curated classification suite, 8 classes + transformation",,True
+S036,silver_train,OpenML-CC18,miceprotein,openml_40966,,,,MiceProtein,class,1080,77,8,0,string,MULTICLASS,"R1 curated classification suite, 8 classes",ok,True
+S037-anon,groupc2_train,group_c_v2,internet_advertisements,,S037,anon,{},Internet-Advertisements,y,3279,1558,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S037-numcode,groupc2_train,group_c_v2,internet_advertisements,,S037,numcode,"{""mapping"": ""alphabetical""}",Internet-Advertisements,class,3279,1558,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S037,silver_train,AMLB-classification+OpenML-CC18,internet_advertisements,openml_40978,,,,Internet-Advertisements,class,3279,1558,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S038-anon,groupc2_train,group_c_v2,steel_plates_fault,,S038,anon,{},steel-plates-fault,y,1941,27,7,0,string,MULTICLASS,"R1 curated classification suite, 7 classes + transformation",,True
+S038-numcode,groupc2_train,group_c_v2,steel_plates_fault,,S038,numcode,"{""mapping"": ""alphabetical""}",steel-plates-fault,target,1941,27,7,0,int,MULTICLASS,"R1 curated classification suite, 7 classes + transformation",,True
+S038,silver_train,AMLB-classification+OpenML-CC18,steel_plates_fault,openml_40982,,,,steel-plates-fault,target,1941,27,7,0,string,MULTICLASS,"R1 curated classification suite, 7 classes",ok,True
+S039-anon,groupc2_train,group_c_v2,wilt,,S039,anon,{},wilt,y,4839,5,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S039,silver_train,AMLB-classification+OpenML-CC18,wilt,openml_40983,,,,wilt,class,4839,5,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S040-anon,groupc2_train,group_c_v2,segment,,S040,anon,{},segment,y,2310,16,7,0,string,MULTICLASS,"R1 curated classification suite, 7 classes + transformation",,True
+S040-numcode,groupc2_train,group_c_v2,segment,,S040,numcode,"{""mapping"": ""alphabetical""}",segment,class,2310,16,7,0,int,MULTICLASS,"R1 curated classification suite, 7 classes + transformation",,True
+S040,silver_train,AMLB-classification+OpenML-CC18,segment,openml_40984,,,,segment,class,2310,16,7,0,string,MULTICLASS,"R1 curated classification suite, 7 classes",ok,True
+S041-anon,groupc2_train,group_c_v2,moneyball,,S041,anon,{},Moneyball,y,1232,14,374,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S041-bin3,groupc2_train,group_c_v2,moneyball,,S041,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",Moneyball,RS,1232,14,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S041-bin5,groupc2_train,group_c_v2,moneyball,,S041,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",Moneyball,RS,1232,14,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S041-bin7,groupc2_train,group_c_v2,moneyball,,S041,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",Moneyball,RS,1232,14,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S041,silver_train,AMLB-regression+OpenML-CTR23,moneyball,openml_41021,,,,Moneyball,RS,1232,14,374,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S042-anon,groupc2_train,group_c_v2,jungle_chess_2pcs_raw_endgame_complete,,S042,anon,{},jungle_chess_2pcs_raw_endgame_complete,y,44819,6,3,0,string,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S042-numcode,groupc2_train,group_c_v2,jungle_chess_2pcs_raw_endgame_complete,,S042,numcode,"{""mapping"": ""alphabetical""}",jungle_chess_2pcs_raw_endgame_complete,class,44819,6,3,0,int,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S042,silver_train,AMLB-classification+OpenML-CC18,jungle_chess_2pcs_raw_endgame_complete,openml_41027,,,,jungle_chess_2pcs_raw_endgame_complete,class,44819,6,3,0,string,MULTICLASS,"R1 curated classification suite, 3 classes",ok,True
+S043-anon,groupc2_train,group_c_v2,apsfailure,,S043,anon,{},APSFailure,y,76000,170,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S043-numcode,groupc2_train,group_c_v2,apsfailure,,S043,numcode,"{""mapping"": ""alphabetical""}",APSFailure,class,76000,170,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S043,silver_train,AMLB-classification,apsfailure,openml_41138,,,,APSFailure,class,76000,170,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S044-anon,groupc2_train,group_c_v2,christine,,S044,anon,{},christine,y,5418,1636,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S044,silver_train,AMLB-classification,christine,openml_41142,,,,christine,class,5418,1636,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S045-anon,groupc2_train,group_c_v2,jasmine,,S045,anon,{},jasmine,y,2984,144,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S045,silver_train,AMLB-classification,jasmine,openml_41143,,,,jasmine,class,2984,144,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S046-anon,groupc2_train,group_c_v2,madeline,,S046,anon,{},madeline,y,3140,259,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S046,silver_train,AMLB-classification,madeline,openml_41144,,,,madeline,class,3140,259,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S047-anon,groupc2_train,group_c_v2,philippine,,S047,anon,{},philippine,y,5832,308,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S047,silver_train,AMLB-classification,philippine,openml_41145,,,,philippine,class,5832,308,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S048-anon,groupc2_train,group_c_v2,sylvine,,S048,anon,{},sylvine,y,5124,20,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S048,silver_train,AMLB-classification,sylvine,openml_41146,,,,sylvine,class,5124,20,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S049-anon,groupc2_train,group_c_v2,miniboone,,S049,anon,{},MiniBooNE,y,130064,50,2,0,bool,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S049-numcode,groupc2_train,group_c_v2,miniboone,,S049,numcode,"{""mapping"": ""alphabetical""}",MiniBooNE,signal,130064,50,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S049,silver_train,AMLB-classification,miniboone,openml_41150,,,,MiniBooNE,signal,130064,50,2,0,bool,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S050-anon,groupc2_train,group_c_v2,ada,,S050,anon,{},ada,y,4147,48,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S050,silver_train,AMLB-classification,ada,openml_41156,,,,ada,class,4147,48,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S051-anon,groupc2_train,group_c_v2,gina,,S051,anon,{},gina,y,3153,970,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S051,silver_train,AMLB-classification,gina,openml_41158,,,,gina,class,3153,970,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S052-anon,groupc2_train,group_c_v2,kick,,S052,anon,{},kick,y,72983,32,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S052,silver_train,AMLB-classification,kick,openml_41162,,,,kick,IsBadBuy,72983,32,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S053-anon,groupc2_train,group_c_v2,fabert,,S053,anon,{},fabert,y,8237,800,7,0,int,MULTICLASS,"R1 curated classification suite, 7 classes + transformation",,True
+S053,silver_train,AMLB-classification,fabert,openml_41164,,,,fabert,class,8237,800,7,0,int,MULTICLASS,"R1 curated classification suite, 7 classes",ok,True
+S054-anon,groupc2_train,group_c_v2,volkert,,S054,anon,{},volkert,y,58310,180,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes + transformation",,True
+S054,silver_train,AMLB-classification,volkert,openml_41166,,,,volkert,class,58310,180,10,0,int,MULTICLASS,"R1 curated classification suite, 10 classes",ok,True
+S055-anon,groupc2_train,group_c_v2,jannis,,S055,anon,{},jannis,y,83733,54,4,0,int,MULTICLASS,"R1 curated classification suite, 4 classes + transformation",,True
+S055,silver_train,AMLB-classification,jannis,openml_41168,,,,jannis,class,83733,54,4,0,int,MULTICLASS,"R1 curated classification suite, 4 classes",ok,True
+S056-anon,groupc2_train,group_c_v2,helena,,S056,anon,{},helena,y,65196,27,100,0,int,MULTICLASS,"R1 curated classification suite, 100 classes + transformation",,True
+S056,silver_train,AMLB-classification,helena,openml_41169,,,,helena,class,65196,27,100,0,int,MULTICLASS,"R1 curated classification suite, 100 classes",ok,True
+S057-anon,groupc2_train,group_c_v2,bioresponse,,S057,anon,{},Bioresponse,y,3751,1776,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S057,silver_train,AMLB-classification+OpenML-CC18,bioresponse,openml_4134,,,,Bioresponse,target,3751,1776,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S058-anon,groupc2_train,group_c_v2,amazon_employee_access,,S058,anon,{},Amazon_employee_access,y,32769,9,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S058,silver_train,AMLB-classification,amazon_employee_access,openml_4135,,,,Amazon_employee_access,target,32769,9,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S059-anon,groupc2_train,group_c_v2,black_friday,,S059,anon,{},black_friday,y,166821,9,13876,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S059-bin3,groupc2_train,group_c_v2,black_friday,,S059,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",black_friday,Purchase,166821,9,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S059-bin5,groupc2_train,group_c_v2,black_friday,,S059,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",black_friday,Purchase,166821,9,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S059-bin7,groupc2_train,group_c_v2,black_friday,,S059,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",black_friday,Purchase,166821,9,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S059,silver_train,AMLB-regression,black_friday,openml_41540,,,,black_friday,Purchase,166821,9,13876,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S060-anon,groupc2_train,group_c_v2,yprop_4_1,,S060,anon,{},yprop_4_1,y,8885,251,1336,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S060-bin3,groupc2_train,group_c_v2,yprop_4_1,,S060,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",yprop_4_1,oz252,8885,251,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S060-bin5,groupc2_train,group_c_v2,yprop_4_1,,S060,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",yprop_4_1,oz252,8885,251,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S060-bin7,groupc2_train,group_c_v2,yprop_4_1,,S060,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",yprop_4_1,oz252,8885,251,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S060,silver_train,AMLB-regression,yprop_4_1,openml_416,,,,yprop_4_1,oz252,8885,251,1336,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S061-anon,groupc2_train,group_c_v2,sat11_hand_runtime_regression,,S061,anon,{},SAT11-HAND-runtime-regression,y,4440,116,1945,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S061-bin3,groupc2_train,group_c_v2,sat11_hand_runtime_regression,,S061,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",SAT11-HAND-runtime-regression,runtime,4440,116,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S061-bin5,groupc2_train,group_c_v2,sat11_hand_runtime_regression,,S061,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",SAT11-HAND-runtime-regression,runtime,4440,116,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S061-bin7,groupc2_train,group_c_v2,sat11_hand_runtime_regression,,S061,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",SAT11-HAND-runtime-regression,runtime,4440,116,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S061-round,groupc2_train,group_c_v2,sat11_hand_runtime_regression,,S061,round,"{""decimals"": 0}",SAT11-HAND-runtime-regression,runtime,4440,116,850,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S061,silver_train,AMLB-regression,sat11_hand_runtime_regression,openml_41980,,,,SAT11-HAND-runtime-regression,runtime,4440,116,1945,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S062-anon,groupc2_train,group_c_v2,topo_2_1,,S062,anon,{},topo_2_1,y,8885,266,1336,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S062-bin3,groupc2_train,group_c_v2,topo_2_1,,S062,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",topo_2_1,oz267,8885,266,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S062-bin5,groupc2_train,group_c_v2,topo_2_1,,S062,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",topo_2_1,oz267,8885,266,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S062-bin7,groupc2_train,group_c_v2,topo_2_1,,S062,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",topo_2_1,oz267,8885,266,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S062,silver_train,AMLB-regression,topo_2_1,openml_422,,,,topo_2_1,oz267,8885,266,1336,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S063-anon,groupc2_train,group_c_v2,house_prices_nominal,,S063,anon,{},house_prices_nominal,y,1460,79,663,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S063-bin3,groupc2_train,group_c_v2,house_prices_nominal,,S063,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",house_prices_nominal,SalePrice,1460,79,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S063-bin5,groupc2_train,group_c_v2,house_prices_nominal,,S063,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",house_prices_nominal,SalePrice,1460,79,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S063-bin7,groupc2_train,group_c_v2,house_prices_nominal,,S063,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",house_prices_nominal,SalePrice,1460,79,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S063,silver_train,AMLB-regression,house_prices_nominal,openml_42563,,,,house_prices_nominal,SalePrice,1460,79,663,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S064-anon,groupc2_train,group_c_v2,mercedes_benz_greener_manufacturing,,S064,anon,{},Mercedes_Benz_Greener_Manufacturing,y,4209,376,2545,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S064-bin3,groupc2_train,group_c_v2,mercedes_benz_greener_manufacturing,,S064,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",Mercedes_Benz_Greener_Manufacturing,y,4209,376,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S064-bin5,groupc2_train,group_c_v2,mercedes_benz_greener_manufacturing,,S064,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",Mercedes_Benz_Greener_Manufacturing,y,4209,376,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S064-bin7,groupc2_train,group_c_v2,mercedes_benz_greener_manufacturing,,S064,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",Mercedes_Benz_Greener_Manufacturing,y,4209,376,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S064-round,groupc2_train,group_c_v2,mercedes_benz_greener_manufacturing,,S064,round,"{""decimals"": 0}",Mercedes_Benz_Greener_Manufacturing,y,4209,376,91,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S064,silver_train,AMLB-regression,mercedes_benz_greener_manufacturing,openml_42570,,,,Mercedes_Benz_Greener_Manufacturing,y,4209,376,2545,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S065-anon,groupc2_train,group_c_v2,brazilian_houses,,S065,anon,{},Brazilian_houses,y,10692,12,5751,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S065-bin3,groupc2_train,group_c_v2,brazilian_houses,,S065,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",Brazilian_houses,total_(BRL),10692,12,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S065-bin5,groupc2_train,group_c_v2,brazilian_houses,,S065,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",Brazilian_houses,total_(BRL),10692,12,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S065-bin7,groupc2_train,group_c_v2,brazilian_houses,,S065,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",Brazilian_houses,total_(BRL),10692,12,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S065,silver_train,AMLB-regression,brazilian_houses,openml_42688,,,,Brazilian_houses,total_(BRL),10692,12,5751,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S066-anon,groupc2_train,group_c_v2,onlinenewspopularity,,S066,anon,{},OnlineNewsPopularity,y,39644,59,1454,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S066-bin3,groupc2_train,group_c_v2,onlinenewspopularity,,S066,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",OnlineNewsPopularity,shares,39644,59,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S066-bin5,groupc2_train,group_c_v2,onlinenewspopularity,,S066,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",OnlineNewsPopularity,shares,39644,59,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S066-bin7,groupc2_train,group_c_v2,onlinenewspopularity,,S066,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",OnlineNewsPopularity,shares,39644,59,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S066,silver_train,AMLB-regression,onlinenewspopularity,openml_42724,,,,OnlineNewsPopularity,shares,39644,59,1454,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S067-anon,groupc2_train,group_c_v2,colleges,,S067,anon,{},colleges,y,7063,44,4502,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S067-bin3,groupc2_train,group_c_v2,colleges,,S067,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",colleges,percent_pell_grant,7063,44,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S067-bin5,groupc2_train,group_c_v2,colleges,,S067,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",colleges,percent_pell_grant,7063,44,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S067-bin7,groupc2_train,group_c_v2,colleges,,S067,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",colleges,percent_pell_grant,7063,44,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S067,silver_train,AMLB-regression,colleges,openml_42727,,,,colleges,percent_pell_grant,7063,44,4502,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S068-anon,groupc2_train,group_c_v2,us_crime,,S068,anon,{},us_crime,y,1994,126,98,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S068-bin3,groupc2_train,group_c_v2,us_crime,,S068,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",us_crime,ViolentCrimesPerPop,1994,126,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S068-bin5,groupc2_train,group_c_v2,us_crime,,S068,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",us_crime,ViolentCrimesPerPop,1994,126,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S068-bin7,groupc2_train,group_c_v2,us_crime,,S068,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",us_crime,ViolentCrimesPerPop,1994,126,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S068,silver_train,AMLB-regression,us_crime,openml_42730,,,,us_crime,ViolentCrimesPerPop,1994,126,98,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S069-anon,groupc2_train,group_c_v2,click_prediction_small,,S069,anon,{},Click_prediction_small,y,39948,11,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S069,silver_train,AMLB-classification,click_prediction_small,openml_42733,,,,Click_prediction_small,click,39948,11,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S070-anon,groupc2_train,group_c_v2,okcupid_stem,,S070,anon,{},okcupid-stem,y,50789,19,3,0,string,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S070-numcode,groupc2_train,group_c_v2,okcupid_stem,,S070,numcode,"{""mapping"": ""alphabetical""}",okcupid-stem,job,50789,19,3,0,int,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S070,silver_train,AMLB-classification,okcupid_stem,openml_42734,,,,okcupid-stem,job,50789,19,3,0,string,MULTICLASS,"R1 curated classification suite, 3 classes",ok,True
+S071-anon,groupc2_train,group_c_v2,mip_2016_regression,,S071,anon,{},MIP-2016-regression,y,1090,144,933,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S071-bin3,groupc2_train,group_c_v2,mip_2016_regression,,S071,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",MIP-2016-regression,PAR10,1090,144,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S071-bin5,groupc2_train,group_c_v2,mip_2016_regression,,S071,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",MIP-2016-regression,PAR10,1090,144,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S071-bin7,groupc2_train,group_c_v2,mip_2016_regression,,S071,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",MIP-2016-regression,PAR10,1090,144,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S071-round,groupc2_train,group_c_v2,mip_2016_regression,,S071,round,"{""decimals"": 0}",MIP-2016-regression,PAR10,1090,144,491,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S071,silver_train,AMLB-regression,mip_2016_regression,openml_43071,,,,MIP-2016-regression,PAR10,1090,144,933,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S072-anon,groupc2_train,group_c_v2,spambase,,S072,anon,{},spambase,y,4601,57,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S072,silver_train,OpenML-CC18,spambase,openml_44,,,,spambase,class,4601,57,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S073-anon,groupc2_train,group_c_v2,airfoil_self_noise,,S073,anon,{},airfoil_self_noise,y,1503,5,1456,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S073-bin3,groupc2_train,group_c_v2,airfoil_self_noise,,S073,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",airfoil_self_noise,sound_pressure,1503,5,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S073-bin5,groupc2_train,group_c_v2,airfoil_self_noise,,S073,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",airfoil_self_noise,sound_pressure,1503,5,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S073-bin7,groupc2_train,group_c_v2,airfoil_self_noise,,S073,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",airfoil_self_noise,sound_pressure,1503,5,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S073-round,groupc2_train,group_c_v2,airfoil_self_noise,,S073,round,"{""decimals"": 0}",airfoil_self_noise,sound_pressure,1503,5,38,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S073,silver_train,OpenML-CTR23,airfoil_self_noise,openml_44957,,,,airfoil_self_noise,sound_pressure,1503,5,1456,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S074-anon,groupc2_train,group_c_v2,auction_verification,,S074,anon,{},auction_verification,y,2043,7,2039,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S074-bin3,groupc2_train,group_c_v2,auction_verification,,S074,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",auction_verification,verification.time,2043,7,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S074-bin5,groupc2_train,group_c_v2,auction_verification,,S074,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",auction_verification,verification.time,2043,7,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S074-bin7,groupc2_train,group_c_v2,auction_verification,,S074,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",auction_verification,verification.time,2043,7,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S074-round,groupc2_train,group_c_v2,auction_verification,,S074,round,"{""decimals"": 0}",auction_verification,verification.time,2043,7,1592,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S074,silver_train,OpenML-CTR23,auction_verification,openml_44958,,,,auction_verification,verification.time,2043,7,2039,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S075-anon,groupc2_train,group_c_v2,physiochemical_protein,,S075,anon,{},physiochemical_protein,y,45730,9,15903,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S075-bin3,groupc2_train,group_c_v2,physiochemical_protein,,S075,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",physiochemical_protein,RMSD,45730,9,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S075-bin5,groupc2_train,group_c_v2,physiochemical_protein,,S075,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",physiochemical_protein,RMSD,45730,9,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S075-bin7,groupc2_train,group_c_v2,physiochemical_protein,,S075,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",physiochemical_protein,RMSD,45730,9,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S075-round,groupc2_train,group_c_v2,physiochemical_protein,,S075,round,"{""decimals"": 0}",physiochemical_protein,RMSD,45730,9,22,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S075,silver_train,OpenML-CTR23,physiochemical_protein,openml_44963,,,,physiochemical_protein,RMSD,45730,9,15903,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S076-anon,groupc2_train,group_c_v2,superconductivity,,S076,anon,{},superconductivity,y,21263,81,3007,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S076-bin3,groupc2_train,group_c_v2,superconductivity,,S076,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",superconductivity,critical_temp,21263,81,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S076-bin5,groupc2_train,group_c_v2,superconductivity,,S076,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",superconductivity,critical_temp,21263,81,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S076-bin7,groupc2_train,group_c_v2,superconductivity,,S076,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",superconductivity,critical_temp,21263,81,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S076-round,groupc2_train,group_c_v2,superconductivity,,S076,round,"{""decimals"": 0}",superconductivity,critical_temp,21263,81,140,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S076,silver_train,OpenML-CTR23,superconductivity,openml_44964,,,,superconductivity,critical_temp,21263,81,3007,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S077-anon,groupc2_train,group_c_v2,geographical_origin_of_music,,S077,anon,{},geographical_origin_of_music,y,1059,116,31,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S077-bin3,groupc2_train,group_c_v2,geographical_origin_of_music,,S077,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",geographical_origin_of_music,latitude,1059,116,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S077-bin5,groupc2_train,group_c_v2,geographical_origin_of_music,,S077,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",geographical_origin_of_music,latitude,1059,116,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S077-bin7,groupc2_train,group_c_v2,geographical_origin_of_music,,S077,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",geographical_origin_of_music,latitude,1059,116,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S077-round,groupc2_train,group_c_v2,geographical_origin_of_music,,S077,round,"{""decimals"": 0}",geographical_origin_of_music,latitude,1059,116,26,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S077,silver_train,OpenML-CTR23,geographical_origin_of_music,openml_44965,,,,geographical_origin_of_music,latitude,1059,116,31,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S078-anon,groupc2_train,group_c_v2,naval_propulsion_plant,,S078,anon,{},naval_propulsion_plant,y,11934,14,51,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S078-bin3,groupc2_train,group_c_v2,naval_propulsion_plant,,S078,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",naval_propulsion_plant,gt_compressor_decay_state_coefficient,11934,14,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S078-bin5,groupc2_train,group_c_v2,naval_propulsion_plant,,S078,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",naval_propulsion_plant,gt_compressor_decay_state_coefficient,11934,14,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S078-bin7,groupc2_train,group_c_v2,naval_propulsion_plant,,S078,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",naval_propulsion_plant,gt_compressor_decay_state_coefficient,11934,14,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S078,silver_train,OpenML-CTR23,naval_propulsion_plant,openml_44969,,,,naval_propulsion_plant,gt_compressor_decay_state_coefficient,11934,14,51,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S079-anon,groupc2_train,group_c_v2,grid_stability,,S079,anon,{},grid_stability,y,10000,12,10000,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S079-bin3,groupc2_train,group_c_v2,grid_stability,,S079,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",grid_stability,stab,10000,12,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S079-bin5,groupc2_train,group_c_v2,grid_stability,,S079,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",grid_stability,stab,10000,12,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S079-bin7,groupc2_train,group_c_v2,grid_stability,,S079,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",grid_stability,stab,10000,12,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S079,silver_train,OpenML-CTR23,grid_stability,openml_44973,,,,grid_stability,stab,10000,12,10000,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S080-anon,groupc2_train,group_c_v2,video_transcoding,,S080,anon,{},video_transcoding,y,68784,18,10960,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S080-bin3,groupc2_train,group_c_v2,video_transcoding,,S080,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",video_transcoding,utime,68784,18,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S080-bin5,groupc2_train,group_c_v2,video_transcoding,,S080,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",video_transcoding,utime,68784,18,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S080-bin7,groupc2_train,group_c_v2,video_transcoding,,S080,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",video_transcoding,utime,68784,18,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S080-round,groupc2_train,group_c_v2,video_transcoding,,S080,round,"{""decimals"": 0}",video_transcoding,utime,68784,18,186,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S080,silver_train,OpenML-CTR23,video_transcoding,openml_44974,,,,video_transcoding,utime,68784,18,10960,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S081-anon,groupc2_train,group_c_v2,wave_energy,,S081,anon,{},wave_energy,y,72000,48,71993,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S081-bin3,groupc2_train,group_c_v2,wave_energy,,S081,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",wave_energy,energy_total,72000,48,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S081-bin5,groupc2_train,group_c_v2,wave_energy,,S081,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",wave_energy,energy_total,72000,48,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S081-bin7,groupc2_train,group_c_v2,wave_energy,,S081,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",wave_energy,energy_total,72000,48,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S081-round,groupc2_train,group_c_v2,wave_energy,,S081,round,"{""decimals"": 0}",wave_energy,energy_total,72000,48,65770,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S081,silver_train,OpenML-CTR23,wave_energy,openml_44975,,,,wave_energy,energy_total,72000,48,71993,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S082-anon,groupc2_train,group_c_v2,sarcos,,S082,anon,{},sarcos,y,48933,21,11414,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S082-bin3,groupc2_train,group_c_v2,sarcos,,S082,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",sarcos,V22,48933,21,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S082-bin5,groupc2_train,group_c_v2,sarcos,,S082,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",sarcos,V22,48933,21,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S082-bin7,groupc2_train,group_c_v2,sarcos,,S082,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",sarcos,V22,48933,21,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S082-round,groupc2_train,group_c_v2,sarcos,,S082,round,"{""decimals"": 0}",sarcos,V22,48933,21,210,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S082,silver_train,OpenML-CTR23,sarcos,openml_44976,,,,sarcos,V22,48933,21,11414,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S083-anon,groupc2_train,group_c_v2,comp_activ,,S083,anon,{},cpu_activity,y,8192,21,56,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S083-bin3,groupc2_train,group_c_v2,comp_activ,,S083,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",cpu_activity,usr,8192,21,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S083-bin5,groupc2_train,group_c_v2,comp_activ,,S083,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",cpu_activity,usr,8192,21,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S083-bin7,groupc2_train,group_c_v2,comp_activ,,S083,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",cpu_activity,usr,8192,21,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S083,silver_train,OpenML-CTR23,comp_activ,openml_44978,,,,cpu_activity,usr,8192,21,56,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S084-anon,groupc2_train,group_c_v2,diamonds,,S084,anon,{},diamonds,y,53940,9,11602,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S084-bin3,groupc2_train,group_c_v2,diamonds,,S084,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",diamonds,price,53940,9,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S084-bin5,groupc2_train,group_c_v2,diamonds,,S084,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",diamonds,price,53940,9,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S084-bin7,groupc2_train,group_c_v2,diamonds,,S084,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",diamonds,price,53940,9,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S084,silver_train,OpenML-CTR23,diamonds,openml_44979,,,,diamonds,price,53940,9,11602,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S085-anon,groupc2_train,group_c_v2,kin8nm,,S085,anon,{},kin8nm,y,8192,8,8191,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S085-bin3,groupc2_train,group_c_v2,kin8nm,,S085,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",kin8nm,y,8192,8,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S085-bin5,groupc2_train,group_c_v2,kin8nm,,S085,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",kin8nm,y,8192,8,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S085-bin7,groupc2_train,group_c_v2,kin8nm,,S085,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",kin8nm,y,8192,8,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S085,silver_train,OpenML-CTR23,kin8nm,openml_44980,,,,kin8nm,y,8192,8,8191,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S086-anon,groupc2_train,group_c_v2,pumadyn32nh,,S086,anon,{},pumadyn32nh,y,8192,32,8191,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S086-bin3,groupc2_train,group_c_v2,pumadyn32nh,,S086,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",pumadyn32nh,thetadd6,8192,32,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S086-bin5,groupc2_train,group_c_v2,pumadyn32nh,,S086,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",pumadyn32nh,thetadd6,8192,32,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S086-bin7,groupc2_train,group_c_v2,pumadyn32nh,,S086,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",pumadyn32nh,thetadd6,8192,32,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S086,silver_train,OpenML-CTR23,pumadyn32nh,openml_44981,,,,pumadyn32nh,thetadd6,8192,32,8191,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S087-anon,groupc2_train,group_c_v2,miami_housing,,S087,anon,{},miami_housing,y,13932,15,2111,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S087-bin3,groupc2_train,group_c_v2,miami_housing,,S087,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",miami_housing,SALE_PRC,13932,15,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S087-bin5,groupc2_train,group_c_v2,miami_housing,,S087,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",miami_housing,SALE_PRC,13932,15,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S087-bin7,groupc2_train,group_c_v2,miami_housing,,S087,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",miami_housing,SALE_PRC,13932,15,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S087,silver_train,OpenML-CTR23,miami_housing,openml_44983,,,,miami_housing,SALE_PRC,13932,15,2111,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S088-anon,groupc2_train,group_c_v2,cps88wages,,S088,anon,{},cps88wages,y,28155,6,5970,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S088-bin3,groupc2_train,group_c_v2,cps88wages,,S088,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",cps88wages,wage,28155,6,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S088-bin5,groupc2_train,group_c_v2,cps88wages,,S088,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",cps88wages,wage,28155,6,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S088-bin7,groupc2_train,group_c_v2,cps88wages,,S088,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",cps88wages,wage,28155,6,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S088-round,groupc2_train,group_c_v2,cps88wages,,S088,round,"{""decimals"": 0}",cps88wages,wage,28155,6,1496,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S088,silver_train,OpenML-CTR23,cps88wages,openml_44984,,,,cps88wages,wage,28155,6,5970,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S089-anon,groupc2_train,group_c_v2,socmob,,S089,anon,{},socmob,y,1156,5,361,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S089-bin3,groupc2_train,group_c_v2,socmob,,S089,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",socmob,counts_for_sons_current_occupation,1156,5,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S089-bin5,groupc2_train,group_c_v2,socmob,,S089,bin5,"{""bins"": 5, ""actual_bins"": 4, ""strategy"": ""quantile""}",socmob,counts_for_sons_current_occupation,1156,5,4,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S089-bin7,groupc2_train,group_c_v2,socmob,,S089,bin7,"{""bins"": 7, ""actual_bins"": 6, ""strategy"": ""quantile""}",socmob,counts_for_sons_current_occupation,1156,5,6,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S089-round,groupc2_train,group_c_v2,socmob,,S089,round,"{""decimals"": 0}",socmob,counts_for_sons_current_occupation,1156,5,129,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S089,silver_train,OpenML-CTR23,socmob,openml_44987,,,,socmob,counts_for_sons_current_occupation,1156,5,361,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S090-anon,groupc2_train,group_c_v2,kc_house,,S090,anon,{},kings_county,y,21613,21,4028,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S090-bin3,groupc2_train,group_c_v2,kc_house,,S090,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",kings_county,price,21613,21,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S090-bin5,groupc2_train,group_c_v2,kc_house,,S090,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",kings_county,price,21613,21,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S090-bin7,groupc2_train,group_c_v2,kc_house,,S090,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",kings_county,price,21613,21,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S090,silver_train,OpenML-CTR23,kc_house,openml_44989,,,,kings_county,price,21613,21,4028,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S091-anon,groupc2_train,group_c_v2,brazilian_houses,,S091,anon,{},brazilian_houses,y,10692,9,5751,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S091-bin3,groupc2_train,group_c_v2,brazilian_houses,,S091,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",brazilian_houses,total,10692,9,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S091-bin5,groupc2_train,group_c_v2,brazilian_houses,,S091,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",brazilian_houses,total,10692,9,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S091-bin7,groupc2_train,group_c_v2,brazilian_houses,,S091,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",brazilian_houses,total,10692,9,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S091,silver_train,OpenML-CTR23,brazilian_houses,openml_44990,,,,brazilian_houses,total,10692,9,5751,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S092-anon,groupc2_train,group_c_v2,fps_benchmark,,S092,anon,{},fps_benchmark,y,24624,43,2675,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S092-bin3,groupc2_train,group_c_v2,fps_benchmark,,S092,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",fps_benchmark,FPS,24624,43,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S092-bin5,groupc2_train,group_c_v2,fps_benchmark,,S092,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",fps_benchmark,FPS,24624,43,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S092-bin7,groupc2_train,group_c_v2,fps_benchmark,,S092,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",fps_benchmark,FPS,24624,43,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S092-round,groupc2_train,group_c_v2,fps_benchmark,,S092,round,"{""decimals"": 0}",fps_benchmark,FPS,24624,43,345,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S092,silver_train,OpenML-CTR23,fps_benchmark,openml_44992,,,,fps_benchmark,FPS,24624,43,2675,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S093-anon,groupc2_train,group_c_v2,health_insurance,,S093,anon,{},health_insurance,y,22272,11,75,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S093-bin3,groupc2_train,group_c_v2,health_insurance,,S093,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",health_insurance,whrswk,22272,11,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S093-bin5,groupc2_train,group_c_v2,health_insurance,,S093,bin5,"{""bins"": 5, ""actual_bins"": 3, ""strategy"": ""quantile""}",health_insurance,whrswk,22272,11,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S093-bin7,groupc2_train,group_c_v2,health_insurance,,S093,bin7,"{""bins"": 7, ""actual_bins"": 3, ""strategy"": ""quantile""}",health_insurance,whrswk,22272,11,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S093,silver_train,OpenML-CTR23,health_insurance,openml_44993,,,,health_insurance,whrswk,22272,11,75,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S094-anon,groupc2_train,group_c_v2,fifa,,S094,anon,{},fifa,y,19178,28,133,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S094-bin3,groupc2_train,group_c_v2,fifa,,S094,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",fifa,wage_eur,19178,28,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S094-bin5,groupc2_train,group_c_v2,fifa,,S094,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",fifa,wage_eur,19178,28,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S094-bin7,groupc2_train,group_c_v2,fifa,,S094,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",fifa,wage_eur,19178,28,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S094,silver_train,OpenML-CTR23,fifa,openml_45012,,,,fifa,wage_eur,19178,28,133,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S095-anon,groupc2_train,group_c_v2,phishingwebsites,,S095,anon,{},PhishingWebsites,y,11055,30,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S095,silver_train,AMLB-classification+OpenML-CC18,phishingwebsites,openml_4534,,,,PhishingWebsites,Result,11055,30,2,0,int,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S096-anon,groupc2_train,group_c_v2,gesturephasesegmentationprocessed,,S096,anon,{},GesturePhaseSegmentationProcessed,y,9873,32,5,0,string,MULTICLASS,"R1 curated classification suite, 5 classes + transformation",,True
+S096-numcode,groupc2_train,group_c_v2,gesturephasesegmentationprocessed,,S096,numcode,"{""mapping"": ""alphabetical""}",GesturePhaseSegmentationProcessed,Phase,9873,32,5,0,int,MULTICLASS,"R1 curated classification suite, 5 classes + transformation",,True
+S096,silver_train,AMLB-classification+OpenML-CC18,gesturephasesegmentationprocessed,openml_4538,,,,GesturePhaseSegmentationProcessed,Phase,9873,32,5,0,string,MULTICLASS,"R1 curated classification suite, 5 classes",ok,True
+S097-anon,groupc2_train,group_c_v2,space_ga,,S097,anon,{},space_ga,y,3107,6,3105,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S097-bin3,groupc2_train,group_c_v2,space_ga,,S097,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",space_ga,ln_votes_pop,3107,6,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S097-bin5,groupc2_train,group_c_v2,space_ga,,S097,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",space_ga,ln_votes_pop,3107,6,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S097-bin7,groupc2_train,group_c_v2,space_ga,,S097,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",space_ga,ln_votes_pop,3107,6,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S097-round,groupc2_train,group_c_v2,space_ga,,S097,round,"{""decimals"": 0}",space_ga,ln_votes_pop,3107,6,4,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S097,silver_train,OpenML-CTR23,space_ga,openml_45402,,,,space_ga,ln_votes_pop,3107,6,3105,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S098-anon,groupc2_train,group_c_v2,diabetes130us,,S098,anon,{},Diabetes130US,y,101766,49,3,0,string,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S098-numcode,groupc2_train,group_c_v2,diabetes130us,,S098,numcode,"{""mapping"": ""alphabetical""}",Diabetes130US,readmitted,101766,49,3,0,int,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S098,silver_train,AMLB-classification,diabetes130us,openml_4541,,,,Diabetes130US,readmitted,101766,49,3,0,string,MULTICLASS,"R1 curated classification suite, 3 classes",ok,True
+S099-anon,groupc2_train,group_c_v2,analcatdata_authorship,,S099,anon,{},analcatdata_authorship,y,841,70,4,0,string,MULTICLASS,"R1 curated classification suite, 4 classes + transformation",,True
+S099-numcode,groupc2_train,group_c_v2,analcatdata_authorship,,S099,numcode,"{""mapping"": ""alphabetical""}",analcatdata_authorship,Author,841,70,4,0,int,MULTICLASS,"R1 curated classification suite, 4 classes + transformation",,True
+S099,silver_train,OpenML-CC18,analcatdata_authorship,openml_458,,,,analcatdata_authorship,Author,841,70,4,0,string,MULTICLASS,"R1 curated classification suite, 4 classes",ok,True
+S100-anon,groupc2_train,group_c_v2,splice,,S100,anon,{},splice,y,3190,60,3,0,string,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S100-numcode,groupc2_train,group_c_v2,splice,,S100,numcode,"{""mapping"": ""alphabetical""}",splice,Class,3190,60,3,0,int,MULTICLASS,"R1 curated classification suite, 3 classes + transformation",,True
+S100,silver_train,OpenML-CC18,splice,openml_46,,,,splice,Class,3190,60,3,0,string,MULTICLASS,"R1 curated classification suite, 3 classes",ok,True
+S101-anon,groupc2_train,group_c_v2,analcatdata_dmft,,S101,anon,{},analcatdata_dmft,y,797,4,5,136,string,MULTICLASS,"R1 curated classification suite, 5 classes + transformation",,True
+S101-numcode,groupc2_train,group_c_v2,analcatdata_dmft,,S101,numcode,"{""mapping"": ""alphabetical""}",analcatdata_dmft,Prevention,797,4,5,136,int,MULTICLASS,"R1 curated classification suite, 5 classes + transformation",,True
+S101,silver_train,OpenML-CC18,analcatdata_dmft,openml_469,,,,analcatdata_dmft,Prevention,797,4,5,136,string,MULTICLASS,"R1 curated classification suite, 5 classes",ok,True
+S102-anon,groupc2_train,group_c_v2,tic_tac_toe,,S102,anon,{},tic-tac-toe,y,958,9,2,0,string,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S102-numcode,groupc2_train,group_c_v2,tic_tac_toe,,S102,numcode,"{""mapping"": ""alphabetical""}",tic-tac-toe,Class,958,9,2,0,int,BINARY,"R1 curated classification suite, 2 classes + transformation",,True
+S102,silver_train,OpenML-CC18,tic_tac_toe,openml_50,,,,tic-tac-toe,Class,958,9,2,0,string,BINARY,"R1 curated classification suite, 2 classes",ok,True
+S103-anon,groupc2_train,group_c_v2,space_ga,,S103,anon,{},space_ga,y,3107,6,3105,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S103-bin3,groupc2_train,group_c_v2,space_ga,,S103,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",space_ga,ln(VOTES/POP),3107,6,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S103-bin5,groupc2_train,group_c_v2,space_ga,,S103,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",space_ga,ln(VOTES/POP),3107,6,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S103-bin7,groupc2_train,group_c_v2,space_ga,,S103,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",space_ga,ln(VOTES/POP),3107,6,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S103-round,groupc2_train,group_c_v2,space_ga,,S103,round,"{""decimals"": 0}",space_ga,ln(VOTES/POP),3107,6,4,0,int,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S103,silver_train,AMLB-regression,space_ga,openml_507,,,,space_ga,ln(VOTES/POP),3107,6,3105,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S104-anon,groupc2_train,group_c_v2,vehicle,,S104,anon,{},vehicle,y,846,18,4,0,string,MULTICLASS,"R1 curated classification suite, 4 classes + transformation",,True
+S104-numcode,groupc2_train,group_c_v2,vehicle,,S104,numcode,"{""mapping"": ""alphabetical""}",vehicle,Class,846,18,4,0,int,MULTICLASS,"R1 curated classification suite, 4 classes + transformation",,True
+S104,silver_train,AMLB-classification+OpenML-CC18,vehicle,openml_54,,,,vehicle,Class,846,18,4,0,string,MULTICLASS,"R1 curated classification suite, 4 classes",ok,True
+S105-anon,groupc2_train,group_c_v2,quake,,S105,anon,{},quake,y,2178,3,12,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S105-bin3,groupc2_train,group_c_v2,quake,,S105,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",quake,col_4,2178,3,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S105-bin5,groupc2_train,group_c_v2,quake,,S105,bin5,"{""bins"": 5, ""actual_bins"": 4, ""strategy"": ""quantile""}",quake,col_4,2178,3,4,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S105-bin7,groupc2_train,group_c_v2,quake,,S105,bin7,"{""bins"": 7, ""actual_bins"": 4, ""strategy"": ""quantile""}",quake,col_4,2178,3,4,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S105,silver_train,AMLB-regression,quake,openml_550,,,,quake,col_4,2178,3,12,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S106-anon,groupc2_train,group_c_v2,house_16h,,S106,anon,{},house_16H,y,22784,16,2045,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S106-bin3,groupc2_train,group_c_v2,house_16h,,S106,bin3,"{""bins"": 3, ""actual_bins"": 3, ""strategy"": ""quantile""}",house_16H,price,22784,16,3,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S106-bin5,groupc2_train,group_c_v2,house_16h,,S106,bin5,"{""bins"": 5, ""actual_bins"": 5, ""strategy"": ""quantile""}",house_16H,price,22784,16,5,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S106-bin7,groupc2_train,group_c_v2,house_16h,,S106,bin7,"{""bins"": 7, ""actual_bins"": 7, ""strategy"": ""quantile""}",house_16H,price,22784,16,7,0,int,ORDINAL,R2 curated regression suite (OpenML-CTR23 / AMLB regression) + transformation,,True
+S106,silver_train,AMLB-regression,house_16h,openml_574,,,,house_16H,price,22784,16,2045,0,float,CONTINUOUS_REGRESSION,R2 curated regression suite (OpenML-CTR23 / AMLB regression),ok,True
+S107-anon,groupc2_train,group_c_v2,letter,,S107,anon,{},letter,y,20000,16,26,0,string,MULTICLASS,"R1 curated classification suite, 26 classes + transformation",,True
+S107-numcode,groupc2_train,group_c_v2,letter,,S107,numcode,"{""mapping"": ""alphabetical""}",letter,class,20000,16,26,0,int,MULTICLASS,"R1 curated classification suite, 26 classes + transformation",,True
+S107,silver_train,OpenML-CC18,letter,openml_6,,,,letter,class,20000,16,26,0,string,MULTICLASS,"R1 curated classification suite, 26 classes",ok,True
+S108-anon,groupc2_train,group_c_v2,cancertreatmentresponse,,S108,anon,{},cancerTreatmentResponse,y,1069,12,8,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S108,silver_train,TOC-UCO (discretised-regression),cancertreatmentresponse,tocuco_dr08_cancerTreatmentResponse,,,,cancerTreatmentResponse,y,1069,12,8,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S109-anon,groupc2_train,group_c_v2,bank1,,S109,anon,{},bank1,y,8192,8,9,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S109,silver_train,TOC-UCO (discretised-regression),bank1,tocuco_dr09_bank1,,,,bank1,y,8192,8,9,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S110-anon,groupc2_train,group_c_v2,comp_activ,,S110,anon,{},computer1,y,8192,12,9,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S110,silver_train,TOC-UCO (discretised-regression),comp_activ,tocuco_dr09_computer1,,,,computer1,y,8192,12,9,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S111-anon,groupc2_train,group_c_v2,insurance,,S111,anon,{},insurance,y,1338,9,9,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S111,silver_train,TOC-UCO (discretised-regression),insurance,tocuco_dr09_insurance,,,,insurance,y,1338,9,9,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S112-anon,groupc2_train,group_c_v2,soybean,,S112,anon,{},soybean,y,320,9,9,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S112,silver_train,TOC-UCO (discretised-regression),soybean,tocuco_dr09_soybean,,,,soybean,y,320,9,9,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S113-anon,groupc2_train,group_c_v2,bank2,,S113,anon,{},bank2,y,8192,32,10,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S113,silver_train,TOC-UCO (discretised-regression),bank2,tocuco_dr10_bank2,,,,bank2,y,8192,32,10,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S114-anon,groupc2_train,group_c_v2,cancerdeathrate,,S114,anon,{},cancerDeathRate,y,3047,29,10,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S114,silver_train,TOC-UCO (discretised-regression),cancerdeathrate,tocuco_dr10_cancerDeathRate,,,,cancerDeathRate,y,3047,29,10,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S115-anon,groupc2_train,group_c_v2,realstate,,S115,anon,{},realState,y,414,6,10,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S115,silver_train,TOC-UCO (discretised-regression),realstate,tocuco_dr10_realState,,,,realState,y,414,6,10,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S116-anon,groupc2_train,group_c_v2,stock,,S116,anon,{},stock,y,950,9,10,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction + transformation,,True
+S116,silver_train,TOC-UCO (discretised-regression),stock,tocuco_dr10_stock,,,,stock,y,950,9,10,0,int,ORDINAL,R4 TOC-UCO discretised regression: ordered interval index by construction,ok,True
+S117-anon,groupc2_train,group_c_v2,swd,,S117,anon,{},swd,y,1000,10,4,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository + transformation,,False
+S117,silver_train,TOC-UCO (originally-ordinal),swd,tocuco_oc04_swd,,,,swd,y,1000,10,4,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository,ok,False
+S118-anon,groupc2_train,group_c_v2,lev,,S118,anon,{},lev,y,1000,4,5,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository + transformation,,False
+S118,silver_train,TOC-UCO (originally-ordinal),lev,tocuco_oc05_lev,,,,lev,y,1000,4,5,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository,ok,False
+S119-anon,groupc2_train,group_c_v2,nhanes,,S119,anon,{},nhanes,y,5223,30,5,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository + transformation,,False
+S119,silver_train,TOC-UCO (originally-ordinal),nhanes,tocuco_oc05_nhanes,,,,nhanes,y,5223,30,5,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository,ok,False
+S120-anon,groupc2_train,group_c_v2,vlbw,,S120,anon,{},vlbw,y,172,19,5,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository + transformation,,False
+S120,silver_train,TOC-UCO (originally-ordinal),vlbw,tocuco_oc05_vlbw,,,,vlbw,y,172,19,5,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository,ok,False
+S121-anon,groupc2_train,group_c_v2,esl,,S121,anon,{},esl,y,488,4,6,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository + transformation,,False
+S121,silver_train,TOC-UCO (originally-ordinal),esl,tocuco_oc06_esl,,,,esl,y,488,4,6,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository,ok,False
+S122-anon,groupc2_train,group_c_v2,era,,S122,anon,{},era,y,1000,4,9,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository + transformation,,False
+S122,silver_train,TOC-UCO (originally-ordinal),era,tocuco_oc09_era,,,,era,y,1000,4,9,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository,ok,False
+S123-anon,groupc2_train,group_c_v2,melbourneairbnb,,S123,anon,{},melbourneAirbnb,y,20036,48,10,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository + transformation,,False
+S123,silver_train,TOC-UCO (originally-ordinal),melbourneairbnb,tocuco_oc10_melbourneAirbnb,,,,melbourneAirbnb,y,20036,48,10,0,int,ORDINAL,R3 TOC-UCO originally-ordinal repository,ok,False

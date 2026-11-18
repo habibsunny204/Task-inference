@@ -1,0 +1,32 @@
+{
+ "instance_id": "I035",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "d500ad9cc40034ddb06254f5f78f475e3ed24cb039ec8570fe1ac3716981da22",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column has exactly two distinct values ('benign' and 'malignant'), which are clearly binary categories."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.95,\n    \"MULTICLASS\": 0.02,\n    \"ORDINAL\": 0.01,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0.01\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column has exactly two distinct values ('benign' and 'malignant'), which are clearly binary categories.\"\n}",
+   "tokens_in": 979,
+   "tokens_out": 131,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 18.21
+}

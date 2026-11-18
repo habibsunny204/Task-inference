@@ -1,0 +1,34 @@
+{
+ "instance_id": "I030",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "5b8de8eb2aea17eac5366636c510a70bd054161f1e65b58c54f1afe126515987",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.2,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are whole numbers ranging from 0 to 3, suggesting an ordinal scale, but could also be interpreted as binary or multiclass."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.2,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The target values are whole numbers ranging from 0 to 3, suggesting an ordinal scale, but could also be interpreted as binary or multiclass.\"\n}\n```",
+   "tokens_in": 1172,
+   "tokens_out": 146,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.33
+}

@@ -1,0 +1,34 @@
+{
+ "instance_id": "I030",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "5b8de8eb2aea17eac5366636c510a70bd054161f1e65b58c54f1afe126515987",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.8095238095238094,
+  "p_MULTICLASS": 0.047619047619047616,
+  "p_ORDINAL": 0.09523809523809523,
+  "p_COUNT_REGRESSION": 0.047619047619047616,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.05,
+  "confidence": 5,
+  "evidence": "The target column 'y' has distinct values of 0 and 1, which suggests a binary outcome, with a high prevalence of one value over the other."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.85,\n    \"MULTICLASS\": 0.05,\n    \"ORDINAL\": 0.10,\n    \"COUNT_REGRESSION\": 0.05,\n    \"CONTINUOUS_REGRESSION\": 0.00\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'y' has distinct values of 0 and 1, which suggests a binary outcome, with a high prevalence of one value over the other.\"\n}\n```",
+   "tokens_in": 1451,
+   "tokens_out": 186,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.2
+}

@@ -1,0 +1,34 @@
+{
+ "instance_id": "I047",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "f7721051383bb1a2a94e6dbf927e7a07a8d90695de8f60a8f76acef440cf1668",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.7,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has three distinct categorical values with no indication of order or count."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.7,\n    \"ORDINAL\": 0.2,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has three distinct categorical values with no indication of order or count.\"\n}\n```",
+   "tokens_in": 617,
+   "tokens_out": 133,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 14.13
+}

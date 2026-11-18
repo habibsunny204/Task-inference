@@ -1,0 +1,35 @@
+{
+ "instance_id": "G005",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "d8652a8ee0c7551a9bc5f7d0eca4044de8e0104876cbee254296c17f276b579b",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column 'Utility' is described as an 'enumerated' variable with integer values ranging from 1 to 5, which suggests it is a rating or score. This aligns with ORDINAL or MULTICLASS tasks, and could also be interpreted as a continuous regression task if the values are treated as measurements.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column 'Utility' is described as an 'enumerated' variable with integer values ranging from 1 to 5, which suggests it is a rating or score. This aligns with ORDINAL or MULTICLASS tasks, and could also be interpreted as a continuous regression task if the values are treated as measurements.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 2165,
+   "tokens_out": 193,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 26.08
+}

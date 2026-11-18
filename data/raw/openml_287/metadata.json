@@ -1,0 +1,30 @@
+{
+  "dataset_id": 287,
+  "name": "wine_quality",
+  "version": 1,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/287",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/wine+quality",
+  "paper_url": "https://www.sciencedirect.com/science/article/pii/S0167923609001377",
+  "citation": "P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.",
+  "creator": "Paulo Cortez",
+  "licence": "Public",
+  "upload_date": "2014-08-14T19:50:58",
+  "default_target": "quality",
+  "target_column": "quality",
+  "openml_task_id": "359935",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "fixed.acidity",
+    "volatile.acidity",
+    "citric.acid",
+    "residual.sugar",
+    "chlorides",
+    "free.sulfur.dioxide",
+    "total.sulfur.dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ]
+}

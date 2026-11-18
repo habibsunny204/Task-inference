@@ -1,0 +1,33 @@
+{
+ "instance_id": "G018",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "6de9d2dc1107ae882a36f3570a6d54638b585f2c510e296894b6639556e07706",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.4,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are integers with a clear ordinal structure, and the distribution is not uniform, suggesting ordered categories."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0, \"MULTICLASS\": 0, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.4, \"CONTINUOUS_REGRESSION\": 0},\n  \"confidence\": 4,\n  \"evidence\": \"The target values are integers with a clear ordinal structure, and the distribution is not uniform, suggesting ordered categories.\"\n}",
+   "tokens_in": 991,
+   "tokens_out": 115,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.19
+}

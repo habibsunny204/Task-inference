@@ -1,0 +1,33 @@
+{
+ "instance_id": "I015",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "107126a4588585dd6f3247e412e4dd9f393b7a7a414e5634e29bad00f9a0d370",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.1,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has two distinct values and is an integer with a binary distribution."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\"BINARY\": 0.7, \"MULTICLASS\": 0.1, \"ORDINAL\": 0.2, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has two distinct values and is an integer with a binary distribution.\"\n}",
+   "tokens_in": 1047,
+   "tokens_out": 113,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.46
+}

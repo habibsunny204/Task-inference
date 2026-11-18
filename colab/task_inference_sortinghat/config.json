@@ -1,0 +1,6 @@
+{
+  "bundle": "task_inference_sortinghat",
+  "frozen": "2026-10-18",
+  "store": "store",
+  "note": "store: the 76 unlabelled test instances (manifest, meta, targets) copied from data/store, relative to this folder"
+}

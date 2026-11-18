@@ -1,0 +1,34 @@
+{
+ "instance_id": "I028",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "af8d08ab54283f53e23d74e98babd6d27fba4e0ea0d4a65a5743ecebe01d23b2",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column contains only whole numbers with a limited range of 0 to 4, and the majority of values are 0, suggesting a binary outcome."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"COUNT_REGRESSION\": 0.2,\n    \"ORDINAL\": 0.1\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column contains only whole numbers with a limited range of 0 to 4, and the majority of values are 0, suggesting a binary outcome.\"\n}\n```",
+   "tokens_in": 1310,
+   "tokens_out": 146,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.4
+}

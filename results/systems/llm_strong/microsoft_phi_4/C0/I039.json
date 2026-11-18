@@ -1,0 +1,32 @@
+{
+ "instance_id": "I039",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "f680983b05721fccb8ca614929b11bf41b1e8f959f11fd5b9d61a0fbd3e590b0",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 1.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target values are real numbers with a wide range and no indication of discrete categories or counts."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.0,\n    \"ORDINAL\": 0.0,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 1.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target values are real numbers with a wide range and no indication of discrete categories or counts.\"\n}\n```",
+   "tokens_in": 1077,
+   "tokens_out": 131,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 15.5
+}

@@ -1,0 +1,33 @@
+{
+ "instance_id": "G010",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "b46515f65eabf892dc1c06ee017f305c3bf2c111e4022298866a9e5c306d15f5",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.5,
+  "p_CONTINUOUS_REGRESSION": 0.5,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target values are non-negative integers with a range and mean suggesting a continuous-like distribution."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.0, \"COUNT_REGRESSION\": 0.5, \"CONTINUOUS_REGRESSION\": 0.5},\n  \"confidence\": 4,\n  \"evidence\": \"The target values are non-negative integers with a range and mean suggesting a continuous-like distribution.\"\n}",
+   "tokens_in": 2146,
+   "tokens_out": 123,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.13
+}

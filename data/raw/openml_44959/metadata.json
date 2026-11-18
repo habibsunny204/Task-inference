@@ -1,0 +1,27 @@
+{
+  "dataset_id": 44959,
+  "name": "concrete_compressive_strength",
+  "version": 7,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/44959",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength",
+  "paper_url": "https://doi.org/10.1016/S0008-8846(98)00165-3",
+  "citation": "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. \nI-Cheng Yeh, \"\"Modeling of strength of high performance concrete using artificial neural networks,\"\" Cement and Concrete Research, Vol. 28, No. 12, pp. 1797-1808 (1998).",
+  "creator": null,
+  "licence": "CC BY 4.0",
+  "upload_date": "2022-12-22T16:11:09",
+  "default_target": "strength",
+  "target_column": "strength",
+  "openml_task_id": "361237",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "cement",
+    "blast_furnace_slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+ "instance_id": "I001",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "9d624d39f656cc3bdb8816ae03547621247928310235109a554f3082349d264f",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.5,
+  "p_ORDINAL": 0.3,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.2,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target values are whole numbers ranging from 1 to 26 with equal frequency, suggesting either a multiclass or ordinal classification, but without explicit ordering information, multiclass is more likely."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.0,\n    \"MULTICLASS\": 0.5,\n    \"ORDINAL\": 0.3,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.2\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target values are whole numbers ranging from 1 to 26 with equal frequency, suggesting either a multiclass or ordinal classification, but without explicit ordering information, multiclass is more likely.\"\n}\n```",
+   "tokens_in": 1536,
+   "tokens_out": 159,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 19.83
+}

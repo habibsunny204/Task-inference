@@ -1,0 +1,9 @@
+# Versions used to compute the paper's numbers (Python 3.14; Python 3.12 or later should work)
+numpy==2.5.3
+pandas==3.0.6
+pyarrow==25.0.1
+scikit-learn==1.9.1
+scipy==1.18.1
+tabulate==0.10.0
+# only to rerun the frozen rule baselines (scripts/run_rules.py, scripts/build_candidate_pool.py):
+# openml==0.15.1

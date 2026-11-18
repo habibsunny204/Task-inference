@@ -1,0 +1,35 @@
+{
+ "instance_id": "G010",
+ "group": "group_c",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "ac4ad1d183c0eab8c2442004c9c77720575959ff04c177bdd255594b5447816c",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.05,
+  "p_MULTICLASS": 0.25,
+  "p_ORDINAL": 0.45,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.05,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target is an integer with values ranging from 1 to 58, suggesting it could represent counts, categories, or continuous measurements. The lack of clear ordering or context makes ORDINAL, MULTICLASS, COUNT_REGRESSION, and CONTINUOUS_REGRESSION all plausible."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.25,\n    \"ORDINAL\": 0.45,\n    \"COUNT_REGRESSION\": 0.20,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target is an integer with values ranging from 1 to 58, suggesting it could represent counts, categories, or continuous measurements. The lack of clear ordering or context makes ORDINAL, MULTICLASS, COUNT_REGRESSION, and CONTINUOUS_REGRESSION all plausible.\"\n}",
+   "tokens_in": 962,
+   "tokens_out": 182,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.15
+}

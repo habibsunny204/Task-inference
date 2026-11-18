@@ -1,0 +1,35 @@
+{
+ "instance_id": "G019",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "cdfc04f94f12168f46135403f4f07d42210e363cd42497a1a826928e9d8055ba",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.03,
+  "p_COUNT_REGRESSION": 0.02,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The dataset contains records of simulation crashes (fail or succeed) and aims to predict these outcomes from input parameter values.",
+  "evidence_level": "E5"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.95,\n    \"ORDINAL\": 0.03,\n    \"COUNT_REGRESSION\": 0.02\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset contains records of simulation crashes (fail or succeed) and aims to predict these outcomes from input parameter values.\",\n  \"evidence_level\": \"E5\"\n}\n```\nThe task is most likely BINARY because the dataset aims to predict binary outcomes (fail or succeed) from input parameter values. The confidence level is 5 because the evidence directly from the dataset and documentation strongly supports this conclusion. The evidence level is E5 because the evidence is explicit and directly related to the intended task.",
+   "tokens_in": 3489,
+   "tokens_out": 222,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.56
+}

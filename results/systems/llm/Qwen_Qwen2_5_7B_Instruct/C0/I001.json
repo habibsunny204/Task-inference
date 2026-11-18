@@ -1,0 +1,34 @@
+{
+ "instance_id": "I001",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "3eaa11a647d8b3ebd6024cbcaf31c5c7f975b0b1fb267eef0af1fd2318a88f67",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.3,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.2,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has 26 distinct whole number values, evenly distributed, suggesting ordered categories."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0, \"MULTICLASS\": 0.3, \"ORDINAL\": 0.5, \"COUNT_REGRESSION\": 0.2, \"CONTINUOUS_REGRESSION\": 0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 26 distinct whole number values, evenly distributed, suggesting ordered categories.\"\n}",
+   "tokens_in": 972,
+   "tokens_out": 119,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 8.21
+}

@@ -1,0 +1,25 @@
+{
+  "dataset_id": 44970,
+  "name": "QSAR_fish_toxicity",
+  "version": 7,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/44970",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/QSAR+fish+toxicity",
+  "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/1062936X.2015.1018938",
+  "citation": "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. \nM. Cassotti, D. Ballabio, R. Todeschini, V. Consonni. A similarity-based QSAR model for predicting acute toxicity towards the fathead minnow (Pimephales promelas), SAR and QSAR in Environmental Research (2015), 26, 217-243; doi: 10.1080/1062936X.2015.1018938",
+  "creator": null,
+  "licence": "CC BY 4.0",
+  "upload_date": "2022-12-22T16:13:08",
+  "default_target": "LC50",
+  "target_column": "LC50",
+  "openml_task_id": "361621",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "CIC0",
+    "SM1_Dz",
+    "GATS1i",
+    "NdsCH",
+    "NdssC",
+    "MLOGP"
+  ]
+}

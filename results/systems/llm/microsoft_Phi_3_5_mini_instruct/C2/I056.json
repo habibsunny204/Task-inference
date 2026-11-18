@@ -1,0 +1,37 @@
+{
+ "instance_id": "I056",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "4cf23882bb4bfc260bf26172f2a0eeffb3d0cfc786d93b3c602ba43cecede59a",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.01,
+  "p_ORDINAL": 0.02,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The dataset contains records of simulation crashes (failures) and successes, indicating a binary outcome based on the input parameters.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.95,\n    \"ORDINAL\": 0.02,\n    \"MULTICLASS\": 0.01,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0.01\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset contains records of simulation crashes (failures) and successes, indicating a binary outcome based on the input parameters.\",\n  \"evidence_level\": \"E1\"\n}\n```",
+   "tokens_in": 3544,
+   "tokens_out": 206,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 12.38
+}

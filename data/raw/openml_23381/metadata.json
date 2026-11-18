@@ -1,0 +1,31 @@
+{
+  "dataset_id": 23381,
+  "name": "dresses-sales",
+  "version": 2,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/23381",
+  "original_data_url": null,
+  "paper_url": null,
+  "citation": null,
+  "creator": null,
+  "licence": "Public",
+  "upload_date": "2016-04-11T19:57:27",
+  "default_target": "Class",
+  "target_column": "Class",
+  "openml_task_id": "125920",
+  "openml_task_type": "Supervised Classification",
+  "feature_names": [
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13"
+  ]
+}

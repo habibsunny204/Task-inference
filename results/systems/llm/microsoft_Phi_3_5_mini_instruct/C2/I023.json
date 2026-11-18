@@ -1,0 +1,34 @@
+{
+ "instance_id": "I023",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "00271062690a66202398c01901a33ed5b35dee5e06b5ca53d535da4aad1c9e47",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "MULTICLASS"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.025641025641025644,
+  "p_MULTICLASS": 0.48717948717948717,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.48717948717948717,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.95,
+  "confidence": 5,
+  "evidence": "The dataset contains 10 distinct values, each representing a count of instances per class, with all values being whole numbers and summing to 2000.",
+  "evidence_level": "E5"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"MULTICLASS\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.95,\n    \"ORDINAL\": 0.0,\n    \"COUNT_REGRESSION\": 0.95,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The dataset contains 10 distinct values, each representing a count of instances per class, with all values being whole numbers and summing to 2000.\",\n  \"evidence_level\": \"E5\"\n}\n```",
+   "tokens_in": 2572,
+   "tokens_out": 194,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.32
+}

@@ -1,0 +1,34 @@
+{
+ "instance_id": "G011",
+ "group": "group_c",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "55c7d0513c9d5985cf50bd47e7256cd250a774cc147b0e26b0aa6f677b249086",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.045454545454545456,
+  "p_MULTICLASS": 0.2727272727272727,
+  "p_ORDINAL": 0.45454545454545453,
+  "p_COUNT_REGRESSION": 0.09090909090909091,
+  "p_CONTINUOUS_REGRESSION": 0.13636363636363635,
+  "probability_sum_raw": 1.1,
+  "confidence": 3,
+  "evidence": "The target column `strength` has 5 distinct integer values (0\u20134), evenly distributed, and is likely to represent ordered categories (e.g., strength levels), though it could also be treated as a continuous or multi-class task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.3,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.15\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column `strength` has 5 distinct integer values (0\u20134), evenly distributed, and is likely to represent ordered categories (e.g., strength levels), though it could also be treated as a continuous or multi-class task.\"\n}",
+   "tokens_in": 1101,
+   "tokens_out": 165,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 23.18
+}

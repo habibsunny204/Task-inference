@@ -1,0 +1,18 @@
+{
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+ "config": {
+  "version": "llm-baseline-v0.1",
+  "frozen_on": "2026-09-27",
+  "models": [
+   "Qwen/Qwen2.5-7B-Instruct",
+   "microsoft/Phi-3.5-mini-instruct"
+  ],
+  "load_in_4bit": true,
+  "max_new_tokens": 400,
+  "decoding": "greedy (do_sample=False)",
+  "retries": 1,
+  "note": "Both default models are ungated on Hugging Face (no token needed). To swap one, edit this list before the first run and record the change in README.md."
+ },
+ "utc": "2026-09-29T08:56:29+00:00"
+}

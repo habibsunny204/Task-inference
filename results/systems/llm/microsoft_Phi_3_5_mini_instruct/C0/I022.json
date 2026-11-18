@@ -1,0 +1,33 @@
+{
+ "instance_id": "I022",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "e57349c9c885f281f8853736133a5663e0c761a48d7d2aceaf0e6051ccfe0ad7",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.025641025641025644,
+  "p_MULTICLASS": 0.025641025641025644,
+  "p_ORDINAL": 0.46153846153846156,
+  "p_COUNT_REGRESSION": 0.48717948717948717,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.95,
+  "confidence": 5,
+  "evidence": "The target values are distinct integers with a clear minimum and maximum, and the majority of values are zeros, indicating a count of occurrences."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n\n{\n\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n\n  \"probabilities\": {\n\n    \"BINARY\": 0.05,\n\n    \"MULTICLASS\": 0.05,\n\n    \"ORDINAL\": 0.9,\n\n    \"COUNT_REGRESSION\": 0.95,\n\n    \"CONTINUOUS_REGRESSION\": 0.0\n\n  },\n\n  \"confidence\": 5,\n\n  \"evidence\": \"The target values are distinct integers with a clear minimum and maximum, and the majority of values are zeros, indicating a count of occurrences.\"\n\n}\n\n```",
+   "tokens_in": 842,
+   "tokens_out": 188,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.23
+}

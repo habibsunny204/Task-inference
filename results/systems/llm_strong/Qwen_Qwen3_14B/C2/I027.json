@@ -1,0 +1,35 @@
+{
+ "instance_id": "I027",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "7eb89fc868b039d2471f27adf84cf50d1a9e317ed2485fcd59644cc7147fa140",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.7,
+  "p_MULTICLASS": 0.15,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.03,
+  "p_CONTINUOUS_REGRESSION": 0.02,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The dataset documentation explicitly states that all problems are binary classification tasks.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.7,\n    \"MULTICLASS\": 0.15,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.03,\n    \"CONTINUOUS_REGRESSION\": 0.02\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The dataset documentation explicitly states that all problems are binary classification tasks.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1726,
+   "tokens_out": 138,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 24.13
+}

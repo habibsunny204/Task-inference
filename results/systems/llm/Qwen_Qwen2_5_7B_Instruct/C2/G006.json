@@ -1,0 +1,33 @@
+{
+ "instance_id": "G006",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "e265c191310e185184432584851c52310b9cfbe254ef5af185f50479219b090a",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION"
+  ],
+  "most_likely_task": "CONTINUOUS_REGRESSION",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.0,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 1.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target variable 'strength' is described as compressive strength in MPa, which is a continuous value.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"CONTINUOUS_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.0, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 1.0},\n  \"confidence\": 5,\n  \"evidence\": \"The target variable 'strength' is described as compressive strength in MPa, which is a continuous value.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1678,
+   "tokens_out": 132,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.47
+}

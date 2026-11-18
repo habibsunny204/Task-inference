@@ -1,0 +1,34 @@
+{
+ "instance_id": "G018",
+ "group": "group_c",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "753b33a5d3ab5fcc281d5ab5362ec47ca26f68d1e9d9a83b02bd6ba9155d5f2b",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.047619047619047616,
+  "p_MULTICLASS": 0.047619047619047616,
+  "p_ORDINAL": 0.38095238095238093,
+  "p_COUNT_REGRESSION": 0.47619047619047616,
+  "p_CONTINUOUS_REGRESSION": 0.047619047619047616,
+  "probability_sum_raw": 1.05,
+  "confidence": 4,
+  "evidence": "The target column `y` has 8 distinct values, all whole numbers, and the dataset documentation mentions predicting the number of common solar flares.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\"BINARY\": 0.05, \"MULTICLASS\": 0.05, \"ORDINAL\": 0.4, \"COUNT_REGRESSION\": 0.5, \"CONTINUOUS_REGRESSION\": 0.05},\n  \"confidence\": 4,\n  \"evidence\": \"The target column `y` has 8 distinct values, all whole numbers, and the dataset documentation mentions predicting the number of common solar flares.\",\n  \"evidence_level\": \"E2\"\n}\n```",
+   "tokens_in": 1480,
+   "tokens_out": 147,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.76
+}

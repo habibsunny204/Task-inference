@@ -1,0 +1,121 @@
+eval,system,condition,weights,policy,k,n,costly
+hgb,autogluon,C0,uniform,always act,0,35,7
+hgb,autogluon,C0,favourite_2_3,always act,0,35,8
+hgb,autogluon,C1,uniform,always act,0,35,7
+hgb,autogluon,C1,favourite_2_3,always act,0,35,8
+hgb,autogluon,C2,uniform,always act,0,35,7
+hgb,autogluon,C2,favourite_2_3,always act,0,35,8
+hgb,llm:Qwen_Qwen2_5_7B_Instruct,C0,uniform,always act,0,35,8
+hgb,llm:Qwen_Qwen2_5_7B_Instruct,C0,favourite_2_3,always act,0,35,8
+hgb,llm:Qwen_Qwen2_5_7B_Instruct,C1,uniform,always act,0,35,9
+hgb,llm:Qwen_Qwen2_5_7B_Instruct,C1,favourite_2_3,always act,0,35,9
+hgb,llm:Qwen_Qwen2_5_7B_Instruct,C2,uniform,always act,0,35,8
+hgb,llm:Qwen_Qwen2_5_7B_Instruct,C2,favourite_2_3,always act,0,35,8
+hgb,llm:Qwen_Qwen3_14B,C0,uniform,always act,0,35,13
+hgb,llm:Qwen_Qwen3_14B,C0,favourite_2_3,always act,0,35,13
+hgb,llm:Qwen_Qwen3_14B,C1,uniform,always act,0,35,12
+hgb,llm:Qwen_Qwen3_14B,C1,favourite_2_3,always act,0,35,12
+hgb,llm:Qwen_Qwen3_14B,C2,uniform,always act,0,35,8
+hgb,llm:Qwen_Qwen3_14B,C2,favourite_2_3,always act,0,35,8
+hgb,llm:microsoft_phi_4,C0,uniform,always act,0,35,8
+hgb,llm:microsoft_phi_4,C0,favourite_2_3,always act,0,35,8
+hgb,llm:microsoft_phi_4,C1,uniform,always act,0,35,7
+hgb,llm:microsoft_phi_4,C1,favourite_2_3,always act,0,35,7
+hgb,llm:microsoft_phi_4,C2,uniform,always act,0,35,4
+hgb,llm:microsoft_phi_4,C2,favourite_2_3,always act,0,35,4
+hgb,method:forced,C0,uniform,always act,0,35,1
+hgb,method:forced,C0,favourite_2_3,always act,0,35,1
+hgb,method:forced,C1,uniform,always act,0,35,2
+hgb,method:forced,C1,favourite_2_3,always act,0,35,2
+hgb,method:forced,C2,uniform,always act,0,35,5
+hgb,method:forced,C2,favourite_2_3,always act,0,35,5
+hgb,sortinghat:forced,C0,uniform,always act,0,35,10
+hgb,sortinghat:forced,C0,favourite_2_3,always act,0,35,10
+hgb,sortinghat:forced,C1,uniform,always act,0,35,4
+hgb,sortinghat:forced,C1,favourite_2_3,always act,0,35,4
+hgb,sortinghat:forced,C2,uniform,always act,0,35,4
+hgb,sortinghat:forced,C2,favourite_2_3,always act,0,35,4
+hgb,v2:forced,C0,uniform,always act,0,35,2
+hgb,v2:forced,C0,favourite_2_3,always act,0,35,2
+hgb,v2:forced,C1,uniform,always act,0,35,3
+hgb,v2:forced,C1,favourite_2_3,always act,0,35,3
+hgb,v2:forced,C2,uniform,always act,0,35,3
+hgb,v2:forced,C2,favourite_2_3,always act,0,35,3
+hgb,v2:forced,C0,uniform,confidence,6,56,1
+hgb,v2:forced,C0,uniform,expected_regret,6,56,1
+hgb,v2:forced,C0,uniform,never ask,0,56,2
+hgb,v2:forced,C0,favourite_2_3,confidence,6,56,1
+hgb,v2:forced,C0,favourite_2_3,expected_regret,6,56,1
+hgb,v2:forced,C0,favourite_2_3,never ask,0,56,2
+hgb,v2:forced,C1,uniform,confidence,6,56,2
+hgb,v2:forced,C1,uniform,expected_regret,6,56,1
+hgb,v2:forced,C1,uniform,never ask,0,56,3
+hgb,v2:forced,C1,favourite_2_3,confidence,6,56,2
+hgb,v2:forced,C1,favourite_2_3,expected_regret,6,56,1
+hgb,v2:forced,C1,favourite_2_3,never ask,0,56,3
+hgb,v2:forced,C2,uniform,confidence,6,56,3
+hgb,v2:forced,C2,uniform,expected_regret,6,56,2
+hgb,v2:forced,C2,uniform,never ask,0,56,3
+hgb,v2:forced,C2,favourite_2_3,confidence,6,56,3
+hgb,v2:forced,C2,favourite_2_3,expected_regret,6,56,2
+hgb,v2:forced,C2,favourite_2_3,never ask,0,56,3
+ag,autogluon,C0,uniform,always act,0,35,6
+ag,autogluon,C0,favourite_2_3,always act,0,35,6
+ag,autogluon,C1,uniform,always act,0,35,6
+ag,autogluon,C1,favourite_2_3,always act,0,35,6
+ag,autogluon,C2,uniform,always act,0,35,6
+ag,autogluon,C2,favourite_2_3,always act,0,35,6
+ag,llm:Qwen_Qwen2_5_7B_Instruct,C0,uniform,always act,0,35,7
+ag,llm:Qwen_Qwen2_5_7B_Instruct,C0,favourite_2_3,always act,0,35,7
+ag,llm:Qwen_Qwen2_5_7B_Instruct,C1,uniform,always act,0,35,12
+ag,llm:Qwen_Qwen2_5_7B_Instruct,C1,favourite_2_3,always act,0,35,12
+ag,llm:Qwen_Qwen2_5_7B_Instruct,C2,uniform,always act,0,35,10
+ag,llm:Qwen_Qwen2_5_7B_Instruct,C2,favourite_2_3,always act,0,35,10
+ag,llm:Qwen_Qwen3_14B,C0,uniform,always act,0,35,14
+ag,llm:Qwen_Qwen3_14B,C0,favourite_2_3,always act,0,35,14
+ag,llm:Qwen_Qwen3_14B,C1,uniform,always act,0,35,14
+ag,llm:Qwen_Qwen3_14B,C1,favourite_2_3,always act,0,35,14
+ag,llm:Qwen_Qwen3_14B,C2,uniform,always act,0,35,7
+ag,llm:Qwen_Qwen3_14B,C2,favourite_2_3,always act,0,35,7
+ag,llm:microsoft_phi_4,C0,uniform,always act,0,35,8
+ag,llm:microsoft_phi_4,C0,favourite_2_3,always act,0,35,8
+ag,llm:microsoft_phi_4,C1,uniform,always act,0,35,7
+ag,llm:microsoft_phi_4,C1,favourite_2_3,always act,0,35,7
+ag,llm:microsoft_phi_4,C2,uniform,always act,0,35,3
+ag,llm:microsoft_phi_4,C2,favourite_2_3,always act,0,35,3
+ag,method:forced,C0,uniform,always act,0,35,3
+ag,method:forced,C0,favourite_2_3,always act,0,35,3
+ag,method:forced,C1,uniform,always act,0,35,4
+ag,method:forced,C1,favourite_2_3,always act,0,35,4
+ag,method:forced,C2,uniform,always act,0,35,5
+ag,method:forced,C2,favourite_2_3,always act,0,35,5
+ag,sortinghat:forced,C0,uniform,always act,0,35,10
+ag,sortinghat:forced,C0,favourite_2_3,always act,0,35,10
+ag,sortinghat:forced,C1,uniform,always act,0,35,5
+ag,sortinghat:forced,C1,favourite_2_3,always act,0,35,5
+ag,sortinghat:forced,C2,uniform,always act,0,35,5
+ag,sortinghat:forced,C2,favourite_2_3,always act,0,35,5
+ag,v2:forced,C0,uniform,always act,0,35,4
+ag,v2:forced,C0,favourite_2_3,always act,0,35,4
+ag,v2:forced,C1,uniform,always act,0,35,5
+ag,v2:forced,C1,favourite_2_3,always act,0,35,5
+ag,v2:forced,C2,uniform,always act,0,35,4
+ag,v2:forced,C2,favourite_2_3,always act,0,35,4
+ag,v2:forced,C0,uniform,confidence,6,56,3
+ag,v2:forced,C0,uniform,expected_regret,6,56,3
+ag,v2:forced,C0,uniform,never ask,0,56,4
+ag,v2:forced,C0,favourite_2_3,confidence,6,56,3
+ag,v2:forced,C0,favourite_2_3,expected_regret,6,56,3
+ag,v2:forced,C0,favourite_2_3,never ask,0,56,4
+ag,v2:forced,C1,uniform,confidence,6,56,4
+ag,v2:forced,C1,uniform,expected_regret,6,56,3
+ag,v2:forced,C1,uniform,never ask,0,56,5
+ag,v2:forced,C1,favourite_2_3,confidence,6,56,4
+ag,v2:forced,C1,favourite_2_3,expected_regret,6,56,3
+ag,v2:forced,C1,favourite_2_3,never ask,0,56,5
+ag,v2:forced,C2,uniform,confidence,6,56,4
+ag,v2:forced,C2,uniform,expected_regret,6,56,3
+ag,v2:forced,C2,uniform,never ask,0,56,4
+ag,v2:forced,C2,favourite_2_3,confidence,6,56,4
+ag,v2:forced,C2,favourite_2_3,expected_regret,6,56,3
+ag,v2:forced,C2,favourite_2_3,never ask,0,56,4

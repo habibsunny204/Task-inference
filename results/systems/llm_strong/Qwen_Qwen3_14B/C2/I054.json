@@ -1,0 +1,35 @@
+{
+ "instance_id": "I054",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "80aeffa353e7c86ff997b44d263e01b201339c983df56cab56b92643092085f8",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.15,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.05,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target column `Class` has only two distinct values (1 and 2), which are whole numbers and could represent binary categories such as 'recommended' vs 'not recommended' based on the dataset's description.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.15,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target column `Class` has only two distinct values (1 and 2), which are whole numbers and could represent binary categories such as 'recommended' vs 'not recommended' based on the dataset's description.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1633,
+   "tokens_out": 167,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.26
+}

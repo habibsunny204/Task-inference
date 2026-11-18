@@ -1,0 +1,34 @@
+{
+ "instance_id": "I001",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "384cee17e7827f10d859703c13c6846da04f9043b4dfdf413c1fbe0058aa5f52",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.047619047619047616,
+  "p_MULTICLASS": 0.8095238095238094,
+  "p_ORDINAL": 0.09523809523809523,
+  "p_COUNT_REGRESSION": 0.02857142857142857,
+  "p_CONTINUOUS_REGRESSION": 0.019047619047619046,
+  "probability_sum_raw": 1.05,
+  "confidence": 4,
+  "evidence": "The dataset contains 26 distinct values sorted by value, each representing a different letter of the alphabet, suggesting an ordinal relationship with a clear, natural order.",
+  "evidence_level": "E3"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.05,\n    \"MULTICLASS\": 0.85,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.03,\n    \"CONTINUOUS_REGRESSION\": 0.02\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The dataset contains 26 distinct values sorted by value, each representing a different letter of the alphabet, suggesting an ordinal relationship with a clear, natural order.\",\n  \"evidence_level\": \"E3\"\n}\n```",
+   "tokens_in": 2833,
+   "tokens_out": 190,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.25
+}

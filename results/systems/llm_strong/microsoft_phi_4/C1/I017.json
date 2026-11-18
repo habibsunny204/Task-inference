@@ -1,0 +1,35 @@
+{
+ "instance_id": "I017",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/phi-4",
+ "prompt_sha256": "f30a9d327a893147b824342298dc18cf476d21b8ac86f44dc696444b0058782e",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "CONTINUOUS_REGRESSION",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.1,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.5,
+  "p_COUNT_REGRESSION": 0.1,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target values are integers ranging from 0 to 3, with a distribution that suggests an ordinal relationship, but could also be interpreted as multiclass or continuous."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\n    \"BINARY\": 0.1,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.5,\n    \"COUNT_REGRESSION\": 0.1,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target values are integers ranging from 0 to 3, with a distribution that suggests an ordinal relationship, but could also be interpreted as multiclass or continuous.\"\n}\n```",
+   "tokens_in": 1110,
+   "tokens_out": 156,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 18.21
+}

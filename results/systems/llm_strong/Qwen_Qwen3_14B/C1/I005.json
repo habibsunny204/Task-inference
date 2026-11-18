@@ -1,0 +1,32 @@
+{
+ "instance_id": "I005",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "cb78950891f52c930d5793f08f58195a0bef0cc408bc999060682b6436ef6d8d",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.95,
+  "p_MULTICLASS": 0.02,
+  "p_ORDINAL": 0.01,
+  "p_COUNT_REGRESSION": 0.01,
+  "p_CONTINUOUS_REGRESSION": 0.01,
+  "probability_sum_raw": 1.0,
+  "confidence": 5,
+  "evidence": "The target column has exactly two distinct values (+ and -), which strongly indicates a binary classification task."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.95,\n    \"MULTICLASS\": 0.02,\n    \"ORDINAL\": 0.01,\n    \"COUNT_REGRESSION\": 0.01,\n    \"CONTINUOUS_REGRESSION\": 0.01\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column has exactly two distinct values (+ and -), which strongly indicates a binary classification task.\"\n}",
+   "tokens_in": 944,
+   "tokens_out": 127,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 17.33
+}

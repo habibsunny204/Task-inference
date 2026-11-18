@@ -1,0 +1,31 @@
+{
+ "instance_id": "I052",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "0954c161dee4e628478b25f9d64bdc8195673e7cb7c83e53b60e5ebcc87dea11",
+ "answer": null,
+ "problems": [
+  "no JSON object"
+ ],
+ "attempts": [
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.0,\n0.1,\n\"ORDINAL\": 0.6,\n\"COUNT_REGRESSION\": 0.15,\n\"CONTINUOUS_REGRESSION\": 0.15\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'area' has distinct values ranging from 0 to 35.88 with a mean of 12.8473, and a significant number of zero values, suggesting a count of events or items, which aligns with COUNT_REGRESSION.\"\n}\n```",
+   "tokens_in": 1592,
+   "tokens_out": 224,
+   "problems": [
+    "no JSON object"
+   ]
+  },
+  {
+   "raw": "```json\n{\n  \"plausible_task_set\": [\"BINARY\", \"COUNT_REGRESSION\", \"ORDINAL\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n  \"probabilities\": {\n    \"BINARY\": 0.15,\n    \"MULTICLASS\": 0.0,\n0.1,\n    \"ORDINAL\": 0.6,\n    \"COUNT_REGRESSION\": 0.25,\n    \"CONTINUOUS_REGRESSION\": 0.05\n  },\n  \"confidence\": 5,\n  \"evidence\": \"The target column 'area' has distinct values ranging from 0 to 35.88 with a majority of values being 0, indicating a count of events or items, fitting the COUNT_REGRESSION task.\"\n}\n```",
+   "tokens_in": 1608,
+   "tokens_out": 214,
+   "problems": [
+    "no JSON object"
+   ]
+  }
+ ],
+ "parse_ok": false,
+ "seconds": 23.19
+}

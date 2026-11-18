@@ -1,0 +1,30 @@
+{
+  "dataset_id": 44971,
+  "name": "white_wine",
+  "version": 7,
+  "source": "OpenML",
+  "source_url": "https://www.openml.org/d/44971",
+  "original_data_url": "https://archive.ics.uci.edu/ml/datasets/wine",
+  "paper_url": "https://doi.org/10.1016/j.dss.2009.05.016",
+  "citation": "Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.",
+  "creator": null,
+  "licence": "CC BY 4.0",
+  "upload_date": "2022-12-22T16:13:13",
+  "default_target": "quality",
+  "target_column": "quality",
+  "openml_task_id": "361249",
+  "openml_task_type": "Supervised Regression",
+  "feature_names": [
+    "fixed_acidity",
+    "volatile_acidity",
+    "citric_acid",
+    "residual_sugar",
+    "chlorides",
+    "free_sulfur_dioxide",
+    "total_sulfur_dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+ "instance_id": "I025",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "87f645f37928f3b6e0f7fbb16199e0045349dc0adf0e91fcce038645c147d373",
+ "answer": {
+  "plausible_task_set": [
+   "CONTINUOUS_REGRESSION",
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.3,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target values are integers from 1 to 10 with equal distribution, suggesting ordinal nature.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\", \"CONTINUOUS_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0, \"MULTICLASS\": 0, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.3, \"CONTINUOUS_REGRESSION\": 0.1},\n  \"confidence\": 3,\n  \"evidence\": \"The target values are integers from 1 to 10 with equal distribution, suggesting ordinal nature.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 2454,
+   "tokens_out": 132,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 13.98
+}

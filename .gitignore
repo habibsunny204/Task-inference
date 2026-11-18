@@ -1,0 +1,7 @@
+# TOC-UCO is downloaded by scripts/fetch_tocuco.py and not redistributed
+data/external/
+# rebuilt by scripts/build_annotation_packets.py
+annotation/packets/
+__pycache__/
+.ipynb_checkpoints/
+.venv/

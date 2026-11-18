@@ -1,0 +1,34 @@
+{
+ "instance_id": "I021",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "ff7542493847acc88e56f6f9db9a5a5c4947367486ba8a8333233a9f8936465a",
+ "answer": {
+  "plausible_task_set": [
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.4,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target variable has 4 distinct values and is described as ordered classes from slight to severe, indicating ordinal nature.",
+  "evidence_level": "E2"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"MULTICLASS\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.4, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.0, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 3,\n  \"evidence\": \"The target variable has 4 distinct values and is described as ordered classes from slight to severe, indicating ordinal nature.\",\n  \"evidence_level\": \"E2\"\n}",
+   "tokens_in": 1532,
+   "tokens_out": 133,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 11.2
+}

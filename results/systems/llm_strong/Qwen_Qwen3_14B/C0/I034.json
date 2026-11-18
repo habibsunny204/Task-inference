@@ -1,0 +1,34 @@
+{
+ "instance_id": "I034",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "900f9ce5bd36c5307ccc0fe587b31f042b0d985854ba78c912600dda3741bd7b",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "BINARY",
+  "p_BINARY": 0.6,
+  "p_MULTICLASS": 0.2,
+  "p_ORDINAL": 0.2,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 3,
+  "evidence": "The target has only 3 distinct values (0, 1, 2), with no negative values and all values being integers. This suggests a classification task, and the most likely interpretation is BINARY if 0 and 1/2 are considered as two groups (e.g., 0 vs. non-zero)."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"BINARY\", \"MULTICLASS\", \"ORDINAL\"],\n  \"most_likely_task\": \"BINARY\",\n  \"probabilities\": {\n    \"BINARY\": 0.6,\n    \"MULTICLASS\": 0.2,\n    \"ORDINAL\": 0.2,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.0\n  },\n  \"confidence\": 3,\n  \"evidence\": \"The target has only 3 distinct values (0, 1, 2), with no negative values and all values being integers. This suggests a classification task, and the most likely interpretation is BINARY if 0 and 1/2 are considered as two groups (e.g., 0 vs. non-zero).\"\n}",
+   "tokens_in": 724,
+   "tokens_out": 178,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 21.94
+}

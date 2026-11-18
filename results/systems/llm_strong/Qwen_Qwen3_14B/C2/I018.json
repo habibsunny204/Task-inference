@@ -1,0 +1,35 @@
+{
+ "instance_id": "I018",
+ "group": "pilot",
+ "condition": "C2",
+ "model_id": "Qwen/Qwen3-14B",
+ "prompt_sha256": "9648c9a62dd1cd1905c80cfbd5bbc582e0d5758e9c43446cd8bcbae5c858299b",
+ "answer": {
+  "plausible_task_set": [
+   "BINARY",
+   "MULTICLASS",
+   "ORDINAL"
+  ],
+  "most_likely_task": "MULTICLASS",
+  "p_BINARY": 0.2,
+  "p_MULTICLASS": 0.6,
+  "p_ORDINAL": 0.1,
+  "p_COUNT_REGRESSION": 0.0,
+  "p_CONTINUOUS_REGRESSION": 0.1,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The documentation explicitly states that the target variable 'Contraceptive_method_used' has three categories: 1=No-use, 2=Long-term, 3=Short-term, which are unordered and thus indicate a multicategory classification task.",
+  "evidence_level": "E1"
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"MULTICLASS\", \"ORDINAL\", \"BINARY\"],\n  \"most_likely_task\": \"MULTICLASS\",\n  \"probabilities\": {\n    \"BINARY\": 0.2,\n    \"MULTICLASS\": 0.6,\n    \"ORDINAL\": 0.1,\n    \"COUNT_REGRESSION\": 0.0,\n    \"CONTINUOUS_REGRESSION\": 0.1\n  },\n  \"confidence\": 4,\n  \"evidence\": \"The documentation explicitly states that the target variable 'Contraceptive_method_used' has three categories: 1=No-use, 2=Long-term, 3=Short-term, which are unordered and thus indicate a multicategory classification task.\",\n  \"evidence_level\": \"E1\"\n}",
+   "tokens_in": 1802,
+   "tokens_out": 173,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 29.78
+}

@@ -1,0 +1,62 @@
+{
+ "instance_id": "I008",
+ "group": "pilot",
+ "task": "MULTICLASS",
+ "arm": "ag_multiclass",
+ "fold": 3,
+ "k": 11,
+ "presets": "medium_quality",
+ "time_limit_s": 60,
+ "problem_type": "multiclass",
+ "eval_metric": "accuracy",
+ "decision": "native",
+ "started_utc": "2026-10-17T19:00:59+00:00",
+ "status": "ok",
+ "fit_seconds": 62.02,
+ "n_train": 12000,
+ "n_test": 3000,
+ "model_best": "WeightedEnsemble_L2",
+ "models_trained": [
+  "LightGBM",
+  "WeightedEnsemble_L2",
+  "NeuralNetFastAI",
+  "RandomForestGini",
+  "RandomForestEntr",
+  "LightGBMXT",
+  "CatBoost"
+ ],
+ "metrics": {
+  "mae": 1.59,
+  "rmse": 5.504543577809154,
+  "exact_acc": 0.89,
+  "macro_f1": 0.5182867303733224,
+  "qwk": 0.9912068049205004,
+  "spearman": 0.9841947476723562
+ },
+ "metrics_all_decisions": {
+  "native": {
+   "mae": 1.59,
+   "rmse": 5.504543577809154,
+   "exact_acc": 0.89,
+   "macro_f1": 0.5182867303733224,
+   "qwk": 0.9912068049205004,
+   "spearman": 0.9841947476723562
+  },
+  "median": {
+   "mae": 1.4533333333333334,
+   "rmse": 4.979959839195493,
+   "exact_acc": 0.8926666666666667,
+   "macro_f1": 0.5367859460123666,
+   "qwk": 0.9927793587021075,
+   "spearman": 0.9858710822906992
+  },
+  "mean": {
+   "mae": 1.481897836311382,
+   "rmse": 4.479704643538295,
+   "exact_acc": 0.8933333333333333,
+   "macro_f1": 0.5589185266939038,
+   "qwk": 0.9937320676848431,
+   "spearman": 0.8611258328044412
+  }
+ }
+}

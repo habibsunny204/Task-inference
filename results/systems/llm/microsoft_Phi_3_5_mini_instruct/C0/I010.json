@@ -1,0 +1,33 @@
+{
+ "instance_id": "I010",
+ "group": "pilot",
+ "condition": "C0",
+ "model_id": "microsoft/Phi-3.5-mini-instruct",
+ "prompt_sha256": "f9a9414c43d70942b51bb82286f2caf8fb73a9f40d17e4c04e4d7158417663a6",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "COUNT_REGRESSION",
+  "p_BINARY": 0.025641025641025644,
+  "p_MULTICLASS": 0.05128205128205129,
+  "p_ORDINAL": 0.4358974358974359,
+  "p_COUNT_REGRESSION": 0.48717948717948717,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.95,
+  "confidence": 5,
+  "evidence": "The target values are distinct integers with a clear minimum and maximum, and the distribution is heavily skewed towards the lower end with a high frequency of zeros."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "```json\n\n{\n\n  \"plausible_task_set\": [\"COUNT_REGRESSION\", \"ORDINAL\"],\n\n  \"most_likely_task\": \"COUNT_REGRESSION\",\n\n  \"probabilities\": {\n\n    \"BINARY\": 0.05,\n\n    \"MULTICLASS\": 0.1,\n\n    \"ORDINAL\": 0.85,\n\n    \"COUNT_REGRESSION\": 0.95,\n\n    \"CONTINUOUS_REGRESSION\": 0.0\n\n  },\n\n  \"confidence\": 5,\n\n  \"evidence\": \"The target values are distinct integers with a clear minimum and maximum, and the distribution is heavily skewed towards the lower end with a high frequency of zeros.\"\n\n}\n\n```",
+   "tokens_in": 844,
+   "tokens_out": 191,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 10.24
+}

@@ -1,0 +1,33 @@
+{
+ "instance_id": "I021",
+ "group": "pilot",
+ "condition": "C1",
+ "model_id": "Qwen/Qwen2.5-7B-Instruct",
+ "prompt_sha256": "7ea152fca3fe6c635c3de4ae7a5d752c4a3f7fe21a8caa0af17861667dcdb28c",
+ "answer": {
+  "plausible_task_set": [
+   "COUNT_REGRESSION",
+   "ORDINAL"
+  ],
+  "most_likely_task": "ORDINAL",
+  "p_BINARY": 0.0,
+  "p_MULTICLASS": 0.0,
+  "p_ORDINAL": 0.6,
+  "p_COUNT_REGRESSION": 0.4,
+  "p_CONTINUOUS_REGRESSION": 0.0,
+  "probability_sum_raw": 1.0,
+  "confidence": 4,
+  "evidence": "The target has 4 distinct values, including zero, and the values are integers without clear ordering beyond their magnitude."
+ },
+ "problems": [],
+ "attempts": [
+  {
+   "raw": "{\n  \"plausible_task_set\": [\"ORDINAL\", \"COUNT_REGRESSION\"],\n  \"most_likely_task\": \"ORDINAL\",\n  \"probabilities\": {\"BINARY\": 0.0, \"MULTICLASS\": 0.0, \"ORDINAL\": 0.6, \"COUNT_REGRESSION\": 0.4, \"CONTINUOUS_REGRESSION\": 0.0},\n  \"confidence\": 4,\n  \"evidence\": \"The target has 4 distinct values, including zero, and the values are integers without clear ordering beyond their magnitude.\"\n}",
+   "tokens_in": 1384,
+   "tokens_out": 122,
+   "problems": []
+  }
+ ],
+ "parse_ok": true,
+ "seconds": 9.8
+}
