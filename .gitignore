@@ -1,5 +1,6 @@
 # TOC-UCO is downloaded by scripts/fetch_tocuco.py and not redistributed
-data/external/
+data/external/TOC-UCO/
+data/external/TOC-UCO.zip
 # rebuilt by scripts/build_annotation_packets.py
 annotation/packets/
 __pycache__/

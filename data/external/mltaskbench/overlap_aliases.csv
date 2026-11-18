@@ -1,0 +1,45 @@
+dataset_name,did,our_family,reason
+houses,537,california_housing,"same records: California housing (Pace and Barry 1997, 20,640 block groups), our calhousing (TOC-UCO)"
+california,43979,california_housing,"same records: California housing, tabular-benchmark version (source: Torgo's cal_housing)"
+California-Housing-Classification,45578,california_housing,"same records: California housing, classification version"
+Boston-house-price-data,43465,boston_housing,same records: Boston housing (506 tracts)
+house_8L,218,census,"same records: house_8L = TOC-UCO census1 (22,784 rows, 8 features) and house_16H (training)"
+house_sales_reduced,42635,kc_house,"same records: King County house sales (21,613 rows), our kings_county"
+Forest-Fire-Area,43440,forest_fires,same records: Montesinho forest fires (517 rows)
+UCI-student-performance-por,42351,student_performance,"same records: student performance, Portuguese course (649 rows), our student_performance_por"
+UCI-student-performance-mat,42352,student_performance,"same collection: student performance, mathematics course (395 rows); the family map treats the collection as one family"
+student-grade-pass-or-fail-prediction,43452,student_performance,same records: built from the student performance mathematics table (395 rows)
+Pima-Indians-Diabetes,43582,diabetes,"same records: Pima Indians diabetes (768 rows), our diabetes (OpenML 37)"
+Pima-Indians-Diabetes-Dataset,43483,diabetes,same records: Pima Indians diabetes (768 rows)
+Diabetes-Data-Set,43384,diabetes,"same records: Pima Indians diabetes (768 rows, target Outcome)"
+satellite_image,294,satimage,"same records: Statlog Landsat satellite image data, our satimage"
+Bank-Note-Authentication-UCI,43466,banknote_authentication,"same records: UCI banknote authentication (1,372 rows)"
+cpu_act,197,comp_activ,"same records: Delve computer activity (8,192 rows), our cpu_activity and computer1"
+machine_cpu,230,machine,"same records: relative CPU performance (209 rows), our machine (TOC-UCO)"
+bank8FM,572,bank1,"same records: Delve bank 8FM (8,192 rows, 8 features) = TOC-UCO bank1"
+bank32nh,558,bank2,"same records: Delve bank 32nh (8,192 rows, 32 features) = TOC-UCO bank2"
+puma32H,308,pumadyn32nh,"same records: pumadyn 32nh (8,192 rows, target thetadd6), our pumadyn32nh"
+lowbwt,203,rdata_lbw,"same records: Hosmer and Lemeshow low birth weight (189 births), our COUNT::lbw"
+thyroid-allhyper,40475,sick,"same records: Garavan thyroid records shared by allhyper, allhypo, allrep, dis and sick"
+thyroid-allhypo,40476,sick,"same records: Garavan thyroid records shared by allhyper, allhypo, allrep, dis and sick"
+thyroid-allrep,40477,sick,"same records: Garavan thyroid records shared by allhyper, allhypo, allrep, dis and sick"
+thyroid-dis,40478,sick,"same records: Garavan thyroid records shared by allhyper, allhypo, allrep, dis and sick"
+thyroid-ann,40497,sick,"unclear: Quinlan's thyroid data, 3,772 training cases like sick; excluded by the tie-break"
+Indian-Liver-Patient-Records,43665,ilpd,"same records: Indian liver patient dataset (583 rows), our ilpd"
+Indian-Liver-Patient-Patient-Records-KFolds-5folds,43403,ilpd,same records: Indian liver patient dataset with fold columns
+cleveland,194,heartdisease,"unclear: UCI heart disease; which UCI file our heartDisease (294 rows, num) comes from is not stated; excluded by the tie-break"
+heart-c,49,heartdisease,"unclear: UCI heart disease, Cleveland file; excluded by the tie-break"
+cholesterol,204,heartdisease,"unclear: UCI heart disease, Cleveland file with cholesterol as target; excluded by the tie-break"
+heart-h,51,heartdisease,"unclear: UCI heart disease, Hungarian file (294 rows); excluded by the tie-break"
+hungarian,231,heartdisease,"unclear: UCI heart disease, Hungarian file (294 rows); excluded by the tie-break"
+Heart-Disease-Dataset-(Comprehensive),43672,heartdisease,"same records in part: combines the Cleveland, Hungarian, Switzerland, Long Beach and Statlog files"
+jungle_chess_2pcs_endgame_complete,41001,jungle_chess_2pcs_raw_endgame_complete,same records: the jungle chess endgame table
+jungle_chess_2pcs_endgame_elephant_elephant,40999,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table
+jungle_chess_2pcs_endgame_lion_elephant,41004,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table
+jungle_chess_2pcs_endgame_lion_lion,41007,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table
+jungle_chess_2pcs_endgame_panther_elephant,41000,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table
+jungle_chess_2pcs_endgame_panther_lion,40997,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table
+jungle_chess_2pcs_endgame_rat_elephant,41003,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table
+jungle_chess_2pcs_endgame_rat_lion,41006,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table
+jungle_chess_2pcs_endgame_rat_panther,41002,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table
+jungle_chess_2pcs_endgame_rat_rat,41005,jungle_chess_2pcs_raw_endgame_complete,same records: a subset of the jungle chess endgame table

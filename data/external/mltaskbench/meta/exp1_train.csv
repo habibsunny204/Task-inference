@@ -1,0 +1,2152 @@
+dataset_name,problem_type,sub_problem_type,multi_uni_variate,file_path,original_download_link,target_variable,if_timeseries_one_or more_timeseries,features,instances,dataset_description
+sensory,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/sensory/sensory.csv,https://openml.org/data/v1/download/52658/sensory.arff,Score,-,12,576,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Data for the sensory evaluation experiment in Brien, C.J. and Payne,
+R.W. (1996) Tiers, structure formulae and the analysis of complicated
+experiments.  submitted for publication.
+The experiment involved two phases.  In the field phase a viticultural
+experiment was conducted to investigate the differences between 4
+types of trellising and 2 methods of pruning.  The design was a
+split-plot design in which the trellis types were assigned to the main
+plots using two adjacent Youden squares of 3 rows and 4 columns.  Each
+main plot was split into two subplots (or halfplots) and the methods
+of pruning assigned at random independently to the two halfplots in
+each main plot.  The produce of each halfplot was made into a wine so
+that there were 24 wines altogether.
+The second phase was an evaluation phase in which the produce from the
+halplots was evaluated by 6 judges all of whom took part in 24
+sittings.  In the first 12 sittings the judges evaluated the wines
+made from the halfplots of one square; the final 12 sittings were to
+evaluate the wines from the other square.  At each sitting, each judge
+assessed two glasses of wine from each of the halplots of one of the
+main plots.  The main plots allocated to the judges at each sitting
+were determined as follows.  For the allocation of rows, each occasion
+was subdivided into 3 intervals of 4 consecutive sittings.  During
+each interval, each judge examined plots from one particular row,
+these being determined using two 3x3 Latin squares for each occasion,
+one for judges 1-3 and the other for judges 4-6.  At each sitting
+judges 1-3 examined wines from one particular column and judges 4-6
+examined wines from another column.  The columns were randomized to
+the 2 sets of judges x 3 intervals x 4 sittings using duplicates of a
+balanced incomplete block design for v=4 and k=2 that were latinized.
+This balanced incomplete block design consists of three sets of 2
+blocks, each set containing the 4 ""treatments"".  For each interval, a
+different set of 2 blocks was taken and each block assigned to two
+sittings, but with the columns within the block placed in reverse
+order in one sitting compared to the other sitting.  Thus, in each
+interval, a judge would evaluate a wine from each of the 4 columns.
+The scores assigned in evaluating the wines, and the factors indexing
+them, are given below.  The factors are as follows:
+Occasion
+Judges
+Interval
+Sittings
+Position
+Squares
+Rows
+Columns
+Halfplot
+Trellis
+Method
+followed by the response variable
+Score
+The scores are ordered so that the factors Occasion, Judges, Interval,
+Sittings and Position are in standard order; the remaining factors are
+in randomized order.
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: last"
+iq_brain_size,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/iq_brain_size/iq_brain_size.csv,https://openml.org/data/v1/download/52595/iq_brain_size.arff,FIQ,-,9,20,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Relationship between IQ and Brain Size
+
+Summary:
+Monozygotic twins share numerous physical, psychological, and pathological traits.  Recent advances in in vivo brain image acquisition and analysis have made it possible to determine quantitatively whether: 1) twins share neuroanatomical traits; and 2) neuroanatomical measures correlate with brain size.
+Using magnetic resonance imaging and computer-based image analysis techniques, measurements of the volume of the forebrain, the surface area of the cerebral cortex and the mid-sagittal area of the corpus callosum were obtained in 10 pairs of monozygotic twins.  Head circumference, body weight, and Full-Scale IQ were also measured.  Analyses of variance were carried out using genotype, birth order, and sex, as between-subject factors.  Pearson correlation coefficients were computed to assess the interrelationships between brain measures, head circumference, and IQ.
+Effects of genotype (but not of birth order) were found for total forebrain volume, total cortical surface area, and callosal area.  Consistent with previous twin studies, highly significant effects of genotype but not birth order were also found for head circumference, body weight, and Full-Scale IQ.  The significant effect of genotype on all measures was not attributable to sex differences across unrelated twin pairs.  Significant correlations were observed between forebrain volume, cortical surface area, and callosal area as well as between each brain measure and head circumference.  No correlation between IQ and any other measure was found.
+Monozygotic twins share similarities in forebrain volume, cortical surface area, and callosal area.  Brain measures are highly correlated with one another and with head circumference, but none is correlated with IQ.
+
+Authorization: Contact Authors
+
+Reference:
+Tramo MJ, Loftus WC, Green RL, Stukel TA, Weaver JB, Gazzaniga MS.  Brain Size, Head Size, and IQ in Monozygotic Twins.  Neurology  1998; 50:1246-1252.
+
+Description:  This datafile contains 20 observations (10 pairs of twins) on 9 variables.  This data set can be used to demonstrate simple linear regression and correlation.
+
+
+Variable Names in order from left to right:
+CCMIDSA: Corpus Collasum Surface Area (cm2)
+FIQ: Full-Scale IQ
+HC: Head Circumference (cm)
+ORDER: Birth Order
+PAIR: Pair ID (Genotype)
+SEX: Sex (1=Male 2=Female)
+TOTSA: Total Surface Area (cm2)
+TOTVOL: Total Brain Volume (cm3)
+WEIGHT: Body Weight (kg)
+
+
+
+Therese Stukel
+Dartmouth Hitchcock Medical Center
+One Medical Center Dr.
+Lebanon, NH 03756
+e-mail: stukel@dartmouth.edu
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: 2"
+debutanizer,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/debutanizer/debutanizer.csv,https://openml.org/data/v1/download/2096280/debutanizer.arff,y,-,8,2394,"&quot;The debutanizer column is part of a desulfuring and naphtha splitter plant.&quot;
+
+u1 Top temperature
+u2 Top pressure
+u3 Reflux flow
+u4 Flow to next process
+u5 6th tray temperature
+u6 Bottom temperature
+u7 Bottom temperature
+y Butane content in the debutanizer bottoms (Naphtha splitter feed)
+
+See Appendix A.3 of Fortuna, L., Graziani, S., Rizzo, A., Xibilia, M.G. &quot;Fortuna, L., Graziani, S., Rizzo, A., Xibilia, M.G.&quot; (Springer 2007) for more info."
+backache,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/backache/backache.csv,https://openml.org/data/v1/download/52575/backache.arff,col_33,-,33,180,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Data file:
+This data from ""Problem-Solving"" on ""backache in pregnancy""
+is in somewhat different
+format from that listed in the book. Each integer is preceded by a space.
+This makes it easier to read. Each line is split in two separated by an
+ampersand. Each line also has a full stop (or period) at the end of each
+line which should be removed. If you have any queries, please contact me.
+Chris Chatfield.
+cc@maths.bath.ac.uk
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last"
+LED-display-domain-7digit,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/LED-display-domain-7digit/LED-display-domain-7digit.csv,https://openml.org/data/v1/download/4535757/LED-display-domain-7digit.arff,Class,-,8,500,"**Author**: Breiman,L., Friedman,J.H., Olshen,R.A., and Stone,C.J.  
+**Source**: [UCI](http://archive.ics.uci.edu/ml/datasets/LED+Display+Domain), [KEEL](http://sci2s.ugr.es/keel/dataset.php?cod=63, https://archive.ics.uci.edu/ml/datasets/LED+Display+Domain) - 1988  
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)  
+
+**LED display data set**  
+This simple domain contains 7 Boolean attributes and 10 classes, the set of decimal digits. Recall that LED displays contain 7 light-emitting diodes -- hence the reason for 7 attributes. The class attribute is an integer ranging between 0 and 9 inclusive, representing the possible digits show on the display.
+
+The problem would be easy if not for the introduction of noise.  In this case, each attribute value has the 10% probability of having its value inverted.  
+
+It's valuable to know the optimal Bayes rate for these databases. In this case, the misclassification rate is 26% (74% classification accuracy).
+        
+### Attribute Information  
+* V1-V7 represent each of the 7 LEDs, with values either 0 or 1, according to whether the corresponding light is on or not for the decimal digit. Each has a 10% percent chance of being inverted."
+jungle_chess_2pcs_endgame_rat_rat,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/jungle_chess_2pcs_endgame_rat_rat/jungle_chess_2pcs_endgame_rat_rat.csv,https://openml.org/data/v1/download/18248709/jungle_chess_2pcs_endgame_rat_rat.arff,class,-,47,3660,"### Description ###
+
+This dataset is part of a collection datasets based on the game ""Jungle Chess"" (a.k.a. Dou Shou Qi). For a description of the rules, please refer to the paper (link attached). The paper also contains a description of various constructed features. As the tablebases are a disjoint set of several tablebases based on which (two) pieces are on the board, we have uploaded all tablebases that have explicit different content:
+
+* Rat vs Rat
+* Rat vs Panther
+* Rat vs. Lion
+* Rat vs. Elephant
+* Panther vs. Lion
+* Panther vs. Elephant
+* Tiger vs. Lion
+* Lion vs. Lion
+* Lion vs. Elephant
+* Elephant vs. Elephant
+* Complete (Combination of the above)
+* RAW Complete (Combination of the above, containing for both pieces just the rank, file and strength information). This dataset contains a similar classification problem as, e.g., the King and Rook vs. King problem and is suitable for classification tasks. 
+
+(Note that this dataset is one of the above mentioned datasets). Additionally, note that several subproblems are very similar. Having seen a given positions from one of the tablebases arguably gives a lot of information about the outcome of the same position in the other tablebases. 
+
+### Please cite ###
+J. N. van Rijn and J. K. Vis, Endgame Analysis of Dou Shou Qi. ICGA Journal 37:2, 120--124, 2014. ArXiv link: https://arxiv.org/abs/1604.07312"
+Pokmon-Legendary-Data,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/Pokmon-Legendary-Data/Pokmon-Legendary-Data.csv,https://openml.org/data/v1/download/22102204/Pokmon-Legendary-Data.arff,is_legendary,-,14,801,"Context
+In the world of Pokmon academia, one name towers above any other  Professor Samuel Oak. While his colleague Professor Elm specializes in Pokmon evolution, Oak has dedicated his career to understanding the relationship between Pokmon and their human trainers. A former trainer himself, the professor has first-hand experience of how obstinate Pokmon can be  particularly when they hold legendary status.
+For his latest research project, Professor Oak has decided to investigate the defining characteristics of legendary Pokmon to improve our understanding of their temperament. Hearing of our expertise in classification problems, he has enlisted us as the lead researchers.
+Our journey begins at the professor's research lab in Pallet Town, Kanto. The first step is to open up the Pokdex, an encyclopaedic guide to 801 Pokmon from all seven generations.
+
+Content
+After browsing the Pokdex, we can see several variables that could feasibly explain what makes a Pokmon legendary. We have a series of numerical fighter stats  attack, defense, speed and so on  as well as a categorization of Pokemon type (bug, dark, dragon, etc.). is_legendary is the binary classification variable we will eventually be predicting, tagged 1 if a Pokmon is legendary and 0 if it is not.
+Before we explore these variables in any depth, let's find out how many Pokmon are legendary out of the 801 total, using the handy count() function from the dplyr package.
+
+Acknowledgements
+DataCamp"
+amazon_employee_access,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/amazon_employee_access/amazon_employee_access.csv,https://openml.org/data/v1/download/22102808/amazon_employee_access.arff,ACTION,-,10,32769,Amazon Employee Access (Kaggle Competition). The data consists of real historical data collected from 2010 & 2011.  Employees are manually allowed or denied access to resources over time. You must create an algorithm capable of learning from this historical data to predict approval/denial for an unseen set of employees.
+shuttle-landing-control,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/shuttle-landing-control/shuttle-landing-control.csv,https://openml.org/data/v1/download/3595/shuttle-landing-control.arff,Class,-,7,15,"# Space Shuttle Autolanding Domain
+ 
+NASA: Mr. Roger Burke's autolander design team
+
+##### Past Usage: (several, it appears)
+      Example: Michie,D. (1988).  The Fifth Generation's Unbridged Gap.
+               In Rolf Herken (Ed.) The Universal Turing Machine: A
+               Half-Century Survey, 466-489, Oxford University Press.
+ 
+##### Relevant Information:
+      This is a tiny database.  Michie reports that Burke's group used
+      RULEMASTER to generate comprehendable rules for determining
+      the conditions under which an autolanding would be preferable to
+      manual control of the spacecraft.
+ 
+##### Number of Instances:
+15
+ 
+##### Number of Attributes: 
+7 (including the class attribute)
+ 
+##### Attribute Information:
+     1. Class: noauto, auto
+        -- that is, advise using manual/automatic control
+     2. STABILITY: stab, xstab
+     3. ERROR: XL, LX, MM, SS
+     4. SIGN: pp, nn
+     5. WIND: head, tail
+     6. MAGNITUDE: Low, Medium, Strong, OutOfRange
+     7. VISIBILITY: yes, no
+ 
+##### Missing Attribute Values:
+    -- none
+    -- but several ""don't care"" values: (denoted by ""*"")
+          Attribute Number:   Number of Don't Care Values:
+                         2:   2
+                         3:   3
+                         4:   8
+                         5:   8
+                         6:   5
+                         7:   0
+ 
+##### Class Distribution:
+     1. Use noauto control: 6
+     2. Use automatic control: 9%
+ Information about the dataset\
+ CLASSTYPE: nominal\
+ CLASSINDEX: first"
+UNIX_user_data,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/UNIX_user_data/UNIX_user_data.csv,https://openml.org/data/v1/download/52413/UNIX_user_data.arff,user,-,3,9100,"**Author**: Terran Lane (terran@ecn.purdue.edu)   
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/UNIX+User+Data) - Date unknown  
+**Please cite**:   
+
+This file contains 9 sets of sanitized user data drawn from the command histories of 8 UNIX computer users at Purdue over the course of up to 2 years (USER0 and USER1 were generated by the same person, working on different platforms and different projects).  The data is drawn from tcsh(1) history files and has been parsed and sanitized to remove filenames, user names, directory structures, web addresses, host names, and other possibly identifying items.  Command names, flags, and shell metacharacters have been preserved.  Additionally, **SOF** and **EOF** tokens have been inserted at the start and end of
+shell sessions, respectively.  Sessions are concatenated by date order and tokens appear in the order issued within the shell session, but no timestamps are included in this data.  For example, the two sessions:
+
+cd ~/private/docs  
+ls -laF | more  
+cat foo.txt bar.txt zorch.txt > somewhere  
+exit  
+
+cd ~/games/  
+xquake &  
+fg  
+vi scores.txt  
+mailx john_doe@somewhere.com  
+exit  
+
+would be represented by the token stream  
+
+**SOF**  
+cd  
+\<1\>                  (one ""file name"" argument)  
+ls  
+-laF  
+|  
+more  
+cat  
+\<3\>                     (three ""file"" arguments)
+\>  
+\<1\>  
+exit  
+**EOF**  
+**SOF**  
+cd  
+\<1\>  
+xquake  
+&  
+fg  
+vi  
+\<1\>  
+mailx  
+\<1\>  
+exit  
+**EOF**
+
+This data is made available under conditions of anonymity for the contributing users and may be used for research purposes only. Summaries and research results employing this data may be published, but literal tokens or token sequences from the data may not be published except with express consent of the originators of the data. No portion of this data may be released with or included in a commercial product, nor may any portion of this data be sold or redistributed for profit or as part of of a profit-making endeavor."
+haberman,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/haberman/haberman.csv,https://openml.org/data/v1/download/43/haberman.arff,Survival_status,-,4,306,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+1. Title: Haberman's Survival Data
+ 
+ 2. Sources:
+    (a) Donor:   Tjen-Sien Lim (limt@stat.wisc.edu)
+    (b) Date:    March 4, 1999
+ 
+ 3. Past Usage:
+    1. Haberman, S. J. (1976). Generalized Residuals for Log-Linear
+       Models, Proceedings of the 9th International Biometrics
+       Conference, Boston, pp. 104-122.
+    2. Landwehr, J. M., Pregibon, D., and Shoemaker, A. C. (1984),
+       Graphical Models for Assessing Logistic Regression Models (with
+       discussion), Journal of the American Statistical Association 79:
+       61-83.
+    3. Lo, W.-D. (1993). Logistic Regression Trees, PhD thesis,
+       Department of Statistics, University of Wisconsin, Madison, WI.
+ 
+ 4. Relevant Information:
+    The dataset contains cases from a study that was conducted between
+    1958 and 1970 at the University of Chicago's Billings Hospital on
+    the survival of patients who had undergone surgery for breast
+    cancer.
+ 
+ 5. Number of Instances: 306
+ 
+ 6. Number of Attributes: 4 (including the class attribute)
+ 
+ 7. Attribute Information:
+    1. Age of patient at time of operation (numerical)
+    2. Patient's year of operation (year - 1900, numerical)
+    3. Number of positive axillary nodes detected (numerical)
+    4. Survival status (class attribute)
+          1 = the patient survived 5 years or longer
+          2 = the patient died within 5 year
+ 
+ 8. Missing Attribute Values: None
+
+ Information about the dataset
+ CLASSTYPE: nominal
+ CLASSINDEX: last"
+pollen,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/pollen/pollen.csv,https://openml.org/data/v1/download/52641/pollen.arff,DENSITY,-,6,3848,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This dataset is synthetic.  It was generated by David Coleman
+at RCA Laboratories in Princeton, N.J.  For convenience, we will
+refer to it as the POLLEN DATA.  The first three variables are the
+lengths of geometric features observed sampled pollen grains - in the
+x, y, and z dimensions: a ""ridge"" along x, a ""nub"" in the y
+direction, and a ""crack"" in along the z dimension.  The fourth
+variable is pollen grain weight, and the fifth is density.
+
+There are 3848 observations, in random order (for people whose
+software packages cannot handle this much data, it is recommended
+that the data be sampled).  The dataset is broken up into eight
+pieces, POLLEN1.DAT - POLLEN8.DAT, each with 481 observations.
+We will call the variables:
+
+1. RIDGE
+2. NUB
+3. CRACK
+4. WEIGHT
+5. DENSITY
+
+6. OBSERVATION NUMBER (for convenience)
+
+The data analyst is advised that there is more than one ""feature"" to
+these data.  Each feature can be observed through various graphical
+techniques, but analytic methods, as well, can help ""crack"" the
+dataset.
+
+Additional Info:
+
+I no longer have the description handed out during the JSM, but can
+tell you how I generated the data, in minitab.
+
+1. Part A was generated: 5000 (I think) 5-variable, uncorrelated, i.i.d.
+Gaussian observations.
+
+2. To get part B, I duplicated part A, then reversed the sign on the
+observations for 3 of the 5 variables.
+
+3. Part B was appended to Part A.
+
+4. The order of the observations was randomized.
+
+5. While waiting for my tardy car-pool companion, I took a piece of
+graph paper, and figured out a dot-matrix representation of the word,
+""EUREKA.""  I then added these observations to the ""center"" of the
+datatset.
+
+6. The data were scaled, by variable (something like 1,3,5,7,11).
+
+7. The data were rotated, then translated.
+
+8. A few points in space within the datacloud were chosen as ellipsoid
+centers, then for each center, all observations within a (scaled and
+rotated) radius were identified, and eliminated - to form ellipsoidal
+voids.
+
+9. The variables were given entirely ficticious names.
+
+FYI, only the folks at Bell Labs, Murray Hill, found everything,
+including the voids.
+
+Hope this is helpful!
+
+References:
+
+Becker, R.A., Denby, L., McGill, R., and Wilks,
+A. (1986). Datacryptanalysis: A Case Study.
+Proceedings of the Section on Statistical Graphics, 92-97.
+
+Slomka, M. (1986). The Analysis of a Synthetic Data Set.
+Proceedings of the Section on Statistical Graphics, 113-116.
+
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+concrete_compressive_strength,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/concrete_compressive_strength/concrete_compressive_strength.csv,https://openml.org/data/v1/download/22111823/concrete_compressive_strength.arff,strength,-,9,1030,"**Data Description**
+
+Concrete is the most important material in civil engineering. The concrete compressive strength is a highly nonlinear function of age and ingredients. Each instance represents a description, different features of concrete instance, including its compressive strength. The latter can be predicted using the other features about the concrete.
+
+**Attribute Description**
+
+1. *cement* - amount in kg in a m3 mixture
+2. *blast_furnace_slag* - amount in kg in a m3 mixture
+3. *fly_ash* - amount in kg in a m3 mixture
+4. *water* - amount in kg in a m3 mixture
+5. *superplasticizer* - amount in kg in a m3 mixture
+6. *coarse_aggregate* - amount in kg in a m3 mixture
+7. *fine_aggregate* - amount in kg in a m3 mixture
+8. *age* - age in days (1 - 365)
+9. *strength* - in MPa, target feature"
+Waterstress,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/Waterstress/Waterstress.csv,https://openml.org/data/v1/download/21854347/Waterstress.arff,class,-,23,1188,"**Author**: Ankita Gupta, Dr.Lakwinder Kaur, Dr. Gurmeet Kaur    
+**Source**: Unknown - 01-11-2019 
+**Please cite**:   
+
+Water stress dataset for Indian variety of wheat crop: 
+
+The data consist of a file system-based data of Raj 3765 variety of wheat. There are twenty-four chlorophyll fluorescence images captured every alternative day (Control and Drought) that have been captured for a period of sixty days. A total of (594 x 2) images are used for this research work.
+This dataset comprises of images of wheat crop using Chlorophyll Fluorescence modality. Which is further used to identify drought water stress at canopy level in the wheat crop with the help of  Image Processing algorithms.
+
+
+
+Autocorrelation: (out.autoc)
+Contrast: matlab (out.contr)
+Correlation: matlab (out.corrm)
+4.Correlation: (out.corrp)
+5.Cluster Prominence: (out.cprom)
+Cluster Shade: (out.cshad)
+7.Dissimilarity: (out.dissi)
+Energy: matlab (out.energ)
+Entropy: (out.entro)
+Homogeneity: matlab (out.homom)
+Homogeneity: (out.homop)
+Maximum probability: (out.maxpr)
+Sum of sqaures: Variance (out.sosvh)
+Sum average (out.savgh)
+Sum variance (out.svarh)
+Sum entropy (out.senth)
+Difference variance (out.dvarh)
+Difference entropy (out.denth)
+Information measure of correlation1 (out.inf1h)
+Informaiton measure of correlation2 (out.inf2h)
+Inverse difference (INV) is homom (out.homom)
+Inverse difference normalized (INN) (out.indnc)
+Inverse difference moment normalized (out.idmnc)
+These variables then undergone through various statistical processes to identify the key detection variables suited best for water stress which in-turn help to build root cause analysis model (RCA) for water stress.
+The dataset has been produced using MATLAB GLCM libraries https://in.mathworks.com/help/images/ref/graycomatrix.html
+
+Texture feature analysis is done using 23 texture GLCM features to extract features pertaining to water stress identification.
+
+
+These variables then undergone through various statistical processes to identify the key detection variables suited best for water stress which in-turn help to build root cause analysis model (RCA) for water stress.
+The dataset has been produced using MATLAB GLCM libraries https://in.mathworks.com/help/images/ref/graycomatrix.html"
+analcatdata_homerun,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/analcatdata_homerun/analcatdata_homerun.csv,https://openml.org/data/v1/download/52561/analcatdata_homerun.arff,Bonds.HR,-,28,163,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: none specific
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+qsfrdhla,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/qsfrdhla/qsfrdhla.csv,https://openml.org/data/v1/download/52539/qsfrdhla.arff,oz34,-,34,16,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This is one of 41 drug design datasets. The datasets with 1143 features are formed using Adriana.Code software  (www.molecular-networks.com/software/adrianacode).
+The molecules and outputs are taken from the original studies (see below). The other datasets are taken exactly from the original studies. 
+
+The last attribute in each file is the target.
+
+Original studies:
+
+carbolenes
+""B. D. Silverman and Daniel. E. Platt, J. Med. Chem. 1996, 39, 2129-2140""
+
+mtp2
+""Bergstrom, C. A. S.; Norinder, U.; Luthman, K.; Artursson, P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1185""
+
+chang, cristalli, depreux, doherty, garrat2, garrat, heyl, krystek, lewis, penning, rosowsky, siddiqi, stevenson, strupcz, svensson, thompson, tsutumi, uejling, yokoyama1, yokoyama2	
+""David E Patterson, Richard D Cramer, Allan M Ferguson, Robert D Clark, Laurence W Weinberger. Neighbourhood Behaviour: A Useful Concept for Validation of """"Molecular Diversity"""" Descriptors. J. Med. Chem. 1996 (39) 3049 - 3059.""
+
+mtp
+""Karthikeyan, M.; Glen, R.C.; Bender, A. General melting point prediction based on a diverse compound dataset and artificial neural networks. J. Chem. Inf. Model.; 2005; 45(3); 581-590""
+
+benzo32
+""Harrison,P.W. and Barlin,G.B. and Davies,L.P. and Ireland,S.J. and Matyus,P. and Wong,M.G., Syntheses, pharmacological evaluation and molecular modelling of substituted 6-alkoxyimidazo[1,2-b]pyridazines as new ligands for the benzodiazepine receptor, European Journal of Medicinal Chemistry, (31), 1996, 651-662""
+
+PHENETYL1	
+""H. Kubinyi (Ed.): """"QSAR: Hansch Analysis and Related Approaches"""", VCH, Weinhein (Ger), 1993, pp.57-68""
+
+pah	
+""Todeschini, R.; Gramatica, P.; Marengo, E.; Provenzani, R. Weighted Holistic  Invariant Molecular Descriptors. Part 2. Theory Development and Applications on Modeling Physico-Chemical Properties of PolyAromatic Hydrocarbons (PAH). Chemom. Intell. Lab. Syst. 1995, 27, 221-229.""
+
+pdgfr	
+""R. Guha and P. Jurs. The Development of Linear, Ensemble and Non-linear Models for the Prediction and Interpretation of the Biological Activity of a Set of PDGFR Inhibitors. J. Chem. Inf. Comput. Sci. 2004, 44 (6), 2179-2189""
+
+Phen	
+""Cammarata, A. Interrelationship of the Regression Models Used for Structure-Activity Analyses. J. Med. Chem. 1972, 15, 573-577""
+
+topo_2_1, yprop_4_1	
+""Jun Feng et al, Predictive Toxicology: Benchmarking Molecular Descriptors and Statistical Methods, J. Chem. Inf Comput. Sci., 2003 (43) 1463-1470""
+
+qsabr1, qsabr2	
+""Damborsky, J., Schultz, T.W., Comparison of the QSAR models for toxicity and biodegradability of anilines and phenols, Chemosphere 34: 429-446, 1997""
+
+qsartox	
+""Blaha, L., Damborsky, J., Nemec, M., QSAR for acute toxicity of saturated and unsaturated halogenated aliphatic compounds, Chemosphere 36: 1345-1365, 1998""
+
+qsbr_rw1	
+""Damborsky, J. et al., Structure-biodegradability relationships for chlorinated dibenzo-p-dioxins and dibenzofurans, In: Wittich, R.-M., Biodegradation of dioxins and furans, R.G. Landes Company, Austin, 1998""
+
+qsbr_y2	
+""Damborsky, J. et al., A mechanistic approach to deriving QSBR- A case study: dehalogenation of haloaliphatic compounds, In: Peijnenburg, W.J.G.M., Damborsky, J., Biodegradability Prediction, Kluwer Academic Publishers""
+
+qsbralks	
+""Damborsky, J. et al., Mechanism-based Quantitative Structure-Biodegradability Relationships for hydrolytic dehalogenation of chloro- and bromo-alkenes, Quantitative Structure-Activity Relationships 17: 450-458, 1998""
+
+qsfrdhla	
+""Damborsky, J., Quantitative structure-function relationships of the single-point mutants of haloalkane dehalogenase: A multivariate approach, Qunatitative Structure-Activity Relationships 16: 126-135, 1997""
+
+qsfsr1	
+""Damborsky, J., Quantitative structure-function and structure-stability relationships of purposely modified proteins, Protein Engineering 11: 21-30, 1998""
+
+qsfsr2	
+""Damborsky, J., Quantitative structure-function and structure-stability relationships of purposely modified proteins, Protein Engineering 11: 21-30, 1998""
+
+qsprcmpx	
+""Cajan, M. et al., Stability of Aromatic Amides with Bromide Anion: Quantitative Structure-Property Relationships, Journal of Chemical Information and Computer Sciences, in press, 2000""
+
+selwood	
+""Selwood, D. L.; Livingstone, D. J.; Comley, J. C.; O'Dowd, A. B.; Hudson, A. T.; Jackson, P.; Jandu, K. S.; Rose, V. S.; Stables, J. N. Structure-Activity Relationships of Antifilarial Antimycin Analogues: A Multivariate Pattern Recognition Study J. Med. Chem., 1990, 33, 136-142"""
+visualizing_livestock,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/visualizing_livestock/visualizing_livestock.csv,https://openml.org/data/v1/download/52985/visualizing_livestock.arff,livestocktype,-,3,130,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This S dump contains 22 data sets from the
+book Visualizing Data published by
+Hobart Press (books@hobart.com).
+The dump was created by data.dump()
+and can be read back into S by data.restore().
+The name of each S data set is the name of
+the data set used in the book. To find the
+description of the data set in the book look
+under the entry - data, name - in the index.
+For example, one data set is barley.
+To find the description of barley, look
+in the index under the entry - data, barley.
+
+File: ../data/visualizing/livestock.csv
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+qsprcmpx,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/qsprcmpx/qsprcmpx.csv,https://openml.org/data/v1/download/52540/qsprcmpx.arff,oz40,-,40,22,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This is one of 41 drug design datasets. The datasets with 1143 features are formed using Adriana.Code software  (www.molecular-networks.com/software/adrianacode).
+The molecules and outputs are taken from the original studies (see below). The other datasets are taken exactly from the original studies. 
+
+The last attribute in each file is the target.
+
+Original studies:
+
+carbolenes
+""B. D. Silverman and Daniel. E. Platt, J. Med. Chem. 1996, 39, 2129-2140""
+
+mtp2
+""Bergstrom, C. A. S.; Norinder, U.; Luthman, K.; Artursson, P. Molecular Descriptors Influencing Melting Point and Their Role in Classification of Solid Drugs. J. Chem. Inf. Comput. Sci.; (Article); 2003; 43(4); 1177-1185""
+
+chang, cristalli, depreux, doherty, garrat2, garrat, heyl, krystek, lewis, penning, rosowsky, siddiqi, stevenson, strupcz, svensson, thompson, tsutumi, uejling, yokoyama1, yokoyama2	
+""David E Patterson, Richard D Cramer, Allan M Ferguson, Robert D Clark, Laurence W Weinberger. Neighbourhood Behaviour: A Useful Concept for Validation of """"Molecular Diversity"""" Descriptors. J. Med. Chem. 1996 (39) 3049 - 3059.""
+
+mtp
+""Karthikeyan, M.; Glen, R.C.; Bender, A. General melting point prediction based on a diverse compound dataset and artificial neural networks. J. Chem. Inf. Model.; 2005; 45(3); 581-590""
+
+benzo32
+""Harrison,P.W. and Barlin,G.B. and Davies,L.P. and Ireland,S.J. and Matyus,P. and Wong,M.G., Syntheses, pharmacological evaluation and molecular modelling of substituted 6-alkoxyimidazo[1,2-b]pyridazines as new ligands for the benzodiazepine receptor, European Journal of Medicinal Chemistry, (31), 1996, 651-662""
+
+PHENETYL1	
+""H. Kubinyi (Ed.): """"QSAR: Hansch Analysis and Related Approaches"""", VCH, Weinhein (Ger), 1993, pp.57-68""
+
+pah	
+""Todeschini, R.; Gramatica, P.; Marengo, E.; Provenzani, R. Weighted Holistic  Invariant Molecular Descriptors. Part 2. Theory Development and Applications on Modeling Physico-Chemical Properties of PolyAromatic Hydrocarbons (PAH). Chemom. Intell. Lab. Syst. 1995, 27, 221-229.""
+
+pdgfr	
+""R. Guha and P. Jurs. The Development of Linear, Ensemble and Non-linear Models for the Prediction and Interpretation of the Biological Activity of a Set of PDGFR Inhibitors. J. Chem. Inf. Comput. Sci. 2004, 44 (6), 2179-2189""
+
+Phen	
+""Cammarata, A. Interrelationship of the Regression Models Used for Structure-Activity Analyses. J. Med. Chem. 1972, 15, 573-577""
+
+topo_2_1, yprop_4_1	
+""Jun Feng et al, Predictive Toxicology: Benchmarking Molecular Descriptors and Statistical Methods, J. Chem. Inf Comput. Sci., 2003 (43) 1463-1470""
+
+qsabr1, qsabr2	
+""Damborsky, J., Schultz, T.W., Comparison of the QSAR models for toxicity and biodegradability of anilines and phenols, Chemosphere 34: 429-446, 1997""
+
+qsartox	
+""Blaha, L., Damborsky, J., Nemec, M., QSAR for acute toxicity of saturated and unsaturated halogenated aliphatic compounds, Chemosphere 36: 1345-1365, 1998""
+
+qsbr_rw1	
+""Damborsky, J. et al., Structure-biodegradability relationships for chlorinated dibenzo-p-dioxins and dibenzofurans, In: Wittich, R.-M., Biodegradation of dioxins and furans, R.G. Landes Company, Austin, 1998""
+
+qsbr_y2	
+""Damborsky, J. et al., A mechanistic approach to deriving QSBR- A case study: dehalogenation of haloaliphatic compounds, In: Peijnenburg, W.J.G.M., Damborsky, J., Biodegradability Prediction, Kluwer Academic Publishers""
+
+qsbralks	
+""Damborsky, J. et al., Mechanism-based Quantitative Structure-Biodegradability Relationships for hydrolytic dehalogenation of chloro- and bromo-alkenes, Quantitative Structure-Activity Relationships 17: 450-458, 1998""
+
+qsfrdhla	
+""Damborsky, J., Quantitative structure-function relationships of the single-point mutants of haloalkane dehalogenase: A multivariate approach, Qunatitative Structure-Activity Relationships 16: 126-135, 1997""
+
+qsfsr1	
+""Damborsky, J., Quantitative structure-function and structure-stability relationships of purposely modified proteins, Protein Engineering 11: 21-30, 1998""
+
+qsfsr2	
+""Damborsky, J., Quantitative structure-function and structure-stability relationships of purposely modified proteins, Protein Engineering 11: 21-30, 1998""
+
+qsprcmpx	
+""Cajan, M. et al., Stability of Aromatic Amides with Bromide Anion: Quantitative Structure-Property Relationships, Journal of Chemical Information and Computer Sciences, in press, 2000""
+
+selwood	
+""Selwood, D. L.; Livingstone, D. J.; Comley, J. C.; O'Dowd, A. B.; Hudson, A. T.; Jackson, P.; Jandu, K. S.; Rose, V. S.; Stables, J. N. Structure-Activity Relationships of Antifilarial Antimycin Analogues: A Multivariate Pattern Recognition Study J. Med. Chem., 1990, 33, 136-142"""
+analcatdata_chlamydia,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/analcatdata_chlamydia/analcatdata_chlamydia.csv,https://openml.org/data/v1/download/52647/analcatdata_chlamydia.arff,Count,-,4,100,"**Author**: Jeffrey S. Simonoff  
+**Source**: [StatLib](http://lib.stat.cmu.edu/datasets/) - 2003  
+**Please cite**: Jeffrey S. Simonoff. Analyzing Categorical Data. Springer-Verlag, New York, 2003  
+
+One of the data sets used in the book ""Analyzing Categorical Data"" by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. Further details concerning the book, including information on statistical software, are available at the [web site](http://people.stern.nyu.edu/jsimonof/AnalCatData/)."
+houses,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/houses/houses.csv,https://openml.org/data/v1/download/52649/houses.arff,median_house_value,-,9,20640,"**Author**:  Kelley Pace
+
+**Source**: http://lib.stat.cmu.edu/datasets/
+
+**Please cite**:   
+
+If you use an algorithm, dataset, or other information from StatLib, please acknowledge both StatLib and the original contributor of the material. 
+
+Pace and Barry (1997), ""Sparse Spatial Autoregressions"", Statistics and Probability Letters.
+
+@article{pace1997sparse,
+  title={Sparse spatial autoregressions},
+  author={Pace, R Kelley and Barry, Ronald},
+  journal={Statistics \& Probability Letters},
+  volume={33},
+  number={3},
+  pages={291--297},
+  year={1997},
+  publisher={Elsevier}
+}
+
+**Data description**
+
+S&P Letters Data
+We collected information on the variables using all the block groups in California from the 1990 Census. In this sample a block group on average includes 1425.5 individuals living in a geographically compact area. Naturally, the geographical area included varies inversely with the population density. We computed distances among the centroids of each block group as measured in latitude and longitude. We excluded all the block groups reporting zero entries for the independent and dependent variables. The final data contained 20,640 observations on 9 variables. The dependent variable is ln(median house value)."
+analcatdata_challenger,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/analcatdata_challenger/analcatdata_challenger.csv,https://openml.org/data/v1/download/52574/analcatdata_challenger.arff,Damaged,-,6,23,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: 4
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+Ailerons,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/Ailerons/Ailerons.csv,https://openml.org/data/v1/download/52060/Ailerons.arff,goal,-,41,13750,"**Author**: Luis Torgo"",""Rui Camacho  
+**Source**: Unknown - 2014-08-18  
+**Please cite**:   
+
+This data set addresses a control problem, namely flying a F16 aircraft. The attributes describe the status of the aeroplane, while the goal is to predict the control action on the ailerons of the aircraft."
+disclosure_x_tampered,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/disclosure_x_tampered/disclosure_x_tampered.csv,https://openml.org/data/v1/download/1663732/disclosure_x_tampered.arff,Income,-,4,662,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Data Used in ""A BAYESIAN APPROACH TO DATA DISCLOSURE: OPTIMAL
+INTRUDER BEHAVIOR FOR CONTINUOUS DATA""
+by Stephen E. Fienberg, Udi E. Makov, and Ashish P. Sanil
+
+Background:
+==========
+In this paper we develop an approach to data disclosure in survey settings by
+adopting a probabilistic definition of disclosure due to Dalenius. Our approach
+is based on the principle that a data collection agency must consider
+disclosure from the perspective of an intruder in order to efficiently evaluate
+data disclosure limitation procedures. The probabilistic definition and our
+attempt to study optimal intruder behavior lead naturally to a Bayesian
+formulation.  We apply the methods in a small-scale simulation study using data
+adapted from an actual survey conducted by the Institute for Social Research at
+York University. (See Sections 1-3 of the paper for details oF the model
+formulation and related issues.)
+
+The Data:
+========
+Our case study uses data from the survey data Elite Canadian
+Decision-Makers collected by the Institute for Social Research at York
+University.  This survey was conducted in 1981 using telephone
+interviews and there were 1348 respondents, but many of these did not
+supply complete data.  We have extracted data on 12 variables, each of which
+was measured on a 5-point scale:
+
+Civil-liberties:
+- ---------------
+C1 - Free speech is just not worth it.
+C2 - We have gone too far in pushing equal rights in this country.
+C3 - It is better to live in an  orderly  society  than  to  allow people so
+much freedom.
+C5 - Free speech ought to be allowed for all political groups.
+
+Attitudes towards Jews:
+- ----------------------
+A15 - Most Jews don't care what happens to people who are not Jews.
+A18 - Jews are more willing than others to use shady practices  to
+get ahead.
+
+Canada-US relationship:
+- ----------------------
+CUS1 - Ensure independent Canada.
+CUS5 - Canada should have free trade with the USA.
+CUS6 - Canada's way of life is influenced strongly by USA.
+CUS7 - Canada benefits from US investments.
+
+
+In addition, we have data on two approximately continuous variables:
+
+Personal information:
+- --------------------
+Income - Total family income before taxes (with top-coding at \$80,000).
+Age - Based on year of birth.
+
+
+We transformed the original survey data  as follows in order to create
+a database of approximately continuous variables:
+
+[A]  We add categorical  variables  (all  but  income) to increase the number
+of levels. (When necessary we reversed the order of levels of a response  to a
+question.)  The new variables are defined as follows:
+
+Civil     = C1 + C2 + C3 + (8 - C5)
+Attitude  = A15 + A18
+Can/US    = (5 - CUS1) + CUS5 + (5 - CUS6) + CUS7
+
+After we removed cases with missing observations and  two  cases involving
+young children, we had a  data-base consisting of 662 observations.
+
+[B]  In order to enhance continuity, we took the following measures:
+
+Age:  We added normal  distributed  variates,  with  0   mean  and
+variance 4 to all observations.
+Income: We added uniform variates on the range of $0 - $10,000 to all incomes
+below $80,000.  Since all cases of incomes exceeding $80,000 were
+lumped together  in  the  survey,  we simulated their values by means
+of a t(8) distribution. Drawing values from the upper 38% tail of t(8),
+we evaluated the values of income as $60,000 + 25,000*t(8).
+Other variables: We added  normal distributed variates, with 0 mean and
+variance  0.5 to the variables.
+
+We assume that the agency releases information about all
+variables, except for Attitudes (towards Jews), which  is unavailable to
+the intruder and is at the center of the intruder's investigation.
+
+We denote the released data by
+
+Z = (( z(i,j) ))   with i=1,..,662; j=1,2,3,4.
+
+We assume that the intruder's data, X, are accurate and are related to Z via
+the following transformation:
+x(0,j) = z(i,j)*theta(i,j) + xi(j),
+
+where theta(i,j) is a bias removing parameter normally distributed with mean 1
+and variance  v(j), and xi(j) is normally distributed disturbance with 0  mean
+and variance sigma2(j).
+
+The following table provides the values of
+v(j), sigma2(j) used in the study:
+
+v(j)     sigma2(j)
+Civil                      0.1732       25
+Can/US                     0.1732       25
+Age                        0.1732       9
+Income (in $10000's)       0.1732       4
+
+
+We first generated several realizations of the above transformation on small
+subsets of the data to ascertain the impact of the process of the error
+on the data. In Table 4-1 in the paper we present 10 records the the intruder's
+accurate data, X, and the biased and corrupted released data, Z, which we
+obtained from one realization of the transformation.
+
+Section 4.2 of the paper contains details of the implementation of our Bayesian
+model.
+
+Data Used in the Computations:
+=============================
+We conducted a complete simulation of the procedures for the complete set of
+662 cases.  We considered four different scenarios for the simulation. (The
+names of datasets used in each of the scenarios appear in brackets below. The
+datasets are appended to this text.)
+
+* The released data contains no bias or noise (i.e. v(j)=0 and sigma2(j)=0 for
+all j). [Z.DATA]
+* The released data contains only noise (i.e., v(j)=0 for all j and
+and $sigma2(j)$ as given in the above Table). [X_NOISE.DATA]
+* The released data contains only bias (i.e., sigma2(j)=0 for all j and v(j)
+as given in the above Table). [X_BIAS.DATA]
+* The released data contains both bias and noise (i.e., v(j) and sigma2(j) as
+given in the above Table). [X_TAMPERED.DATA]
+
+We took each individual in turn as the object of the intruder's efforts and
+carried out the calculations.
+
+Structure of the Datasets:
+- -------------------------
+Each attached dataset consists of four space-separated columns containing the
+data on Age, Civil, Can/US and Income ($) respectively.
+
+
+
+Dataset: X_TAMPERED
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+UCI-student-performance-mat,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/UCI-student-performance-mat/UCI-student-performance-mat.csv,https://openml.org/data/v1/download/21826977/UCI-student-performance-mat.arff,G3,-,33,395,"**Author**: P. Cortez and A. Silva  
+**Source**: [original](http://archive.ics.uci.edu/ml/datasets/Student+Performance) - 2008  
+**Please cite**: P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.  
+
+This data approach student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features) and it was collected by using school reports and questionnaires.
+
+Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat) and Portuguese language (por). In [Cortez and Silva, 2008], the two datasets were modeled under binary/five-level classification and regression tasks. This dataset regard the performance in Mathematics.
+
+Important note: the target attribute G3 has a strong correlation with attributes G2 and G1. This occurs because G3 is the final year grade (issued at the 3rd period), while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficult to predict G3 without G2 and G1, but such prediction is much more useful (see paper source for more details).
+
+**Attributes**   
+1 school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira).  
+2 sex - student's sex (binary: 'F' - female or 'M' - male)   
+3 age - student's age (numeric: from 15 to 22)   
+4 address - student's home address type (binary: 'U' - urban or 'R' - rural)   
+5 famsize - family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)   
+6 Pstatus - parent's cohabitation status (binary: 'T' - living together or 'A' - apart)   
+7 Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2 â€“ 5th to 9th grade, 3 â€“ secondary education or 4 â€“ higher education)   
+8 Fedu - father's education (numeric: 0 - none, 1 - primary education (4th grade), 2 â€“ 5th to 9th grade, 3 â€“ secondary education or 4 â€“ higher education)   
+9 Mjob - mother's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')   
+10 Fjob - father's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')   
+11 reason - reason to choose this school (nominal: close to 'home', school 'reputation', 'course' preference or 'other')    
+12 guardian - student's guardian (nominal: 'mother', 'father' or 'other')   
+13 traveltime - home to school travel time (numeric: 1 - <15>1 hour)   
+14 studytime - weekly study time (numeric: 1 - <2>10 hours)   
+15 failures - number of past class failures (numeric: n if 1&lt;=n&lt;3, else 4)   
+16 schoolsup - extra educational support (binary: yes or no)   
+17 famsup - family educational support (binary: yes or no)   
+18 paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)   
+19 activities - extra-curricular activities (binary: yes or no)   
+20 nursery - attended nursery school (binary: yes or no)   
+21 higher - wants to take higher education (binary: yes or no)    
+22 internet - Internet access at home (binary: yes or no)   
+23 romantic - with a romantic relationship (binary: yes or no)   
+24 famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)   
+25 freetime - free time after school (numeric: from 1 - very low to 5 - very high)   
+26 goout - going out with friends (numeric: from 1 - very low to 5 - very high)   
+27 Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)   
+28 Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)   
+29 health - current health status (numeric: from 1 - very bad to 5 - very good)   
+30 absences - number of school absences (numeric: from 0 to 93)   
+
+these grades are related with the course subject, Math or Portuguese:    
+31 G1 - first period grade (numeric: from 0 to 20)   
+31 G2 - second period grade (numeric: from 0 to 20)   
+32 G3 - final grade (numeric: from 0 to 20, output target)"
+default-of-credit-card-clients,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/default-of-credit-card-clients/default-of-credit-card-clients.csv,https://openml.org/data/v1/download/21854402/default-of-credit-card-clients.arff,y,-,25,30000,"**Author**: Yeh, I. C., & Lien, C. H
+**Source**: [original](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients#) - 2016-01-26  
+**Please cite**: Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480.
+
+   
+
+Data Set Information:
+
+This research aimed at the case of customersâ€™ default payments in Taiwan and compares the predictive accuracy of probability of default among six data mining methods. From the perspective of risk management, the result of predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. Because the real probability of default is unknown, this study presented the novel Sorting Smoothing Method to estimate the real probability of default. With the real probability of default as the response variable (Y), and the predictive probability of default as the independent variable (X), the simple linear regression result (Y = A + BX) shows that the forecasting model produced by artificial neural network has the highest coefficient of determination; its regression intercept (A) is close to zero, and regression coefficient (B) to one. Therefore, among the six data mining techniques, artificial neural network is the only one that can accurately estimate the real probability of default.
+
+
+## Attribute Information:
+
+This research employed a binary variable, default payment (Yes = 1, No = 0), as the response variable. This study reviewed the literature and used the following 23 variables as explanatory variables:
+X1: Amount of the given credit (NT dollar): it includes both the individual consumer credit and his/her family (supplementary) credit.
+X2: Gender (1 = male; 2 = female).
+X3: Education (1 = graduate school; 2 = university; 3 = high school; 4 = others).
+X4: Marital status (1 = married; 2 = single; 3 = others).
+X5: Age (year).
+X6 - X11: History of past payment. We tracked the past monthly payment records (from April to September, 2005) as follows: X6 = the repayment status in September, 2005; X7 = the repayment status in August, 2005; . . .;X11 = the repayment status in April, 2005. The measurement scale for the repayment status is: -1 = pay duly; 1 = payment delay for one month; 2 = payment delay for two months; . . .; 8 = payment delay for eight months; 9 = payment delay for nine months and above.
+X12-X17: Amount of bill statement (NT dollar). X12 = amount of bill statement in September, 2005; X13 = amount of bill statement in August, 2005; . . .; X17 = amount of bill statement in April, 2005.
+X18-X23: Amount of previous payment (NT dollar). X18 = amount paid in September, 2005; X19 = amount paid in August, 2005; . . .;X23 = amount paid in April, 2005.
+
+
+## Relevant Papers:
+
+Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480."
+student_performance_por,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/student_performance_por/student_performance_por.csv,https://openml.org/data/v1/download/22103117/student_performance_por.arff,G3,-,33,649,"**Original Source**
+
+Paulo Cortez, University of Minho, Guimaraes, Portugal, http://www3.dsi.uminho.pt/pcortez
+
+The dataset was obtained from the UCI Repository.
+
+**Data description**
+
+This data approach student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features) and it was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat) and Portuguese language (por). In [Cortez and Silva, 2008], the two datasets were modeled under binary/five-level classification and regression tasks. Important note: the target attribute G3 has a strong correlation with attributes G2 and G1. This occurs because G3 is the final year grade (issued at the 3rd period), while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficult to predict G3 without G2 and G1, but such prediction is much more useful (see paper source for more details).
+
+**Note**
+
+This dataset only contains the grades for the portugese class.
+
+Attribute Information:
+
+1 school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
+2 sex - student's sex (binary: 'F' - female or 'M' - male)
+3 age - student's age (numeric: from 15 to 22)
+4 address - student's home address type (binary: 'U' - urban or 'R' - rural)
+5 famsize - family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)
+6 Pstatus - parent's cohabitation status (binary: 'T' - living together or 'A' - apart)
+7 Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2 - 5th to 9th grade, 3 - secondary education or 4 - higher education)
+8 Fedu - father's education (numeric: 0 - none, 1 - primary education (4th grade), 2 - 5th to 9th grade, 3 - secondary education or 4 - higher education)
+9 Mjob - mother's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')
+10 Fjob - father's job (nominal: 'teacher', 'health' care related, civil 'services' (e.g. administrative or police), 'at_home' or 'other')
+11 reason - reason to choose this school (nominal: close to 'home', school 'reputation', 'course' preference or 'other')
+12 guardian - student's guardian (nominal: 'mother', 'father' or 'other')
+13 traveltime - home to school travel time (numeric: 1 - <15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - >1 hour)
+14 studytime - weekly study time (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - >10 hours)
+15 failures - number of past class failures (numeric: n if 1<=n<3, else 4)
+16 schoolsup - extra educational support (binary: yes or no)
+17 famsup - family educational support (binary: yes or no)
+18 paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)
+19 activities - extra-curricular activities (binary: yes or no)
+20 nursery - attended nursery school (binary: yes or no)
+21 higher - wants to take higher education (binary: yes or no)
+22 internet - Internet access at home (binary: yes or no)
+23 romantic - with a romantic relationship (binary: yes or no)
+24 famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
+25 freetime - free time after school (numeric: from 1 - very low to 5 - very high)
+26 goout - going out with friends (numeric: from 1 - very low to 5 - very high)
+27 Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)
+28 Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
+29 health - current health status (numeric: from 1 - very bad to 5 - very good)
+30 absences - number of school absences (numeric: from 0 to 93)
+
+these grades are related with the course subject
+
+31 G1 - first period grade (numeric: from 0 to 20)
+31 G2 - second period grade (numeric: from 0 to 20)
+32 G3 - final grade (numeric: from 0 to 20, output target)
+
+
+**Citation request**
+
+Please include this citation if you plan to use this database:
+
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+[Web Link]"
+Boston-house-price-data,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/Boston-house-price-data/Boston-house-price-data.csv,https://openml.org/data/v1/download/22102290/Boston-house-price-data.arff,MEDV,-,14,506,"Context
+This dataset is extracted from the The Boston Housing Dataset, and the extraction of the data is explained in Extract dataset/dataframe from an URL
+Acknowledgements
+A Dataset derived from information collected by the U.S. Census Service concerning housing in the area of Boston Mass.
+Column description:
+This dataset contains information collected by the U.S Census Service concerning housing in the area of Boston Mass. It was obtained from the StatLib archive (http://lib.stat.cmu.edu/datasets/boston), and has been used extensively throughout the literature to benchmark algorithms. However, these comparisons were primarily done outside of Delve and are thus somewhat suspect. The dataset is small in size with only 506 cases.
+The data was originally published by Harrison, D. and Rubinfeld, D.L. Hedonic prices and the demand for clean air', J. Environ. Economics  Management, vol.5, 81-102, 1978.
+Variables in order:
+ CRIM     per capita crime rate by town
+ ZN       proportion of residential land zoned for lots over 25,000 sq.ft.
+ INDUS    proportion of non-retail business acres per town
+ CHAS     Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+ NOX      nitric oxides concentration (parts per 10 million)
+ RM       average number of rooms per dwelling
+ AGE      proportion of owner-occupied units built prior to 1940
+ DIS      weighted distances to five Boston employment centres
+ RAD      index of accessibility to radial highways
+ TAX      full-value property-tax rate per 10,000
+ PTRATIO  pupil-teacher ratio by town
+ B        1000(Bk - 0.63)2 where Bk is the proportion of blacks by town
+ LSTAT     lower status of the population
+ MEDV     Median value of owner-occupied homes in 1000's
+
+Inspiration
+I'd like to find it as the base for data exploration in regression way"
+eye_movements,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/eye_movements/eye_movements.csv,https://openml.org/data/v1/download/53927/eye_movements.arff,label,-,28,10936,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Jarkko Salojarvi, Kai Puolamaki, Jaana Simola, Lauri Kovanen, Ilpo Kojo, Samuel Kaski. Inferring Relevance from Eye Movements: Feature Extraction. Helsinki University of Technology, Publications in Computer and Information Science, Report A82. 3 March 2005. Data set at http://www.cis.hut.fi/eyechallenge2005/
+
+Competition 1 (preprocessed data)
+A straight-forward classification task. We provide pre-computed feature vectors for each word in the eye movement trajectory, with class labels.
+
+The dataset consist of several assignments. Each assignment consists of a question followed by ten sentences (titles of news articles). One of the sentences is the correct answer to the question (C) and five of the sentences are irrelevant to the question (I). Four of the sentences are relevant to the question (R), but they do not answer it.
+
+
+* Features are in columns, feature vectors in rows.
+* Each assignment is a time sequence of 22-dimensional feature vectors.
+* The first column is the line number, second the assignment number and the next 22 columns (3 to 24) are the different features. Columns 25 to 27 contain extra information about the example. The training data set contains the classification label in the 28th column: ""0"" for irrelevant, ""1"" for relevant and ""2"" for the correct answer.
+* Each example (row) represents a single word. You are asked to return the classification of each read sentence.
+* The 22 features provided are commonly used in psychological studies on eye movement. All of them are not necessarily relevant in this context.
+
+The objective of the Challenge is to predict the classification labels (I, R, C).
+
+
+
+Please see the technical report for information of eye movements, experimental setup, baseline methods and references:
+
+Jarkko Salojarvi, Kai Puolamaki, Jaana Simola, Lauri Kovanen, Ilpo Kojo, Samuel Kaski. Inferring Relevance from Eye Movements: Feature Extraction. Helsinki University of Technology, Publications in Computer and Information Science, Report A82. 3 March 2005. [PDF]
+
+
+
+Modified by TunedIT (converted to ARFF format)
+
+
+FEATURES
+
+The values in columns marked with an asterisk (*) are same for all occurances of the word.
+
+COL	NAME		DESCRIPTION
+1	#line		Line number
+2	#assg		Assignment Number
+3	fixcount	Number of fixations to the word
+4*	firstPassCnt	Number of fixations to the word when it is first encountered
+5*	P1stFixation	'1' if fixation occured when the sentence the word was in was encountered the first time
+6*	P2stFixation	'1' if fixation occured when the sentence the word was in was encountered the second time
+7*	prevFixDur	Duration of previous fixation
+8*	firstfixDur	Duration of the first fixation when the word is first encountered
+9*	firstPassFixDur	Sum of durations of fixations when the word is first encountered
+10*	nextFixDur	Duration of the next fixation when gaze initially moves from the word
+11	firstSaccLen	Length of the first saccade
+12	lastSaccLen	Distance between fixation on the word and the next fixation
+13	prevFixPos	Distance between the first fixation preceding the word and the beginning ot the word
+14	landingPos	Distance between the first fixation on the word and the beginning of the word
+15	leavingPos	Distance between the last fixation on the word and the beginning of the word
+16	totalFixDur	Sum of all durations of fixations to the word
+17	meanFixDur	Mean duration of the fixations to the word
+18*	nRegressFrom	Number of regressions leaving from the word
+19*	regressLen	Sum of durations of regressions initiating from this word
+20*	nextWordRegress	'1' if a regression initiated from the following word
+21*	regressDur	Sum of durations of the fixations on the word during regression
+22	pupilDiamMax	Maximum pupil diameter
+23	pupilDiamLag	Maximum pupil diameter 0.5 - 1.5 seconds after the beginning of fixation
+24	timePrtctg	First fixation duration divided by the total number of fixations
+25	nWordsInTitle	Number of word in the sentence (title) this word is in
+26	titleNo		Title number
+27	wordNo		Word number (ordinal) in this title
+28	label		Classification for training data ('0'=irrelevant, '1'=relevant, '2'=correct)"
+Moneyball,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/Moneyball/Moneyball.csv,https://openml.org/data/v1/download/18626236/Moneyball.arff,RS,-,15,1232,"**Author**: MITx  
+**Source**: [Kaggle](https://www.kaggle.com/wduckett/moneyball-mlb-stats-19622012/data), originally from [The Analytics Edge course on EdX](https://www.edx.org/course/analytics-edge-mitx-15-071x-3). Data collected from [baseball-reference.com](baseball-reference.com)  
+**Please cite**:   
+
+**Moneyball**  
+In the early 2000s, Billy Beane and Paul DePodesta worked for the Oakland Athletics. While there, they literally changed the game of baseball. They didn't do it using a bat or glove, and they certainly didn't do it by throwing money at the issue; in fact, money was the issue. They didn't have enough of it, but they were still expected to keep up with teams that had much deeper pockets. This is where Statistics came riding down the hillside on a white horse to save the day. This data set contains some of the information that was available to Beane and DePodesta in the early 2000s, and it can be used to better understand their methods.
+
+### Attributes  
+This data set contains a set of variables that Beane and DePodesta focused heavily on. They determined that stats like on-base percentage (OBP) and slugging percentage (SLG) were very important when it came to scoring runs, however they were largely undervalued by most scouts at the time. This translated to a gold mine for Beane and DePodesta. Since these players weren't being looked at by other teams, they could recruit these players on a small budget. The variables are as follows:
+
+Team  
+League  
+Year  
+Runs Scored (RS)  
+Runs Allowed (RA)  
+Wins (W)  
+On-Base Percentage (OBP)  
+Slugging Percentage (SLG)  
+Batting Average (BA)  
+Playoffs (binary)  
+RankSeason  
+RankPlayoffs  
+Games Played (G)  
+Opponent On-Base Percentage (OOBP)  
+Opponent Slugging Percentage (OSLG)  
+
+### Acknowledgements  
+This data set is referenced in The Analytics Edge course on EdX during the lecture regarding the story of Moneyball. The data itself is gathered from baseball-reference.com. Sports-reference.com is one of the most comprehensive sports statistics resource available, and I highly recommend checking it out.
+
+Inspiration
+It is such an important skill in today's world to be able to see the ""truth"" in a data set. That is what DePodesta was able to do with this data, and it unsettled the entire system of baseball recruitment. Beane and DePodesta defined their season goal as making it to playoffs. With that in mind, consider these questions:
+
+How does a team make the playoffs?
+How does a team win more games?
+How does a team score more runs?
+They are all simple questions with simple answers, but now it is time to use the data to find the ""truth"" hidden in the numbers."
+analcatdata_halloffame,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/analcatdata_halloffame/analcatdata_halloffame.csv,https://openml.org/data/v1/download/52566/analcatdata_halloffame.arff,Hall_of_Fame,-,18,1340,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+The-Estonia-Disaster-Passenger-List,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/The-Estonia-Disaster-Passenger-List/The-Estonia-Disaster-Passenger-List.csv,https://openml.org/data/v1/download/22102214/The-Estonia-Disaster-Passenger-List.arff,Survived,-,8,989,"Introduction
+On September 27 1994 the ferry Estonia set sail on a night voyage across the Baltic Sea from the port of Tallin in Estonia to Stockholm. She departed at 19.00 carrying 989 passengers and crew, as well as vehicles, and was due to dock at 09.30 the following morning, Tragically, the Estonia never arrived.
+The weather was typically stormy for the time of year but, like all the other scheduled ferries on that day, the Estonia set off as usual. At roughly 01:00 a worrying sound of screeching metal was heard, but an immediate inspection of the bow visor showed nothing untoward. The ship suddenly listed 15 minutes later and soon alarms were sounding, including the lifeboat alarm. Shortly afterwards the Estonia rolled drastically to starboard. Those who had reached the decks had a chance of survival but those who had not were doomed as the angled corridors had become death traps. A Mayday signal was sent but power failure meant the ships position was given imprecisely. The Estonia disappeared from the responding ships radar screens at about 01:50.
+The Marietta arrived at the scene at 02:12 and the first helicopter at 03:05. Of the 138 people rescued alive, one died later in hospital.
+Of the 310 people who had reached the decks, almost a third died of hypothermia. The final death toll was shockingly high  more than 850 people.
+An official inquiry found that failure of the locks on the bow visor, which broke away under the punishing waves, caused water to flood the car deck and quickly capsize the ship. The report also noted a lack of action, delay in sounding the alarm, lack of guidance from the bridge and a failure to light distress flares.
+The sinking of the Estonia was Europes worst postwar maritime disaster.
+
+Read more: https://en.wikipedia.org/wiki/MS_Estonia
+
+Facts
+When was the Sinking of the Estonia: September 28, 1994
+Where was the Sinking of the Estonia: Near the Turku Archipelago, in the Baltic Sea
+What was the Sinking of the Estonia death toll: 852 passengers and crew
+
+Interesting things to investigate about the data:
+
+Who's more likely to survive the sinking based on data?
+Is age an indicator for survival?
+Is gender an indicator for survival?
+Did the crew aboard have a higher chance of survival than passengers?
+Since the death toll is well above 80, can you make a classifier that beats the baseline (all passengers died)?
+
+Video
+Watch the Zero Hour documentary about the disaster: https://www.youtube.com/watch?v=eFDGL_ehpkI"
+pasture,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/pasture/pasture.csv,https://openml.org/data/v1/download/52242/pasture.arff,pasture-prod-class,-,23,36,"**Author**: Dave Barker  
+**Source**: [original](http://www.cs.waikato.ac.nz/ml/weka/datasets.html) -   
+**Please cite**:   
+
+Pasture Production
+
+Data source:   Dave Barker
+AgResearch Grasslands, Palmerston North, New Zealand
+
+The objective was to predict pasture production from a variety of biophysical factors. Vegetation and soil variables from areas of grazed North Island hill country with different management (fertilizer application/stocking rate) histories (1973-1994) were measured and subdivided into 36 paddocks. Nineteen vegetation (including herbage production); soil chemical, physical and biological; and soil water variables were selected as potentially useful biophysical indicators.
+
+Attribute Information:
+1.  fertiliser - fertiliser used - enumerated
+2.  slope - slope of the paddock - integer
+3.  aspect-dev-NW - the deviation from the north-west - integer
+4.  OlsenP - integer
+5.  MinN - integer
+6.  TS - integer
+7.  Ca-Mg - calcium magnesium ration - real
+8.  LOM - soil lom (g/100g) - real
+9.  NFIX-mean - a mean calculation - real
+10. Eworms-main-3 - main 3 spp earth worms per g/m2 - real
+11. Eworms-No-species - number of spp - integer
+12. KUnSat - mm/hr - real
+13. OM - real
+14. Air-Perm - real
+15. Porosity - real
+16. HFRG-pct-mean - mean percent - real
+17. legume-yield - kgDM/ha - real
+18. OSPP-pct-mean - mean percent - real
+19. Jan-Mar-mean-TDR - real
+20. Annual-Mean-Runoff - in mm - real
+21. root-surface-area - m2/m3 - real
+22. Leaf-P - ppm - real
+23. pasture-prod-class - pasture production categorisation - enumerated"
+Brazilian_houses,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/Brazilian_houses/Brazilian_houses.csv,https://openml.org/data/v1/download/22044541/Brazilian_houses.arff,total_(BRL),-,13,10692,"**Author**: Kaggle  
+**Source**: [original](https://www.kaggle.com/rubenssjr/brasilian-houses-to-rent) - 20-03-2020  
+**Please cite**:   
+
+This dataset contains 10962 houses to rent with 13 diferent features.
+
+**Outliers **
+Some values in the dataset can be considered as outliers for further analyses. Bear in mind that the Web Crawler was used only to get the data, so it's possible that errors in the original data exist.
+
+**Changes in data between versions of dataset **
+Since the WebCrawler was ran in different days for each version of dataset, there may be differences like added or deleted houses (as well as added cities).
+
+Notes: 
+
+1) This dataset corresponds to the 2nd version of the original dataset (""houses_to_rent_v2.csv"").
+
+2) The value '-' in the attribute floor was replaced by '0' as the data contributor stated that this refers to houses with just one floor (see https://www.kaggle.com/rubenssjr/brasilian-houses-to-rent/discussion)."
+CPMP-2015-runtime-regression,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/CPMP-2015-runtime-regression/CPMP-2015-runtime-regression.csv,https://openml.org/data/v1/download/21378721/CPMP-2015-runtime-regression.arff,runtime,-,25,2108,"source: An Algorithm Selection Benchmark for the Container Pre-Marshalling Problem (CPMP)
+authors: K. Tierney and Y. Malitsky (features) / K. Tierney and D. Pacino and S. Voss (algorithms)
+translator in coseal format: K. Tierney
+
+This is an extension of the 2013 premarshalling dataset that includes more features and a set of test instances. 
+
+There are three sets of features:
+
+feature_values.arff contains the full set of features from iteration 2 of our latent feature analysis (LFA) process (see paper)
+feature_values_itr1.arff contains only the features after iteration 1 of LFA
+feature_values_orig.arff containers the features used in PREMARHSALLING-ASTAR-2013
+
+We also provide test data with an identical naming scheme (see _test). 
+
+The features for the pre-marshalling problem are all extremely easy and fast to
+compute, thus the feature_costs.arff file has been omitted, as it would be time
+0 for every feature (regardless of using original, iteration 1 or iteration 2
+features).
+
+The feature computation code is available at https://bitbucket.org/eusorpb/cpmp-as
+
+Note: previously the scenario was called PREMARSHALLING-ASTAR-2015. To save same space, we renamed the scenario."
+usp05-ft,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/usp05-ft/usp05-ft.csv,https://openml.org/data/v1/download/53940/usp05-ft.arff,AppType,-,15,76,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This is a PROMISE Software Engineering Repository data set made publicly
+available in order to encourage repeatable, verifiable, refutable, and/or
+improvable predictive models of software engineering.
+
+If you publish material based on PROMISE data sets then, please
+follow the acknowledgment guidelines posted on the PROMISE repository
+web page http://promisedata.org/repository .
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+(c) 2007  Jingzhou Li
+(jingli@ucalgary.ca)
+This data set is distributed under the
+Creative Commons Attribution-Share Alike 3.0 License
+http://creativecommons.org/licenses/by-sa/3.0/
+
+You are free:
+
+* to Share -- copy, distribute and transmit the work
+* to Remix -- to adapt the work
+
+Under the following conditions:
+
+Attribution. You must attribute the work in the manner specified by
+the author or licensor (but not in any way that suggests that they endorse
+you or your use of the work).
+
+Share Alike. If you alter, transform, or build upon this work, you
+may distribute the resulting work only under the same, similar or a
+compatible license.
+
+* For any reuse or distribution, you must make clear to others the
+license terms of this work.
+* Any of the above conditions can be waived if you get permission from
+the copyright holder.
+* Apart from the remix rights granted under this license, nothing in
+this license impairs or restricts the author's moral rights.
+
+1. Title: USP05-FT: Software effort estimation at feature level
+
+2. Source Information
+-- Donor: Jingzhou Li (jingli@ucalgary.ca), Guenther Ruhe (ruhe@ucalgary.ca)
+computer science department
+University of Calgary, Canada
+(403) 210-5440
+-- Date: December 2005
+
+3. Past Usage:
+[1]. J.Z. Li, G. Ruhe, A. Al-Emran, M. M. Ritcher, ""A Flexible Method for Effort Estimation by Analogy"", Empirical Software Engineering, Vol. 12, No. 1, 2007, pp 65-106.
+[2]. J.Z. Li, G. Ruhe, ""A Comparative Study of Attribute Weighting Heuristics for Effort Estimation by Analogy"", Proceedings of the ACM-IEEE International Symposium on Empirical Software Engineering (ISESE'06), September 2006, Brazil.
+
+4. Relevant Information:
+-- This data set was part of USP05 that was collected from university student projects about Web and client/server applications
+-- The detailed description of the whole data set can be found in reference [1].
+
+5. Number of Instances: 76 (features)
+
+6. Number of Attributes: 15 (including ID, Effort is the actual effort)
+
+7. Attribute Information:
+1. ID: Three digit Object ID,
+2. Effort: Actual effort in hours expended on tasks related to implementing the object by all participating persons.
+3. IntComplx: Complexity of Internal Calculation (1-VeryLow, 2-Low, 3-Medium, 4-High, 5-VeryHigh )
+4. DataFile: Number of Data Files/Database Tables Accessed (Positive integer)
+5. DataEn: Number of Data Entry Items (Positive integer)
+6. DataOut: Number of Data Output Items (Positive integer)
+7. UFP: Unadjusted Function Point Count (Positive integer)
+8. Lang: Language Used (C++, Java, VB, Java Script, VB Script,  SQL, Php, Perl, Asp, Html, XML, Others)
+9. Tools: Development Tools and Platforms (VJ++, VB, Delphi, VisualCafe, JUnit,   PowerBuilder, BorlandC++, Others)
+10. ToolExpr: Language and Tool Experience Level (Range of number of months of experience, e.g. [2, 5] for 2 to 5 months, as the minimum experience level is 2 and 5 the maximum in the team)
+11. AppExpr: Applications Experience Level (1-VeryLow, 2-Low, 3-Medium, 4-High, 5-VeryHigh)
+12. TeamSize: Team size for implementing the object (Range: [a, b], min-max number of persons, e.g. [2, 5])
+13. DBMS: Database Systems (Oracle, Access, SQLServer, MySQL, Others)
+14. Method: Methodology (OO, SA, SD, RAD, JAD, MVC, Others)
+15. AppType: Type of System/Application Architecture (B/S, C/S, BC/S, Centered, Other)
+
+
+8. Missing Attribute Values: 37
+
+9. Data"
+hutsof99_child_witness,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/hutsof99_child_witness/hutsof99_child_witness.csv,https://openml.org/data/v1/download/52996/hutsof99_child_witness.arff,acc,-,17,42,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Graeme D. Hutcheson and Nick Sofroniou 1999
+
+The Multivariate Social Scientist:
+Introductory Statistics Using Generalized Linear Models.
+
+SAGE Publications.
+
+Copyright: Graeme D. Hutcheson & Nick Sofroniou, 1999
+
+This software can be freely used for non-commercial purposes and can be
+freely distributed.
+
+
+Readme file
+===========
+
+The data sets in this directory are taken from the above book.
+The data are presented in two formats, *.dat (ascii) and
+*.por (SPSS portable). The GLIM code and macros are provided in
+files *.glm and *.mac. Please read the errata file which indicates some
+minor differences between these data sets and those reported in the
+book.
+
+
+
+
+DATA FILE      SOURCE IN BOOK    DESCRIPTION
+
+Chapter 1
+tab1_01.*   Table 1.1         Video Games and Hostility
+
+Chapter 2
+tab2_01.*   Table 2.1         Normal Errors
+tab2_02.*   Table 2.2         Skewed Errors
+tab2_03.*   Table 2.3         Curvilinearity
+
+Chapter 3
+tab3_01.*   Table 3.1         Two Simple Models
+tab3_05.*   Table 3.5         Cost and Sound Quality
+tab3_07.*   Table 3.7         Exam marks and College Offers
+tab3_11.*   Table 3.11        Quality of Children's Testimonies
+Age: 5-6 = 0; 8-9 = 1
+Gender: female = 0; male = 1
+Location: 1 = home; 2 = school;
+3 = police interview
+4 = special interview
+tab3_11d.*  Table 3.11        Data in Table 3.11 with indicator dummy codes
+added
+
+Chapter 4
+tab4_01.*   Table 4.1         Infection Severity and Treatment Outcome
+Treatment Outcome: 0 = survived
+1 = died
+tab4_14.*   Table 4.14        Infection severity, Treatment outcome and
+Hospital Attended
+Hospital: 1 = hospital A
+2 = hospital B
+3 = hospital C
+tab4.14d.*  Table 4.14        Infection severity, Treatment outcome and
+Hospital Attended including dummy codes
+
+logis.*                       Child witness data: copy of
+tab3_11, but includes prosecution
+logis_d.*                     Child witness data: copy of
+tab3_11d, but includes prosecution
+
+logis.por and logis_d.por provide the data to
+obtain the parameters calculated in the book
+(pages 147 to 152). It should be noted that
+these differ slightly to the parameters
+obtained using the data sets logis.dat and
+logis_d.dat, as the *.dat files only record
+the variable 'coherence' to 2 decimal places.
+
+Chapter 5
+
+tab5_01.*    Table 5.1        Job Satisfaction for doctors and dentists
+tab5_04.*    Table 5.4        Race, Housing and Illness
+tab5_07.*    Table 5.7        Dopamine and psychosis: integer scoring
+tab5_08.*    Table 5.8        Dopamine and psychosis: mid-ranks scoring
+tab5_10.*    Table 5.10       Treatment and Depression: integer scoring
+tab5_11.*    Table 5.11       Treatment and depression: mid-ranks scoring
+tab5_13.*    Table 5.13       Alcohol consumption and Libido: integer scores
+tab5_16.*    Table 5.16       Alcohol consumption and libido: low vs medium
+or high
+tab5_17.*    Table 5.17       Alcohol consumption and libido: medium vs high
+
+
+Chapter 6
+
+tab6_11.*    Table 6.11       Child witness example data set
+
+File: ../data/hutsof99/tab6_11.dat
+
+Note: changes from Errata.txt where not included!
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+Brainsize,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/Brainsize/Brainsize.csv,https://openml.org/data/v1/download/53976/Brainsize.arff,MRI_Count,-,7,40,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Datasets of Data And Story Library, project illustrating use of basic statistic methods, converted to arff format by Hakan Kjellerstrand.
+Source: TunedIT: http://tunedit.org/repo/DASL
+
+DASL file http://lib.stat.cmu.edu/DASL/Datafiles/Brainsize.html
+
+Brain Size and Intelligence
+
+Reference:   Willerman, L., Schultz, R., Rutledge, J. N., and Bigler, E. (1991), ""In Vivo  Brain Size and Intelligence,"" Intelligence, 15, 223-228.
+
+Authorization:   Contact authors
+Description:   Willerman et al. (1991) collected a sample of  40 right-handed Anglo introductory psychology students at a large southwestern university. Subjects took  four subtests (Vocabulary, Similarities, Block Design, and Picture Completion) of the Wechsler (1981) Adult Intelligence Scale-Revised.   The researchers used Magnetic Resonance Imaging (MRI) to determine the brain size of the subjects.  Information about gender and body size (height and weight) are also included.  The researchers withheld the weights of two subjects and the height of one subject for reasons of confidentiality.
+
+Number of cases:   40
+Variable Names:
+
+Gender:   Male or Female
+FSIQ:   Full Scale IQ scores based on the four Wechsler (1981) subtests
+VIQ:   Verbal IQ scores based on the four Wechsler (1981) subtests
+PIQ:   Performance IQ scores based on the four Wechsler (1981) subtests
+Weight:   body weight in pounds
+Height:   height in inches
+MRI_Count:   total pixel Count from the 18 MRI scans"
+SPECTF,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/SPECTF/SPECTF.csv,https://openml.org/data/v1/download/52240/SPECTF.arff,OVERALL_DIAGNOSIS,-,45,349,"**Author**: Krzysztof J. Cios"",""Lukasz A.  
+**Source**: [original](https://archive.ics.uci.edu/ml/datasets/SPECTF+Heart) -   
+**Please cite**:   
+
+SPECTF heart data
+
+This is a merged version of the separate train and test set which are usually distributed. On OpenML this train-test split can be found as one of the possible tasks.  
+
+NOTE: See the SPECT heart data for binary data for the same classification task.
+
+Sources: 
+-- Original owners: Krzysztof J. Cios, Lukasz A. Kurgan University of Colorado at Denver, Denver, CO 80217, U.S.A. Krys.Cios@cudenver.edu Lucy S. Goodenday Medical College of Ohio, OH, U.S.A. 
+-- Donors: Lukasz A.Kurgan, Krzysztof J. Cios 
+-- Date: 10/01/01  
+
+Relevant Information: The dataset describes diagnosing of cardiac Single Proton Emission Computed Tomography (SPECT) images. Each of the patients is classified into two categories: normal and abnormal. The database of 267 SPECT image sets (patients) was processed to extract features that summarize the original SPECT images. As a result, 44 continuous feature pattern was created for each patient. The CLIP3 algorithm was used to generate classification rules from these patterns. The CLIP3 algorithm generated rules that were 77.0% accurate (as compared with cardiologists' diagnoses)."
+EgyptianSkulls,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/EgyptianSkulls/EgyptianSkulls.csv,https://openml.org/data/v1/download/1663694/EgyptianSkulls.arff,Year,-,5,150,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Datasets of Data And Story Library, project illustrating use of basic statistic methods, converted to arff format by Hakan Kjellerstrand.
+Source: TunedIT: http://tunedit.org/repo/DASL
+
+DASL file http://lib.stat.cmu.edu/DASL/Datafiles/EgyptianSkulls.html
+
+Egyptian Skull Development
+
+Reference:   Thomson, A. and Randall-Maciver, R. (1905) Ancient Races of the Thebaid, Oxford:  Oxford University Press.
+Also found in:  Hand, D.J., et al. (1994) A Handbook of Small Data Sets, New York:  Chapman & Hall, pp. 299-301.
+Manly, B.F.J. (1986) Multivariate Statistical Methods, New York:  Chapman & Hall.
+Authorization:   Contact Authors
+Description:   Four measurements of male Egyptian skulls from 5 different time periods.  Thirty skulls are measured from each time period.
+
+
+Number of cases:   150
+Variable Names:
+
+MB:   Maximal Breadth of Skull
+BH:   Basibregmatic Height of Skull
+BL:   Basialveolar Length of Skull
+NH:   Nasal Height of Skull
+Year:   Approximate Year of Skull Formation (negative = B.C., positive = A.D.)"
+student-grade-pass-or-fail-prediction,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/student-grade-pass-or-fail-prediction/student-grade-pass-or-fail-prediction.csv,https://openml.org/data/v1/download/22102277/student-grade-pass-or-fail-prediction.arff,pass,-,30,395,"This dataset is based on dipam7/student-grade-prediction
+Dataset
+General information
+This data approach student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school-related features) and it was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat) and Portuguese language (por). In [Cortez and Silva, 2008], the two datasets were modeled under binary/five-level classification and regression tasks. 
+Important note the target attribute G3 has a strong correlation with attributes G2 and G1. This occurs because G3 is the final year grade (issued at the 3rd period), while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficult to predict G3 without G2 and G1, but such prediction is much more useful (see paper source for more details).
+Attribute information
+Important note unlike the original dataset, this one converted all binary values to numerical bool values. Moreover, it doesn't have attributes Mjob, Fjob, reason, guardian
+school - student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira) (bool: 1 if it's GP else 0)
+sex - student's sex (binary: 'F' - female or 'M' - male) (bool: 1 if it's F else 0)
+age - student's age (numeric: from 15 to 22)
+address - student's home address type (binary: 'U' - urban or 'R' - rural) (bool: 1 if it's U else 0)
+famsize - family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3) (bool: 1 if it's LE3 else 0)
+Pstatus - parent's cohabitation status (binary: 'T' - living together or 'A' - apart) (bool: 1 if it's T else 0)
+Medu - mother's education (numeric: 0 - none, 1 - primary education (4th grade), 2  5th to 9th grade, 3  secondary education or 4  higher education)
+Fedu - father's education (numeric: 0 - none, 1 - primary education (4th grade), 2  5th to 9th grade, 3  secondary education or 4  higher education)
+traveltime - home to school travel time (numeric: 1 - 1 hour)
+studytime - weekly study time (numeric: 1 - 10 hours)
+failures - number of past class failures (numeric: n if 1=n3, else 4)
+schoolsup - extra educational support (binary: yes or no) (bool: 1 if it's Yes else 0)
+famsup - family educational support (binary: yes or no) (bool: 1 if it's Yes else 0)
+paid - extra paid classes within the course subject (Math or Portuguese) (binary: yes or no) (bool: 1 if it's Yes else 0)
+activities - extra-curricular activities (binary: yes or no) (bool: 1 if it's Yes else 0)
+nursery - attended nursery school (binary: yes or no) (bool: 1 if it's Yes else 0)
+higher - wants to take higher education (binary: yes or no) (bool: 1 if it's Yes else 0)
+internet - Internet access at home (binary: yes or no) (bool: 1 if it's Yes else 0)
+romantic - with a romantic relationship (binary: yes or no) (bool: 1 if it's Yes else 0)
+famrel - quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
+freetime - free time after school (numeric: from 1 - very low to 5 - very high)
+goout- going out with friends (numeric: from 1 - very low to 5 - very high)
+Dalc - workday alcohol consumption (numeric: from 1 - very low to 5 - very high)
+Walc - weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
+health - current health status (numeric: from 1 - very bad to 5 - very good)
+absences - number of school absences (numeric: from 0 to 93)
+G1 - first period grade (numeric: from 0 to 20)
+G2 - second period grade (numeric: from 0 to 20)
+G3 - final grade (numeric: from 0 to 20)
+pass - (bool: 1 if that student passes else 0) output target
+Generator
+I assume you have downloaded the original dataset.
+import pandas as pd
+pd.set_option('display.max_columns', 100)
+
+ Read from original dataset
+df = pd.read_csv('student-mat.csv')
+
+ Drop columns that contain nominal values
+df = df.drop(columns=['Mjob', 'Fjob', 'reason', 'guardian'])
+
+ Convert binary values to numerical values
+df['school'] = (df['school'] == 'GP').astype('int')
+df['sex'] = (df['sex'] == 'F').astype('int')
+df['address'] = (df['address'] == 'U').astype('int')
+df['famsize'] = (df['famsize'] == 'LE3').astype('int')
+df['Pstatus'] = (df['Pstatus'] == 'T').astype('int')
+df['schoolsup'] = (df['schoolsup'] == 'yes').astype('int')
+df['famsup'] = (df['famsup'] == 'yes').astype('int')
+df['paid'] = (df['paid'] == 'yes').astype('int')
+df['activities'] = (df['activities'] == 'yes').astype('int')
+df['nursery'] = (df['nursery'] == 'yes').astype('int')
+df['higher'] = (df['higher'] == 'yes').astype('int')
+df['internet'] = (df['internet'] == 'yes').astype('int')
+df['romantic'] = (df['romantic'] == 'yes').astype('int')
+
+ Add a column to indicate who fail
+df['pass'] = (df['G3'] = 10).astype('int')
+
+ Save to student-mat-pass-or-fail.csv
+with open('student-mat-pass-or-fail.csv', 'w') as f:
+    f.write(df.to_csv(index=False))
+
+Task
+With all attributes except G3, please predict pass. 
+Citation
+P. Cortez and A. Silva. Using Data Mining to Predict Secondary School Student Performance. In A. Brito and J. Teixeira Eds., Proceedings of 5th FUture BUsiness TEChnology Conference (FUBUTEC 2008) pp. 5-12, Porto, Portugal, April, 2008, EUROSIS, ISBN 978-9077381-39-7.
+Web Link"
+wholesale-customers,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/wholesale-customers/wholesale-customers.csv,https://openml.org/data/v1/download/1681131/wholesale-customers.arff,Channel,-,9,440,"**Author**: Margarida G. M. S. Cardoso      
+**Source**: UCI     
+**Please cite**: Abreu, N. (2011). Analise do perfil do cliente Recheio e desenvolvimento de um sistema promocional. Mestrado em Marketing, ISCTE-IUL, Lisbon.  
+
+* Title:   
+Wholesale customers Data Set 
+
+* Abstract:   
+The data set refers to clients of a wholesale distributor. It includes the annual spending in monetary units (m.u.) on diverse product categories
+
+* Source:  
+Margarida G. M. S. Cardoso, margarida.cardoso '@' iscte.pt, ISCTE-IUL, Lisbon, Portugal
+
+* Attribute Information:
+
+1) FRESH: annual spending (m.u.) on fresh products (Continuous); 
+2) MILK: annual spending (m.u.) on milk products (Continuous); 
+3) GROCERY: annual spending (m.u.)on grocery products (Continuous); 
+4) FROZEN: annual spending (m.u.)on frozen products (Continuous) 
+5) DETERGENTS_PAPER: annual spending (m.u.) on detergents and paper products (Continuous) 
+6) DELICATESSEN: annual spending (m.u.)on and delicatessen products (Continuous); 
+7) CHANNEL: customers' Channel - Horeca (Hotel/Restaurant/Café) or Retail channel (Nominal) 
+8) REGION: customers' Region - Lisbon, Porto or Other (Nominal) 
+
+Descriptive Statistics: 
+
+(Minimum, Maximum, Mean, Std. Deviation) 
+FRESH ( 3, 112151, 12000.30, 12647.329) 
+MILK (55, 73498, 5796.27, 7380.377) 
+GROCERY (3, 92780, 7951.28, 9503.163) 
+FROZEN (25, 60869, 3071.93, 4854.673) 
+DETERGENTS_PAPER (3, 40827, 2881.49, 4767.854) 
+DELICATESSEN (3, 47943, 1524.87, 2820.106) 
+
+REGION Frequency 
+Lisbon 77 
+Oporto 47 
+Other Region 316 
+Total 440 
+
+CHANNEL Frequency 
+Horeca 298 
+Retail 142 
+Total 440 
+
+
+* Relevant Papers:
+
+Cardoso, Margarida G.M.S. (2013). Logical discriminant models â€“ Chapter 8 in Quantitative Modeling in Marketing and Management Edited by Luiz Moutinho and Kun-Huang Huarng. World Scientific. p. 223-253. ISBN 978-9814407717 
+
+Jean-Patrick Baudry, Margarida Cardoso, Gilles Celeux, Maria JosÃ© Amorim, Ana Sousa Ferreira (2012). Enhancing the selection of a model-based clustering with external qualitative variables. RESEARCH REPORT NÂ° 8124, October 2012, Project-Team SELECT. INRIA Saclay - ÃŽle-de-France, Projet select, UniversitÃ© Paris-Sud 11"
+balance-scale,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/balance-scale/balance-scale.csv,https://openml.org/data/v1/download/11/balance-scale.arff,class,-,5,625,"**Author**: Siegler, R. S. (donated by Tim Hume)  
+**Source**: [UCI](http://archive.ics.uci.edu/ml/datasets/balance+scale) - 1994  
+**Please cite**: [UCI](https://archive.ics.uci.edu/ml/citation_policy.html)   
+
+**Balance Scale Weight & Distance Database**  
+This data set was generated to model psychological experimental results.  Each example is classified as having the balance scale tip to the right, tip to the left, or be balanced. The attributes are the left weight, the left distance, the right weight, and the right distance. The correct way to find the class is the greater of (left-distance * left-weight) and (right-distance * right-weight). If they are equal, it is balanced.
+
+### Attribute description  
+The attributes are the left weight, the left distance, the right weight, and the right distance.
+
+### Relevant papers  
+Shultz, T., Mareschal, D., & Schmidt, W. (1994). Modeling Cognitive Development on Balance Scale Phenomena. Machine Learning, Vol. 16, pp. 59-88."
+bank8FM,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/bank8FM/bank8FM.csv,https://openml.org/data/v1/download/1787308/bank8FM.arff,rej,-,9,8192,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+A family of datasets synthetically generated from a simulation of how bank-customers choose their banks. Tasks are
+based on predicting the fraction of bank customers who leave the bank because of full queues. The bank family of
+datasets are generated from a simplistic simulator, which simulates the queues in a series of banks. The simulator was
+constructed with the explicit purpose of generating a family of datasets for DELVE. Customers come from several
+residential areas, choose their preferred bank depending on distances and have tasks of varying complexity, and various
+levels of patience. Each bank has several queues, that open and close according to demand. The tellers have various
+effectivities, and customers may change queue, if their patience expires. In the rej prototasks, the object is to predict the
+rate of rejections, ie the fraction of customers that are turned away from the bank because all the open tellers have full
+queues.
+Source: collection of regression datasets by Luis Torgo (ltorgo@ncc.up.pt) at
+http://www.ncc.up.pt/~ltorgo/Regression/DataSets.html
+Orginal source: DELVE repository of data.
+Characteristics: Data set contains 8192 (4500+3692) cases. and 9 continuous
+attributes"
+cpu_activity,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/cpu_activity/cpu_activity.csv,https://openml.org/data/v1/download/22111842/cpu_activity.arff,usr,-,22,8192,"**Data Description**
+
+
+The Computer Activity databases are a collection of computer systems activity measures. The data was collected from a Sun Sparcstation 20/712 with 128 Mbytes of memory running in a multi-user university department.
+Users would typically be doing a large variety of tasks ranging from accessing the internet, editing files or running very cpu-bound programs. The data was collected continuously on two separate occasions. On both occassions, system activity was gathered every 5 seconds. The final dataset is taken from both occasions with equal numbers of observations coming from each collection epoch.
+
+Each instance represents one observed system performance. The goal is to predict portion of time that cpus run in user mode.
+
+**Attribute Description**
+
+1. *lread* - Reads (transfers per second ) between system memory and user memory.
+2. *lwrite* - writes (transfers per second) between system memory and user memory.
+3. *scall* - Number of system calls of all types per second.
+4. *sread* - Number of system read calls per second.
+5. *swrite* - Number of system write calls per second .
+6. *fork* - Number of system fork calls per second.
+7. *exec* - Number of system exec calls per second.
+8. *rchar* - Number of characters transferred per second by system read calls.
+9. *wchar* - Number of characters transfreed per second by system write calls.
+10. *pgout* - Number of page out requests per second.
+11. *ppgout* - Number of pages, paged out per second.
+12. *pgfree* - Number of pages per second placed on the free list.
+13. *pgscan* - Number of pages checked if they can be freed per second.
+14. *atch* - Number of page attaches (satisfying a page fault by reclaiming a page in memory) per second.
+15. *pgin* - Number of page-in requests per second.
+16. *ppgin* - Number of pages paged in per second.
+17. *pflt* - Number of page faults caused by protection errors (copy-on-writes).
+18. *vflt* - Number of page faults caused by address translation.
+19. *runqsz* - Process run queue size.
+20. *freemem* - Number of memory pages available to user processes.
+21. *freeswap* - Number of disk blocks available for page swapping.
+22. *usr* - Portion of time (%) that cpus run in user mode."
+blood-transfusion-service-center,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/blood-transfusion-service-center/blood-transfusion-service-center.csv,https://openml.org/data/v1/download/1586225/blood-transfusion-service-center.arff,Class,-,5,748,"**Author**: Prof. I-Cheng Yeh  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Blood+Transfusion+Service+Center)  
+**Please cite**: Yeh, I-Cheng, Yang, King-Jang, and Ting, Tao-Ming, ""Knowledge discovery on RFM model using Bernoulli sequence"", Expert Systems with Applications, 2008.   
+
+**Blood Transfusion Service Center Data Set**  
+Data taken from the Blood Transfusion Service Center in Hsin-Chu City in Taiwan -- this is a classification problem.
+
+To demonstrate the RFMTC marketing model (a modified version of RFM), this study adopted the donor database of Blood Transfusion Service Center in Hsin-Chu City in Taiwan. The center passes their blood transfusion service bus to one university in Hsin-Chu City to gather blood donated about every three months. To build an FRMTC model, we selected 748 donors at random from the donor database. 
+
+### Attribute Information  
+* V1: Recency - months since last donation
+* V2: Frequency - total number of donation
+* V3: Monetary - total blood donated in c.c.
+* V4: Time - months since first donation), and a binary variable representing whether he/she donated blood in March 2007 (1 stand for donating blood; 0 stands for not donating blood).
+
+The target attribute is a binary variable representing whether he/she donated blood in March 2007 (2 stands for donating blood; 1 stands for not donating blood)."
+soybean,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/soybean/soybean.csv,https://openml.org/data/v1/download/42/soybean.arff,class,-,36,683,"**Author**: R.S. Michalski and R.L. Chilausky (Donors: Ming Tan & Jeff Schlimmer)  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Soybean+(Large)) - 1988  
+**Please cite**: R.S. Michalski and R.L. Chilausky ""Learning by Being Told and Learning from Examples: An Experimental Comparison of the Two Methods of Knowledge Acquisition in the Context of Developing an Expert System for Soybean Disease Diagnosis"", International Journal of Policy Analysis and Information Systems, Vol. 4, No. 2, 1980.  
+
+**Large Soybean Database**  
+This is the large soybean database from the UCI repository, with its training and test database combined into a single file. 
+
+There are 19 classes, only the first 15 of which have been used in prior work. The folklore seems to be that the last four classes are unjustified by the data since they have so few examples. There are 35 categorical attributes, some nominal and some ordered. The value 'dna' means does not apply. The values for attributes are encoded numerically, with the first value encoded as ""0,'' the second as ""1,'' and so forth. An unknown value is encoded as ""?''.
+
+### Attribute Information
+
+1. date: april,may,june,july,august,september,october,?. 
+2. plant-stand: normal,lt-normal,?. 
+3. precip: lt-norm,norm,gt-norm,?. 
+4. temp: lt-norm,norm,gt-norm,?. 
+5. hail: yes,no,?. 
+6. crop-hist: diff-lst-year,same-lst-yr,same-lst-two-yrs, 
+same-lst-sev-yrs,?. 
+7. area-damaged: scattered,low-areas,upper-areas,whole-field,?. 
+8. severity: minor,pot-severe,severe,?. 
+9. seed-tmt: none,fungicide,other,?. 
+10. germination: 90-100%,80-89%,lt-80%,?. 
+11. plant-growth: norm,abnorm,?. 
+12. leaves: norm,abnorm. 
+13. leafspots-halo: absent,yellow-halos,no-yellow-halos,?. 
+14. leafspots-marg: w-s-marg,no-w-s-marg,dna,?. 
+15. leafspot-size: lt-1/8,gt-1/8,dna,?. 
+16. leaf-shread: absent,present,?. 
+17. leaf-malf: absent,present,?. 
+18. leaf-mild: absent,upper-surf,lower-surf,?. 
+19. stem: norm,abnorm,?. 
+20. lodging: yes,no,?. 
+21. stem-cankers: absent,below-soil,above-soil,above-sec-nde,?. 
+22. canker-lesion: dna,brown,dk-brown-blk,tan,?. 
+23. fruiting-bodies: absent,present,?. 
+24. external decay: absent,firm-and-dry,watery,?. 
+25. mycelium: absent,present,?. 
+26. int-discolor: none,brown,black,?. 
+27. sclerotia: absent,present,?. 
+28. fruit-pods: norm,diseased,few-present,dna,?. 
+29. fruit spots: absent,colored,brown-w/blk-specks,distort,dna,?. 
+30. seed: norm,abnorm,?. 
+31. mold-growth: absent,present,?. 
+32. seed-discolor: absent,present,?. 
+33. seed-size: norm,lt-norm,?. 
+34. shriveling: absent,present,?. 
+35. roots: norm,rotted,galls-cysts,?.
+
+### Classes 
+
+-- 19 Classes = {diaporthe-stem-canker, charcoal-rot, rhizoctonia-root-rot, phytophthora-rot, brown-stem-rot, powdery-mildew, downy-mildew, brown-spot, bacterial-blight, bacterial-pustule, purple-seed-stain, anthracnose, phyllosticta-leaf-spot, alternarialeaf-spot, frog-eye-leaf-spot, diaporthe-pod-&-stem-blight, cyst-nematode, 2-4-d-injury, herbicide-injury} 
+
+### Revelant papers
+
+Tan, M., & Eshelman, L. (1988). Using weighted networks to represent classification knowledge in noisy domains. Proceedings of the Fifth International Conference on Machine Learning (pp. 121-134). Ann Arbor, Michigan: Morgan Kaufmann. 
+
+Fisher,D.H. & Schlimmer,J.C. (1988). Concept Simplification and Predictive Accuracy. Proceedings of the Fifth International Conference on Machine Learning (pp. 22-28). Ann Arbor, Michigan: Morgan Kaufmann."
+BachChoralHarmony,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/BachChoralHarmony/BachChoralHarmony.csv,https://openml.org/data/v1/download/1798821/BachChoralHarmony.arff,V17,-,17,5665,"**Author**: -- Creators: Daniele P. Radicioni and Roberto Esposito  -- Donor: Daniele P. Radicioni (radicion '@' di.unito.it) and Roberto Esposito (esposito '@' di.unito.it)  -- Date: May"",""2014  
+**Source**: UCI  
+**Please cite**: D. P. Radicioni and R. Esposito. Advances in Music Information Retrieval, chapter BREVE: an HMPerceptron-Based Chord Recognition System. Studies in Computational Intelligence, Zbigniew W. Ras and Alicja Wieczorkowska (Editors), Springer, 2010.  
+
+Abstract: The data set is composed of 60 chorales (5665 events) by J.S. Bach (1675-1750). Each event of each chorale is labelled using 1 among 101 chord labels and described through 14 features.
+Source:
+
+-- Creators: Daniele P. Radicioni and Roberto Esposito 
+-- Donor: Daniele P. Radicioni (radicion '@' di.unito.it) and Roberto Esposito (esposito '@' di.unito.it) 
+-- Date: May, 2014
+
+
+Data Set Information:
+
+Pitch classes information has been extracted from MIDI sources downloaded 
+from (JSB Chorales)[[Web Link]]. Meter information has 
+been computed through the Meter program which is part of the Melisma 
+music analyser (Melisma)[[Web Link]]. 
+Chord labels have been manually annotated by a human expert.
+
+
+Attribute Information:
+
+1. Choral ID: corresponding to the file names from (Bach Central)[[Web Link]]. 
+2. Event number: index (starting from 1) of the event inside the chorale. 
+3-14. Pitch classes: YES/NO depending on whether a given pitch is present. 
+Pitch classes/attribute correspondence is as follows: 
+C -&gt; 3 
+C#/Db -&gt; 4 
+D -&gt; 5 
+... 
+B -&gt; 14 
+15. Bass: Pitch class of the bass note 
+16. Meter: integers from 1 to 5. Lower numbers denote less accented events, 
+higher numbers denote more accented events. 
+17. Chord label: Chord resonating during the given event.
+
+
+Relevant Papers:
+
+1. D. P. Radicioni and R. Esposito. Advances in Music Information Retrieval, 
+chapter BREVE: an HMPerceptron-Based Chord Recognition System. Studies 
+in Computational Intelligence, Zbigniew W. Ras and Alicja Wieczorkowska 
+(Editors), Springer, 2010. 
+2. Esposito, R. and Radicioni, D. P., CarpeDiem: Optimizing the Viterbi 
+Algorithm and Applications to Supervised Sequential Learning, Journal 
+of Machine Learning Research, 10(Aug):1851-1880, 2009.
+
+
+
+Citation Request:
+
+D. P. Radicioni and R. Esposito. Advances in Music Information Retrieval, chapter BREVE: an HMPerceptron-Based Chord Recognition System. Studies in Computational Intelligence, Zbigniew W. Ras and Alicja Wieczorkowska (Editors), Springer, 2010."
+jungle_chess_2pcs_endgame_lion_elephant,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/jungle_chess_2pcs_endgame_lion_elephant/jungle_chess_2pcs_endgame_lion_elephant.csv,https://openml.org/data/v1/download/18248708/jungle_chess_2pcs_endgame_lion_elephant.arff,class,-,47,4704,"### Description ###
+
+This dataset is part of a collection datasets based on the game ""Jungle Chess"" (a.k.a. Dou Shou Qi). For a description of the rules, please refer to the paper (link attached). The paper also contains a description of various constructed features. As the tablebases are a disjoint set of several tablebases based on which (two) pieces are on the board, we have uploaded all tablebases that have explicit different content:
+
+* Rat vs Rat
+* Rat vs Panther
+* Rat vs. Lion
+* Rat vs. Elephant
+* Panther vs. Lion
+* Panther vs. Elephant
+* Tiger vs. Lion
+* Lion vs. Lion
+* Lion vs. Elephant
+* Elephant vs. Elephant
+* Complete (Combination of the above)
+* RAW Complete (Combination of the above, containing for both pieces just the rank, file and strength information). This dataset contains a similar classification problem as, e.g., the King and Rook vs. King problem and is suitable for classification tasks. 
+
+(Note that this dataset is one of the above mentioned datasets). Additionally, note that several subproblems are very similar. Having seen a given positions from one of the tablebases arguably gives a lot of information about the outcome of the same position in the other tablebases. 
+
+### Please cite ###
+J. N. van Rijn and J. K. Vis, Endgame Analysis of Dou Shou Qi. ICGA Journal 37:2, 120--124, 2014. ArXiv link: https://arxiv.org/abs/1604.07312"
+WorkersCompensation,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/WorkersCompensation/WorkersCompensation.csv,https://openml.org/data/v1/download/22045494/WorkersCompensation.arff,UltimateIncurredClaimCost,-,15,100000,"This dataset describes 100,000 realistic, synthetically generated worker compensation insurance claims. Along the ultimate financial losses, each claim is described by the initial case estimate, date of accident and reporting date, a text describing the accident and demographic info on the worker.
+
+The dataset was kindly created and provided by Colin Priest. While similar, it is not identical to the dataset used in www.kaggle.com/c/actuarial-loss-estimation."
+pbcseq,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/pbcseq/pbcseq.csv,https://openml.org/data/v1/download/52628/pbcseq.arff,status,-,19,1945,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Primary Biliary Cirrhosis
+
+This data set is a follow-up to the original PBC data set, as discussed
+in appendix D of Fleming and Harrington, Counting Processes and Survival
+Analysis, Wiley, 1991.  An analysis based on the enclised data is found in
+Murtaugh PA. Dickson ER. Van Dam GM. Malinchoc M. Grambsch PM.
+Langworthy AL. Gips CH.  ""Primary biliary cirrhosis: prediction of short-term
+survival based on repeated patient visits."" Hepatology. 20(1.1):126-34, 1994.
+
+Quoting from F&H.  ""The following pages contain the data from the Mayo Clinic
+trial in primary biliary cirrhosis (PBC) of the liver conducted between 1974
+and 1984.  A description of the clinical background for the trial and the
+covariates recorded here is in Chapter 0, especially Section 0.2.  A more
+extended discussion can be found in Dickson, et al., Hepatology 10:1-7 (1989)
+and in Markus, et al., N Eng J of Med 320:1709-13 (1989).
+""A total of 424 PBC patients, referred to Mayo Clinic during that ten-year
+interval, met eligibility criteria for the randomized placebo controlled
+trial of the drug D-penicillamine.  The first 312 cases in the data set
+participated in the randomized trial and contain largely complete data.  The
+additional 112 cases did not participate in the clinical trial, but consented
+to have basic measurements recorded and to be followed for survival.  Six of
+those cases were lost to follow-up shortly after diagnosis, so the data here
+are on an additional 106 cases as well as the 312 randomized participants.
+Missing data items are denoted by `.'. ""
+
+The F&H data set contains only baseline measurements of the laboratory
+paramters.  This data set contains multiple laboratory results, but
+only on the first 312 patients.  Some baseline data values in this file
+differ from the original PBC file, for instance, the data errors in
+prothrombin time and age which were discovered after the orignal analysis,
+during research work on dfbeta residuals.  (These two data points are
+discussed in F&H, figure 4.6.7).  Another major difference is that
+there was significantly more follow-up for many of the patients at the
+time this data set was assembled.
+
+One ""feature"" of the data deserves special comment.  The last
+observation before death or liver transplant often has many more
+missing covariates than other data rows.  The original clinical
+protocol for these patients specified visits at 6 months, 1 year, and
+annually thereafter.  At these protocol visits lab values were
+obtained for a large pre-specified battery of tests.  ""Extra"" visits,
+often undertaken because of worsening medical condition, did not
+necessarily have all this lab work.  The missing values are thus
+potentially informative, and violate the usual ""missing at random""
+(MCAR or MAC) assumptions that are assumed in analyses.  Because of
+the earlier published results on the Mayo PBC risk score, however, the
+5 variables involved in that computation were usually obtained, i.e.,
+age, bilirubin, albumin, prothrombin time, and edema score.
+
+Variables:
+case number
+number of days between registration and the earlier of death,
+transplantion, or study analysis time
+status: 0=alive, 1=transplanted, 2=dead
+drug: 1= D-penicillamine, 0=placebo
+age in days, at registration
+sex: 0=male, 1=female
+day: number of days between enrollment and this visit date, remaining
+values on the line of data refer to this visit.
+presence of asictes:       0=no 1=yes
+presence of hepatomegaly   0=no 1=yes
+presence of spiders        0=no 1=yes
+presence of edema          0=no edema and no diuretic therapy for edema;
+.5 = edema present without diuretics, or edema resolved by diuretics;
+1 = edema despite diuretic therapy
+serum bilirubin in mg/dl
+serum cholesterol in mg/dl
+albumin in gm/dl
+alkaline phosphatase in U/liter
+SGOT in U/ml  (serum glutamic-oxaloacetic transaminase, the enzyme name
+has subsequently changed to ""ALT"" in the medical literature)
+platelets per cubic ml / 1000
+prothrombin time in seconds
+histologic stage of disease
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: 3"
+weather_ankara,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/weather_ankara/weather_ankara.csv,https://openml.org/data/v1/download/21829190/weather_ankara.arff,Mean_temperature,-,10,321,"**Author**:   
+**Source**: KEEL - [original](https://sci2s.ugr.es/keel/dataset.php?cod=41) - Date unknown  
+**Please cite**:   
+
+**Weather Ankara dataset**
+
+This file contains the weather information of Ankara from 01/01/1994 to 28/05/1998. From given features, the goal is to predict the mean
+temperature.
+
+**Attribute Information**
+
+     1. Max_temperature real [23.0, 100.0]   
+     2. Min_temperature real [-7.1, 65.5]   
+     3. Dewpoint real [-3.1, 57.6]   
+     4. Precipitation real [0.0, 4.0]   
+     5. Sea_level_pressure real [29.46, 30.6]   
+     6. Standard_pressure real [26.3, 27.18]   
+     7. Visibility real [0.2, 11.5]   
+     8. Wind_speed real [0.0, 18.0]   
+     9. Max_wind_speed real [2.19, 57.4]   
+     10. Mean_temperature real [7.9, 81.8]"
+jungle_chess_2pcs_endgame_rat_elephant,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/jungle_chess_2pcs_endgame_rat_elephant/jungle_chess_2pcs_endgame_rat_elephant.csv,https://openml.org/data/v1/download/18248705/jungle_chess_2pcs_endgame_rat_elephant.arff,class,-,47,5880,"### Description ###
+
+This dataset is part of a collection datasets based on the game ""Jungle Chess"" (a.k.a. Dou Shou Qi). For a description of the rules, please refer to the paper (link attached). The paper also contains a description of various constructed features. As the tablebases are a disjoint set of several tablebases based on which (two) pieces are on the board, we have uploaded all tablebases that have explicit different content:
+
+* Rat vs Rat
+* Rat vs Panther
+* Rat vs. Lion
+* Rat vs. Elephant
+* Panther vs. Lion
+* Panther vs. Elephant
+* Tiger vs. Lion
+* Lion vs. Lion
+* Lion vs. Elephant
+* Elephant vs. Elephant
+* Complete (Combination of the above)
+* RAW Complete (Combination of the above, containing for both pieces just the rank, file and strength information). This dataset contains a similar classification problem as, e.g., the King and Rook vs. King problem and is suitable for classification tasks. 
+
+(Note that this dataset is one of the above mentioned datasets). Additionally, note that several subproblems are very similar. Having seen a given positions from one of the tablebases arguably gives a lot of information about the outcome of the same position in the other tablebases. 
+
+### Please cite ###
+J. N. van Rijn and J. K. Vis, Endgame Analysis of Dou Shou Qi. ICGA Journal 37:2, 120--124, 2014. ArXiv link: https://arxiv.org/abs/1604.07312"
+weather_izmir,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/weather_izmir/weather_izmir.csv,https://openml.org/data/v1/download/21829191/weather_izmir.arff,Mean_temperature,-,10,1461,"**Author**:   
+**Source**: KEEL - [original](https://sci2s.ugr.es/keel/dataset.php?cod=78) - Date unknown  
+**Please cite**:   
+
+**Weather Izmir dataset**
+
+This file contains the weather information of Izmir from 01/01/1994 to 31/12/1997. From given features, the goal is to predict the mean temperature.
+
+**Attributes Information**
+
+     1. Max_temperature real[36.7,105.0]
+     2. Min_temperature real[15.8,78.6]
+     3. Dewpoint real[13.6,64.4]
+     4. Precipitation real[0.0,7.6]
+     5. Sea_level_pressure real[29.26,30.48]
+     6. Standard_pressure real[2.3,10.1]
+     7. Visibility real[0.92,29.1]
+     8. Wind_speed real[4.72,68.8]
+     9. Max_wind_speed real[16.11,55.24]
+     10. Mean_temperature real[29.4,89.9] [target]"
+visualizing_hamster,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/visualizing_hamster/visualizing_hamster.csv,https://openml.org/data/v1/download/53008/visualizing_hamster.arff,testes,-,6,73,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This S dump contains 22 data sets from the
+book Visualizing Data published by
+Hobart Press (books@hobart.com).
+The dump was created by data.dump()
+and can be read back into S by data.restore().
+The name of each S data set is the name of
+the data set used in the book. To find the
+description of the data set in the book look
+under the entry - data, name - in the index.
+For example, one data set is barley.
+To find the description of barley, look
+in the index under the entry - data, barley.
+
+File: ../data/visualizing/hamster.csv
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+Loan-Predication,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/Loan-Predication/Loan-Predication.csv,https://openml.org/data/v1/download/22102420/Loan-Predication.arff,Loan_Status,-,13,614,"Among all industries, insurance domain has the largest use of analytics  data science methods. This data set would provide you enough taste of working on data sets from insurance companies, what challenges are faced, what strategies are used, which variables influence the outcome etc. This is a classification problem. The data has 615 rows and 13 columns.
+Problem-----
+Company wants to automate the loan eligibility process (real time) based on customer detail provided while filling online application form. These details are Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To automate this process, they have given a problem to identify the customers segments, those are eligible for loan amount so that they can specifically target these customers. Here they have provided a partial data set."
+fried,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/fried/fried.csv,https://openml.org/data/v1/download/52742/fried.arff,Y,-,11,40768,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This is an artificial data set used in Friedman (1991) and also
+described in Breiman (1996,p.139). The cases are generated using the
+following method: Generate the values of 10 attributes, X1, ..., X10
+independently each of which uniformly distributed over [0,1]. Obtain
+the value of the target variable Y using the equation:
+
+Y = 10 * sin(pi * X1 * X2) + 20 * (X3 - 0.5)^2 + 10 * X4 + 5 * X5 + sigma(0,1)
+
+Source: collection of regression datasets by Luis Torgo (ltorgo@ncc.up.pt) at
+http://www.ncc.up.pt/~ltorgo/Regression/DataSets.html
+Original source: Breiman (1996, p.139).
+Characteristics: 40768 cases, 11 continuous attributes
+
+References
+
+BREIMAN, L. (1996): Bagging Predictors. Machine Learning, 24(3), 123--140. Kluwer Academic Publishers.
+FRIEDMAN, J. (1991): Multivariate Adaptative Regression Splines. Annals of Statistics, 19:1, 1--141."
+thoracic-surgery,Tabular,binary,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/thoracic-surgery/thoracic-surgery.csv,https://openml.org/data/v1/download/1592298/thoracic-surgery.arff,Class,-,17,470,"**Author**:   
+**Source**: UCI    
+**Please cite**: Zikeba, M., Tomczak, J. M., Lubicz, M., & Swikatek, J. (2013). Boosted SVM for extracting rules from imbalanced data in application to prediction of the post-operative life expectancy in the lung cancer patients. Applied Soft Computing.   
+
+  
+* Title: 
+Thoracic Surgery Data Data Set 
+
+* Abstract: 
+The data is dedicated to classification problem related to the post-operative life expectancy in the lung cancer patients: class 1 - death within one year after surgery, class 2 - survival.
+
+* Source:
+Creators: Marek Lubicz (1), Konrad Pawelczyk (2), Adam Rzechonek (2), Jerzy Kolodziej (2) 
+-- (1) Wroclaw University of Technology, wybrzeze Wyspianskiego 27, 50-370, Wroclaw, Poland 
+-- (2) Wroclaw Medical University, wybrzeze L. Pasteura 1, 50-367 Wroclaw, Poland 
+
+Donor: Maciej Zieba (maciej.zieba '@' pwr.wroc.pl), Jakub M. Tomczak (jakub.tomczak '@' pwr.wroc.pl), (+48) 71 320 44 53 
+
+* Data Set Information:
+
+The data was collected retrospectively at Wroclaw Thoracic Surgery Centre for patients who underwent major lung resections for primary lung cancer in the years 2007â€“2011. The Centre is associated with the Department of Thoracic Surgery of the Medical University of Wroclaw and Lower-Silesian Centre for Pulmonary Diseases, Poland, while the research database constitutes a part of the National Lung Cancer Registry, administered by the Institute of Tuberculosis and Pulmonary Diseases in Warsaw, Poland.
+
+
+* Attribute Information:
+
+1. DGN: Diagnosis - specific combination of ICD-10 codes for primary and secondary as well multiple tumours if any (DGN3,DGN2,DGN4,DGN6,DGN5,DGN8,DGN1) 
+2. PRE4: Forced vital capacity - FVC (numeric) 
+3. PRE5: Volume that has been exhaled at the end of the first second of forced expiration - FEV1 (numeric) 
+4. PRE6: Performance status - Zubrod scale (PRZ2,PRZ1,PRZ0) 
+5. PRE7: Pain before surgery (T,F) 
+6. PRE8: Haemoptysis before surgery (T,F) 
+7. PRE9: Dyspnoea before surgery (T,F) 
+8. PRE10: Cough before surgery (T,F) 
+9. PRE11: Weakness before surgery (T,F) 
+10. PRE14: T in clinical TNM - size of the original tumour, from OC11 (smallest) to OC14 (largest) (OC11,OC14,OC12,OC13) 
+11. PRE17: Type 2 DM - diabetes mellitus (T,F) 
+12. PRE19: MI up to 6 months (T,F) 
+13. PRE25: PAD - peripheral arterial diseases (T,F) 
+14. PRE30: Smoking (T,F) 
+15. PRE32: Asthma (T,F) 
+16. AGE: Age at surgery (numeric) 
+17. Risk1Y: 1 year survival period - (T)rue value if died (T,F) 
+
+Class Distribution: the class value (Risk1Y) is binary valued."
+FacultySalaries,Tabular,regression,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/FacultySalaries/FacultySalaries.csv,https://openml.org/data/v1/download/53979/FacultySalaries.arff,asst.prof.salary,-,6,50,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Datasets of Data And Story Library, project illustrating use of basic statistic methods, converted to arff format by Hakan Kjellerstrand.
+Source: TunedIT: http://tunedit.org/repo/DASL
+
+DASL file http://lib.stat.cmu.edu/DASL/Datafiles/FacultySalaries.html
+
+Professors' Pay
+
+Reference:   ""Faculty Compensation and Benefits Committee."" (1993, April).  Ohio State University
+Authorization:   free use
+Description:   Average salaries for professors at the top 50 universities of the Association of American Universities.  Salaries of full, associate and assistant professors at these universities are provided.  1992-1993 data from Clark University are not available; 1991-1992 salaries were substituted.
+* Note that the ""Big Ten"" has 11 schools in it (since Penn State joined the original 10 schools)
+Number of cases:   50
+Variable Names:
+
+University:   Name of the university
+CIC.institutions:   1 if in the Committee on Institutional Cooperation (the Big Ten* plus University of Chicago); 0 if the university is not in the CIC
+average.salary:   Average salary for all professors at the university assuming that the proportions of faculty in each rank are the same as those proportions at the Ohio State University
+full.prof.salary:   Average salary for full professors at the university in 1992
+assoc.prof.salary:   Average salary for associate professors at the university in 1992
+asst.prof.salary:   Average salary for assistant professors at the university in 1992"
+jungle_chess_2pcs_endgame_panther_elephant,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/jungle_chess_2pcs_endgame_panther_elephant/jungle_chess_2pcs_endgame_panther_elephant.csv,https://openml.org/data/v1/download/18248696/jungle_chess_2pcs_endgame_panther_elephant.arff,class,-,47,4704,"### Description ###
+
+This dataset is part of a collection datasets based on the game ""Jungle Chess"" (a.k.a. Dou Shou Qi). For a description of the rules, please refer to the paper (link attached). The paper also contains a description of various constructed features. As the tablebases are a disjoint set of several tablebases based on which (two) pieces are on the board, we have uploaded all tablebases that have explicit different content:
+
+* Rat vs Rat
+* Rat vs Panther
+* Rat vs. Lion
+* Rat vs. Elephant
+* Panther vs. Lion
+* Panther vs. Elephant
+* Tiger vs. Lion
+* Lion vs. Lion
+* Lion vs. Elephant
+* Elephant vs. Elephant
+* Complete (Combination of the above)
+* RAW Complete (Combination of the above, containing for both pieces just the rank, file and strength information). This dataset contains a similar classification problem as, e.g., the King and Rook vs. King problem and is suitable for classification tasks. 
+
+(Note that this dataset is one of the above mentioned datasets). Additionally, note that several subproblems are very similar. Having seen a given positions from one of the tablebases arguably gives a lot of information about the outcome of the same position in the other tablebases. 
+
+### Please cite ###
+J. N. van Rijn and J. K. Vis, Endgame Analysis of Dou Shou Qi. ICGA Journal 37:2, 120--124, 2014. ArXiv link: https://arxiv.org/abs/1604.07312"
+breast-tissue,Tabular,multiclass,Tabular_Multivariate,../dataset/Tabular_datasets/Class_Reg/breast-tissue/breast-tissue.csv,https://openml.org/data/v1/download/1586226/breast-tissue.arff,Class,-,10,106,"**Author**: JP Marques de Sá, J Jossinet  
+**Source**: UCI    
+**Please cite**:     
+
+* Source:
+  
+JP Marques de Sá, INEB-Instituto de Engenharia Biomédica, Porto, Portugal; e-mail: jpmdesa '@' gmail.com 
+J Jossinet, inserm, Lyon, France
+
+* Data Set Information:
+  
+Impedance measurements were made at the frequencies: 15.625, 31.25, 62.5, 125, 250, 500, 1000 KHz Impedance measurements of freshly excised breast tissue were made at the following frequencies: 15.625, 31.25, 62.5, 125, 250, 500, 1000 KHz. These measurements plotted in the (real, -imaginary) plane constitute the impedance spectrum from where the breast tissue features are computed. 
+
+The dataset can be used for predicting the classification of either the original 6 classes or of 4 classes by merging together the fibro-adenoma, mastopathy and glandular classes whose discrimination is not important (they cannot be accurately discriminated anyway).
+
+  
+* Attribute Information:
+  
+I0 Impedivity (ohm) at zero frequency 
+PA500 phase angle at 500 KHz 
+HFS high-frequency slope of phase angle 
+DA impedance distance between spectral ends 
+AREA area under spectrum 
+A/DA area normalized by DA 
+MAX IP maximum of the spectrum 
+DR distance between I0 and real part of the maximum frequency point 
+P length of the spectral curve 
+Class car(carcinoma), fad + mas + gla, con (connective), adi (adipose)."

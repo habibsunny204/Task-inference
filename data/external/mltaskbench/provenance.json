@@ -1,0 +1,22 @@
+{
+ "record": "https://doi.org/10.5281/zenodo.21649607",
+ "version": "2",
+ "licence": "CC BY 4.0",
+ "publication_date": "2026-07-28",
+ "fetched": "2026-11-10",
+ "zenodo_checksums": {
+  "nlp_data.zip": "md5:e7fcd977b15fee91731a558c475c4d27",
+  "meta_datasets.zip": "md5:5116357fb026f5d440d408ab87fa9bf9",
+  "dataset.zip": "md5:b211cab946338517f1b9ecb56f6bfb77",
+  "dataset_small.zip": "md5:f41b4b03f3597146075a58a9a8c8d4d1"
+ },
+ "dataset_zip_bytes_read": 3393033,
+ "openml_listing_rows": 25218,
+ "sha256": {
+  "meta/exp1_test.csv": "77f84edd57a2efa844a51cb28892fb116e348969d537358a799706019f45ea81",
+  "meta/exp1_train.csv": "3abfede7cc92428d54c1210b4006156aabf58637ce3a0acef6ef7797f2513aeb",
+  "meta/exp1_val.csv": "2e5c90d5d70caf8443c6b6437fe7ff0041734b2cafa5a146e40eec538cc8efad",
+  "openml_ids.csv": "8e083a82765becc0442ac984be062b1e6998975cf8735a9981491e846730f7a1",
+  "zip_members.csv": "ba77ed89dc4405b6ca9c9bbc472cd99d55b66ea3466a3124aa413602ba399096"
+ }
+}

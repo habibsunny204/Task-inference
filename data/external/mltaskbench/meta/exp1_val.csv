@@ -1,0 +1,2981 @@
+dataset_name,problem_type,sub_problem_type,multi_uni_variate,file_path,original_download_link,target_variable,if_timeseries_one_or more_timeseries,features,instances,dataset_description
+kings_county,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/kings_county/kings_county.csv,https://openml.org/data/v1/download/22111853/kings_county.arff,price,-,22,21613,"**Data Description**
+
+This dataset contains house sale prices for King County, which includes Seattle. It includes homes sold between May 2014 and May 2015.
+
+**Attribute Description**
+
+1. *price* - target feature
+2. *bedrooms* - number of bedrooms
+3. *bathrooms* - number of bathrooms
+4. *sqft_living* - Size of living area in square feet
+5. *sqft_lot* - Size of the lot in square feet
+6. *floors* - Number of floors
+7. *waterfront* - '1' if the property has a waterfront, '0' if not.
+8. *view* - an index from 0 to 4 of how good the view of the property was
+9. *condition* - Condition of the house, ranked from 1 to 5
+10. *grade* - Classification by construction quality which refers to the types of materials used and the quality of workmanship; the higher, the better
+11. *sqft_above* - Square feet above ground
+12. *sqft_basement* - Square feet below ground
+13. *yr_built* - Year built
+14. *yr_renovated* - Year renovated. 0 if never renovated
+15. *zipcode* - 5 digit zip code
+16. *lat* - Latitude
+17. *long* - Longitude
+18. *sqft_living15* - Average size of interior housing living space for the closest 15 houses, in square feet
+19. *sqft_lot15* - Average size of land lots for the closest 15 houses, in square feet
+20. *date_year* - Date sold - year
+21. *date_month* - Date sold - month
+22. *date_day* - Date sold - day"
+ecoli,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/ecoli/ecoli.csv,https://openml.org/data/v1/download/39/ecoli.arff,class,-,8,336,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+1. Title: Protein Localization Sites
+ 
+ 
+ 2. Creator and Maintainer:
+ 	     Kenta Nakai
+              Institue of Molecular and Cellular Biology
+ 	     Osaka, University
+ 	     1-3 Yamada-oka, Suita 565 Japan
+ 	     nakai@imcb.osaka-u.ac.jp
+              http://www.imcb.osaka-u.ac.jp/nakai/psort.html
+    Donor: Paul Horton (paulh@cs.berkeley.edu)
+    Date:  September, 1996
+    See also: yeast database
+ 
+ 3. Past Usage.
+ Reference: ""A Probablistic Classification System for Predicting the Cellular 
+            Localization Sites of Proteins"", Paul Horton & Kenta Nakai,
+            Intelligent Systems in Molecular Biology, 109-115.
+ 	   St. Louis, USA 1996.
+ Results: 81% for E.coli with an ad hoc structured
+ 	 probability model. Also similar accuracy for Binary Decision Tree and
+ 	 Bayesian Classifier methods applied by the same authors in
+ 	 unpublished results.
+ 
+ Predicted Attribute: Localization site of protein. ( non-numeric ).
+ 
+ 
+ 4. The references below describe a predecessor to this dataset and its 
+ development. They also give results (not cross-validated) for classification 
+ by a rule-based expert system with that version of the dataset.
+ 
+ Reference: ""Expert Sytem for Predicting Protein Localization Sites in 
+            Gram-Negative Bacteria"", Kenta Nakai & Minoru Kanehisa,  
+            PROTEINS: Structure, Function, and Genetics 11:95-110, 1991.
+ 
+ Reference: ""A Knowledge Base for Predicting Protein Localization Sites in
+ 	   Eukaryotic Cells"", Kenta Nakai & Minoru Kanehisa, 
+ 	   Genomics 14:897-911, 1992.
+ 
+ 
+ 5. Number of Instances:  336 for the E.coli dataset and 
+ 
+ 
+ 6. Number of Attributes.
+          for E.coli dataset:  8 ( 7 predictive, 1 name )
+ 	     
+ 7. Attribute Information.
+ 
+   1.  Sequence Name: Accession number for the SWISS-PROT database
+   2.  mcg: McGeoch's method for signal sequence recognition.
+   3.  gvh: von Heijne's method for signal sequence recognition.
+   4.  lip: von Heijne's Signal Peptidase II consensus sequence score.
+            Binary attribute.
+   5.  chg: Presence of charge on N-terminus of predicted lipoproteins.
+ 	   Binary attribute.
+   6.  aac: score of discriminant analysis of the amino acid content of
+ 	   outer membrane and periplasmic proteins.
+   7. alm1: score of the ALOM membrane spanning region prediction program.
+   8. alm2: score of ALOM program after excluding putative cleavable signal
+ 	   regions from the sequence.
+ 
+ NOTE - the sequence name has been removed
+ 
+ 8. Missing Attribute Values: None.
+ 
+ 
+ 9. Class Distribution. The class is the localization site. Please see Nakai &
+ 		       Kanehisa referenced above for more details.
+ 
+   cp  (cytoplasm)                                    143
+   im  (inner membrane without signal sequence)        77               
+   pp  (perisplasm)                                    52
+   imU (inner membrane, uncleavable signal sequence)   35
+   om  (outer membrane)                                20
+   omL (outer membrane lipoprotein)                     5
+   imL (inner membrane lipoprotein)                     2
+   imS (inner membrane, cleavable signal sequence)      2"
+sarcos,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/sarcos/sarcos.csv,https://openml.org/data/v1/download/22102750/sarcos.arff,V22,-,28,44484,"**Dataset Description**
+
+The data relates to an inverse dynamics problem for a seven degrees-of-freedom
+SARCOS anthropomorphic robot arm. The task is to map from a 21-dimensional
+input space (7 joint positions, 7 joint velocities, 7 joint accelerations) to
+the corresponding 7 joint torques. Usually, the first of those (V22) is used as
+the target variable and is therefore set as the default target variable, while
+the other 6 joint torques are excluded from the model.
+
+
+**NOTE**
+
+This dataset contains only the corresponding training data, as there is data leakage between
+the original training and test data. This was described in
+[this article](https://www.datarobot.com/blog/running-code-and-failing-models/) by Rajiv Shah.
+
+
+**Related Studies**
+
+  * LWPR: An O(n) Algorithm for Incremental Real Time Learning in High
+  Dimensional Space, S. Vijayakumar and S. Schaal, Proc ICML 2000, 1079-1086
+
+  * (2000). Statistical Learning for Humanoid Robots, S. Vijayakumar, A.
+  D'Souza, T. Shibata, J. Conradt, S. Schaal, Autonomous Robot, 12(1) 55-69
+
+  * (2002) Incremental Online Learning in High Dimensions S. Vijayakumar, A.
+  D'Souza, S. Schaal, Neural Computation 17(12) 2602-2634 (2005)
+
+  * (2019) Cascaded Gaussian Processes for Data-efficient Robot Dynamics Learning,
+  Sahand Rezaei-Shoshtari, David Meger, Inna Sharf, https://arxiv.org/pdf/1910.02291.pdf
+
+  * (2019) TabNet: Attentive Interpretable Tabular Learning,
+  Sercan Oe. Arik, Tomas Pfister, https://arxiv.org/pdf/1908.07442.pdf
+
+**Citation**
+
+LWPR: An O(n) Algorithm for Incremental Real-Time Learning in High Dimensional Space, S. Vijayakumar and S. Schaal, Proc ICML 2000, 1079-1086 (2000).
+
+The data was obtained from: http://www.gaussianprocess.org/gpml/data/"
+Give-Me-Some-Credit,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/Give-Me-Some-Credit/Give-Me-Some-Credit.csv,https://openml.org/data/v1/download/22116561/Give-Me-Some-Credit.arff,SeriousDlqin2yrs,-,11,150000,"Improve on the state of the art in credit scoring by predicting the probability that somebody will experience financial distress in the next two years.
+
+yeah
+
+## Description
+
+Banks play a crucial role in market economies. They decide who can get finance and on what terms and can make or break investment decisions. For markets and society to function, individuals and companies need access to credit. 
+
+Credit scoring algorithms, which make a guess at the probability of default, are the method banks use to determine whether or not a loan should be granted. This competition requires participants to improve on the state of the art in credit scoring, by predicting the probability that somebody will experience financial distress in the next two years.
+
+The goal of this competition is to build a model that borrowers can use to help make the best financial decisions.
+
+Historical data are provided on 250,000 borrowers and the prize pool is $5,000 ($3,000 for first, $1,500 for second and $500 for third).
+
+## Features
+
+| Variable Name                        | Description                                                                                                                                              | Type       |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| SeriousDlqin2yrs                     | Person experienced 90 days past due delinquency or worse                                                                                                 | Y/N        |
+| RevolvingUtilizationOfUnsecuredLines | Total balance on credit cards and personal lines of credit except real estate and no installment debt like car loans divided by the sum of credit limits | percentage |
+| age                                  | Age of borrower in years                                                                                                                                 | integer    |
+| NumberOfTime30-59DaysPastDueNotWorse | Number of times borrower has been 30-59 days past due but no worse in the last 2 years.                                                                  | integer    |
+| DebtRatio                            | Monthly debt payments, alimony,living costs divided by monthy gross income                                                                               | percentage |
+| MonthlyIncome                        | Monthly income                                                                                                                                           | real       |
+| NumberOfOpenCreditLinesAndLoans      | Number of Open loans (installment like car loan or mortgage) and Lines of credit (e.g. credit cards)                                                     | integer    |
+| NumberOfTimes90DaysLate              | Number of times borrower has been 90 days or more past due.                                                                                              | integer    |
+| NumberRealEstateLoansOrLines         | Number of mortgage and real estate loans including home equity lines of credit                                                                           | integer    |
+| NumberOfTime60-89DaysPastDueNotWorse | Number of times borrower has been 60-89 days past due but no worse in the last 2 years.                                                                  | integer    |
+| NumberOfDependents                   | Number of dependents in family excluding themselves (spouse, children etc.)                                                                              | integer    |
+
+**Note:** This is the training part of the Kaggle competition going by the dataset name hosted [here](https://www.kaggle.com/competitions/GiveMeSomeCredit/overview)."
+hutsof99_logis,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/hutsof99_logis/hutsof99_logis.csv,https://openml.org/data/v1/download/52981/hutsof99_logis.arff,Quality,-,8,70,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Graeme D. Hutcheson and Nick Sofroniou 1999
+
+The Multivariate Social Scientist:
+Introductory Statistics Using Generalized Linear Models.
+
+SAGE Publications.
+
+Copyright: Graeme D. Hutcheson & Nick Sofroniou, 1999
+
+This software can be freely used for non-commercial purposes and can be
+freely distributed.
+
+
+Readme file
+===========
+
+The data sets in this directory are taken from the above book.
+The data are presented in two formats, *.dat (ascii) and
+*.por (SPSS portable). The GLIM code and macros are provided in
+files *.glm and *.mac. Please read the errata file which indicates some
+minor differences between these data sets and those reported in the
+book.
+
+
+
+
+DATA FILE      SOURCE IN BOOK    DESCRIPTION
+
+Chapter 1
+tab1_01.*   Table 1.1         Video Games and Hostility
+
+Chapter 2
+tab2_01.*   Table 2.1         Normal Errors
+tab2_02.*   Table 2.2         Skewed Errors
+tab2_03.*   Table 2.3         Curvilinearity
+
+Chapter 3
+tab3_01.*   Table 3.1         Two Simple Models
+tab3_05.*   Table 3.5         Cost and Sound Quality
+tab3_07.*   Table 3.7         Exam marks and College Offers
+tab3_11.*   Table 3.11        Quality of Children's Testimonies
+Age: 5-6 = 0; 8-9 = 1
+Gender: female = 0; male = 1
+Location: 1 = home; 2 = school;
+3 = police interview
+4 = special interview
+tab3_11d.*  Table 3.11        Data in Table 3.11 with indicator dummy codes
+added
+
+Chapter 4
+tab4_01.*   Table 4.1         Infection Severity and Treatment Outcome
+Treatment Outcome: 0 = survived
+1 = died
+tab4_14.*   Table 4.14        Infection severity, Treatment outcome and
+Hospital Attended
+Hospital: 1 = hospital A
+2 = hospital B
+3 = hospital C
+tab4.14d.*  Table 4.14        Infection severity, Treatment outcome and
+Hospital Attended including dummy codes
+
+logis.*                       Child witness data: copy of
+tab3_11, but includes prosecution
+logis_d.*                     Child witness data: copy of
+tab3_11d, but includes prosecution
+
+logis.por and logis_d.por provide the data to
+obtain the parameters calculated in the book
+(pages 147 to 152). It should be noted that
+these differ slightly to the parameters
+obtained using the data sets logis.dat and
+logis_d.dat, as the *.dat files only record
+the variable 'coherence' to 2 decimal places.
+
+Chapter 5
+
+tab5_01.*    Table 5.1        Job Satisfaction for doctors and dentists
+tab5_04.*    Table 5.4        Race, Housing and Illness
+tab5_07.*    Table 5.7        Dopamine and psychosis: integer scoring
+tab5_08.*    Table 5.8        Dopamine and psychosis: mid-ranks scoring
+tab5_10.*    Table 5.10       Treatment and Depression: integer scoring
+tab5_11.*    Table 5.11       Treatment and depression: mid-ranks scoring
+tab5_13.*    Table 5.13       Alcohol consumption and Libido: integer scores
+tab5_16.*    Table 5.16       Alcohol consumption and libido: low vs medium
+or high
+tab5_17.*    Table 5.17       Alcohol consumption and libido: medium vs high
+
+
+Chapter 6
+
+tab6_11.*    Table 6.11       Child witness example data set
+
+File: ../data/hutsof99/logis.dat
+
+Note: changes from Errata.txt where not included!
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+visualizing_galaxy,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/visualizing_galaxy/visualizing_galaxy.csv,https://openml.org/data/v1/download/52990/visualizing_galaxy.arff,velocity,-,5,323,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This S dump contains 22 data sets from the
+book Visualizing Data published by
+Hobart Press (books@hobart.com).
+The dump was created by data.dump()
+and can be read back into S by data.restore().
+The name of each S data set is the name of
+the data set used in the book. To find the
+description of the data set in the book look
+under the entry - data, name - in the index.
+For example, one data set is barley.
+To find the description of barley, look
+in the index under the entry - data, barley.
+
+File: ../data/visualizing/galaxy.csv
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+visualizing_ethanol,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/visualizing_ethanol/visualizing_ethanol.csv,https://openml.org/data/v1/download/53011/visualizing_ethanol.arff,E,-,3,88,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This S dump contains 22 data sets from the
+book Visualizing Data published by
+Hobart Press (books@hobart.com).
+The dump was created by data.dump()
+and can be read back into S by data.restore().
+The name of each S data set is the name of
+the data set used in the book. To find the
+description of the data set in the book look
+under the entry - data, name - in the index.
+For example, one data set is barley.
+To find the description of barley, look
+in the index under the entry - data, barley.
+
+File: ../data/visualizing/ethanol.csv
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+analcatdata_gsssexsurvey,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_gsssexsurvey/analcatdata_gsssexsurvey.csv,https://openml.org/data/v1/download/52618/analcatdata_gsssexsurvey.arff,AIDS_know,-,10,159,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+machine_cpu,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/machine_cpu/machine_cpu.csv,https://openml.org/data/v1/download/3667/machine_cpu.arff,class,-,7,209,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+The problem concerns Relative CPU Performance Data. More information can be obtained in the UCI Machine
+ Learning repository (http://www.ics.uci.edu/~mlearn/MLSummary.html).
+ The used attributes are :
+ MYCT: machine cycle time in nanoseconds (integer)
+ MMIN: minimum main memory in kilobytes (integer)
+ MMAX: maximum main memory in kilobytes (integer)
+ CACH: cache memory in kilobytes (integer)
+ CHMIN: minimum channels in units (integer)
+ CHMAX: maximum channels in units (integer)
+ PRP: published relative performance (integer) (target variable)
+ 
+ Original source: UCI machine learning repository. 
+ Source: collection of regression datasets by Luis Torgo (ltorgo@ncc.up.pt) at
+ http://www.ncc.up.pt/~ltorgo/Regression/DataSets.html
+ Characteristics: 209 cases; 6 continuous variables"
+cleveland,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/cleveland/cleveland.csv,https://openml.org/data/v1/download/3631/cleveland.arff,num,-,14,303,"**Author**: Andras Janosi, M.D.  
+Donor: David W. Aha (aha@ics.uci.edu)  
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Heart+Disease) - July 1988  
+**Please cite**: The author request that any publications resulting from the use of the data include the name of the author.
+
+**Heart Disease Databases: Cleveland**  
+This database contains 76 attributes, but all published experiments refer to using a subset of 14 of them.  In particular, the Cleveland database is the only one that has been used by ML researchers to this date.  The ""goal"" field refers to the presence of heart disease in the patient.  It is integer valued from 0 (no presence) to 4. Experiments with the Cleveland database have concentrated on simply attempting to distinguish presence (values 1,2,3,4) from absence (value 0).  
+    
+The names and social security numbers of the patients were recently removed from the database, replaced with dummy values.
+One file has been ""processed"", that one containing the Cleveland database. 
+     
+Attribute documentation:  
+>
+       1 id: patient identification number
+       2 ccf: social security number (I replaced this with a dummy value of 0)
+       3 age: age in years
+       4 sex: sex (1 = male; 0 = female)
+       5 painloc: chest pain location (1 = substernal; 0 = otherwise)
+       6 painexer (1 = provoked by exertion; 0 = otherwise)
+       7 relrest (1 = relieved after rest; 0 = otherwise)
+       8 pncaden (sum of 5, 6, and 7)
+       9 cp: chest pain type
+         -- Value 1: typical angina
+         -- Value 2: atypical angina
+         -- Value 3: non-anginal pain
+         -- Value 4: asymptomatic
+      10 trestbps: resting blood pressure (in mm Hg on admission to the 
+         hospital)
+      11 htn
+      12 chol: serum cholestoral in mg/dl
+      13 smoke: I believe this is 1 = yes; 0 = no (is or is not a smoker)
+      14 cigs (cigarettes per day)
+      15 years (number of years as a smoker)
+      16 fbs: (fasting blood sugar > 120 mg/dl)  (1 = true; 0 = false)
+      17 dm (1 = history of diabetes; 0 = no such history)
+      18 famhist: family history of coronary artery disease (1 = yes; 0 = no)
+      19 restecg: resting electrocardiographic results
+         -- Value 0: normal
+         -- Value 1: having ST-T wave abnormality (T wave inversions and/or ST 
+                     elevation or depression of > 0.05 mV)
+         -- Value 2: showing probable or definite left ventricular hypertrophy
+                     by Estes' criteria
+      20 ekgmo (month of exercise ECG reading)
+      21 ekgday(day of exercise ECG reading)
+      22 ekgyr (year of exercise ECG reading)
+      23 dig (digitalis used furing exercise ECG: 1 = yes; 0 = no)
+      24 prop (Beta blocker used during exercise ECG: 1 = yes; 0 = no)
+      25 nitr (nitrates used during exercise ECG: 1 = yes; 0 = no)
+      26 pro (calcium channel blocker used during exercise ECG: 1 = yes; 0 = no)
+      27 diuretic (diuretic used used during exercise ECG: 1 = yes; 0 = no)
+      28 proto: exercise protocol
+           1 = Bruce     
+           2 = Kottus
+           3 = McHenry
+           4 = fast Balke
+           5 = Balke
+           6 = Noughton 
+           7 = bike 150 kpa min/min  (Not sure if ""kpa min/min"" is what was 
+               written!)
+           8 = bike 125 kpa min/min  
+           9 = bike 100 kpa min/min
+          10 = bike 75 kpa min/min
+          11 = bike 50 kpa min/min
+          12 = arm ergometer
+      29 thaldur: duration of exercise test in minutes
+      30 thaltime: time when ST measure depression was noted
+      31 met: mets achieved
+      32 thalach: maximum heart rate achieved
+      33 thalrest: resting heart rate
+      34 tpeakbps: peak exercise blood pressure (first of 2 parts)
+      35 tpeakbpd: peak exercise blood pressure (second of 2 parts)
+      36 dummy
+      37 trestbpd: resting blood pressure
+      38 exang: exercise induced angina (1 = yes; 0 = no)
+      39 xhypo: (1 = yes; 0 = no)
+      40 oldpeak = ST depression induced by exercise relative to rest
+      41 slope: the slope of the peak exercise ST segment
+         -- Value 1: upsloping
+         -- Value 2: flat
+         -- Value 3: downsloping
+      42 rldv5: height at rest
+      43 rldv5e: height at peak exercise
+      44 ca: number of major vessels (0-3) colored by flourosopy
+      45 restckm: irrelevant
+      46 exerckm: irrelevant
+      47 restef: rest raidonuclid (sp?) ejection fraction
+      48 restwm: rest wall (sp?) motion abnormality
+         0 = none
+         1 = mild or moderate
+         2 = moderate or severe
+         3 = akinesis or dyskmem (sp?)
+      49 exeref: exercise radinalid (sp?) ejection fraction
+      50 exerwm: exercise wall (sp?) motion 
+      51 thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
+      52 thalsev: not used
+      53 thalpul: not used
+      54 earlobe: not used
+      55 cmo: month of cardiac cath (sp?)  (perhaps ""call"")
+      56 cday: day of cardiac cath (sp?)
+      57 cyr: year of cardiac cath (sp?)
+      58 num: diagnosis of heart disease (angiographic disease status)
+         -- Value 0: < 50% diameter narrowing
+         -- Value 1: > 50% diameter narrowing
+         (in any major vessel: attributes 59 through 68 are vessels)
+      59 lmt
+      60 ladprox
+      61 laddist
+      62 diag
+      63 cxmain
+      64 ramus
+      65 om1
+      66 om2
+      67 rcaprox
+      68 rcadist
+      69 lvx1: not used
+      70 lvx2: not used
+      71 lvx3: not used
+      72 lvx4: not used
+      73 lvf: not used
+      74 cathef: not used
+      75 junk: not used
+      76 name: last name of patient 
+         (I replaced this with the dummy string ""name"")"
+sa-heart,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/sa-heart/sa-heart.csv,https://openml.org/data/v1/download/1592290/sa-heart.arff,Class,-,10,462,"**Author**:   
+**Source**: http://statweb.stanford.edu/~tibs/ElemStatLearn/data.html   
+**Please cite**:   
+
+* Title:
+
+South Africa Heart Disease Dataset
+
+* Description
+
+A retrospective sample of males in a heart-disease high-risk region of the Western Cape, South Africa. There are roughly two controls per case of CHD. Many of the CHD positive men have undergone blood pressure reduction treatment and other programs to reduce their risk factors after their CHD event. In some cases the measurements were made after these treatments. These data are taken from a larger dataset, described in  Rousseauw et al, 1983, South African Medical
+Journal. 
+
+* Attributes:
+
+sbp  systolic blood pressure   
+tobacco  cumulative tobacco (kg)   
+ldl  low densiity lipoprotein cholesterol   
+adiposity  
+famhist  family history of heart disease (Present, Absent)   
+typea  type-A behavior   
+obesity   
+alcohol  current alcohol consumption   
+age  age at onset   
+chd  response, coronary heart disease"
+kr-vs-k,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/kr-vs-k/kr-vs-k.csv,https://openml.org/data/v1/download/1590570/kr-vs-k.arff,Class,-,7,28056,"**Author**:   
+**Source**: KEEL 
+**Please cite**:   
+
+Abstract:
+
+A chess endgame data set representing the positions on the board of the white king, the white rook, and the black king. The task is to determine the optimum number of turn required for white to win the game, which can be a draw if it takes more than sixteen turns.
+
+Attributes Details:
+
+
+1. White_king_col {a, b, c, d, e, f, g, h}
+2. White_king_row {1, 2, 3, 4, 5, 6, 7, 8}
+3. White_rook_col {a, b, c, d, e, f, g, h}
+4. White_rook_row {1, 2, 3, 4, 5, 6, 7, 8}
+5. Black_king_col {a, b, c, d, e, f, g, h}
+6. Black_king_row {1, 2, 3, 4, 5, 6, 7, 8}
+7. Class - Game {draw, zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen}"
+Amazon_employee_access,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/Amazon_employee_access/Amazon_employee_access.csv,https://openml.org/data/v1/download/1681098/Amazon_employee_access.arff,target,-,10,32769,"**Author**:   
+**Source**: [Kaggle Amazon Employee Access Challenge](https://www.kaggle.com/c/amazon-employee-access-challenge)  
+**Please cite**:   
+
+### Description
+
+The data consists of real historical data collected from 2010 & 2011.  Employees are manually allowed or denied access to resources over time. 
+The data is used to create an algorithm capable of learning from this historical data to predict approval/denial for an unseen set of employees.
+
+### Dataset Information
+
+When an employee at any company starts work, they first need to obtain the computer access necessary to fulfill their role. This access may allow an employee to read/manipulate resources through various applications or web portals. It is assumed that employees fulfilling the functions of a given role will access the same or similar resources. It is often the case that employees figure out the access they need as they encounter roadblocks during their daily work (e.g. not able to log into a reporting portal). A knowledgeable supervisor then takes time to manually grant the needed access in order to overcome access obstacles. As employees move throughout a company, this access discovery/recovery cycle wastes a non-trivial amount of time and money.
+
+There is a considerable amount of data regarding an employee&rsquo;s role within an organization and the resources to which they have access. Given the data related to current employees and their provisioned access, models can be built that automatically determine access privileges as employees enter and leave roles within a company. These auto-access models seek to minimize the human involvement required to grant or revoke employee access.
+
+The original training and test set were merged.
+
+### Attributes Information
+
+* ACTION [target]: ACTION is 1 if the resource was approved, 0 if the resource was not  
+* RESOURCE: An ID for each resource  
+* MGR_ID: The EMPLOYEE ID of the manager of the current EMPLOYEE ID record; an employee may have only one manager at a time  
+* ROLE_ROLLUP_1: Company role grouping category id 1 (e.g. US Engineering)  
+* ROLE_ROLLUP_2: Company role grouping category id 2 (e.g. US Retail)  
+* ROLE_DEPTNAME: Company role department description (e.g. Retail)  
+* ROLE_TITLE: Company role business title description (e.g. Senior Engineering Retail Manager)  
+* ROLE_FAMILY_DESC: Company role family extended description (e.g. Retail Manager, Software Engineering)  
+* ROLE_FAMILY: Company role family description (e.g. Retail Manager)  
+* ROLE_CODE: Company role code; this code is unique to each role (e.g. Manager)"
+Run_or_walk_information,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/Run_or_walk_information/Run_or_walk_information.csv,https://openml.org/data/v1/download/16788738/Run_or_walk_information.arff,activity,-,7,88588,"**Author**: Viktor Malyi  
+**Source**: [Kaggle](https://www.kaggle.com/vmalyi/run-or-walk)  
+**Please cite**:   
+
+**Run or walk**  
+This dataset is gather to detect whether a person is running or walking based on deep neural networks and sensor data collected from iOS devices.
+
+The dataset represents 88588 sensor data samples collected from the accelerometer and gyroscope from iPhone 5c in 10 seconds intervals and ~5.4/second frequency. 
+
+### Attribute information  
+This data is represented by following columns (each column contains sensor data for one of the sensor's axes):
+
+acceleration_x
+acceleration_y
+acceleration_z
+gyro_x
+gyro_y
+gyro_z
+
+There is an activity type represented by ""activity"" column which acts as label and reflects following activities:
+
+""0"": walking
+""1"": running
+
+The original data also contains a ""wrist"" column which represents the wrist where the device was placed, and ""date"", ""time"" and ""username"" columns which provide information about the exact date, time and user which collected these measurements."
+analcatdata_hiroshima,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_hiroshima/analcatdata_hiroshima.csv,https://openml.org/data/v1/download/52606/analcatdata_hiroshima.arff,Aberrant_cells,-,3,649,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: 2
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+kick,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/kick/kick.csv,https://openml.org/data/v1/download/19335679/kick.arff,IsBadBuy,-,33,72983,"One of the biggest challenges of an auto dealership purchasing a used car at an auto auction is the risk of that the vehicle might have serious issues that prevent it from being sold to customers. The auto community calls these unfortunate purchases &quot;kicks&quot;.
+
+Kicked cars often result when there are tampered odometers, mechanical issues the dealer is not able to address, issues with getting the vehicle title from the seller, or some other unforeseen problem. Kick cars can be very costly to dealers after transportation cost, throw-away repair work, and market losses in reselling the vehicle.
+
+Modelers who can figure out which cars have a higher risk of being kick can provide real value to dealerships trying to provide the best inventory selection possible to their customers.
+
+The challenge of this competition is to predict if the car purchased at the Auction is a Kick (bad buy)."
+colleges_aaup,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/colleges_aaup/colleges_aaup.csv,https://openml.org/data/v1/download/52600/colleges_aaup.arff,target,-,17,1161,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+The AAUP dataset for the ASA Statistical Graphics Section's 1995
+Data Analysis Exposition contains information on faculty salaries
+for 1161 American colleges and universities.  The data may be
+obtained in either of two formats.
+
+AAUP.DATA contains the raw data in comma delimited fields with a
+single data line for each school. The order of variables is the
+same as given below for the fixed column version, although the
+spacing varies for each school.
+
+AAUP2.DATA has the data arranged in fixed columns, with two data
+lines for each school and a maximum line length of 80 characters.
+
+This dataset is taken from the March-April 1994 issue of Academe.
+Thanks to Maryse Eymonerie, Consultant to AAUP, for assistance in
+supplying the data.  Faculty salary data are for the 1993-94
+school year. You may wish to consult a copy of the special issue
+of Academe for more detailed descriptions of the variables.
+
+Data Revised: Wed Jan 18 1995
+
+VARIABLE DESCRIPTIONS (AAUP2.DAT)
+Fixed column format with two data lines per school
+
+Line #1
+1 -  5   FICE (Federal ID number)
+7 - 37   College name
+38 - 39   State (postal code)
+40 - 43   Type  (I, IIA, or IIB)
+44 - 48   Average salary - full professors
+49 - 52   Average salary - associate professors
+53 - 56   Average salary - assistant professors
+57 - 60   Average salary - all ranks
+61 - 65   Average compensation - full professors
+66 - 69   Average compensation - associate professors
+70 - 73   Average compensation - assistant professors
+74 - 78   Average compensation - all ranks
+
+Line #2
+1 -  4   Number of full professors
+5 -  8   Number of associate professors
+9 - 12   Number of assistant professors
+13 - 16   Number of instructors
+17 - 21   Number of faculty - all ranks
+
+Missing values are denoted with *
+All salary and compensation figures are yearly in $100's
+
+**************************************************************
+To obtain the dataset from Statlib, send one of the single line
+messages below to the address statlib@lib.stat.cmu.edu
+
+send aaup.data from colleges
+or
+send aaup2.data from colleges
+
+
+For more information on the ASA Statistical Graphics Section's
+1995 Data Analysis Exposition send the message
+
+send readme from colleges
+
+%%%%%%%%%%%%%%
+INFORMATION %
+%%%%%%%%%%%%%%
+
+WHAT'S WHAT AMONG AMERICAN COLLEGES AND UNIVERSITIES?
+
+This is the subject of the 1995 Data Analysis Exposition
+sponsored by the Statistical Graphics Section of the American
+Statistical Association.  The purpose of the Exposition is to
+encourage statisticians to demonstrate techniques, especially
+graphical, for analyzing data and displaying the results of an
+analysis.  Individuals and groups will work with the same set of
+data and present their analyses at a special session as part of
+the annual Joint Statistical Meetings in Orlando, Florida on
+August 13th-17th, 1995.  The datasets for 1995 are drawn from two
+sources, U.S. News & World Report's Guide to Americas Best
+Colleges and the AAUP (American Association of University
+Professors) 1994 Salary Survey which appeared in the March-April
+1994 issue of Academe.
+
+The U.S. News data contains information on tuition, room & board
+costs, SAT or ACT scores, application/acceptance rates,
+graduation rate, student/faculty ratio, spending per student, and
+a number of other variables for 1300+ schools. The AAUP data
+includes average salary, overall compensation, and number of
+faculty broken down by full, associate, and assistant professor
+ranks.
+
+The raw data and documentation are contained in the files
+described below.  To obtain any of these files send a message to
+statlib@lib.stat.cmu.edu of the following form  (substituting the
+file you want for XXXXX)
+
+send XXXXX from colleges
+
+Available files
+
+usnews.doc      Documentation for the U.S. News data
+usnews.data     U.S. News data in comma delimited format
+usnews3.data    U.S. News data in fixed column format
+
+aaup.doc        Documentation for the AAUP salary data
+aaup.data       AAUP salary data in comma delimited format
+aaup2.data      AAUP salary data in fixed column format
+
+Two versions of each dataset are provided to accommodate users
+with different software constraints.  The comma delimited
+versions (USNEWS.DATA and AAUP.DATA) contain information for each
+college on a separate line with values delimited by commas.  The
+fixed column versions (USNEWS3.DATA and AAUP2.DATA) use 2 or 3
+data lines per school and a maximum line length of 80 characters.
+
+To participate in the 1995 Data Analysis Exposition you must send
+an abstract form to the American Statistical Association by
+February 1st, 1995.  Information is available from the ASA
+Meetings Department by e-mail (meetings@asa.mhs.compuserve.com),
+phone (703-684-1221), fax (703-684-2037), or surface mail (ASA,
+1429 Duke St., Alexandria, VA 22314).  Your initial abstract may
+be fairly general since you may do the bulk of your analysis
+after the February 1 deadline.
+
+You may choose your own path to proceed in analyzing the data or
+use some of the suggested questions below to get started.
+
+... How well can we model tuition using the other variables?
+... How might we cluster colleges into similar comparison groups?
+... How can we best display faculty salary structure?
+... Can we find a reasonable way to rank the schools?
+
+You may work on your own or put together a team.  Show off the
+capabilities of your favorite software package or use the data
+for a class project and display your students results.  You may
+choose to consider just a subset of schools or examine regional
+patterns.  The main point is to find innovative ways to display
+the interesting features of the data.
+
+Further questions about the 1995 Exposition can be directed to
+Robin Lock, Mathematics Department, St. Lawrence University,
+Canton, NY 13617  e-mail   rlock@vm.stlawu.edu
+
+If you would like to be informed about any subsequent adjustments
+or error fixes to the 1995 Exposition data, please send an e-mail
+message to register your interest to rlock@vm.stlawu.edu.
+
+Special thanks for providing data for the 1995 Exposition to:
+Robert Morse, Director of Research for America's Best Colleges at
+U.S. News & World Report
+Maryse Eymonerie, Consultant to AAUP.
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+ailerons,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/ailerons/ailerons.csv,https://openml.org/data/v1/download/53268/ailerons.arff,binaryClass,-,41,13750,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). It converts the numeric target feature to a two-class nominal target feature by computing the mean and classifying all instances with a lower target value as positive ('P') and all others as negative ('N')."
+airfoil_self_noise,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/airfoil_self_noise/airfoil_self_noise.csv,https://openml.org/data/v1/download/22102967/airfoil_self_noise.arff,pressure,-,6,1503,"**Citation**
+
+Please refer to UCI's [citation policy](https://archive.ics.uci.edu/ml/citation_policy.html).
+
+**Source**
+
+Donor: Dr Roberto Lopez robertolopez '@' intelnics.com Intelnics
+
+Creators:
+Thomas F. Brooks, D. Stuart Pope and Michael A. Marcolini NASA
+
+Note that the names of the columns have been altered to be more descriptive.
+
+**Data Description**
+
+The NASA data set comprises different size NACA 0012 airfoils at various wind tunnel speeds and angles of attack. The span of the airfoil and the observer position were the same in all of the experiments.
+
+**Attribute description**
+
+This problem has the following inputs:
+
+* frequency - Frequency, in Hertzs.
+* angle -  Angle of attack, in degrees.
+* length - Chord length, in meters.
+* velocity - Free-stream velocity, in meters per second.
+* thickness - Suction side displacement thickness, in meters.
+
+The only output is:
+
+* pressure - Scaled sound pressure level, in decibels.
+
+Relevant Papers:
+
+T.F. Brooks, D.S. Pope, and A.M. Marcolini.
+Airfoil self-noise and prediction.
+Technical report, NASA RP-1218, July 1989.
+
+K. Lau.
+A neural networks approach for aerofoil noise prediction.
+Master thesis, Department of Aeronautics.
+Imperial College of Science, Technology and Medicine (London, United Kingdom), 2006.
+
+R. Lopez.
+Neural Networks for Variational Problems in Engineering.
+PhD Thesis, Technical University of Catalonia, 2008."
+Cardiovascular-Disease-dataset,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/Cardiovascular-Disease-dataset/Cardiovascular-Disease-dataset.csv,https://openml.org/data/v1/download/22116515/Cardiovascular-Disease-dataset.arff,cardio,-,13,70000,"## Data description
+
+There are 3 types of input features:
+
+* Objective: factual information;
+* Examination: results of medical examination;
+* Subjective: information given by the patient.
+
+Features:
+
+1. Age | Objective Feature | age | int (days)
+2. Height | Objective Feature | height | int (cm) |
+3. Weight | Objective Feature | weight | float (kg) |
+4. Gender | Objective Feature | gender | categorical code |
+5. Systolic blood pressure | Examination Feature | ap_hi | int |
+6. Diastolic blood pressure | Examination Feature | ap_lo | int |
+7. Cholesterol | Examination Feature | cholesterol | 1: normal, 2: above normal, 3: well above normal |
+8. Glucose | Examination Feature | gluc | 1: normal, 2: above normal, 3: well above normal |
+9. Smoking | Subjective Feature | smoke | binary |
+10. Alcohol intake | Subjective Feature | alco | binary |
+11. Physical activity | Subjective Feature | active | binary |
+12. Presence or absence of cardiovascular disease | Target Variable | cardio | binary |
+
+All of the dataset values were collected at the moment of medical examination.
+
+**Notes by Uploader to OpenML**
+
+* Gender: 1 - women, 2 - men
+* There is no information available on Kaggle where this data was collected."
+ringnorm,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/ringnorm/ringnorm.csv,https://openml.org/data/v1/download/1592288/ringnorm.arff,Class,-,21,7400,"**Author**: Michael Revow     
+**Source**: http://www.cs.toronto.edu/~delve/data/ringnorm/desc.html   
+**Please cite**:     
+
+1: Abstract: 
+
+This is a 20 dimensional, 2 class classification problem. Each class is drawn from a multivariate normal distribution. Class 1 has mean zero and covariance 4 times the identity. Class 2 has mean (a,a,..a) and unit covariance. a = 2/sqrt(20). 
+
+2: Data set description.
+
+This is an implementation of Leo Breiman's ringnorm example[1]. It is a 20 dimensional, 2 class classification example. Each class is drawn from a multivariate normal distribution. Class 1 has mean zero and covariance 4 times the identity. Class 2 has mean (a,a,..a) and unit covariance. a = 2/sqrt(20). Breiman reports the theoretical expected misclassification rate as 1.3%. He used 300 training examples with CART and found an error of 21.4%.
+
+
+- Type.          Classification 
+- Origin.  Laboratory
+- Instances.  7400
+- Features.  20
+- Classes.  2 
+- Missing values. No
+
+3: Attributes information
+
+@relation ring
+@attribute A1 real [-6879.0, 6285.0]
+@attribute A2 real [-7141.0, 6921.0]
+@attribute A3 real [-7734.0, 7611.0]
+@attribute A4 real [-6627.0, 7149.0]
+@attribute A5 real [-7184.0, 6383.0]
+@attribute A6 real [-6946.0, 6743.0]
+@attribute A7 real [-7781.0, 6285.0]
+@attribute A8 real [-6882.0, 6357.0]
+@attribute A9 real [-7184.0, 7487.0]
+@attribute A10 real [-7232.0, 6757.0]
+@attribute A11 real [-7803.0, 7208.0]
+@attribute A12 real [-7395.0, 6791.0]
+@attribute A13 real [-7096.0, 6403.0]
+@attribute A14 real [-7472.0, 7261.0]
+@attribute A15 real [-7342.0, 7372.0]
+@attribute A16 real [-7121.0, 6905.0]
+@attribute A17 real [-7163.0, 7175.0]
+@attribute A18 real [-8778.0, 6896.0]
+@attribute A19 real [-7554.0, 5726.0]
+@attribute A20 real [-6722.0, 7627.0]
+@attribute Class {0, 1}
+@inputs A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20
+@outputs Class"
+rmftsa_ladata,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/rmftsa_ladata/rmftsa_ladata.csv,https://openml.org/data/v1/download/52966/rmftsa_ladata.arff,Respiratory_Mortality,-,11,508,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Data Sets for 'Regression Models for Time Series Analysis' by
+B. Kedem and K. Fokianos, Wiley 2002. Submitted by Kostas
+Fokianos (fokianos@ucy.ac.cy) [8/Nov/02] (176k)
+
+Note: - attribute names were generated manually
+- information about data taken from here:
+http://lib.stat.cmu.edu/datasets/
+
+File: ../data/rmftsa/ladata
+
+LA Pollution-Mortality Study:
+1970-1979, 508 observations,  6-day spacing. Weekly FILTERED data.
+The data were lowpass filtered, filtering out frequencies above 0.1
+cycles per day.
+Mortality:          (1) Mrt: Total Mortality
+(2) Rsp: Respiratory Mortality
+(3) Crd: Cardiovascular Mortality
+Weather:            (4) Tmp: Temperature
+(5) Hum: Relative Humidity
+Pollution:          (6) Crb: Carbon Monoxide
+(7) Slf: Sulfur Dioxideglm.LAshumway
+(8) Nit: Nitrogen Dioxide
+(9) Hdr: Hydrocarbons
+(10) Ozn: Ozone
+(11) Par: Particulates
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+blogger,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/blogger/blogger.csv,https://openml.org/data/v1/download/1586224/blogger.arff,Class,-,6,100,"**Author**:   
+**Source**: UCI
+**Please cite**:   
+
+Source:
+ 
+http://www.ijcaonline.org/archives/volume47/number18/7291-0509
+ 
+ 
+Data Set Information:
+ 
+In this paper, we look for to recognize the causes of users tend to cyber space in Kohkiloye and Boyer Ahmad Province in Iran. Collecting information to form database is done by questionnaire. This questionnaire is provided as oral, written and also programming of a website which includes an internet questionnaire and the users can answer the questions as they wish. They entered their used websites, blogs and social networks during the day. After collecting questionnaires, the wed addresses are gathered to get expected results. And finally, their trustfulness is checked by analyzing their used web pages. As the results were same, for getting better and noiseless response, they will put in database.
+  
+Attribute Information:
+ 
+We considered the following parameters as questions: age,  education, political attitudes, blog topic, and the type of the identity in internet, the influence of manager inefficiency on tendency, the effect of inefficient media on tendency, the effects of social and political conditions on tendency and finally the effect of poverty in the province on tendency. The noisy or too detailed data in database makes us far from to get proper and suitable answers of algorithms [8]. We preprocessed the data and eliminated some non-relevant data. Finally the followings are considered as the main fields which include: education, political caprice, topics, local media turnover (LMT) and local, political and social space (LPSS). 
+
+The collected data are shown in Table 1. In order to get correct answer, we classify bloggers to two groups: professional bloggers and seasonal (temporary) bloggers. Professional bloggers are those who adopt blog as an effective digital media and interested in digital writing in continuous time intervals. Seasonal (temporary) bloggers are not professional and follow blogging in discrete time periods. In this study, we review the tendency factors considering whether these people are among professional bloggers (Pro Bloggers, PB) and then, consider the other factors according to it."
+analcatdata_supreme,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_supreme/analcatdata_supreme.csv,https://openml.org/data/v1/download/52616/analcatdata_supreme.arff,Log_exposure,-,8,4052,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+video_transcoding,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/video_transcoding/video_transcoding.csv,https://openml.org/data/v1/download/22111838/video_transcoding.arff,utime,-,21,68784,"**Data Description**
+
+The dataset contains a million randomly sampled video instances listing 10 fundamental video characteristics along with the YouTube video ID.
+
+The videos were all transcribed from one format into another, measuring the memory usage and the transcription time.
+
+The goal is to predict the transcription time using the input information and the desired output format.
+
+**Attribute Description**
+
+1. *id* - Youtube video id (should be dropped for the analysis)
+2. *duration* - duration of video
+3. *codec* - coding standard used for the video (""mpeg4"", ""h264"", ""vp8"", ""flv"")
+4. *width* - width of video in pixles
+5. *height* - height of video in pixles
+6. *bitrate* - video bitrate
+7. *framerate* - actual video frame rate
+8. *i* - number of i frames in the video
+9. *p* - number of p frames in the video
+10. *b* - number of b frames in the video
+11. *frames* - number of frames in video
+12. *i_size* - total size in byte of i videos
+13. *p_size* - total size in byte of p videos
+14. *b_size* - total size in byte of b videos
+15. *size* - total size of video
+16. *o_codec* - output codec used for transcoding (""mpeg4"", ""h264"", ""vp8"", ""flv"")
+17. *o_bitrate* - output bitrate used for transcoding
+18. *o_framerate* - output framerate used for transcoding
+19. *o_width* - output width in pixel used for transcoding
+20. *o_height* - output height used in pixel for transcoding
+21. *umem* -  total codec allocated memory for transcoding, alternate target feature
+22. *utime* - total transcoding time for transcoding, target feature"
+walking-activity,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/walking-activity/walking-activity.csv,https://openml.org/data/v1/download/1592317/walking-activity.arff,Class,-,5,149332,"**Author**: P. Casale, O. Pujol, P. Radeva.    
+**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/User+Identification+From+Walking+Activity)  
+**Please cite**: Casale, P. Pujol, O. and Radeva, P. 'Personalization and user verification in wearable systems using biometric walking patterns' Personal and Ubiquitous Computing, 16(5), 563-580, 2012
+
+**User Identification From Walking Activity Data Set**  
+The dataset collects data from an Android smartphone positioned in the chest pocket. Accelerometer Data are collected from 22 participants walking in the wild over a predefined path. The dataset is intended for Activity Recognition research purposes. It provides challenges for identification and authentication of people using motion patterns. 
+
+**Note: the original per-user datasets were joined into one dataset**
+
+### Attribute Information  
+Time-step, x acceleration, y acceleration, z acceleration  
+Target: User ID."
+forest_fires,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/forest_fires/forest_fires.csv,https://openml.org/data/v1/download/21829185/forest_fires.arff,area,-,13,517,"Forest Fires Data Set
+
+This is a difficult regression task, where the aim is to predict the burned area of forest fires, in the northeast region of Portugal, by using meteorological and other data.
+
+Data Set Information:
+
+In [Cortez and Morais, 2007], the output 'area' was first transformed with a ln(x+1) function.
+Then, several Data Mining methods were applied. After fitting the models, the outputs were
+post-processed with the inverse of the ln(x+1) transform. Four different input setups were
+used. The experiments were conducted using a 10-fold (cross-validation) x 30 runs. Two
+regression metrics were measured: MAD and RMSE. A Gaussian support vector machine (SVM) fed
+with only 4 direct weather conditions (temp, RH, wind and rain) obtained the best MAD value:
+12.71 +- 0.01 (mean and confidence interval within 95% using a t-student distribution). The
+best RMSE was attained by the naive mean predictor. An analysis to the regression error curve
+(REC) shows that the SVM model predicts more examples within a lower admitted error. In effect,
+the SVM model predicts better small fires, which are the majority.
+
+
+Attribute Information:
+
+For more information, read [Cortez and Morais, 2007].
+1. X - x-axis spatial coordinate within the Montesinho park map: 1 to 9
+2. Y - y-axis spatial coordinate within the Montesinho park map: 2 to 9
+3. month - month of the year: 'jan' to 'dec'
+4. day - day of the week: 'mon' to 'sun'
+5. FFMC - FFMC index from the FWI system: 18.7 to 96.20
+6. DMC - DMC index from the FWI system: 1.1 to 291.3
+7. DC - DC index from the FWI system: 7.9 to 860.6
+8. ISI - ISI index from the FWI system: 0.0 to 56.10
+9. temp - temperature in Celsius degrees: 2.2 to 33.30
+10. RH - relative humidity in %: 15.0 to 100
+11. wind - wind speed in km/h: 0.40 to 9.40
+12. rain - outside rain in mm/m2 : 0.0 to 6.4
+13. area - the burned area of the forest (in ha): 0.00 to 1090.84
+(this output variable is very skewed towards 0.0, thus it may make
+sense to model with the logarithm transform)."
+visualizing_soil,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/visualizing_soil/visualizing_soil.csv,https://openml.org/data/v1/download/52988/visualizing_soil.arff,track,-,5,8641,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This S dump contains 22 data sets from the
+book Visualizing Data published by
+Hobart Press (books@hobart.com).
+The dump was created by data.dump()
+and can be read back into S by data.restore().
+The name of each S data set is the name of
+the data set used in the book. To find the
+description of the data set in the book look
+under the entry - data, name - in the index.
+For example, one data set is barley.
+To find the description of barley, look
+in the index under the entry - data, barley.
+
+File: ../data/visualizing/soil.csv
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+Iris,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/Iris/Iris.csv,https://openml.org/data/v1/download/22103276/Iris.arff,class,-,5,149,"This is perhaps the best known database to be found in the pattern recognition literature.     Fisher's paper is a classic in the field and is referenced frequently to this day. (See Duda & Hart, for example.)     The data set contains 3 classes of 50 instances each, where each class refers to a type of iris plant.      One class is linearly separable from the other 2; the latter are NOT linearly separable from each other."
+collins,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/collins/collins.csv,https://openml.org/data/v1/download/53521/collins.arff,binaryClass,-,24,500,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Binarized version of the original data set (see version 1). The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive ('P') and all others as negative ('N'). Originally converted by Quan Sun."
+Goodreads-Computer-Books,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/Goodreads-Computer-Books/Goodreads-Computer-Books.csv,https://openml.org/data/v1/download/22102610/Goodreads-Computer-Books.arff,Avg_Rating,-,10,1234,"Context
+The reason for creating this dataset is the requirement of a good clean dataset of computer books. I had searched for datasets on books in Kaggle and I found out that while most of the datasets had a good amount of books listed, there were either major columns missing or grossly unclean data. I mean, you can't determine how good a book is just from a few text reviews. So I collected this data from the Goodreads website from the ""Computer"" category to help people who are like this type of book.
+Acknowledgements
+This data was entirely scraped via the Webdriver
+Inspiration
+The reason behind creating this dataset is pretty straightforward, I'm listing the books for all who need computer books, irrespective of the language and publication and all of that. So go ahead and use it to your liking, find out what book you should be reading next,  all possible approaches to exploring this dataset are welcome.
+I started creating this dataset on Jan 18, 2021, and intend to update it frequently.
+P.S. If you like this, please don't forget to give an upvote!
+Notes
+The missing values are imputed in this data by the creator."
+jungle_chess_2pcs_endgame_lion_lion,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/jungle_chess_2pcs_endgame_lion_lion/jungle_chess_2pcs_endgame_lion_lion.csv,https://openml.org/data/v1/download/18248713/jungle_chess_2pcs_endgame_lion_lion.arff,class,-,47,2352,"### Description ###
+
+This dataset is part of a collection datasets based on the game ""Jungle Chess"" (a.k.a. Dou Shou Qi). For a description of the rules, please refer to the paper (link attached). The paper also contains a description of various constructed features. As the tablebases are a disjoint set of several tablebases based on which (two) pieces are on the board, we have uploaded all tablebases that have explicit different content:
+
+* Rat vs Rat
+* Rat vs Panther
+* Rat vs. Lion
+* Rat vs. Elephant
+* Panther vs. Lion
+* Panther vs. Elephant
+* Tiger vs. Lion
+* Lion vs. Lion
+* Lion vs. Elephant
+* Elephant vs. Elephant
+* Complete (Combination of the above)
+* RAW Complete (Combination of the above, containing for both pieces just the rank, file and strength information). This dataset contains a similar classification problem as, e.g., the King and Rook vs. King problem and is suitable for classification tasks. 
+
+(Note that this dataset is one of the above mentioned datasets). Additionally, note that several subproblems are very similar. Having seen a given positions from one of the tablebases arguably gives a lot of information about the outcome of the same position in the other tablebases. 
+
+### Please cite ###
+J. N. van Rijn and J. K. Vis, Endgame Analysis of Dou Shou Qi. ICGA Journal 37:2, 120--124, 2014. ArXiv link: https://arxiv.org/abs/1604.07312"
+vinnie,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/vinnie/vinnie.csv,https://openml.org/data/v1/download/52631/vinnie.arff,field_goals,-,3,380,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Following are data on the shooting of Vinnie Johnson of the Detroit
+Pistons during the 1985-1986 through 1988-1989 seasons. Source was the
+New York Times.
+The data are analyzed in the Carnegie Mellon Ph.D. Thesis of
+Kate Hsiao and some results are cited in Example 2 of Kass, R.E. and
+Raftery, A.E. (1995), Bayes Factors, J. Amer. Statist. Assoc.,
+The first column is the year, with 85 indicating 1985-1986, etc..
+The second column is Field Goals, the third column is Field Goal
+Attempts.
+A more complete version of the data, including free throws, is
+appended together with additional information.
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+datatrieve,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/datatrieve/datatrieve.csv,https://openml.org/data/v1/download/53958/datatrieve.arff,Faulty6_1,-,9,130,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This is a PROMISE Software Engineering Repository data set made publicly
+available in order to encourage repeatable, verifiable, refutable, and/or
+improvable predictive models of software engineering.
+
+If you publish material based on PROMISE data sets then, please
+follow the acknowledgment guidelines posted on the PROMISE repository
+web page http://promise.site.uottawa.ca/SERepository .
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+1. Title/Topic: The transition of the DATATRIEVE product from version 6.0 to
+version 6.1
+
+2. Sources:
+-- Creators: DATATRIEVETM project carried out at Digital Engineering Italy
+-- Donor: Guenther Ruhe
+-- Date:  January 15, 2005
+3. Past usage:
+
+A hybrid approach to analyze empirical software engineering data
+and its application to predict module fault-proneness in maintenance
+Source 	Journal of Systems and Software archive
+Volume 53 ,  Issue 3  (September 2000) table of contents
+Pages: 225 - 237
+Year of Publication: 2000
+ISSN:0164-1212
+Authors
+Sandro Morasca
+Gunther Ruhe
+4. Relevant information:
+
+The DATATRIEVE product was undergoing both adaptive (DATATRIEVE was being transferred
+from platform OpenVMS/VAX to platform OpenVMS/Alpha) and corrective maintenance
+(failures reported from customers were being fixed) at the Gallarate (Italy)
+site of Digital Engineering.
+
+The DATATRIEVE product was originally developed in the BLISS language. BLISS is an
+expression language. It is block-structured, with exception handling facilities, coroutines,
+and a macro system. It was one of the first non-assembly languages for operating system
+implementation.. Some parts were later added or rewritten in the C language. Therefore, the
+overall structure of DATATRIEVE is composed of C functions and BLISS subroutines.
+
+The empirical study of this data set reports only the BLISS part, by far the bigger one.
+In what follows, we will use the term ""module"" to refer to a BLISS module, i.e., a set of
+declarations and subroutines usually belonging to one file. More than 100 BLISS modules
+have been studied. It was important to the DATATRIEVE team to better understand how the
+characteristics of the modules and transition process were correlated with the code quality.
+
+The objective of the data analysis was to study whether it was possible to classify modules as
+non-faulty or faulty, based on a set of measures collected on the project.
+
+5. Number of records: 130
+6. Number of attributes: 9
+8 condition attributes
+1 decision attribute
+7. Attribute Information:
+
+1. LOC6_0: number of lines of code of module m in version 6.0.
+2. LOC6_1: number of lines of code of module m in version 6.1.
+3. AddedLOC: number of lines of code that were added to module m in version 6.1, i.e., they
+were not present in module m in version 6.0.
+4. DeletedLOC: number of lines of code that were deleted from module m in version 6.0, i.e.,
+they were no longer present in module m in version 6.1.
+5. DifferentBlocks: number of different blocks module m in between versions 6.0 and 6.1.
+6. ModificationRate: rate of modification of module m, i.e.,
+(AddedLOC + DeletedLOC) / (LOC6.0 + AddedLOC).
+7. ModuleKnowledge: subjective variable that expresses the project team's knowledge on
+module m (low or high)
+8. ReusedLOC: number of lines of code of module m in version 6.0 reused in module m in
+version 6.1.
+9. Faulty6_1: its value is 0 for all those modules in which no faults were found;
+its value is 1 for all other modules.
+
+8. Missing attributes: none
+
+9. Class Distribution:
+0:   119 = 91.54%
+1:   11  =  8.46%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+wine-quality-white,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/wine-quality-white/wine-quality-white.csv,https://openml.org/data/v1/download/4535759/wine-quality-white.arff,Class,-,12,4898,"Citation Request:
+  This dataset is public available for research. The details are described in [Cortez et al., 2009]. 
+  Please include this citation if you plan to use this database:
+
+  P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. 
+  Modeling wine preferences by data mining from physicochemical properties.
+  In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236.
+
+  Available at: [@Elsevier] http://dx.doi.org/10.1016/j.dss.2009.05.016
+                [Pre-press (pdf)] http://www3.dsi.uminho.pt/pcortez/winequality09.pdf
+                [bib] http://www3.dsi.uminho.pt/pcortez/dss09.bib
+
+1. Title: Wine Quality 
+
+2. Sources
+   Created by: Paulo Cortez (Univ. Minho), Antonio Cerdeira, Fernando Almeida, Telmo Matos and Jose Reis (CVRVV) @ 2009
+   
+3. Past Usage:
+
+  P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. 
+  Modeling wine preferences by data mining from physicochemical properties.
+  In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236.
+
+  In the above reference, two datasets were created, using red and white wine samples.
+  The inputs include objective tests (e.g. PH values) and the output is based on sensory data
+  (median of at least 3 evaluations made by wine experts). Each expert graded the wine quality 
+  between 0 (very bad) and 10 (very excellent). Several data mining methods were applied to model
+  these datasets under a regression approach. The support vector machine model achieved the
+  best results. Several metrics were computed: MAD, confusion matrix for a fixed error tolerance (T),
+  etc. Also, we plot the relative importances of the input variables (as measured by a sensitivity
+  analysis procedure).
+ 
+4. Relevant Information:
+
+   The two datasets are related to red and white variants of the Portuguese &quot;Vinho Verde&quot; wine.
+   For more details, consult: http://www.vinhoverde.pt/en/ or the reference [Cortez et al., 2009].
+   Due to privacy and logistic issues, only physicochemical (inputs) and sensory (the output) variables 
+   are available (e.g. there is no data about grape types, wine brand, wine selling price, etc.).
+
+   These datasets can be viewed as classification or regression tasks.
+   The classes are ordered and not balanced (e.g. there are munch more normal wines than
+   excellent or poor ones). Outlier detection algorithms could be used to detect the few excellent
+   or poor wines. Also, we are not sure if all input variables are relevant. So
+   it could be interesting to test feature selection methods. 
+
+5. Number of Instances: red wine - 1599; white wine - 4898. 
+
+6. Number of Attributes: 11 + output attribute
+  
+   Note: several of the attributes may be correlated, thus it makes sense to apply some sort of
+   feature selection.
+
+7. Attribute information:
+
+   For more information, read [Cortez et al., 2009].
+
+   Input variables (based on physicochemical tests):
+   1 - fixed acidity
+   2 - volatile acidity
+   3 - citric acid
+   4 - residual sugar
+   5 - chlorides
+   6 - free sulfur dioxide
+   7 - total sulfur dioxide
+   8 - density
+   9 - pH
+   10 - sulphates
+   11 - alcohol
+   Output variable (based on sensory data): 
+   12 - quality (score between 0 and 10)
+
+8. Missing Attribute Values: None"
+analcatdata_galapagos,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_galapagos/analcatdata_galapagos.csv,https://openml.org/data/v1/download/52651/analcatdata_galapagos.arff,Observed.species,-,8,30,"**Author**: Jeffrey S. Simonoff  
+**Source**: [StatLib](http://lib.stat.cmu.edu/datasets/) - 2003  
+**Please cite**: Jeffrey S. Simonoff. Analyzing Categorical Data. Springer-Verlag, New York, 2003  
+
+One of the data sets used in the book ""Analyzing Categorical Data"" by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. Further details concerning the book, including information on statistical software, are available at the [web site](http://people.stern.nyu.edu/jsimonof/AnalCatData/)."
+chscase_foot,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/chscase_foot/chscase_foot.csv,https://openml.org/data/v1/download/1390181/chscase_foot.arff,col_6,-,6,526,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+File README
+-----------
+
+chscase  A collection of the data sets used in the book
+""A Casebook for a First Course in Statistics and Data Analysis,""
+by Samprit Chatterjee, Mark S. Handcock and Jeffrey S. Simonoff,
+John Wiley and Sons, New York, 1995. Submitted by
+Samprit Chatterjee (schatterjee@stern.nyu.edu),
+Mark Handcock (mhandcock@stern.nyu.edu) and
+Jeff Simonoff (jsimonoff@stern.nyu.edu)
+
+This submission consists of 38 files, plus this README file.
+Each file represents a data set analyzed in the book. The names
+of the files correspond to the names used in the book. The data
+files are written in plain ASCII (character) text. Missing
+values are represented by ""M"" in all data files.
+
+More information about the data sets and the book can be
+obtained via gopher at the address
+swis.stern.nyu.edu
+
+The information is filed under
+---> Academic Departments & Research Centers
+---> Statistics and Operations Research
+---> Publications
+---> A Casebook for a First Course in Statistics and Data Analysis
+---> Welcome!
+
+It can also be accessed from the World Wide Web (WWW) using a
+WWW browser (e.g., netscape) starting from the URL address
+http://www.stern.nyu.edu/SOR/Casebook
+
+
+
+NOTICE: These datasets may be used freely for scientific,
+educational and/or non-commercial purposes, provided suitable
+acknowledgment is given (by citing the Chatterjee, Handcock and
+Simonoff reference above).
+
+File: foot.dat
+
+Note: attribute names were generated automatically since there was no
+information in the data itself.
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+solar_flare,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/solar_flare/solar_flare.csv,https://openml.org/data/v1/download/22111830/solar_flare.arff,c_class_flares,-,13,1066,"**Data Description**
+
+Predict the number of common solar flares.
+
+The database contains 3 classes, one for the number of times a certain type of solar flare occurred in a 24 hour period.
+
+Each instance represents captured features for 1 active region on the sun.
+
+**Attribute Description**
+
+1. *class* - code for class (modified Zurich class) (A,B,C,D,E,F,H)
+2. *largest_spot_size* -  Code for largest spot size (X,R,S,A,H,K)
+3. *spot_distribution* - Code for spot distribution (X,O,I,C)
+4. *activity* - activity (1 = reduced, 2 = unchanged)
+5. *evolution* - evolution (1 = decay, 2 = no growth, 3 = growth)
+6. *previous_activity* - previous 24 hour flare activity code (1 = nothing as big as an M1, 2 = one M1, 3 = more activity than one M1)
+7. *complex* - historically-complex (1 = Yes, 2 = No)
+8. *complex_path* - whether region become historically complex on this pass across the sun's disk (1 = yes, 2 = no)
+9. *area* - area (1 = small, 2 = large)
+10. *area_largest* - area of the largest spot
+11. *c_class_flares* - number of C-class flares production by this region in the following 24 hours (common flares), target feature
+12. *m_class_flares* - number of M-class flares production by this region in the following 24 hours (moderate flares)
+13. *x_class_flares* - number of X-class flares production by this region in the following 24 hours (severe flares)"
+thyroid-allrep,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/thyroid-allrep/thyroid-allrep.csv,https://openml.org/data/v1/download/4533695/thyroid-allrep.arff,Class,-,27,2800,"General Description of Thyroid Disease Databases 
+                        and Related Files
+
+This directory contains 6 databases, corresponding test set, and 
+corresponding documentation.  They were left at the University of
+California at Irvine by Ross Quinlan during his visit in 1987 for
+the 1987 Machine Learning Workshop.  
+
+The documentation files (with file extension &quot;names&quot;) are formatted to
+be read by Quinlan's C4 decision tree program.  Though briefer than
+the other documentation files found in this database repository, they
+should suffice to describe the database, specifically:
+
+    1. Source
+    2. Number and names of attributes (including class names)
+    3. Types of values that each attribute takes
+
+In general, these databases are quite similar and can be characterized
+somewhat as follows:
+
+    1. Many attributes (29 or so, mostly the same set over all the databases)
+    2. mostly numeric or Boolean valued attributes
+    3. thyroid disease domains (records provided by the Garavan Institute
+       of Sydney, Australia)
+    4. several missing attribute values (signified by &quot;?&quot;)
+    5. small number of classes (under 10, changes with each database)
+    7. 2800 instances in each data set
+    8. 972 instances in each test set (It seems that the test sets' instances
+       are disjoint with respect to the corresponding data sets, but this has 
+       not been verified)
+
+See the following for a discussion of relevant experiments and related work:
+   Quinlan,J.R., Compton,P.J., Horn,K.A., &amp; Lazurus,L. (1986).
+   Inductive knowledge acquisition: A case study.
+   In Proceedings of the Second Australian Conference on Applications
+   of Expert Systems.  Sydney, Australia.
+
+   Quinlan,J.R. (1986). Induction of decision trees. Machine Learning,
+   1, 81--106.
+
+Note that the instances in these databases are followed by a vertical
+bar and a number.  These appear to be a patient id number.  The vertical
+bar is interpreted by Quinlan's algorithms as &quot;ignore the remainder of
+this line&quot;. 
+
+======================================================================
+
+This database now also contains an additional two data files, named 
+hypothyroid.data and sick-euthyroid.data.  They have approximately the
+same data format and set of attributes as the other 6 databases, but
+their integrity is questionable.  Ross Quinlan is concerned that they
+may have been corrupted since they first arrived at UCI, but we have not
+yet established the validity of this possibility.  These 2 databases differ
+in terms of their number of instances (3163) and lack of corresponding 
+test files.  They each have 2 concepts (negative/hypothyroid and 
+sick-euthyroid/negative respectively).  Their source also appears to
+be the Garavan institute.  Each contains several missing values.
+
+Another relatively recent file thyroid0387.data has been added that 
+contains the latest version of an archive of thyroid diagnoses obtained 
+from the Garvan Institute, consisting of 9172 records from 1984 to early 1987.
+
+A domain theory related to thyroid disease has also been added recently 
+(thyroid.theory).
+
+The files new-thyroid.[names,data] were donated by Stefan Aberhard."
+analcatdata_runshoes,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_runshoes/analcatdata_runshoes.csv,https://openml.org/data/v1/download/52610/analcatdata_runshoes.arff,Shoes,-,11,60,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+wine,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/wine/wine.csv,https://openml.org/data/v1/download/3624/wine.arff,class,-,14,178,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+1. Title of Database: Wine recognition data
+ 	Updated Sept 21, 1998 by C.Blake : Added attribute information
+ 
+ 2. Sources:
+    (a) Forina, M. et al, PARVUS - An Extendible Package for Data
+        Exploration, Classification and Correlation. Institute of Pharmaceutical
+        and Food Analysis and Technologies, Via Brigata Salerno, 
+        16147 Genoa, Italy.
+ 
+    (b) Stefan Aeberhard, email: stefan@coral.cs.jcu.edu.au
+    (c) July 1991
+ 3. Past Usage:
+ 
+    (1)
+    S. Aeberhard, D. Coomans and O. de Vel,
+    Comparison of Classifiers in High Dimensional Settings,
+    Tech. Rep. no. 92-02, (1992), Dept. of Computer Science and Dept. of
+    Mathematics and Statistics, James Cook University of North Queensland.
+    (Also submitted to Technometrics).
+ 
+    The data was used with many others for comparing various 
+    classifiers. The classes are separable, though only RDA 
+    has achieved 100% correct classification.
+    (RDA : 100%, QDA 99.4%, LDA 98.9%, 1NN 96.1% (z-transformed data))
+    (All results using the leave-one-out technique)
+ 
+    In a classification context, this is a well posed problem 
+    with ""well behaved"" class structures. A good data set 
+    for first testing of a new classifier, but not very 
+    challenging.
+ 
+    (2) 
+    S. Aeberhard, D. Coomans and O. de Vel,
+    ""THE CLASSIFICATION PERFORMANCE OF RDA""
+    Tech. Rep. no. 92-01, (1992), Dept. of Computer Science and Dept. of
+    Mathematics and Statistics, James Cook University of North Queensland.
+    (Also submitted to Journal of Chemometrics).
+ 
+    Here, the data was used to illustrate the superior performance of
+    the use of a new appreciation function with RDA. 
+ 
+ 4. Relevant Information:
+ 
+    -- These data are the results of a chemical analysis of
+       wines grown in the same region in Italy but derived from three
+       different cultivars.
+       The analysis determined the quantities of 13 constituents
+       found in each of the three types of wines. 
+ 
+    -- I think that the initial data set had around 30 variables, but 
+       for some reason I only have the 13 dimensional version. 
+       I had a list of what the 30 or so variables were, but a.) 
+       I lost it, and b.), I would not know which 13 variables
+       are included in the set.
+ 
+    -- The attributes are (dontated by Riccardo Leardi, 
+ 	riclea@anchem.unige.it )
+  	1) Alcohol
+  	2) Malic acid
+  	3) Ash
+ 	4) Alcalinity of ash  
+  	5) Magnesium
+ 	6) Total phenols
+  	7) Flavanoids
+  	8) Nonflavanoid phenols
+  	9) Proanthocyanins
+ 	10)Color intensity
+  	11)Hue
+  	12)OD280/OD315 of diluted wines
+  	13)Proline            
+ 
+ 5. Number of Instances
+ 
+       	class 1 59
+ 	class 2 71
+ 	class 3 48
+ 
+ 6. Number of Attributes 
+ 	
+ 	13
+ 
+ 7. For Each Attribute:
+ 
+ 	All attributes are continuous
+ 	
+ 	No statistics available, but suggest to standardise
+ 	variables for certain uses (e.g. for us with classifiers
+ 	which are NOT scale invariant)
+ 
+ 	NOTE: 1st attribute is class identifier (1-3)
+ 
+ 8. Missing Attribute Values:
+ 
+ 	None
+ 
+ 9. Class Distribution: number of instances per class
+ 
+       	class 1 59
+ 	class 2 71
+ 	class 3 48
+
+ Information about the dataset
+ CLASSTYPE: nominal
+ CLASSINDEX: first"
+boston,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/boston/boston.csv,https://openml.org/data/v1/download/52643/boston.arff,MEDV,-,14,506,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+The Boston house-price data of Harrison, D. and Rubinfeld, D.L. 'Hedonic
+prices and the demand for clean air', J. Environ. Economics & Management,
+vol.5, 81-102, 1978.   Used in Belsley, Kuh & Welsch, 'Regression diagnostics
+...', Wiley, 1980.   N.B. Various transformations are used in the table on
+pages 244-261 of the latter.
+Variables in order:
+CRIM     per capita crime rate by town
+ZN       proportion of residential land zoned for lots over 25,000 sq.ft.
+INDUS    proportion of non-retail business acres per town
+CHAS     Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+NOX      nitric oxides concentration (parts per 10 million)
+RM       average number of rooms per dwelling
+AGE      proportion of owner-occupied units built prior to 1940
+DIS      weighted distances to five Boston employment centres
+RAD      index of accessibility to radial highways
+TAX      full-value property-tax rate per $10,000
+PTRATIO  pupil-teacher ratio by town
+B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
+LSTAT    % lower status of the population
+MEDV     Median value of owner-occupied homes in $1000's
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: last"
+Forest-Fire-Area,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/Forest-Fire-Area/Forest-Fire-Area.csv,https://openml.org/data/v1/download/22102265/Forest-Fire-Area.arff,area,-,13,517,"Content
+The dataset contains 517 fires from the Montesinho natural park in Portugal. For each incident weekday, month, coordinates, and the burnt area are recorded, as well as several meteorological data such as rain, temperature, humidity, and wind. The workflow reads the data and trains a regression model based on the spatial, temporal, and weather variables.
+Acknowledgements
+All credit for this dataset goes to P. Cortez and A. Morais.
+P. Cortez and A. Morais. A Data Mining Approach to Predict Forest Fires using Meteorological Data. In J. Neves, M. F. Santos and J. Machado Eds., New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence, December, Guimaraes, Portugal, pp. 512-523, 2007. APPIA, ISBN-13 978-989-95618-0-9.
+Burning Area Prediction"
+PopularKids,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/PopularKids/PopularKids.csv,https://openml.org/data/v1/download/53983/PopularKids.arff,Goals,-,11,478,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+Datasets of Data And Story Library, project illustrating use of basic statistic methods, converted to arff format by Hakan Kjellerstrand.
+Source: TunedIT: http://tunedit.org/repo/DASL
+
+DASL file http://lib.stat.cmu.edu/DASL/Datafiles/PopularKids.html
+
+Students' Goals
+,
+
+What Makes Kids Popular
+
+Reference:   Chase, M. A., and Dummer, G. M. (1992), ""The Role of Sports as a Social Determinant for Children,"" Research Quarterly for Exercise and Sport, 63, 418-424
+
+Authorization:   Contact authors
+Description:        Subjects were students in grades 4-6 from three school districts in Ingham and Clinton Counties, Michigan.  Chase and Dummer stratified their sample, selecting students from urban, suburban, and rural school districts with approximately 1/3 of their sample coming from each district.  Students indicated whether good grades, athletic ability, or popularity was most important to them.  They also ranked four factors:  grades, sports, looks, and money, in order of their importance for popularity.  The questionnaire also asked for gender, grade level, and other demographic information.
+Number of cases:   478
+Variable Names:
+
+Gender:   Boy or girl
+Grade:   4, 5 or 6
+Age:   Age in years
+Race:   White, Other
+Urban/Rural:   Rural, Suburban, or Urban school district
+School:   Brentwood Elementary, Brentwood Middle, Ridge, Sand, Eureka, Brown, Main, Portage, Westdale Middle
+Goals:   Student's choice in the personal goals question where options were 1 = Make Good Grades,  2 = Be Popular,  3 = Be Good in Sports
+Grades:   Rank of ""make good grades""  (1=most important for popularity, 4=least important)
+Sports:   Rank of ""being good at sports""  (1=most important for popularity, 4=least important)
+Looks:   Rank of ""being handsome or pretty""  (1=most important for popularity, 4=least important)
+Money:   Rank of ""having lots of money""  (1=most important for popularity, 4=least important)"
+autoPrice,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/autoPrice/autoPrice.csv,https://openml.org/data/v1/download/3644/autoPrice.arff,class,-,16,159,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ All nominal attributes and instances with missing values are deleted.
+ Price treated as the class attribute.
+
+ As used by Kilpatrick, D. & Cameron-Jones, M. (1998). Numeric prediction
+ using instance-based learning with encoding length selection. In Progress
+ in Connectionist-Based Information Systems. Singapore: Springer-Verlag.
+
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ 1. Title: 1985 Auto Imports Database
+ 
+ 2. Source Information:
+    -- Creator/Donor: Jeffrey C. Schlimmer (Jeffrey.Schlimmer@a.gp.cs.cmu.edu)
+    -- Date: 19 May 1987
+    -- Sources:
+      1) 1985 Model Import Car and Truck Specifications, 1985 Ward's
+         Automotive Yearbook.
+      2) Personal Auto Manuals, Insurance Services Office, 160 Water
+         Street, New York, NY 10038 
+      3) Insurance Collision Report, Insurance Institute for Highway
+         Safety, Watergate 600, Washington, DC 20037
+
+ 3. Past Usage:
+    -- Kibler,~D., Aha,~D.~W., & Albert,~M. (1989).  Instance-based prediction
+       of real-valued attributes.  {it Computational Intelligence}, {it 5},
+       51--57.
+          -- Predicted price of car using all numeric and Boolean attributes
+          -- Method: an instance-based learning (IBL) algorithm derived from a
+             localized k-nearest neighbor algorithm.  Compared with a
+             linear regression prediction...so all instances
+             with missing attribute values were discarded.  This resulted with
+             a training set of 159 instances, which was also used as a test
+             set (minus the actual instance during testing).
+          -- Results: Percent Average Deviation Error of Prediction from Actual
+             -- 11.84% for the IBL algorithm
+             -- 14.12% for the resulting linear regression equation
+ 
+ 4. Relevant Information:
+    -- Description
+       This data set consists of three types of entities: (a) the
+       specification of an auto in terms of various characteristics, (b)
+       its assigned insurance risk rating, (c) its normalized losses in use
+       as compared to other cars.  The second rating corresponds to the
+       degree to which the auto is more risky than its price indicates.
+       Cars are initially assigned a risk factor symbol associated with its
+       price.   Then, if it is more risky (or less), this symbol is
+       adjusted by moving it up (or down) the scale.  Actuarians call this
+       process ""symboling"".  A value of +3 indicates that the auto is
+       risky, -3 that it is probably pretty safe.
+ 
+       The third factor is the relative average loss payment per insured
+       vehicle year.  This value is normalized for all autos within a
+       particular size classification (two-door small, station wagons,
+       sports/speciality, etc...), and represents the average loss per car
+       per year.
+ 
+    -- Note: Several of the attributes in the database could be used as a
+             ""class"" attribute.
+ 
+ 5. Number of Instances: 205
+ 
+ 6. Number of Attributes: 26 total
+    -- 15 continuous
+    -- 1 integer
+    -- 10 nominal
+ 
+ 7. Attribute Information:     
+      Attribute:                Attribute Range:
+      ------------------        -----------------------------------------------
+   1. symboling:                -3, -2, -1, 0, 1, 2, 3.
+   2. normalized-losses:        continuous from 65 to 256.
+   3. make:                     alfa-romero, audi, bmw, chevrolet, dodge, honda,
+                                isuzu, jaguar, mazda, mercedes-benz, mercury,
+                                mitsubishi, nissan, peugot, plymouth, porsche,
+                                renault, saab, subaru, toyota, volkswagen, volvo
+   4. fuel-type:                diesel, gas.
+   5. aspiration:               std, turbo.
+   6. num-of-doors:             four, two.
+   7. body-style:               hardtop, wagon, sedan, hatchback, convertible.
+   8. drive-wheels:             4wd, fwd, rwd.
+   9. engine-location:          front, rear.
+  10. wheel-base:               continuous from 86.6 120.9.
+  11. length:                   continuous from 141.1 to 208.1.
+  12. width:                    continuous from 60.3 to 72.3.
+  13. height:                   continuous from 47.8 to 59.8.
+  14. curb-weight:              continuous from 1488 to 4066.
+  15. engine-type:              dohc, dohcv, l, ohc, ohcf, ohcv, rotor.
+  16. num-of-cylinders:         eight, five, four, six, three, twelve, two.
+  17. engine-size:              continuous from 61 to 326.
+  18. fuel-system:              1bbl, 2bbl, 4bbl, idi, mfi, mpfi, spdi, spfi.
+  19. bore:                     continuous from 2.54 to 3.94.
+  20. stroke:                   continuous from 2.07 to 4.17.
+  21. compression-ratio:        continuous from 7 to 23.
+  22. horsepower:               continuous from 48 to 288.
+  23. peak-rpm:                 continuous from 4150 to 6600.
+  24. city-mpg:                 continuous from 13 to 49.
+  25. highway-mpg:              continuous from 16 to 54.
+  26. price:                    continuous from 5118 to 45400.
+ 
+ 8. Missing Attribute Values: (denoted by ""?"")
+    Attribute #:   Number of instances missing a value:
+    2.             41
+    6.             2
+    19.            4
+    20.            4
+    22.            2
+    23.            2
+    26.            4%"
+credit-approval,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/credit-approval/credit-approval.csv,https://openml.org/data/v1/download/29/credit-approval.arff,class,-,16,690,"**Author**: Confidential - Donated by Ross Quinlan   
+**Source**: [UCI](http://archive.ics.uci.edu/ml/datasets/credit+approval) - 1987  
+**Please cite**: [UCI](http://archive.ics.uci.edu/ml/citation_policy.html)  
+
+**Credit Approval**
+This file concerns credit card applications. All attribute names and values have been changed to meaningless symbols to protect the confidentiality of the data.  
+   
+This dataset is interesting because there is a good mix of attributes -- continuous, nominal with small numbers of values, and nominal with larger numbers of values.  There are also a few missing values."
+hungarian,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/hungarian/hungarian.csv,https://openml.org/data/v1/download/3668/hungarian.arff,num,-,14,294,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+Publication Request: 
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    This file describes the contents of the heart-disease directory.
+ 
+    This directory contains 4 databases concerning heart disease diagnosis.
+    All attributes are numeric-valued.  The data was collected from the
+    four following locations:
+ 
+      1. Cleveland Clinic Foundation (cleveland.data)
+      2. Hungarian Institute of Cardiology, Budapest (hungarian.data)
+      3. V.A. Medical Center, Long Beach, CA (long-beach-va.data)
+      4. University Hospital, Zurich, Switzerland (switzerland.data)
+ 
+    Each database has the same instance format.  While the databases have 76
+    raw attributes, only 14 of them are actually used.  Thus I've taken the
+    liberty of making 2 copies of each database: one with all the attributes
+    and 1 with the 14 attributes actually used in past experiments.
+ 
+    The authors of the databases have requested:
+ 
+       ...that any publications resulting from the use of the data include the 
+       names of the principal investigator responsible for the data collection
+       at each institution.  They would be:
+ 
+        1. Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
+        2. University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
+        3. University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
+        4. V.A. Medical Center, Long Beach and Cleveland Clinic Foundation:
+           Robert Detrano, M.D., Ph.D.
+ 
+    Thanks in advance for abiding by this request.
+ 
+    David Aha
+    July 22, 1988
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+ 1. Title: Heart Disease Databases
+ 
+ 2. Source Information:
+    (a) Creators: 
+        -- 1. Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
+        -- 2. University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
+        -- 3. University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
+        -- 4. V.A. Medical Center, Long Beach and Cleveland Clinic Foundation:
+              Robert Detrano, M.D., Ph.D.
+    (b) Donor: David W. Aha (aha@ics.uci.edu) (714) 856-8779   
+    (c) Date: July, 1988
+ 
+ 3. Past Usage:
+     1. Detrano,~R., Janosi,~A., Steinbrunn,~W., Pfisterer,~M., Schmid,~J.,
+        Sandhu,~S., Guppy,~K., Lee,~S., & Froelicher,~V. (1989).  {it 
+        International application of a new probability algorithm for the 
+        diagnosis of coronary artery disease.}  {it American Journal of 
+        Cardiology}, {it 64},304--310.
+        -- International Probability Analysis 
+        -- Address: Robert Detrano, M.D.
+                    Cardiology 111-C
+                    V.A. Medical Center
+                    5901 E. 7th Street
+                    Long Beach, CA 90028
+        -- Results in percent accuracy: (for 0.5 probability threshold)
+              Data Name:  CDF    CADENZA
+           -- Hungarian   77     74
+              Long beach  79     77
+              Swiss       81     81
+           -- Approximately a 77% correct classification accuracy with a
+              logistic-regression-derived discriminant function
+     2. David W. Aha & Dennis Kibler
+        -- 
+           
+           
+           -- Instance-based prediction of heart-disease presence with the 
+              Cleveland database
+              -- NTgrowth: 77.0% accuracy
+              --       C4: 74.8% accuracy
+     3. John Gennari
+        -- Gennari, J.~H., Langley, P, & Fisher, D. (1989). Models of
+           incremental concept formation. {it Artificial Intelligence, 40},
+           11--61.
+        -- Results: 
+           -- The CLASSIT conceptual clustering system achieved a 78.9% accuracy
+              on the Cleveland database.
+ 
+ 4. Relevant Information:
+      This database contains 76 attributes, but all published experiments
+      refer to using a subset of 14 of them.  In particular, the Cleveland
+      database is the only one that has been used by ML researchers to 
+      this date.  The ""goal"" field refers to the presence of heart disease
+      in the patient.  It is integer valued from 0 (no presence) to 4.
+      Experiments with the Cleveland database have concentrated on simply
+      attempting to distinguish presence (values 1,2,3,4) from absence (value
+      0).  
+    
+      The names and social security numbers of the patients were recently 
+      removed from the database, replaced with dummy values.
+ 
+      One file has been ""processed"", that one containing the Cleveland 
+      database.  All four unprocessed files also exist in this directory.
+     
+ 5. Number of Instances: 
+         Database:    # of instances:
+           Cleveland: 303
+           Hungarian: 294
+         Switzerland: 123
+       Long Beach VA: 200
+ 
+ 6. Number of Attributes: 76 (including the predicted attribute)
+ 
+ 7. Attribute Information:
+    -- Only 14 used
+       -- 1. #3  (age)       
+       -- 2. #4  (sex)       
+       -- 3. #9  (cp)        
+       -- 4. #10 (trestbps)  
+       -- 5. #12 (chol)      
+       -- 6. #16 (fbs)       
+       -- 7. #19 (restecg)   
+       -- 8. #32 (thalach)   
+       -- 9. #38 (exang)     
+       -- 10. #40 (oldpeak)   
+       -- 11. #41 (slope)     
+       -- 12. #44 (ca)        
+       -- 13. #51 (thal)      
+       -- 14. #58 (num)       (the predicted attribute)
+ 
+    -- Complete attribute documentation:
+       1 id: patient identification number
+       2 ccf: social security number (I replaced this with a dummy value of 0)
+       3 age: age in years
+       4 sex: sex (1 = male; 0 = female)
+       5 painloc: chest pain location (1 = substernal; 0 = otherwise)
+       6 painexer (1 = provoked by exertion; 0 = otherwise)
+       7 relrest (1 = relieved after rest; 0 = otherwise)
+       8 pncaden (sum of 5, 6, and 7)
+       9 cp: chest pain type
+         -- Value 1: typical angina
+         -- Value 2: atypical angina
+         -- Value 3: non-anginal pain
+         -- Value 4: asymptomatic
+      10 trestbps: resting blood pressure (in mm Hg on admission to the 
+         hospital)
+      11 htn
+      12 chol: serum cholestoral in mg/dl
+      13 smoke: I believe this is 1 = yes; 0 = no (is or is not a smoker)
+      14 cigs (cigarettes per day)
+      15 years (number of years as a smoker)
+      16 fbs: (fasting blood sugar > 120 mg/dl)  (1 = true; 0 = false)
+      17 dm (1 = history of diabetes; 0 = no such history)
+      18 famhist: family history of coronary artery disease (1 = yes; 0 = no)
+      19 restecg: resting electrocardiographic results
+         -- Value 0: normal
+         -- Value 1: having ST-T wave abnormality (T wave inversions and/or ST 
+                     elevation or depression of > 0.05 mV)
+         -- Value 2: showing probable or definite left ventricular hypertrophy
+                     by Estes' criteria
+      20 ekgmo (month of exercise ECG reading)
+      21 ekgday(day of exercise ECG reading)
+      22 ekgyr (year of exercise ECG reading)
+      23 dig (digitalis used furing exercise ECG: 1 = yes; 0 = no)
+      24 prop (Beta blocker used during exercise ECG: 1 = yes; 0 = no)
+      25 nitr (nitrates used during exercise ECG: 1 = yes; 0 = no)
+      26 pro (calcium channel blocker used during exercise ECG: 1 = yes; 0 = no)
+      27 diuretic (diuretic used used during exercise ECG: 1 = yes; 0 = no)
+      28 proto: exercise protocol
+           1 = Bruce     
+           2 = Kottus
+           3 = McHenry
+           4 = fast Balke
+           5 = Balke
+           6 = Noughton 
+           7 = bike 150 kpa min/min  (Not sure if ""kpa min/min"" is what was 
+               written!)
+           8 = bike 125 kpa min/min  
+           9 = bike 100 kpa min/min
+          10 = bike 75 kpa min/min
+          11 = bike 50 kpa min/min
+          12 = arm ergometer
+      29 thaldur: duration of exercise test in minutes
+      30 thaltime: time when ST measure depression was noted
+      31 met: mets achieved
+      32 thalach: maximum heart rate achieved
+      33 thalrest: resting heart rate
+      34 tpeakbps: peak exercise blood pressure (first of 2 parts)
+      35 tpeakbpd: peak exercise blood pressure (second of 2 parts)
+      36 dummy
+      37 trestbpd: resting blood pressure
+      38 exang: exercise induced angina (1 = yes; 0 = no)
+      39 xhypo: (1 = yes; 0 = no)
+      40 oldpeak = ST depression induced by exercise relative to rest
+      41 slope: the slope of the peak exercise ST segment
+         -- Value 1: upsloping
+         -- Value 2: flat
+         -- Value 3: downsloping
+      42 rldv5: height at rest
+      43 rldv5e: height at peak exercise
+      44 ca: number of major vessels (0-3) colored by flourosopy
+      45 restckm: irrelevant
+      46 exerckm: irrelevant
+      47 restef: rest raidonuclid (sp?) ejection fraction
+      48 restwm: rest wall (sp?) motion abnormality
+         0 = none
+         1 = mild or moderate
+         2 = moderate or severe
+         3 = akinesis or dyskmem (sp?)
+      49 exeref: exercise radinalid (sp?) ejection fraction
+      50 exerwm: exercise wall (sp?) motion 
+      51 thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
+      52 thalsev: not used
+      53 thalpul: not used
+      54 earlobe: not used
+      55 cmo: month of cardiac cath (sp?)  (perhaps ""call"")
+      56 cday: day of cardiac cath (sp?)
+      57 cyr: year of cardiac cath (sp?)
+      58 num: diagnosis of heart disease (angiographic disease status)
+         -- Value 0: < 50% diameter narrowing
+         -- Value 1: > 50% diameter narrowing
+         (in any major vessel: attributes 59 through 68 are vessels)
+      59 lmt
+      60 ladprox
+      61 laddist
+      62 diag
+      63 cxmain
+      64 ramus
+      65 om1
+      66 om2
+      67 rcaprox
+      68 rcadist
+      69 lvx1: not used
+      70 lvx2: not used
+      71 lvx3: not used
+      72 lvx4: not used
+      73 lvf: not used
+      74 cathef: not used
+      75 junk: not used
+      76 name: last name of patient 
+         (I replaced this with the dummy string ""name"")
+ 
+ 9. Missing Attribute Values: Several.  Distinguished with value -9.0.
+ 
+ 10. Class Distribution:
+         Database:      0   1   2   3   4 Total
+           Cleveland: 164  55  36  35  13   303
+           Hungarian: 188  37  26  28  15   294
+         Switzerland:   8  48  32  30   5   123
+       Long Beach VA:  51  56  41  42  10   200"
+analcatdata_bankruptcy,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_bankruptcy/analcatdata_bankruptcy.csv,https://openml.org/data/v1/download/52588/analcatdata_bankruptcy.arff,Bankrupt,-,7,50,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+braziltourism,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/braziltourism/braziltourism.csv,https://openml.org/data/v1/download/3623/braziltourism.arff,Trips,-,9,412,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+                by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+                consists of a zip file containing two versions of each of 84 data sets, 
+                plus this README file. Each data set is given in comma-delimited ASCII
+                (.csv) form, and Microsoft Excel (.xls) form.
+ 
+ NOTICE: These data sets may be used freely for scientific, educational and/or
+         noncommercial purposes, provided suitable acknowledgment is given (by citing
+         the above-named reference).
+ 
+ Further details concerning the book, including information on statistical software
+ (including sample S-PLUS/R and SAS code), are available at the web site
+ 
+             http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+ Information about the dataset
+ CLASSTYPE: nominal
+ CLASSINDEX: last
+
+
+ Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+       with Underscores"
+visualizing_slope,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/visualizing_slope/visualizing_slope.csv,https://openml.org/data/v1/download/52975/visualizing_slope.arff,resolution,-,4,44,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+This S dump contains 22 data sets from the
+book Visualizing Data published by
+Hobart Press (books@hobart.com).
+The dump was created by data.dump()
+and can be read back into S by data.restore().
+The name of each S data set is the name of
+the data set used in the book. To find the
+description of the data set in the book look
+under the entry - data, name - in the index.
+For example, one data set is barley.
+To find the description of barley, look
+in the index under the entry - data, barley.
+
+File: ../data/visualizing/slope.csv
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: none specific"
+nursery,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/nursery/nursery.csv,https://openml.org/data/v1/download/26/nursery.arff,class,-,9,12960,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+1. Title: Nursery Database
+ 
+ 2. Sources:
+    (a) Creator: Vladislav Rajkovic et al. (13 experts)
+    (b) Donors: Marko Bohanec   (marko.bohanec@ijs.si)
+                Blaz Zupan      (blaz.zupan@ijs.si)
+    (c) Date: June, 1997
+ 
+ 3. Past Usage:
+ 
+    The hierarchical decision model, from which this dataset is
+    derived, was first presented in 
+ 
+    M. Olave, V. Rajkovic, M. Bohanec: An application for admission in
+    public school systems. In (I. Th. M. Snellen and W. B. H. J. van de
+    Donk and J.-P. Baquiast, editors) Expert Systems in Public
+    Administration, pages 145-160. Elsevier Science Publishers (North
+    Holland)}, 1989.
+ 
+    Within machine-learning, this dataset was used for the evaluation
+    of HINT (Hierarchy INduction Tool), which was proved to be able to
+    completely reconstruct the original hierarchical model. This,
+    together with a comparison with C4.5, is presented in
+ 
+    B. Zupan, M. Bohanec, I. Bratko, J. Demsar: Machine learning by
+    function decomposition. ICML-97, Nashville, TN. 1997 (to appear)
+ 
+ 4. Relevant Information Paragraph:
+ 
+    Nursery Database was derived from a hierarchical decision model
+    originally developed to rank applications for nursery schools. It
+    was used during several years in 1980's when there was excessive
+    enrollment to these schools in Ljubljana, Slovenia, and the
+    rejected applications frequently needed an objective
+    explanation. The final decision depended on three subproblems:
+    occupation of parents and child's nursery, family structure and
+    financial standing, and social and health picture of the family.
+    The model was developed within expert system shell for decision
+    making DEX (M. Bohanec, V. Rajkovic: Expert system for decision
+    making. Sistemica 1(1), pp. 145-157, 1990.).
+ 
+    The hierarchical model ranks nursery-school applications according
+    to the following concept structure:
+ 
+    NURSERY            Evaluation of applications for nursery schools
+    . EMPLOY           Employment of parents and child's nursery
+    . . parents        Parents' occupation
+    . . has_nurs       Child's nursery
+    . STRUCT_FINAN     Family structure and financial standings
+    . . STRUCTURE      Family structure
+    . . . form         Form of the family
+    . . . children     Number of children
+    . . housing        Housing conditions
+    . . finance        Financial standing of the family
+    . SOC_HEALTH       Social and health picture of the family
+    . . social         Social conditions
+    . . health         Health conditions
+ 
+    Input attributes are printed in lowercase. Besides the target
+    concept (NURSERY) the model includes four intermediate concepts:
+    EMPLOY, STRUCT_FINAN, STRUCTURE, SOC_HEALTH. Every concept is in
+    the original model related to its lower level descendants by a set
+    of examples (for these examples sets see 
+    http://www-ai.ijs.si/BlazZupan/nursery.html).
+ 
+    The Nursery Database contains examples with the structural
+    information removed, i.e., directly relates NURSERY to the eight input
+    attributes: parents, has_nurs, form, children, housing, finance,
+    social, health.
+ 
+    Because of known underlying concept structure, this database may be
+    particularly useful for testing constructive induction and
+    structure discovery methods.
+ 
+ 5. Number of Instances: 12960
+    (instances completely cover the attribute space)
+ 
+ 6. Number of Attributes: 8
+ 
+ 7. Attribute Values:
+ 
+    parents        usual, pretentious, great_pret
+    has_nurs       proper, less_proper, improper, critical, very_crit
+    form           complete, completed, incomplete, foster
+    children       1, 2, 3, more
+    housing        convenient, less_conv, critical
+    finance        convenient, inconv
+    social         non-prob, slightly_prob, problematic
+    health         recommended, priority, not_recom
+ 
+ 8. Missing Attribute Values: none
+ 
+ 9. Class Distribution (number of instances per class)
+ 
+    class        N         N[%]
+    ------------------------------
+    not_recom    4320   (33.333 %)
+    recommend       2   ( 0.015 %)
+    very_recom    328   ( 2.531 %)
+    priority     4266   (32.917 %)
+    spec_prior   4044   (31.204 %)
+
+ Information about the dataset
+ CLASSTYPE: nominal
+ CLASSINDEX: last"
+2dplanes,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/2dplanes/2dplanes.csv,https://openml.org/data/v1/download/3652/2dplanes.arff,y,-,11,40768,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+This is an artificial data set described in Breiman et al. (1984,p.238) 
+ (with variance 1 instead of 2).  
+ 
+ Generate the values of the 10 attributes independently
+ using the following probabilities:
+
+ P(X_1 = -1) = P(X_1 = 1) = 1/2
+ P(X_m = -1) = P(X_m = 0) = P(X_m = 1) = 1/3, m=2,...,10
+
+ Obtain the value of the target variable Y using the rule:
+
+ if X_1 = 1 set Y = 3 + 3X_2 + 2X_3 + X_4 + sigma(0,1)
+ if X_1 = -1 set Y = -3 + 3X_5 + 2X_6 + X_7 + sigma(0,1)
+
+ Characteristics: 40768 cases, 11 continuous attributes
+ Source: collection of regression datasets by Luis Torgo (ltorgo@ncc.up.pt) at
+ http://www.ncc.up.pt/~ltorgo/Regression/DataSets.html
+ Original source: Breiman et al. (1984, p.238)."
+heart-h,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/heart-h/heart-h.csv,https://openml.org/data/v1/download/51/heart-h.arff,num,-,14,294,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+Publication Request: 
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    This file describes the contents of the heart-disease directory.
+ 
+    This directory contains 4 databases concerning heart disease diagnosis.
+    All attributes are numeric-valued.  The data was collected from the
+    four following locations:
+ 
+      1. Cleveland Clinic Foundation (cleveland.data)
+      2. Hungarian Institute of Cardiology, Budapest (hungarian.data)
+      3. V.A. Medical Center, Long Beach, CA (long-beach-va.data)
+      4. University Hospital, Zurich, Switzerland (switzerland.data)
+ 
+    Each database has the same instance format.  While the databases have 76
+    raw attributes, only 14 of them are actually used.  Thus I've taken the
+    liberty of making 2 copies of each database: one with all the attributes
+    and 1 with the 14 attributes actually used in past experiments.
+ 
+    The authors of the databases have requested:
+ 
+       ...that any publications resulting from the use of the data include the 
+       names of the principal investigator responsible for the data collection
+       at each institution.  They would be:
+ 
+        1. Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
+        2. University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
+        3. University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
+        4. V.A. Medical Center, Long Beach and Cleveland Clinic Foundation:
+           Robert Detrano, M.D., Ph.D.
+ 
+    Thanks in advance for abiding by this request.
+ 
+    David Aha
+    July 22, 1988
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ 
+ 1. Title: Heart Disease Databases
+ 
+ 2. Source Information:
+    (a) Creators: 
+        -- 1. Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D.
+        -- 2. University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
+        -- 3. University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
+        -- 4. V.A. Medical Center, Long Beach and Cleveland Clinic Foundation:
+              Robert Detrano, M.D., Ph.D.
+    (b) Donor: David W. Aha (aha@ics.uci.edu) (714) 856-8779   
+    (c) Date: July, 1988
+ 
+ 3. Past Usage:
+     1. Detrano,~R., Janosi,~A., Steinbrunn,~W., Pfisterer,~M., Schmid,~J.,
+        Sandhu,~S., Guppy,~K., Lee,~S., & Froelicher,~V. (1989).  {it 
+        International application of a new probability algorithm for the 
+        diagnosis of coronary artery disease.}  {it American Journal of 
+        Cardiology}, {it 64},304--310.
+        -- International Probability Analysis 
+        -- Address: Robert Detrano, M.D.
+                    Cardiology 111-C
+                    V.A. Medical Center
+                    5901 E. 7th Street
+                    Long Beach, CA 90028
+        -- Results in percent accuracy: (for 0.5 probability threshold)
+              Data Name:  CDF    CADENZA
+           -- Hungarian   77     74
+              Long beach  79     77
+              Swiss       81     81
+           -- Approximately a 77% correct classification accuracy with a
+              logistic-regression-derived discriminant function
+     2. David W. Aha & Dennis Kibler
+        -- 
+           
+           
+           -- Instance-based prediction of heart-disease presence with the 
+              Cleveland database
+              -- NTgrowth: 77.0% accuracy
+              --       C4: 74.8% accuracy
+     3. John Gennari
+        -- Gennari, J.~H., Langley, P, & Fisher, D. (1989). Models of
+           incremental concept formation. {it Artificial Intelligence, 40},
+           11--61.
+        -- Results: 
+           -- The CLASSIT conceptual clustering system achieved a 78.9% accuracy
+              on the Cleveland database.
+ 
+ 4. Relevant Information:
+      This database contains 76 attributes, but all published experiments
+      refer to using a subset of 14 of them.  In particular, the Cleveland
+      database is the only one that has been used by ML researchers to 
+      this date.  The ""goal"" field refers to the presence of heart disease
+      in the patient.  It is integer valued from 0 (no presence) to 4.
+      Experiments with the Cleveland database have concentrated on simply
+      attempting to distinguish presence (values 1,2,3,4) from absence (value
+      0).  
+    
+      The names and social security numbers of the patients were recently 
+      removed from the database, replaced with dummy values.
+ 
+      One file has been ""processed"", that one containing the Cleveland 
+      database.  All four unprocessed files also exist in this directory.
+     
+ 5. Number of Instances: 
+         Database:    # of instances:
+           Cleveland: 303
+           Hungarian: 294
+         Switzerland: 123
+       Long Beach VA: 200
+ 
+ 6. Number of Attributes: 76 (including the predicted attribute)
+ 
+ 7. Attribute Information:
+    -- Only 14 used
+       -- 1. #3  (age)       
+       -- 2. #4  (sex)       
+       -- 3. #9  (chest_pain)        
+       -- 4. #10 (trestbps)  
+       -- 5. #12 (chol)      
+       -- 6. #16 (fbs)       
+       -- 7. #19 (restecg)   
+       -- 8. #32 (thalach)   
+       -- 9. #38 (exang)     
+       -- 10. #40 (oldpeak)   
+       -- 11. #41 (slope)     
+       -- 12. #44 (ca)        
+       -- 13. #51 (thal)      
+       -- 14. #58 (num)       (the predicted attribute)
+ 
+    -- Complete attribute documentation:
+       1 id: patient identification number
+       2 ccf: social security number (I replaced this with a dummy value of 0)
+       3 age: age in years
+       4 sex: sex (1 = male; 0 = female)
+       5 painloc: chest pain location (1 = substernal; 0 = otherwise)
+       6 painexer (1 = provoked by exertion; 0 = otherwise)
+       7 relrest (1 = relieved after rest; 0 = otherwise)
+       8 pncaden (sum of 5, 6, and 7)
+       9 chest_pain: chest pain type
+         -- Value 1: typical angina
+         -- Value 2: atypical angina
+         -- Value 3: non-anginal pain
+         -- Value 4: asymptomatic
+      10 trestbps: resting blood pressure (in mm Hg on admission to the 
+         hospital)
+      11 htn
+      12 chol: serum cholestoral in mg/dl
+      13 smoke: I believe this is 1 = yes; 0 = no (is or is not a smoker)
+      14 cigs (cigarettes per day)
+      15 years (number of years as a smoker)
+      16 fbs: (fasting blood sugar > 120 mg/dl)  (1 = true; 0 = false)
+      17 dm (1 = history of diabetes; 0 = no such history)
+      18 famhist: family history of coronary artery disease (1 = yes; 0 = no)
+      19 restecg: resting electrocardiographic results
+         -- Value 0: normal
+         -- Value 1: having ST-T wave abnormality (T wave inversions and/or ST 
+                     elevation or depression of > 0.05 mV)
+         -- Value 2: showing probable or definite left ventricular hypertrophy
+                     by Estes' criteria
+      20 ekgmo (month of exercise ECG reading)
+      21 ekgday(day of exercise ECG reading)
+      22 ekgyr (year of exercise ECG reading)
+      23 dig (digitalis used furing exercise ECG: 1 = yes; 0 = no)
+      24 prop (Beta blocker used during exercise ECG: 1 = yes; 0 = no)
+      25 nitr (nitrates used during exercise ECG: 1 = yes; 0 = no)
+      26 pro (calcium channel blocker used during exercise ECG: 1 = yes; 0 = no)
+      27 diuretic (diuretic used used during exercise ECG: 1 = yes; 0 = no)
+      28 proto: exercise protocol
+           1 = Bruce     
+           2 = Kottus
+           3 = McHenry
+           4 = fast Balke
+           5 = Balke
+           6 = Noughton 
+           7 = bike 150 kpa min/min  (Not sure if ""kpa min/min"" is what was 
+               written!)
+           8 = bike 125 kpa min/min  
+           9 = bike 100 kpa min/min
+          10 = bike 75 kpa min/min
+          11 = bike 50 kpa min/min
+          12 = arm ergometer
+      29 thaldur: duration of exercise test in minutes
+      30 thaltime: time when ST measure depression was noted
+      31 met: mets achieved
+      32 thalach: maximum heart rate achieved
+      33 thalrest: resting heart rate
+      34 tpeakbps: peak exercise blood pressure (first of 2 parts)
+      35 tpeakbpd: peak exercise blood pressure (second of 2 parts)
+      36 dummy
+      37 trestbpd: resting blood pressure
+      38 exang: exercise induced angina (1 = yes; 0 = no)
+      39 xhypo: (1 = yes; 0 = no)
+      40 oldpeak = ST depression induced by exercise relative to rest
+      41 slope: the slope of the peak exercise ST segment
+         -- Value 1: upsloping
+         -- Value 2: flat
+         -- Value 3: downsloping
+      42 rldv5: height at rest
+      43 rldv5e: height at peak exercise
+      44 ca: number of major vessels (0-3) colored by flourosopy
+      45 restckm: irrelevant
+      46 exerckm: irrelevant
+      47 restef: rest raidonuclid (sp?) ejection fraction
+      48 restwm: rest wall (sp?) motion abnormality
+         0 = none
+         1 = mild or moderate
+         2 = moderate or severe
+         3 = akinesis or dyskmem (sp?)
+      49 exeref: exercise radinalid (sp?) ejection fraction
+      50 exerwm: exercise wall (sp?) motion 
+      51 thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
+      52 thalsev: not used
+      53 thalpul: not used
+      54 earlobe: not used
+      55 cmo: month of cardiac cath (sp?)  (perhaps ""call"")
+      56 cday: day of cardiac cath (sp?)
+      57 cyr: year of cardiac cath (sp?)
+      58 num: diagnosis of heart disease (angiographic disease status)
+         -- Value 0: < 50% diameter narrowing
+         -- Value 1: > 50% diameter narrowing
+         (in any major vessel: attributes 59 through 68 are vessels)
+      59 lmt
+      60 ladprox
+      61 laddist
+      62 diag
+      63 cxmain
+      64 ramus
+      65 om1
+      66 om2
+      67 rcaprox
+      68 rcadist
+      69 lvx1: not used
+      70 lvx2: not used
+      71 lvx3: not used
+      72 lvx4: not used
+      73 lvf: not used
+      74 cathef: not used
+      75 junk: not used
+      76 name: last name of patient 
+         (I replaced this with the dummy string ""name"")
+ 
+ 9. Missing Attribute Values: Several.  Distinguished with value -9.0.
+ 
+ 10. Class Distribution:
+         Database:      0   1   2   3   4 Total
+           Cleveland: 164  55  36  35  13   303
+           Hungarian: 188  37  26  28  15   294
+         Switzerland:   8  48  32  30   5   123
+       Long Beach VA:  51  56  41  42  10   200
+
+
+
+
+
+ Relabeled values in attribute 'sex'
+    From: 0                       To: female              
+    From: 1                       To: male                
+
+
+ Relabeled values in attribute 'chest_pain'
+    From: 1                       To: typ_angina          
+    From: 4                       To: asympt              
+    From: 3                       To: non_anginal         
+    From: 2                       To: atyp_angina         
+
+
+ Relabeled values in attribute 'fbs'
+    From: 1                       To: t                   
+    From: 0                       To: f                   
+
+
+ Relabeled values in attribute 'restecg'
+    From: 2                       To: left_vent_hyper     
+    From: 0                       To: normal              
+    From: 1                       To: st_t_wave_abnormality
+
+
+ Relabeled values in attribute 'exang'
+    From: 0                       To: no                  
+    From: 1                       To: yes                 
+
+
+ Relabeled values in attribute 'slope'
+    From: 3                       To: down                
+    From: 2                       To: flat                
+    From: 1                       To: up                  
+
+
+ Relabeled values in attribute 'thal'
+    From: 6                       To: fixed_defect        
+    From: 3                       To: normal              
+    From: 7                       To: reversable_defect   
+
+
+ Relabeled values in attribute 'num'
+    From: '0'                     To: '<50'               
+    From: '1'                     To: '>50_1'             
+    From: '2'                     To: '>50_2'             
+    From: '3'                     To: '>50_3'             
+    From: '4'                     To: '>50_4'"
+analcatdata_broadwaymult,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_broadwaymult/analcatdata_broadwaymult.csv,https://openml.org/data/v1/download/52564/analcatdata_broadwaymult.arff,Count,-,8,285,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: last
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+penguins,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/penguins/penguins.csv,https://openml.org/data/v1/download/21854866/penguins.arff,species,-,7,344,"![palmerpenguins](https://github.com/allisonhorst/palmerpenguins/raw/master/man/figures/logo.png)
+
+## Description
+
+The goal of palmerpenguins is to provide a great dataset for data exploration & visualization, as an alternative to iris.
+
+Data were collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network.
+
+Please see [https://github.com/allisonhorst/palmerpenguins](https://github.com/allisonhorst/palmerpenguins) for more information.
+
+## Citation
+Anyone interested in publishing the data should contact [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) about analysis and working together on any final products. From Gorman et al. (2014): _""Individuals interested in using these data are expected to follow the US LTER Network’s Data Access Policy, Requirements and Use Agreement: https://lternet.edu/data-access-policy/.""_
+
+This dataset has been derived from the R package palmerpenguins available from [https://allisonhorst.github.io/palmerpenguins/](https://allisonhorst.github.io/palmerpenguins/).
+
+Please cite as follows in publications:
+
+    Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer
+    Archipelago (Antarctica) penguin data. R package version 0.1.0.
+    https://allisonhorst.github.io/palmerpenguins/
+
+A BibTeX entry for LaTeX users is:
+
+    @Manual{,
+        title = {palmerpenguins: Palmer Archipelago (Antarctica) penguin data},
+        author = {Allison Marie Horst and Alison Presmanes Hill and Kristen B Gorman},
+        year = {2020},
+        note = {R package version 0.1.0},
+        url = {https://allisonhorst.github.io/palmerpenguins/},
+    }
+
+
+## Artwork
+
+You can download palmerpenguins art (useful for teaching with the data) from the Github repo or the R package. If you use this artwork, please cite with: ""Artwork by @allison_horst"".
+
+#### Meet the Palmer penguins
+
+<img src=""https://github.com/allisonhorst/palmerpenguins/raw/master/man/figures/lter_penguins.png"" data-canonical-src=""https://github.com/allisonhorst/palmerpenguins/raw/master/man/figures/lter_penguins.png"" width=""500"">
+
+#### Bill dimensions
+
+The culmen is the upper ridge of a bird’s bill. In this simplified dataset, culmen length and depth are renamed as variables bill_length_mm and bill_depth_mm to be more intuitive.
+
+For this penguin data, the culmen (bill) length and depth are measured as shown below (thanks Kristen Gorman for clarifying!):
+
+<img src=""https://github.com/allisonhorst/palmerpenguins/raw/master/man/figures/culmen_depth.png"" data-canonical-src=""https://github.com/allisonhorst/palmerpenguins/raw/master/man/figures/culmen_depth.png"" width=""500"">"
+page-blocks,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/page-blocks/page-blocks.csv,https://openml.org/data/v1/download/30/page-blocks.arff,class,-,11,5473,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+1. Title of Database: Blocks Classification
+ 2. Sources:
+    (a) Donato Malerba
+        Dipartimento di Informatica
+        University of Bari
+        via Orabona 4
+        70126 Bari - Italy
+        phone: +39 - 80 - 5443269
+        fax: +39 - 80 - 5443196
+        malerbad@vm.csata.it
+    (b) Donor: Donato Malerba
+    (c) Date: July 1995
+ 3. Past Usage:
+    This data set have been used to try different simplification methods
+    for decision trees. A summary of the results can be found in:
+ 
+    Malerba, D., Esposito, F., and Semeraro, G.
+    ""A Further Comparison of Simplification Methods for Decision-Tree Induction.""
+    In D. Fisher and H. Lenz (Eds.), ""Learning  from Data: 
+    Artificial Intelligence and Statistics V"", Lecture Notes in Statistics,
+    Springer Verlag, Berlin, 1995.
+ 
+    The problem consists in classifying all the blocks of the page
+    layout of a document that has been detected by a segmentation
+    process. This is an essential step in document analysis
+    in order to separate text from graphic areas. Indeed, 
+    the five classes are: text (1), horizontal line (2),
+    picture (3), vertical line (4) and graphic (5).
+    For a detailed presentation of the problem see:
+ 
+     Esposito F., Malerba D., & Semeraro G.
+   Multistrategy Learning for Document Recognition
+          Applied Artificial Intelligence, 8, pp. 33-84, 1994
+ 
+    All instances have been personally checked so that
+    low noise is present in the data.
+ 
+ 4. Relevant Information Paragraph:
+ 
+    The 5473 examples comes from 54 distinct documents. 
+    Each observation concerns one block. 
+    All attributes are numeric.
+    Data are in a format readable by C4.5.
+ 
+ 5. Number of Instances: 5473.
+ 
+ 6. Number of Attributes 
+ 
+    height:   integer.         | Height of the block.
+    lenght:   integer.     | Length of the block. 
+    area:     integer.    | Area of the block (height * lenght);
+    eccen:    continuous.  | Eccentricity of the block (lenght / height);
+    p_black:  continuous.  | Percentage of black pixels within the block (blackpix / area);
+    p_and:    continuous.        | Percentage of black pixels after the application of the Run Length Smoothing Algorithm (RLSA) (blackand / area);
+    mean_tr:  continuous.      | Mean number of white-black transitions (blackpix / wb_trans);
+    blackpix: integer.    | Total number of black pixels in the original bitmap of the block.
+    blackand: integer.        | Total number of black pixels in the bitmap of the block after the RLSA.
+    wb_trans: integer.          | Number of white-black transitions in the original bitmap of the block.
+ 
+ 
+ 
+ 7. Missing Attribute Values:  No missing value.
+ 
+ 8. Class Distribution: 
+ 
+                                            Valid    Cum
+    Class               Frequency  Percent  Percent  Percent
+  
+ text                      4913     89.8     89.8     89.8
+ horiz. line                329      6.0      6.0     95.8
+ graphic                     28       .5       .5     96.3
+ vert. line                  88      1.6      1.6     97.9
+ picture                    115      2.1      2.1    100.0
+                                 -------  -------  -------
+                         TOTAL      5473    100.0    100.0
+ 
+ Summary Statistics:
+ 
+ Variable      Mean    Std Dev   Minimum   Maximum   Correlation 
+ 
+ HEIGHT       10.47      18.96         1       804         .3510
+ LENGTH       89.57     114.72         1       553        -.0045
+ AREA       1198.41    4849.38         7    143993         .2343
+ ECCEN        13.75      30.70      .007    537.00         .0992
+ P_BLACK        .37        .18      .052      1.00         .2130
+ P_AND          .79        .17      .062      1.00        -.1771
+ MEAN_TR       6.22      69.08      1.00   4955.00         .0723
+ BLACKPIX    365.93    1270.33         7     33017         .1656
+ BLACKAND    741.11    1881.50         7     46133         .1565
+ WB_TRANS    106.66     167.31         1      3212         .0337
+ 
+
+ Information about the dataset
+ CLASSTYPE: nominal
+ CLASSINDEX: last"
+cacao_flavor,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/cacao_flavor/cacao_flavor.csv,https://openml.org/data/v1/download/21718892/cacao_flavor.arff,bean_type,-,9,1795,"Chocolate Bar Ratings.
+    Expert ratings of over 1,700 chocolate bars. Each chocolate is evaluated from a combination of both objective qualities and subjective interpretation. A rating here only represents an experience with one bar from one batch. Batch numbers, vintages and review dates are included in the database when known.
+
+    The database is narrowly focused on plain dark chocolate with an aim of appreciating the flavors of the cacao when made into chocolate. The ratings do not reflect health benefits, social missions, or organic status.
+    
+    Flavor is the most important component of the Flavors of Cacao ratings. Diversity, balance, intensity and purity of flavors are all considered. It is possible for a straight forward single note chocolate to rate as high as a complex flavor profile that changes throughout. Genetics, terroir, post harvest techniques, processing and storage can all be discussed when considering the flavor component.
+    
+    Texture has a great impact on the overall experience and it is also possible for texture related issues to impact flavor. It is a good way to evaluate the makers vision, attention to detail and level of proficiency.
+    
+    Aftermelt is the experience after the chocolate has melted. Higher quality chocolate will linger and be long lasting and enjoyable. Since the aftermelt is the last impression you get from the chocolate, it receives equal importance in the overall rating.
+    
+    Overall Opinion is really where the ratings reflect a subjective opinion. Ideally it is my evaluation of whether or not the components above worked together and an opinion on the flavor development, character and style. It is also here where each chocolate can usually be summarized by the most prominent impressions that you would remember about each chocolate.
+    
+    Flavors of Cacao Rating System:
+    5= Elite (Transcending beyond the ordinary limits)
+    4= Premium (Superior flavor development, character and style)
+    3= Satisfactory(3.0) to praiseworthy(3.75) (well made with special qualities)
+    2= Disappointing (Passable but contains at least one significant flaw)
+    1= Unpleasant (mostly unpalatable)
+
+    Acknowledgements
+    These ratings were compiled by Brady Brelinski, Founding Member of the Manhattan Chocolate Society. For up-to-date information, as well as additional content (including interviews with craft chocolate makers), please see his website: http://flavorsofcacao.com/index.html"
+longley,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/longley/longley.csv,https://openml.org/data/v1/download/3648/longley.arff,employed,-,7,16,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+Data from StatLib (ftp stat.cmu.edu/datasets)
+
+ The infamous Longley data, ""An appraisal of least-squares programs from
+  the point of view of the user"", JASA, 62(1967) p819-841.
+
+ Variables are: Number of people employed   (usually the y variable)
+                GNP implicit price deflator
+                GNP
+                Unemployed
+                Armed forces
+                Non-institutionalized population >=14 years of age
+                Year
+
+ Employment is being treated as the class
+ attribute."
+analcatdata_seropositive,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_seropositive/analcatdata_seropositive.csv,https://openml.org/data/v1/download/52638/analcatdata_seropositive.arff,Positive,-,4,132,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: numeric
+CLASSINDEX: 3
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+energy-efficiency,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/energy-efficiency/energy-efficiency.csv,https://openml.org/data/v1/download/1587929/energy-efficiency.arff,y1,-,10,768,"**Author**: Angeliki Xifara, Athanasios Tsanas 
+
+**Source**: UCI
+
+**Please cite**:   
+
+Source:
+  
+The dataset was created by Angeliki Xifara (angxifara @ gmail.com, Civil/Structural Engineer) and was processed by Athanasios Tsanas (tsanasthanasis @ gmail.com, Oxford Centre for Industrial and Applied Mathematics, University of Oxford, UK).
+
+Data Set Information:
+  
+We perform energy analysis using 12 different building shapes simulated in Ecotect. The buildings differ with respect to the glazing area, the glazing area distribution, and the orientation, amongst other parameters. We simulate various settings as functions of the afore-mentioned characteristics to obtain 768 building shapes. The dataset comprises 768 samples and 8 features, aiming to predict two real valued responses. It can also be used as a multi-class classification problem if the response is rounded to the nearest integer.
+ 
+Attribute Information:
+ 
+The dataset contains eight attributes (or features, denoted by X1...X8) and two responses (or outcomes, denoted by y1 and y2). The aim is to use the eight features to predict each of the two responses. 
+
+Specifically: 
+X1  Relative Compactness 
+X2  Surface Area 
+X3  Wall Area 
+X4  Roof Area 
+X5  Overall Height 
+X6  Orientation 
+X7  Glazing Area 
+X8  Glazing Area Distribution 
+y1  Heating Load 
+y2  Cooling Load"
+house_8L,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/house_8L/house_8L.csv,https://openml.org/data/v1/download/3655/house_8L.arff,price,-,9,22784,"**Author**:   
+**Source**: Unknown -   
+**Please cite**:   
+
+This database was designed on the basis of data provided by US Census
+ Bureau [http://www.census.gov] (under Lookup Access
+ [http://www.census.gov/cdrom/lookup]: Summary Tape File 1). The data
+ were collected as part of the 1990 US census. These are mostly counts
+ cumulated at different survey levels. For the purpose of this data set
+ a level State-Place was used. Data from all states was obtained. Most
+ of the counts were changed into appropriate proportions.  There are 4
+ different data sets obtained from this database: House(8H) House(8L)
+ House(16H) House(16L) These are all concerned with predicting the
+ median price of the house in the region based on demographic
+ composition and a state of housing market in the region. A number in
+ the name signifies the number of attributes of the data set. A
+ following letter denotes a very rough approximation to the difficulty
+ of the task. For Low task difficulty, more correlated attributes were
+ chosen as signified by univariate smooth fit of that input on the
+ target. Tasks with High difficulty have had their attributes chosen to
+ make the modelling more difficult due to higher variance or lower
+ correlation of the inputs to the target.
+ 
+ Original source: DELVE repository of data. 
+ Source: collection of regression datasets by Luis Torgo (ltorgo@ncc.up.pt) at
+ http://www.ncc.up.pt/~ltorgo/Regression/DataSets.html
+ Characteristics: 22784 cases, 9 continuous attributes."
+SPECT,Tabular,binary,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/SPECT/SPECT.csv,https://openml.org/data/v1/download/52239/SPECT.arff,OVERALL_DIAGNOSIS,-,23,267,"**Author**: Krzysztof J. Cios"",""Lukasz A.  
+**Source**: [original](https://archive.ics.uci.edu/ml/datasets/SPECT+Heart) -   
+**Please cite**:   
+
+SPECT heart data
+
+This is a merged version of the separate train and test set which are usually distributed. On OpenML this train-test split can be found as one of the possible tasks.  
+
+Sources: 
+-- Original owners: Krzysztof J. Cios, Lukasz A. Kurgan University of Colorado at Denver, Denver, CO 80217, U.S.A. Krys.Cios@cudenver.edu Lucy S. Goodenday Medical College of Ohio, OH, U.S.A.  
+-- Donors: Lukasz A.Kurgan, Krzysztof J. Cios 
+-- Date: 10/01/01  
+
+Relevant Information: The dataset describes diagnosing of cardiac Single Proton Emission Computed Tomography (SPECT) images.  Each of the patients is classified into two categories: normal and abnormal.  The database of 267 SPECT image sets (patients) was processed to extract features that summarize the original SPECT images.  As a result, 44 continuous feature pattern was created for each patient. The pattern was further processed to obtain 22 binary feature patterns. The CLIP3 algorithm was used to generate classification rules from these patterns. The CLIP3 algorithm generated rules that were 84.0% accurate (as compared with cardiologists' diagnoses).   
+
+Attribute Information: 
+1. OVERALL_DIAGNOSIS: 0,1 (class attribute, binary) 
+2. F1: 0,1 (the partial diagnosis 1, binary) 
+3. F2: 0,1 (the partial diagnosis 2, binary) 
+4. F3: 0,1 (the partial diagnosis 3, binary) 
+5. F4: 0,1 (the partial diagnosis 4, binary) 
+6. F5: 0,1 (the partial diagnosis 5, binary) 
+7. F6: 0,1 (the partial diagnosis 6, binary) 
+8. F7: 0,1 (the partial diagnosis 7, binary) 
+9. F8: 0,1 (the partial diagnosis 8, binary) 
+10. F9: 0,1 (the partial diagnosis 9, binary) 
+11. F10: 0,1 (the partial diagnosis 10, binary) 
+12. F11: 0,1 (the partial diagnosis 11, binary) 
+13. F12: 0,1 (the partial diagnosis 12, binary) 
+14. F13: 0,1 (the partial diagnosis 13, binary) 
+15. F14: 0,1 (the partial diagnosis 14, binary) 
+16. F15: 0,1 (the partial diagnosis 15, binary) 
+17. F16: 0,1 (the partial diagnosis 16, binary) 
+18. F17: 0,1 (the partial diagnosis 17, binary) 
+19. F18: 0,1 (the partial diagnosis 18, binary) 
+20. F19: 0,1 (the partial diagnosis 19, binary) 
+21. F20: 0,1 (the partial diagnosis 20, binary) 
+22. F21: 0,1 (the partial diagnosis 21, binary) 
+23. F22: 0,1 (the partial diagnosis 22, binary)"
+solar-flare,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/solar-flare/solar-flare.csv,https://openml.org/data/v1/download/4965263/solar-flare.arff,class,-,13,315,"**Author**: Gary Bradshaw    
+**Source**: [UCI](http://archive.ics.uci.edu/ml/datasets/solar+flare)   
+**Please cite**:   
+
+**Solar Flare database**
+Relevant Information:
+    -- The database contains 3 potential classes, one for the number of times a
+       certain type of solar flare occured in a 24 hour period.
+    -- Each instance represents captured features for 1 active region on the 
+       sun.
+    -- The data are divided into two sections. The second section (flare.data2)
+       has had much more error correction applied to the it, and has 
+       consequently been treated as more reliable.
+ 
+Number of Instances:  flare.data1: 323, flare.data2: 1066
+ 
+Number of attributes:  13 (includes 3 class attributes)
+ 
+### Attribute Information
+    1. Code for class (modified Zurich class)  (A,B,C,D,E,F,H)
+    2. Code for largest spot size              (X,R,S,A,H,K)
+    3. Code for spot distribution              (X,O,I,C)
+    4. Activity                                (1 = reduced, 2 = unchanged)
+    5. Evolution                               (1 = decay, 2 = no growth, 
+                                                3 = growth)
+    6. Previous 24 hour flare activity code    (1 = nothing as big as an M1,
+                                                2 = one M1,
+                                                3 = more activity than one M1)
+    7. Historically-complex                    (1 = Yes, 2 = No)
+    8. Did region become historically complex  (1 = yes, 2 = no) 
+       on this pass across the sun's disk
+    9. Area                                    (1 = small, 2 = large)
+   10. Area of the largest spot                (1 = <=5, 2 = >5)
+ 
+  From all these predictors three classes of flares are predicted, which are 
+  represented in the last three columns.
+ 
+   11. C-class flares production by this region    Number  
+       in the following 24 hours (common flares)
+   12. M-class flares production by this region    Number
+       in the following 24 hours (moderate flares)
+   13. X-class flares production by this region    Number
+       in the following 24 hours (severe flares)
+ 
+ CLASSTYPE: nominal
+ CLASSINDEX: first"
+analcatdata_reviewer,Tabular,multiclass,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/analcatdata_reviewer/analcatdata_reviewer.csv,https://openml.org/data/v1/download/52572/analcatdata_reviewer.arff,Roger_Ebert,-,9,379,"**Author**:   
+**Source**: Unknown - Date unknown  
+**Please cite**:   
+
+analcatdata    A collection of data sets used in the book ""Analyzing Categorical Data,""
+by Jeffrey S. Simonoff, Springer-Verlag, New York, 2003. The submission
+consists of a zip file containing two versions of each of 84 data sets,
+plus this README file. Each data set is given in comma-delimited ASCII
+(.csv) form, and Microsoft Excel (.xls) form.
+
+NOTICE: These data sets may be used freely for scientific, educational and/or
+noncommercial purposes, provided suitable acknowledgment is given (by citing
+the above-named reference).
+
+Further details concerning the book, including information on statistical software
+(including sample S-PLUS/R and SAS code), are available at the web site
+
+http://www.stern.nyu.edu/~jsimonof/AnalCatData
+
+
+Information about the dataset
+CLASSTYPE: nominal
+CLASSINDEX: none specific
+
+
+Note: Quotes, Single-Quotes and Backslashes were removed, Blanks replaced
+with Underscores"
+naval_propulsion_plant,Tabular,regression,Tabular_Multivariate,/dataset/Tabular_datasets/Class_Reg/naval_propulsion_plant/naval_propulsion_plant.csv,https://openml.org/data/v1/download/22111833/naval_propulsion_plant.arff,gt_compressor_decay_state_coefficient,-,16,11934,"**Data Description**
+
+Data have been generated from a sophisticated simulator of a Gas Turbines (GT), mounted on a Frigate characterized by a COmbined Diesel eLectric And Gas (CODLAG) propulsion plant type.
+
+The propulsion system behaviour has been described with this parameters:
+- Ship speed (linear function of the lever position lp).
+- Compressor degradation coefficient kMc.
+- Turbine degradation coefficient kMt.
+so that each possible degradation state can be described by a combination of this triple (lp,kMt,kMc).
+
+A series of measures (16 features) which indirectly represents the state of the system subject to performance decay has been acquired and stored in the dataset over the parameter's space.
+
+The goal is to estimate gt_compressor_decay_state_coefficient from the given measurements.
+
+The columns gt_compressor_inlet_air_pressure, gt_compressor_inlet_air_temperature from the original dataset were
+removed because they have constant values.
+
+
+**Attribute Description**
+
+1. *lever_position*
+2. *ship_speed*
+3. *gas_turbine_shaft_torque*
+4. *gas_turbine_rate_of_revolutions*
+5. *gas_generator_rate_of_revolutions*
+6. *starboard_propeller_torque*
+7. *port_propeller_torque*
+8. *hp_turbine_exit_temperature*
+9. *gt_compressor_inlet_air_temperature*
+10. *gt_compressor_outlet_air_temperature*
+11. *hp_turbine_exit_pressure*
+12. *gt_compressor_inlet_air_pressure*
+13. *gt_compressor_outlet_air_pressure*
+14. *gas_turbine_exhaust_gas_pressure*
+15. *turbine_injecton_control*
+16. *fuel_flow*
+17. *gt_compressor_decay_state_coefficient* - target feature
+18. *gt_turbine_decay_state_coefficient* - alternate target feature"
